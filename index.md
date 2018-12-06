@@ -15,3 +15,5 @@ My research interests include queueing theory, scheduling and performance modeli
 In the past,
 I have researched the complexity theory of abstract motion planning with [Erik Demaine](http://erikdemaine.org/)
 and information theoretic cryptography with [Vinod Vaikuntanathan](https://people.csail.mit.edu/vinodv/).
+
+Hi!
