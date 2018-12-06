@@ -10,7 +10,7 @@ I'm Isaac Grosof, a second-year computer-science student at CMU.
 
 I am advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
 
-My research interests include queueing theory, scheduling and performance modeling. I have a particular interest in multiserver scheduling and tail metrics in scheduling.
+My research interests include queueing theory, scheduling and performance modeling. I have a particular interest in multiserver scheduling and tail metrics in queueing.
 
 In the past,
 I have researched the complexity theory of abstract motion planning with [Erik Demaine](http://erikdemaine.org/)
