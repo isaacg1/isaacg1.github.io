@@ -1,0 +1,103 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it Isaac Grosof}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\usepackage[margin=0.5in]{geometry}
+\usepackage{hyperref}
+
+\begin{document}
+\thispagestyle{empty} % this page has no header
+\name{\Large ISAAC GROSOF\\[12pt]}% the \\[12pt] adds a blank line after name
+
+\address{Computer Science Department \\
+Carnegie Mellon University \\
+  Pittsburgh, PA, 15213}
+  \address{
+igrosof@cmu.edu \\
+  (206) 718-6712}
+
+\begin{resume}
+
+\section{\centerline{RESEARCH INTERESTS}}
+
+Design and performance analysis of stochastic computer systems, including theory and implementation. \\
+Queueing behavior and scheduling policies for resource allocation, especially in multicore systems.
+
+\section{\centerline{CURRENT RESEARCH}}
+
+Multiserver scheduling policies, Scheduling policies for tail metrics, Redundancy queueing systems.
+
+\section{\centerline{EDUCATION}}
+\textbf{2017 - pres}: Pursuing PhD in Computer Science. Carnegie Mellon University, Pittsburgh, PA.\\
+Advisor: Prof. Mor Harchol-Balter
+
+\textbf{2013 - 2017}: M.E. and B.S. in Computer Science. Massachusetts Institute of Technology, Cambridge, MA. GPA 4.96/5 \\
+Master's Thesis in information-theoretic cryptography: ``Secure communication: CDS, PIR, PSM'' \\
+Master's Advisor: Prof. Vinod Vaikunatanathan \\
+Bachelor's Advisor: Prof. Frans Kaashoek \\
+
+\section{\centerline{PUBLICATIONS}}
+
+    Isaac Grosof, Mor Harchol-Balter, Ziv Sculy.
+    ``SRPT for Multiserver Systems.''
+    \textit{Performance Evaluation}, Nov. 2018. \\
+    Also appeared in the following conference:
+    \textit{36th International Symposium on Computer Performance, Modeling, Measurements, and Evaluation (Performance 2018)}, Toulouse, France, December 2018. \\
+    \textbf{Winner of Performance 2018 Best Student Paper Award}.
+
+    Erik D. Demaine, Isaac Grosof, Jayson Lynch, and Mikhail Rudoy.
+    ``Computational Complexity of Motion Planning of a Robot through Simple Gadgets.''
+    \textit{Ninth International Conference on Fun with Algorithms}. La Maddalena, Italy. 2018.
+
+    Erik D. Demaine, Isaac Grosof, and Jayson Lynch.
+    ``Push-Pull Block Puzzles are Hard.''
+    \textit{International Conference on Algorithms and Complexity}. Athens, Greece. 2017.
+
+    Benjamin Grosof, Janine Bloomfield, Paul Fodor, Michael Kifer, Isaac Grosof, Miguel Calejo, and Terrance Swift.
+    ``Automated Decision Support for Financial Regulatory/Policy Compliance, using Textual Rulelog.'' \textit{RuleML 2015}. Berlin, Germany. 2015.
+
+\section{\centerline{EMPLOYMENT}}
+\vspace{8pt}
+\textbf{Summer 2016}: Jane Street Capital, LLC, New York City, NY.\\
+- Software developer for non-obtrusive data collection about in-house trading.\\
+- Software developer responsible for updating trading simulation package to accommodate new trade specification format.
+
+\textbf{Summer 2015}: Coherent Knowledge, Seattle, WA. \\
+- Knowledge Engineer to build demonstrations for the financial and natural language domains using the declarative logic programming language Ergo.
+
+\textbf{2013 - 2014}: MIT Undergraduate Research Opportunities Program, Cambdridge, MA. \\
+- Researcher in Complexity Theory proving computational hardness of block puzzles and related agent motion problems.
+
+\textbf{Summer 2014}: EMC Isilon, Seattle, WA. \\
+- Software developer to replace the previous ad-hoc build platform with a modern Jenkins-based build platform.
+
+%% Mention Stack exchange, one of the most used?
+%% Mention lines of code - over 20,000 lines of code.
+
+ \section{\centerline{PROJECTS}}
+ \textbf{2014 - pres}: Author of new programming language: \textit{Pyth}\\
+ - Pyth is one of the best programming languages for solving tasks with the shortest possible programs.\\
+ - Pyth is an open-source language written in Python which has an online interpreter and detailed documentation.\\
+ - Available at \url{https://github.com/isaacg1/pyth}
+
+\section{\centerline{ SKILLS }}
+\vspace{8pt}
+Strong mathematical background, including abstract logic, probability, and mathematical proofs. \\
+Proficient with Python, Java, OCaml. \\
+Experience with Haskell, C, Rust.\\
+Experience in functional programming (e.g., Scheme) and logic programming (e.g., Prolog). \\
+Experience with Linux, Linux shell scripting. \\
+
+\end{resume}
+\end{document}
