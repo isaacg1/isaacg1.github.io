@@ -24,6 +24,7 @@ github_username:  isaacg1
 
 header_pages:
     - publications.md
+    - talks.md
     - cv.md
     - blog.md
 
