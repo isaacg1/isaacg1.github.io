@@ -6,7 +6,7 @@ permalink: /publications/
 ## Papers
 
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf)
-Isaac Grosof, Mor Harchol-Balter, Ziv Scully. *Performance Evaluation*, Nov. 2018. Also in the conference: *Performance*, Dec. 2018.
+Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *Performance Evaluation*, Nov. 2018. Also in the conference: *Performance*, Dec. 2018.
 
 **Winner of Performance 2018 Best Student Paper Award**
 
