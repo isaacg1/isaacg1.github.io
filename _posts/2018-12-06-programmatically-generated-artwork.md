@@ -3,7 +3,15 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made four rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made five rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Smeared Mandelbrot
+
+Algorithm: Generate mandelbrot-like sets by iterating f(z) = z^p + c, for each p in (1.333, 3). Color them by the relative movement of the point, from start to convergence.
+
+[Repository](https://github.com/isaacg1/mandel)
+
+![Smeared Mandelbrot](/assets/mandel-1000-400.png)
 
 ## Disrupted continuity
 
