@@ -9,7 +9,7 @@ permalink: /publications/
 #### Keeping Your Heavy Traffic on the Road to Low Response Times
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. To appear in *SIGMETRICS 2019*, Jun. 2019.
 
-[\[paper\]](/assets/load-balancing.pdf)
+[\[paper\]](/assets/load-balancing.pdf) [\[arxiv\]](https://arxiv.org/abs/1905.03439)
 
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf)
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *Performance Evaluation*, Nov. 2018. Also in the conference: *Performance*, Dec. 2018.
