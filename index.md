@@ -6,9 +6,11 @@ layout: page
 ---
 ![Isaac Grosof's portrait](/assets/portrait-small.jpg)
 
-I'm Isaac Grosof, a second-year computer-science student at CMU.
+I'm Isaac Grosof, a third-year computer-science student at CMU.
 
 I am advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
+
+I'm currently TAing [15-857](http://www.cs.cmu.edu/~harchol/Perfclass/class19fall.html).
 
 My research interests include queueing theory, scheduling and performance modeling. I have a particular interest in multiserver scheduling and tail metrics in queueing.
 
