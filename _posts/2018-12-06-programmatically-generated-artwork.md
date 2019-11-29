@@ -5,6 +5,17 @@ title: "Programmatically generated artwork"
 
 I have made five rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
 
+## Brushstrokes
+
+Algorithm: Color the pixels randomly.
+Choose locations in a random order. At each location, test a collection of "brushes",
+each a rectangle of pixels.
+Find the brush whose pixels have the least average color distance from the middlemost color.
+Set the pixel at that location to the middlemost color.
+Repeat this process a couple of times.
+
+![Brushstrokes](/assets/brush-1600.png)
+
 ## Smeared Mandelbrot
 
 Algorithm: Generate mandelbrot-like sets by iterating f(z) = z^p + c, for each p in (1.333, 3). Color them by the relative movement of the point, from start to convergence.
