@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="reset_easy" onclick="reset(3000)">
+Reset Easy
+</button>
+<button id="reset_medium" onclick="reset(2000)">
+Reset Medium
+</button>
+<button id="reset_hard" onclick="reset(1000)">
+Reset Hard (Done by chimp in video)
+</button>
+<p>
+</p>
+
+<button id="button0" onclick="press(0,0)">_</button>
+<button id="button1" onclick="press(0,1)">_</button>
+<button id="button2" onclick="press(0,2)">_</button>
+<button id="button3" onclick="press(0,3)">_</button>
+<button id="button4" onclick="press(0,4)">_</button>
+<button id="button5" onclick="press(0,5)">_</button>
+<button id="button6" onclick="press(0,6)">_</button>
+<button id="button7" onclick="press(0,7)">_</button>
+<p>
+</p>
+<button id="button8" onclick="press(1,0)">_</button>
+<button id="button9" onclick="press(1,1)">_</button>
+<button id="button10" onclick="press(1,2)">_</button>
+<button id="button11" onclick="press(1,3)">_</button>
+<button id="button12" onclick="press(1,4)">_</button>
+<button id="button13" onclick="press(1,5)">_</button>
+<button id="button14" onclick="press(1,6)">_</button>
+<button id="button15" onclick="press(1,7)">_</button>
+<p>
+</p>
+<button id="button16" onclick="press(2,0)">_</button>
+<button id="button17" onclick="press(2,1)">_</button>
+<button id="button18" onclick="press(2,2)">_</button>
+<button id="button19" onclick="press(2,3)">_</button>
+<button id="button20" onclick="press(2,4)">_</button>
+<button id="button21" onclick="press(2,5)">_</button>
+<button id="button22" onclick="press(2,6)">_</button>
+<button id="button23" onclick="press(2,7)">_</button>
+<p>
+</p>
+<button id="button24" onclick="press(3,0)">_</button>
+<button id="button25" onclick="press(3,1)">_</button>
+<button id="button26" onclick="press(3,2)">_</button>
+<button id="button27" onclick="press(3,3)">_</button>
+<button id="button28" onclick="press(3,4)">_</button>
+<button id="button29" onclick="press(3,5)">_</button>
+<button id="button30" onclick="press(3,6)">_</button>
+<button id="button31" onclick="press(3,7)">_</button>
+<p>
+</p>
+<button id="button32" onclick="press(4,0)">_</button>
+<button id="button33" onclick="press(4,1)">_</button>
+<button id="button34" onclick="press(4,2)">_</button>
+<button id="button35" onclick="press(4,3)">_</button>
+<button id="button36" onclick="press(4,4)">_</button>
+<button id="button37" onclick="press(4,5)">_</button>
+<button id="button38" onclick="press(4,6)">_</button>
+<button id="button39" onclick="press(4,7)">_</button>
+<p>
+</p>
+<button id="button40" onclick="press(5,0)">_</button>
+<button id="button41" onclick="press(5,1)">_</button>
+<button id="button42" onclick="press(5,2)">_</button>
+<button id="button43" onclick="press(5,3)">_</button>
+<button id="button44" onclick="press(5,4)">_</button>
+<button id="button45" onclick="press(5,5)">_</button>
+<button id="button46" onclick="press(5,6)">_</button>
+<button id="button47" onclick="press(5,7)">_</button>
+<p>
+</p>
+<button id="button48" onclick="press(6,0)">_</button>
+<button id="button49" onclick="press(6,1)">_</button>
+<button id="button50" onclick="press(6,2)">_</button>
+<button id="button51" onclick="press(6,3)">_</button>
+<button id="button52" onclick="press(6,4)">_</button>
+<button id="button53" onclick="press(6,5)">_</button>
+<button id="button54" onclick="press(6,6)">_</button>
+<button id="button55" onclick="press(6,7)">_</button>
+<p>
+</p>
+<button id="button56" onclick="press(7,0)">_</button>
+<button id="button57" onclick="press(7,1)">_</button>
+<button id="button58" onclick="press(7,2)">_</button>
+<button id="button59" onclick="press(7,3)">_</button>
+<button id="button60" onclick="press(7,4)">_</button>
+<button id="button61" onclick="press(7,5)">_</button>
+<button id="button62" onclick="press(7,6)">_</button>
+<button id="button63" onclick="press(7,7)">_</button>
+
+<p id="text">
+Click a reset to start
+</p>
+<p id="sequence">
+</p>
+<p id="failure">
+</p>
+<script>
+var elements = 9;
+var sequence = [
+	[0, 0],
+  [0, 1],
+  [0, 2],
+  [0, 3],
+  [0, 4],
+  [0, 5],
+  [0, 6],
+  [0, 7],
+  [1, 0]
+];
+var seqIndex = 0;
+var ongoing = false;
+
+function sleep(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
+function press(a, b) {
+	if (ongoing) {
+		var text;
+	  var target = sequence[seqIndex];
+		if (a == target[0] && b == target[1]) {
+      seqIndex += 1;
+    	text = "Game Ongoing: " + seqIndex;
+  	} else {
+  		text = "Failure";
+      ongoing = false;
+	    document.getElementById("failure").innerText =
+      	"Clicked " + [a, b] + ", correct was " + target;
+  	}
+    if (seqIndex >= sequence.length) {
+    	text = "Success!";
+      ongoing = false;
+    }
+  	document.getElementById("text").innerText = text;
+  } else {
+  	document.getElementById("text").innerText += " - Done";
+  }
+}
+
+function reset(delay) {
+  document.getElementById("text").innerText = "Memorize";
+	ongoing = false;
+  sequence = [];
+  seqIndex = 0;
+  var i;
+  for (i=0; i < 64; i++) {
+  	var button_text = "button" + i;
+    document.getElementById(button_text).innerText = "_"
+  }
+  while (sequence.length < elements) {
+  	var button_num = Math.floor(Math.random() * 64);
+    var pair = [Math.floor(button_num/8), button_num%8];
+    var index = sequence.findIndex(function (value, a, b) {
+    	return value[0] == pair[0] && value[1] == pair[1];
+    });
+    if (index == -1) {
+    	var button_text = "button" + button_num;
+    	sequence.push(pair);
+    	document.getElementById(button_text).innerText = "" + sequence.length;
+    }
+    document.getElementById("sequence").innerText = "Cheatsheet: " + sequence;
+    document.getElementById("failure").innerText = "";
+  }
+  sleep(delay).then(() => {
+  	var j;
+    for (j=0; j<sequence.length; j++) {
+    	var element = sequence[j];
+      var button_num = element[0] * 8 + element[1];
+      var button_text = "button" + button_num;
+      document.getElementById(button_text).innerText = "#";
+    }
+    document.getElementById("text").innerText = "Game Ongoing";
+    ongoing = true;
+  });
+}
+</script>
+</body>
+</html>
