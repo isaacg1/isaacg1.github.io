@@ -5,6 +5,11 @@ permalink: /publications/
 ---
 ## Papers
 
+### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
+Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *IFIP Performance*, Nov. 2020.
+
+[\[paper\]](/assets/m-gittins-k.pdf) [\[arxiv\]](https://arxiv.org/abs/2003.13232) [\[short paper\]](/assets/m-gittins-k.pdf)
+
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
 #### Keeping Your Heavy Traffic on the Road to Low Response Times
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
