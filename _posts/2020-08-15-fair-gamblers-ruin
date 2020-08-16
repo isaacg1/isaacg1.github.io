@@ -1,8 +1,8 @@
 ---
 published: false
 title: Fair Gambler's Ruin
+layout: null
 ---
 The fair gambler's ruin problem is as follows: Suppose a gambler is repeatedly betting a dollar on the flip of a coin. The gambler starts with one dollar, and stops if they ever drop to zero dollars. How likely is it that the gambler is still going after n flips?
 
 We'll try and answer this in two ways: With a rough, heuristic argument, and exactly.
-
