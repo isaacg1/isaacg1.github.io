@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Fair Gambler's Ruin
 layout: post
 ---
