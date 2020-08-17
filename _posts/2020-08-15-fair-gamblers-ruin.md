@@ -5,7 +5,7 @@ layout: post
 ---
 The fair gambler's ruin problem is as follows: Suppose a gambler is repeatedly betting a dollar on the flip of a coin. The gambler starts with one dollar, and stops if they ever drop to zero dollars. How likely is it that the gambler is still going after n flips?
 
-We'll try and answer this in two ways: With a rough, heuristic argument, and via simulation. I'll also show an attempt at an exact analysis, though I did not succeed.
+We'll try and answer this in two ways: With a rough, heuristic argument, via simulation, and an exact analysis.
 
 Note the game is "fair" in the sense that the expected amount of money that the gambler has is always 1, however many flips have occurred. Nonetheless, the gambler eventually stops with probability 1. This is a null-recurrent Markov chain.
 
@@ -64,18 +64,35 @@ Empirically, it seems like the correct formula might be `0.79/n^.5`.
 
 ## Exact
 
-Let's perform a z-transform. The z-transform of an positive-integer-valued random variable X is defined as `x(z) = E[z^X]`. Let's call the number of steps until the gambler loses L. We can use the fact that after one step, L is either 0 or L+L, each with probability 1/2. Thus the z-transform of L is
+This argument is a paraphrasement of this one from
+[lonza leggiera](https://math.stackexchange.com/questions/3792480/fair-gamblers-ruin-tail-probability)
+on Mathematics Stack Exchange,
+since I had trouble figuring it out myself.
 
-``l(z) = z/2 (1 + l(z)^2)``
+Let's write `p_{i,n}` for the probability that the gambler has `i` dollars after `n` flips.
+We can write this recursively:
 
-Solving for `l(z)`, we find that
+````
+p_{1,0} = 1
+p_{i,n} = (p_{i-1,n} + p_{i+1,n})/2 if i>2
+p_{0,n} = p_{0,n-1} + p_{1,n-1}/2
+p_{1,n} = p_{2,n-1}/2
+````
 
-``l(z) = (1 - (1 - z^2)^.5)/z``
+Let's multiply the probabilities by `2^n` and write this in a chart:
 
-We chose this branch because `l(z) < 1`.
-
-We can now extract the moments of `L`.
-
-``E[L] = l'(1) = ∞``
-
-And here I'm stuck. I suspect a better answer involves martingales, but I'm unsure what it is.
+````
+ i  0  1 2 3 4 5 6 7 8 9
+n ---------------------
+0|     1
+1|  1    1
+2|  2  1   1
+3|  5     2   1
+4| 10  2   3   1
+5| 22    5   4   1
+6| 44  5   9   5   1
+7| 93   14  14   6   1
+8|186 14  28  20   7   1
+````
+We can observe, and it is fairly easy to prove, that the 1 column is the catalan numbers. The probability we care about is the sum over all `i>0` for a given `n`.
+This turns out to be n choose n/2, divided by `2^n`. The asymptotic growth is `(2/(pi n))^0.5`, which is about 0.798 `n^0.5`, matching the observations in simulation.
