@@ -10,6 +10,11 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *IFIP Performance*, N
 
 [\[paper\]](/assets/m-gittins-k.pdf) [\[arxiv\]](https://arxiv.org/abs/2003.13232) [\[short paper\]](/assets/m-gittins-k.pdf)
 
+### The CacheLib Caching Engine: Design and Experiences at Scale
+Ben Berg, Daniel Berger, Sara McAllister, Isaac Grosof, Sathya Gunasekar, Jimmy Lu, Michael Uhlar, Jim Carrig, Nathan
+Beckmann, Mor Harchol-Balter, Greg Ganger.
+To appear in *OSDI*, Nov. 2020.
+
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
 #### Keeping Your Heavy Traffic on the Road to Low Response Times
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
