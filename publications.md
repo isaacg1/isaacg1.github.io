@@ -6,7 +6,7 @@ permalink: /publications/
 ## Papers
 
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
-Isaac Grosof, Mor Harchol-Balter. Not yet peer reviewed.
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
 
 [\[paper\]](/assets/multiserverjob-stability.pdf) [\[arxiv\]](https://arxiv.org/abs/2010.00631)
 
