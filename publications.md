@@ -5,19 +5,24 @@ permalink: /publications/
 ---
 ## Papers
 
+### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions](/assets/gittins-nearly-general.pdf)
+Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 20201.
+[\[paper\]](/assets/gittins-nearly-general.pdf)
+
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
 
 [\[paper\]](/assets/multiserverjob-stability.pdf) [\[arxiv\]](https://arxiv.org/abs/2010.00631)
 
 ### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
-Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *IFIP Performance*, Nov. 2020.
+Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
 
 [\[paper\]](/assets/m-gittins-k.pdf) [\[arxiv\]](https://arxiv.org/abs/2003.13232) [\[short paper\]](/assets/m-gittins-k.pdf)
 
 ### The CacheLib Caching Engine: Design and Experiences at Scale
-Ben Berg, Daniel Berger, Sara McAllister, Isaac Grosof, Sathya Gunasekar, Jimmy Lu, Michael Uhlar, Jim Carrig, Nathan
-Beckmann, Mor Harchol-Balter, Greg Ganger.
+Ben Berg, Daniel Berger, Sara McAllister, Isaac Grosof, Sathya Gunasekar,
+Jimmy Lu, Michael Uhlar, Jim Carrig, Nathan Beckmann,
+Mor Harchol-Balter, Greg Ganger.
 To appear in *OSDI*, Nov. 2020.
 
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
