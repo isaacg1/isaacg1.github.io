@@ -5,10 +5,10 @@ permalink: /publications/
 ---
 ## Papers
 
-### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions](/assets/gittins-nearly-general.pdf)
+### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions](/assets/gittins-extremely-general.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 20201.
 
-[\[paper\]](/assets/gittins-nearly-general.pdf)
+[\[paper\]](/assets/gittins-extremely-general.pdf)
 
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
