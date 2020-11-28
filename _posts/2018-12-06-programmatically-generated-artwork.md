@@ -3,7 +3,19 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made five rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made six rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Threads
+
+Algorithm: Generate particles with "color charges".
+Atoms move relative to each other according to a gravity-like force,
+with a distance metric adapted for a square-torus topology.
+Force is proportional to color similarity and inverse-square of distance.
+Draw traces of each particle.
+
+[Repository](https://github.com/isaacg1/torus)
+
+![Toroidal Gravity](/assets/torus.png)
 
 ## Brushstrokes
 
@@ -58,4 +70,3 @@ each at the nearest unoccupied location to the most similar color placed thus fa
 Note that this one looks better at larger scales. A very large image can be found in the repository readme.
 
 ![Circles](/assets/circles.png)
-
