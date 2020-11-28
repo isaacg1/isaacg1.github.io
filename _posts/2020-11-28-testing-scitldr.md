@@ -72,7 +72,7 @@ our result about the "M/G/k" (a multiserver queueing system)
 builds on results we prove about the "M/G/1" (a single-server queueing system).
 It seems the TLDR program can't pick which to write, and chooses their intersection.
 
-#### Stability for Two-Class Multiserver-job Systems
+#### Paper: Stability for Two-Class Multiserver-job Systems
 
 Summary: “We derive a closed-form analytical expression for the stability region of a two-class (non- dropping) multiserver-job system where”
 
@@ -81,7 +81,7 @@ It seems the system gets caught in between reasonable alternatives fairly easily
 Here, it would be reasonable to either remove that final where
 or add "each class can have distinct exponential service duration distributions".
 
-#### The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions
+#### Paper: The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions
 
 Summary: “We give the first general analysis of Gittins in the M/G/k.”
 
