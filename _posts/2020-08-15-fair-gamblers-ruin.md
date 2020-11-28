@@ -5,7 +5,7 @@ layout: post
 ---
 The fair gambler's ruin problem is as follows: Suppose a gambler is repeatedly betting a dollar on the flip of a coin. The gambler starts with one dollar, and stops if they ever drop to zero dollars. How likely is it that the gambler is still going after n flips?
 
-We'll try and answer this in two ways: With a rough, heuristic argument, via simulation, and an exact analysis.
+We'll try and answer this in three ways: Via a rough, heuristic argument, via simulation, and via an exact analysis.
 
 Note the game is "fair" in the sense that the expected amount of money that the gambler has is always 1, however many flips have occurred. Nonetheless, the gambler eventually stops with probability 1. This is a null-recurrent Markov chain.
 
