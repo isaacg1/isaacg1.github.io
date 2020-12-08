@@ -6,7 +6,7 @@ permalink: /publications/
 ## Papers
 
 ### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions](/assets/gittins-extremely-general.pdf)
-Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 20201.
+Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 2021.
 
 [\[paper\]](/assets/gittins-extremely-general.pdf)
 
