@@ -3,6 +3,15 @@ layout: page
 title: Talks
 permalink: /talks/
 ---
+### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
+[\[paper\]](/assets/multiserverjob-stability.pdf) [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
+
+Given at:
+
+* CMU Theory lunch, Oct. 2020. [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
+
+* SQUALL lunch at CMU, Oct. 2020
+
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
 [\[slides\]](/assets/sigmetrics-2019-load-balancing-talk.pptx) [\[paper\]](/assets/load-balancing.pdf)
 
