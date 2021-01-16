@@ -45,7 +45,7 @@ Topics mentioned in the letter:
 * Frank Colon at Fort Meade with cyber security expertise: [Interviewed here](https://nymag.com/intelligencer/2021/01/frank-colon-who-mike-lindell-wants-for-a-coup-is-confused.html).
   Hasn't even talked to Lindell, hasn't heard any such proposal, is very confused.
   
-* Acting [National Security Advisor](https://en.wikipedia.org/wiki/National_Security_Advisor_(United_States)}:
+* Acting [National Security Advisor](https://en.wikipedia.org/wiki/National_Security_Advisor_(United_States)}):
   Currently held by Richard O'Brien, who [reportedly](https://twitter.com/maggieNYT/status/1350249903101005824?s=20)
   was in the same meeting with Lidell and the President and escorted Lidell to the White House counsel's office
   after the meeting.
