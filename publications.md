@@ -13,7 +13,7 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, Jun
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
 
-[\[paper\]](/assets/multiserverjob-stability.pdf) [\[arxiv\]](https://arxiv.org/abs/2010.00631)
+[\[paper\]](/assets/multiserverjob-stability.pdf) [\[arxiv\]](https://arxiv.org/abs/2010.00631) [\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
 
 ### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
