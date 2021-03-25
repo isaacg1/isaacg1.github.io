@@ -3,7 +3,15 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made six rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made seven rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Midline
+
+Algorithm: Generate seed pixels, place new pixels randomly on the line between those pixels, or as close as possible.
+
+[Repository](https://github.com/isaacg1/midline)
+
+![Midline](/assets/midline.png)
 
 ## Threads
 
