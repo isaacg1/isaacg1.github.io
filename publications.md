@@ -5,10 +5,15 @@ permalink: /publications/
 ---
 ## Papers
 
+### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
+Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 2021.
+
+[\[paper\]](/assets/nudge.pdf) [\[short paper\]](/assets/nudge-short.pdf) [\[slides\]](/assets/sigmetrics-2021-nudge-talk.pptx)
+
 ### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 2021.
 
-[\[paper\]](/assets/gittins-extremely-general.pdf)
+[\[paper\]](/assets/gittins-extremely-general.pdf) [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
 
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
@@ -18,7 +23,7 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
 ### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
 
-[\[paper\]](/assets/m-gittins-k.pdf) [\[arxiv\]](https://arxiv.org/abs/2003.13232) [\[short paper\]](/assets/m-gittins-k.pdf)
+[\[paper\]](/assets/m-gittins-k.pdf) [\[arxiv\]](https://arxiv.org/abs/2003.13232) [\[short paper\]](/assets/m-gittins-k-short.pdf)
 
 ### [The CacheLib Caching Engine: Design and Experiences at Scale](/assets/cachelib.pdf)
 Ben Berg, Daniel Berger, Sara McAllister, Isaac Grosof, Sathya Gunasekar,
