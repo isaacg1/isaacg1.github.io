@@ -6,12 +6,12 @@ permalink: /publications/
 ## Papers
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
-Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 2021.
+Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
-[\[paper\]](/assets/nudge.pdf) [\[short paper\]](/assets/nudge-short.pdf) [\[slides\]](/assets/sigmetrics-2021-nudge-talk.pptx)
+[\[paper\]](/assets/nudge.pdf) [\[short paper\]](/assets/nudge-short.pdf) [\[slides\]](/assets/sigmetrics-2021-nudge-talk.pptx) [\[talks\]](/talks/#nudge-stochastically-improving-upon-fcfs)
 
 ### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf)
-Ziv Scully, Isaac Grosof, Mor Harchol-Balter. To appear in *ACM SIGMETRICS*, June 2021.
+Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
 [\[paper\]](/assets/gittins-extremely-general.pdf) [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
 

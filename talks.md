@@ -3,6 +3,14 @@ layout: page
 title: Talks
 permalink: /talks/
 ---
+
+### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
+[\[paper\]](/assets/nudge.pdf)  [\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
+
+Given at:
+
+* ACM SIGMETRICS, Jun. 2021 [\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
+
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 [\[paper\]](/assets/multiserverjob-stability.pdf) [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
 
