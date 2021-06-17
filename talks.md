@@ -11,6 +11,15 @@ Given at:
 
 * ACM SIGMETRICS, Jun. 2021 [\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
 
+### [Asymptotically Optimal Multiserver Scheduling](/assets/asymptotically-optimal.pdf)
+[\[slides pdf\]](/assets/asymptotically-optimal.pdf) [\[slides pptx\]](/assets/asymptotically-optimal.pptx) [\[SRPT paper\]](/assets/srpt.pdf) [\[Gittins paper\]](gittins-extremely-general.pdf)
+
+Given at:
+
+* Young Europeans in Queueing Theory, June 2021
+
+* University of Washington Theory Seminar, March 2021
+
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 [\[paper\]](/assets/multiserverjob-stability.pdf) [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
 

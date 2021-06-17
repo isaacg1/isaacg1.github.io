@@ -10,6 +10,8 @@ Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June
 
 [\[paper\]](/assets/nudge.pdf) [\[short paper\]](/assets/nudge-short.pdf) [\[slides\]](/assets/sigmetrics-2021-nudge-talk.pptx) [\[talks\]](/talks/#nudge-stochastically-improving-upon-fcfs)
 
+**Winner of the SIGMETRICS 2021 Best Paper Award**
+
 ### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
