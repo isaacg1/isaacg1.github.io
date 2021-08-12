@@ -3,7 +3,7 @@ layout: post
 title: "Paper 1: Push-Pull Block Puzzles are Hard"
 ---
 
-I'm going to write brief recaps of all of the papers I've written,
+I'm going to write recaps of all of the papers I've written,
 in chronological order.
 
 I'm starting with my first paper: ["Push-Pull Block Puzzles are Hard"](assets/push-pull.pdf).
