@@ -58,4 +58,4 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch, and Mikhail Rudoy. *Ninth Internati
 ### [Push-Pull Block Puzzles are Hard](/assets/push-pull.pdf)
 Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algorithms and Complexity*, May 2017.
 
-[\[paper\]](/assets/push-pull.pdf) [\[arxiv\]](https://arxiv.org/abs/1709.01241)
+[\[paper\]](/assets/push-pull.pdf) [\[arxiv\]](https://arxiv.org/abs/1709.01241) [\[blog post\]](/2021/08/12/paper-push-pull.html)
