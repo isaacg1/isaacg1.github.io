@@ -113,7 +113,7 @@ Our construction relied exclusively on the following gadget:
     ##_#_##
     #######
 
-The outer 8 openings are all accessible via the third dimesnion.
+The outer 8 openings are all accessible via the third dimension.
 The NNW and SSW openings are connected,
 as are the NNE and SSE openings.
 
@@ -163,7 +163,10 @@ Essentially, to solve our special levels,
 the player would be forced to solve a problem that's known to be super hard,
 making the game itself super hard as well.
 
-That completes our paper. Overall, I'm happy with it.
+Retrospective
+---
+
+Overall, I'm happy with the paper.
 We developed a new way of proving PSPACE-completeness besides Nondeterministic Constraint Logic,
 which Erik developed and which was the previous standard.
 We also opened the world of "Gadget motion planning", which my next paper would further explore.
@@ -174,3 +177,30 @@ which I had similar issues with,
 and then my PhD in Queueing Theory, which I've found to hit a better balance of
 theory goodness and applicability.
 
+Beaten to the punch
+---
+
+Unfortunately, our paper was dead before it lived.
+
+We had written the paper by 2015,
+as can be seen by its inclusion in Jayson's [Master's thesis](https://dspace.mit.edu/handle/1721.1/105999), in Chapter 3, which was submitted in September 2015.
+I'm pretty sure we completed the work by the prior spring (April 2015),
+when Jayson submitted it to the MOVES 2015 conference.
+However, we didn't submit the paper until 2017.
+
+In July 2015, Pereira, Ritt and Buriol submitted a paper titled [Pull and PushPull are PSPACE-complete](https://www.researchgate.net/profile/Luciana-Buriol/publication/297750476_Pull_and_PushPull_are_PSPACE-complete/links/5f027ebea6fdcc4ca44e8cda/Pull-and-PushPull-are-PSPACE-complete.pdf),
+which completely subsumed our result by showing that PushPull-1,
+in 2D, with no thin walls, is already PSPACE-complete.
+
+We neglected to redo our prior-work review
+to see if anything was discovered between when we wrote the paper and when we submitted it,
+so we didn't realise that by the time we submitted this paper in January 2017,
+it was already obsolete.
+The peer reviewers missed this as well, and so it was published.
+It's pretty embarrassing to learn that our paper was obsolete before it was submitted,
+and I didn't realise this for many years.
+
+That being said, I still think this paper is novel and interesting
+for its introduction of the "gadget framework",
+and for reducing to TQBF instead of the standard reduction to Nondeterministic Constraint Logic,
+as was done by Pereira et al.
