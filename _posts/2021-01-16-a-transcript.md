@@ -5,9 +5,11 @@ title: "Transcribing Michael Lindell (MyPillow CEO)'s notes for a meeting at the
 
 Michael Lindell is the CEO of MyPillow and is a close ally of President Trump, serving as the President's 2020 campaign chair for the state of Minnesota.
 Today, Lindell went to the White House for a brief meeting with the President and others.
-Before going in, Lindell showed [his notes](https://twitter.com/jabinbotsford/status/1350186100564905985/photo/1) to a photographer.
-I have transcribe them here. Transcriptions in [brackets] are speculative, while outside of brackets I'm fairly certain.
-Note that the visible  section consists of the second half of each line.
+Before going in, Lindell showed
+[his notes](https://twitter.com/jabinbotsford/status/1350186100564905985/photo/1) to a photographer.
+I have transcribed them here. Transcriptions in [brackets] are speculative,
+while outside of brackets I'm fairly certain.
+Note that the visible section consists of the second half of each line.
 
 ```
  BE TAKEN IMMEDIATELY TO SAVE THE
