@@ -1,0 +1,11 @@
+﻿I study scheduling and resource allocation algorithms for stochastic models of computing systems. I study how to optimally schedule jobs to minimize delay, primarily in multiserver systems. Prior to my work, almost nothing was known about optimal scheduling for multiserver systems.
+
+In 2018, we published "SRPT for Multiserver Systems", winner of the Best Student Paper Award at IFIP Performance 2018. We proved that a specific policy, the Shortest-Remaining-Processing-Time algorithm, achieves optimal mean delay (mean response time) in the size-aware multiserver stochastic setting, in the limit as load approaches capacity. This was the first result of its kind, using a novel combination of stochastic and worst-case techniques.
+
+In 2019, we published "Load Balancing Guardrails: Keeping Your Heavy Traffic on the Road to Low Response Times", winner of the Best Student Paper Award at ACM SIGMETRICS/IFIP Performance 2019. We developed a novel policy for the size-aware dispatching setting, and proved that our policy achieves optimal mean delay in the limit as load approaches capacity.
+
+In 2021, we turned to the size-unaware or size-partially aware setting, and published "The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions". We proved that a specific policy, the Gittins index policy, achieves optimal mean delay in the limit as load approaches capacity,
+in this more general setting, where the scheduler has only partial information about the jobs. We developed a completely novel framework of analysis for this previously-known policy.
+
+In 2021, we turned from mean delay to the tail of delay, publishing "Nudge: Stochastically Improving upon FCFS", winner of the Best Paper Award at ACM SIGMETRICS 2021. We developed Nudge, a scheduling policy for the M/G/1 which stochastically dominates first-come-first serve, outperforming FCFS simultaneously relative to all percentiles of delay. Prior to this work, FCFS was conjectured to have optimal asymptotic delay tail.
+
