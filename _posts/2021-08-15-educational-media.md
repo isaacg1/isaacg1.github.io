@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Educational media list, 08/15  to 08/31"
+title: 'Educational media list, 08/15  to 08/31'
+published: true
 ---
 Here I'm listing much of the media I've read/watched/listed to/etc., and learned something from. This list will cover the next half month. Generally, if I list something here I'm recommending it. If not, I'll try to mention it.
 
@@ -24,6 +25,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Article: [The Gittins Policy in the M/G/1 Queue](https://www.cs.cmu.edu/~harchol/Papers/WIOPT21.pdf), by Ziv Scully and Mor Harchol-Balter, my frequent collaborators. The first fully general proof of the optimality of the Gittins policy in the M/G/1. Scheduling-first, not multi-armed-bandit-first.
 
-Updated through 08/15.
+* Tutorial Video: [Hardness of easy problems](https://youtu.be/0ndSu9TqrgI), by Virginia Williams, at the Simons Institute. A gentle introduction to fine-grained complexity.
 
-
+Updated through 08/16.
