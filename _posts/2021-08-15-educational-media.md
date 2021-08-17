@@ -27,4 +27,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Tutorial Video: [Hardness of easy problems](https://youtu.be/0ndSu9TqrgI), by Virginia Williams, at the Simons Institute. A gentle introduction to fine-grained complexity.
 
+* Tutorial Video: [Circuit Analysis Algorithms](https://youtu.be/adJvi7tL-qM), by Ryan Williams at the Simons Institute. Apparently Majority-of-XORs is a symmetric function?
+
 Updated through 08/16.
