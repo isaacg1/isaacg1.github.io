@@ -35,7 +35,9 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Wikipedia Article: [Haven](https://en.m.wikipedia.org/wiki/Haven_(graph_theory)). I know understand treewidth better. A graph has treewidth at most k iff k + 1 pursuers can chase down a pursued, where the pursued can move through the graph edges, but can't move through the pursuers' nodes, and both sides know where the other is. Pursuers occupy k nodes while 1 pursuer moves. Tree decompositions are strategies for the pursuers, while havens are strategies for the pursued.
 
-* [FPT Algorithms](https://youtu.be/tpBxUmfagsY), by Daniel Mark at the Simons Institute.
+* Tutorial Video: [FPT Algorithms](https://youtu.be/tpBxUmfagsY), by Daniel Mark at the Simons Institute.
+
+* Research Discussion: [On the purported inconsistency of Peano arithmetic](https://golem.ph.utexas.edu/category/2011/09/the_inconsistency_of_arithmeti.html#c039523), by Edward Nelson and Terry Tao. Tao points out the flaw in Nelson's proposed proof of the inconsistency of Peano arithmetic. High-level, polite, effective discussion.
 
 
 
