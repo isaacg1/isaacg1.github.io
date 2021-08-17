@@ -27,6 +27,8 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Tutorial Video: [Hardness of easy problems](https://youtu.be/0ndSu9TqrgI), by Virginia Williams, at the Simons Institute. A gentle introduction to fine-grained complexity.
 
-* Tutorial Video: [Circuit Analysis Algorithms](https://youtu.be/adJvi7tL-qM), by Ryan Williams at the Simons Institute. Apparently Majority-of-XORs is a symmetric function?
+* Tutorial Video: [Circuit Analysis Algorithms](https://youtu.be/adJvi7tL-qM), by Ryan Williams at the Simons Institute. Apparently Majority-of-XORs is a symmetric function? This isn't literally true.
+
+* Blog Article: [Crawl Doubling Damage](https://desystemize.substack.com/p/desystemize-7), by Collin. In an incredibly hard game that never changes, will anyone notice if something does change?
 
 Updated through 08/16.
