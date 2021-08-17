@@ -39,9 +39,11 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Discussion: [On the purported inconsistency of Peano arithmetic](https://golem.ph.utexas.edu/category/2011/09/the_inconsistency_of_arithmeti.html#c039523), by Edward Nelson and Terry Tao. Tao points out the flaw in Nelson's proposed proof of the inconsistency of Peano arithmetic. High-level, polite, effective discussion.
 
-* Research essay: [Two Cultures of Mathematics](http://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf), by Timothy Gowers. I think a similar split between problem solvers and theory builders exists in TCS, though not nearly as severe. Also, I think problem-solvers dominate in TCS, while theory builders dominate in math.
+* Research essay: [Two Cultures of Mathematics](http://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf), by Timothy Gowers. I think a similar split between problem solvers and theory builders exists in TCS, though not nearly as severe. Also, I think problem-solvers have more representation in TCS, while theory builders dominate in math.
 
+* Tutorial Video: [Prime Gaps](https://youtu.be/pp06oGD4m00) by Terry Tao at UCLA. Very nice intro to the area.
 
+* Puzzle Video: [The Legend of Question Six](https://youtu.be/Y30VF3cSIYQ) by Simon Pampena on Numberphile. The question, from the 1988 IMO, is "Let a, b be positive integers such that (a^2+b^2)/(ab+1) is an integer. Prove that it is a square." I paused the video when they posed question and solved it, based on ill-remembered intuitions from hearing about the question previously. Lots of fun to solve that way, obviously way easier than solving from scratch.
 
 
 
