@@ -39,6 +39,10 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Discussion: [On the purported inconsistency of Peano arithmetic](https://golem.ph.utexas.edu/category/2011/09/the_inconsistency_of_arithmeti.html#c039523), by Edward Nelson and Terry Tao. Tao points out the flaw in Nelson's proposed proof of the inconsistency of Peano arithmetic. High-level, polite, effective discussion.
 
+* Research essay: [Two Cultures of Mathematics](http://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf), by Timothy Gowers. I think a similar split between problem solvers and theory builders exists in TCS, though not nearly as severe. Also, I think problem-solvers dominate in TCS, while theory builders dominate in math.
+
+
+
 
 
 Updated through 08/16.
