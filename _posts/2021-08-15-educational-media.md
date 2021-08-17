@@ -31,6 +31,12 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Blog Article: [Crawl Doubling Damage](https://desystemize.substack.com/p/desystemize-7), by Collin. In an incredibly hard game that never changes, will anyone notice if something does change?
 
-* Research Article: [NEXP not in ACC](https://people.csail.mit.edu/rrw/acc-lbs.pdf), Appendix A, by Ryan Williams. I wanted to see what was up with majority of XORs. The real statement is that majority of XORs can be simulated a symmetric function of ANDs, with polylog overhead or so. For instance, MAJ(a xor b, c xor d) = f((a+b)^2+(c+d)^2) = f(a+2ab+b+c+2cd+d), where f is the "not 0 mod 4" function and MAJ breaks ties towards 1. Here I'm using x^2 as my degree-amplifying function. There are only 6 different inputs after symmetry, so this is easy to check.
+* Research Article: [NEXP not in ACC](https://people.csail.mit.edu/rrw/acc-lbs.pdf), Appendix A, by Ryan Williams. I wanted to see what was up with majority of XORs. The real statement is that majority of XORs can be simulated a symmetric function of ANDs, with polylog overhead or so. For instance, `MAJ(a xor b, c xor d) = f((a+b)^2+(c+d)^2) = f(a+2ab+b+c+2cd+d)`, where f is the "not 0 mod 4" function and MAJ breaks ties towards 1. Here I'm using `x^2` as my degree-amplifying function. There are only 6 different inputs after symmetry, so this is easy to check.
+
+* Wikipedia Article: [Haven](https://en.m.wikipedia.org/wiki/Haven_(graph_theory)). I know understand treewidth better. A graph has treewidth at most k iff k + 1 pursuers can chase down a pursued, where the pursued can move through the graph edges, but can't move through the pursuers' nodes, and both sides know where the other is. Pursuers occupy k nodes while 1 pursuer moves. Tree decompositions are strategies for the pursuers, while havens are strategies for the pursued.
+
+* [FPT Algorithms](https://youtu.be/tpBxUmfagsY), by Daniel Mark at the Simons Institute.
+
+
 
 Updated through 08/16.
