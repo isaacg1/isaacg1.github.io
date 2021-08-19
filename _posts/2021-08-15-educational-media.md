@@ -45,6 +45,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Puzzle Video: [The Legend of Question Six](https://youtu.be/Y30VF3cSIYQ) by Simon Pampena on Numberphile. The question, from the 1988 IMO, is "Let a, b be positive integers such that (a^2+b^2)/(ab+1) is an integer. Prove that it is a square." I paused the video when they posed question and solved it, based on ill-remembered intuitions from hearing about the question previously. Lots of fun to solve that way, obviously way easier than solving from scratch.
 
+* Research Article: [Gradient descent = CLS = PPAD ∩ PLS](https://arxiv.org/abs/2011.01929), by Fearnley, Goldberg, Hollender, and Savani. This paper is very exciting, but a bit less exciting than it sounds. PPAD, PLS, and CLS are well known and important complexity classes. This paper shows that CLS is equal to the intersection of PPAD and PLS, which was not previously known, by showing that the problem of "Find a local approximate optimum of the gradient descent algortihm" is equal to both. Note that this is not the same as the problem "sample the distribution of Gradient Descent's output given a random initializer", which is the algorithm people actually use in practice. But nonetheless, this is a super cool result.
 
-
-Updated through 08/16.
+Updated through 08/18.
