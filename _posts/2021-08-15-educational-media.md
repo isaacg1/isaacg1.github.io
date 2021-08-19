@@ -47,4 +47,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Article: [Gradient descent = CLS = PPAD ∩ PLS](https://arxiv.org/abs/2011.01929), by Fearnley, Goldberg, Hollender, and Savani. This paper is very exciting, but a bit less exciting than it sounds. PPAD, PLS, and CLS are well known and important complexity classes. This paper shows that CLS is equal to the intersection of PPAD and PLS, which was not previously known, by showing that the problem of "Find a local approximate optimum of the gradient descent algortihm" is equal to both. Note that this is not the same as the problem "sample the distribution of Gradient Descent's output given a random initializer", which is the algorithm people actually use in practice. But nonetheless, this is a super cool result.
 
+* Research review: [Large scale quantum experiments] (https://www.quantamagazine.org/how-big-can-the-quantum-world-be-physicists-probe-the-limits-20210818/), by Quanta Magazine. Experimenters are working on placing ever larger objects into quantum superposition. The previous record was several thousand atoms. Now, they're working on hundreds of millions. If this works, it could probe the regime of quantum gravity for the first time.
+
 Updated through 08/18.
