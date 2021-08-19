@@ -49,4 +49,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research review: [Large scale quantum experiments](https://www.quantamagazine.org/how-big-can-the-quantum-world-be-physicists-probe-the-limits-20210818/), by Quanta Magazine. Experimenters are working on placing ever larger objects into quantum superposition. The previous record was several thousand atoms. Now, they're working on hundreds of millions. If this works, it could probe the regime of quantum gravity for the first time.
 
-Updated through 08/18.
+* Tutorial Video: [Circuit Complexity and Connections 1](https://youtu.be/1S8fKlR28Go) and [II](https://youtu.be/i4pQ9DYpdEo), by Ryan Williams, at the Simons Institute. Algorithms for circuit analysis and bounds on the power of circuits are very closely connected.
+
+Updated through 08/19.
