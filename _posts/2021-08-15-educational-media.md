@@ -51,6 +51,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Tutorial Video: [Circuit Complexity and Connections I](https://youtu.be/1S8fKlR28Go) and [II](https://youtu.be/i4pQ9DYpdEo), by Ryan Williams, at the Simons Institute. Algorithms for circuit analysis and bounds on the power of circuits are very closely connected.
 
-* Blog post: [More number gossip](https://blog.tanyakhovanova.com/2021/08/1-is-the-only-square-free-square/), by Tanya Khovanova, the creator of [Number Gossip])(http://numbergossip.com/)
+* Blog post: [More number gossip](https://blog.tanyakhovanova.com/2021/08/1-is-the-only-square-free-square/), by Tanya Khovanova, the creator of [Number Gossip])(http://numbergossip.com/).
 
 Updated through 08/20.
