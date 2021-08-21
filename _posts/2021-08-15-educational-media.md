@@ -53,4 +53,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Blog post: [More number gossip](https://blog.tanyakhovanova.com/2021/08/1-is-the-only-square-free-square/), by Tanya Khovanova, the creator of [Number Gossip])(http://numbergossip.com/).
 
+* Textbook chapter: [Algebra of Orders](http://jdh.hamkins.org/an-algebra-of-orders/), by Josh Hawkins. A very gentle introduction to order theory.
+
 Updated through 08/20.
