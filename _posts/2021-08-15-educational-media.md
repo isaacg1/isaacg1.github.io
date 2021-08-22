@@ -47,4 +47,12 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Article: [Gradient descent = CLS = PPAD ∩ PLS](https://arxiv.org/abs/2011.01929), by Fearnley, Goldberg, Hollender, and Savani. This paper is very exciting, but a bit less exciting than it sounds. PPAD, PLS, and CLS are well known and important complexity classes. This paper shows that CLS is equal to the intersection of PPAD and PLS, which was not previously known, by showing that the problem of "Find a local approximate optimum of the gradient descent algortihm" is equal to both. Note that this is not the same as the problem "sample the distribution of Gradient Descent's output given a random initializer", which is the algorithm people actually use in practice. But nonetheless, this is a super cool result.
 
-Updated through 08/18.
+* Research review: [Large scale quantum experiments](https://www.quantamagazine.org/how-big-can-the-quantum-world-be-physicists-probe-the-limits-20210818/), by Quanta Magazine. Experimenters are working on placing ever larger objects into quantum superposition. The previous record was several thousand atoms. Now, they're working on hundreds of millions. If this works, it could probe the regime of quantum gravity for the first time.
+
+* Tutorial Video: [Circuit Complexity and Connections I](https://youtu.be/1S8fKlR28Go) and [II](https://youtu.be/i4pQ9DYpdEo), by Ryan Williams, at the Simons Institute. Algorithms for circuit analysis and bounds on the power of circuits are very closely connected.
+
+* Blog post: [More number gossip](https://blog.tanyakhovanova.com/2021/08/1-is-the-only-square-free-square/), by Tanya Khovanova, the creator of [Number Gossip])(http://numbergossip.com/).
+
+* Textbook chapter: [Algebra of Orders](http://jdh.hamkins.org/an-algebra-of-orders/), by Josh Hawkins. A very gentle introduction to order theory.
+
+Updated through 08/20.
