@@ -55,4 +55,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Textbook chapter: [Algebra of Orders](http://jdh.hamkins.org/an-algebra-of-orders/), by Josh Hawkins. A very gentle introduction to order theory.
 
+* Blog post: [Meta-rationaliy](https://metarationality.com/bongard-meta-rationality), by David Chapman. All about Bingard problems, which consist of coming up with good explanations for why two sets are divided the way they are. I think the nebulosity stuff is overblown and high-faluting.
+
 Updated through 08/20.
