@@ -57,6 +57,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Blog post: [Meta-rationaliy](https://metarationality.com/bongard-meta-rationality), by David Chapman. All about Bingard problems, which consist of coming up with good explanations for why two sets are divided the way they are. I think the nebulosity stuff is overblown and high-faluting.
 
-* Research essay: [Fraud in Honesty Study](https://datacolada.org/98), by Uri, Joe, Leif and an anonymous team of researchers. Proves that a major study on honesty was fradulent, in extensive detail.
+* Research essay: [Fraud in Honesty Study](https://datacolada.org/98), by Uri, Joe, Leif and an anonymous team of researchers. Proves that a major study on honesty was fradulent, in extensive detail. Responses from the original authors are very interesting, with none disputing the analysis.
 
 Updated through 08/22.
