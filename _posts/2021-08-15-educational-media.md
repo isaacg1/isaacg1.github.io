@@ -59,4 +59,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research essay: [Fraud in Honesty Study](https://datacolada.org/98), by Uri, Joe, Leif and an anonymous team of researchers. Proves that a major study on honesty was fradulent, in extensive detail. Responses from the original authors are very interesting, with none disputing the analysis.
 
+* Research Interview: [Black Hole Information Paradox Resolved] (https://www.quantamagazine.org/netta-engelhardt-has-escaped-hawkings-black-hole-paradox-20210823/), interviewing Netta Engelhardt.
+
 Updated through 08/22.
