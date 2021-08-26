@@ -61,4 +61,5 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Interview: [Black Hole Information Paradox Resolved] (https://www.quantamagazine.org/netta-engelhardt-has-escaped-hawkings-black-hole-paradox-20210823/), interviewing Netta Engelhardt.
 
-Updated through 08/22.
+* Tutorial Video: What makes average-case NP problems hard? [I](https://youtu.be/NoLYzVd2ycg) and [II](https://youtu.be/aWKbWMCpC8w) Boaz Barak at the Simons Institute. From both the physics and CS perspectives.
+Updated through 08/26.
