@@ -62,4 +62,7 @@ I'm not going to give a big explanation of each item, because that'll probably g
 * Research Interview: [Black Hole Information Paradox Resolved] (https://www.quantamagazine.org/netta-engelhardt-has-escaped-hawkings-black-hole-paradox-20210823/), interviewing Netta Engelhardt.
 
 * Tutorial Video: What makes average-case NP problems hard? [I](https://youtu.be/NoLYzVd2ycg) and [II](https://youtu.be/aWKbWMCpC8w) Boaz Barak at the Simons Institute. From both the physics and CS perspectives.
+
+* Explanatory Blog Post: [Pin and Unpin in Rust](https://blog.adamchalmers.com/pin-unpin/), by Adam Chambers. Explaining one of Rust's trickier concepts.
+
 Updated through 08/26.
