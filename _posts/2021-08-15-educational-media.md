@@ -55,4 +55,14 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Textbook chapter: [Algebra of Orders](http://jdh.hamkins.org/an-algebra-of-orders/), by Josh Hawkins. A very gentle introduction to order theory.
 
-Updated through 08/20.
+* Blog post: [Meta-rationaliy](https://metarationality.com/bongard-meta-rationality), by David Chapman. All about Bingard problems, which consist of coming up with good explanations for why two sets are divided the way they are. I think the nebulosity stuff is overblown and high-faluting.
+
+* Research essay: [Fraud in Honesty Study](https://datacolada.org/98), by Uri, Joe, Leif and an anonymous team of researchers. Proves that a major study on honesty was fradulent, in extensive detail. Responses from the original authors are very interesting, with none disputing the analysis.
+
+* Research Interview: [Black Hole Information Paradox Resolved] (https://www.quantamagazine.org/netta-engelhardt-has-escaped-hawkings-black-hole-paradox-20210823/), interviewing Netta Engelhardt.
+
+* Tutorial Video: What makes average-case NP problems hard? [I](https://youtu.be/NoLYzVd2ycg) and [II](https://youtu.be/aWKbWMCpC8w) Boaz Barak at the Simons Institute. From both the physics and CS perspectives.
+
+* Explanatory Blog Post: [Pin and Unpin in Rust](https://blog.adamchalmers.com/pin-unpin/), by Adam Chambers. Explaining one of Rust's trickier concepts.
+
+Updated through 08/26.
