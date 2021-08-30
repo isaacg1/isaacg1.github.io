@@ -71,4 +71,4 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Educational podcast: [Dysentery](http://thispodcastwillkillyou.com/2021/08/24/episode-80-dysentery-loves-a-disaster/), by Erin Welsh and Erin Allman Updyke. A wonderfully friendly and well-searched podcast about disease, especially epidemic disease. This episode is similarly great.
 
-Updated through 08/29.
+Updated through 08/30.
