@@ -69,4 +69,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Blog Post: [Narrowing in on Planet Nine](http://findplanetnine.blogspot.com/2021/08/the-orbit-planet-nine.html?m=1), by Konstantin Batygin and Mike Brown. Overview of a research Article which narrows down the potential locations of Planet Nine and shows the observed clustering of asteroids is not produced by observational bias.
 
+* Educational podcast: [Dysentery](http://thispodcastwillkillyou.com/2021/08/24/episode-80-dysentery-loves-a-disaster/), by Erin Welsh and Erin Allman Updyke. A wonderfully friendly and well-searched podcast about disease, especially epidemic disease. This episode is similarly great.
+
 Updated through 08/29.
