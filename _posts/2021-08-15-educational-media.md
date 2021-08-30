@@ -65,4 +65,7 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Explanatory Blog Post: [Pin and Unpin in Rust](https://blog.adamchalmers.com/pin-unpin/), by Adam Chambers. Explaining one of Rust's trickier concepts.
 
-Updated through 08/26.
+* Research Paper: [Discovery of glycoRNA](https://news.stanford.edu/2021/05/17/stanford-study-reveals-new-biomolecule/), by Ryan Flynn et al. Discovery of glycoRNA, RNAs with sugars attached. Previously unknown because no one was looking. 
+
+
+Updated through 08/29.
