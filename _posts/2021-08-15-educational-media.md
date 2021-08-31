@@ -73,4 +73,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Slides: [Erdos's Ternary Digits Conjecture](http://www.math.lsa.umich.edu/~lagarias/TALK-SLIDES/ternary-fields-2009sep.pdf), by Jeff Lagarias. Erdos conjectured that all powers of 2 above 256 have a 2 when written in base 3. Amenable to SAT solving?
 
-Updated through 08/30.
+* Research Popularization: [Clocks and Entropy](https://www.quantamagazine.org/the-new-science-of-clocks-prompts-questions-about-the-nature-of-time-20210831/), by Natalie Walchover. The fundamental limits of clocks.
+
+Updated through 08/31.
