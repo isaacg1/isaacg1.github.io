@@ -75,4 +75,6 @@ I'm not going to give a big explanation of each item, because that'll probably g
 
 * Research Popularization: [Clocks and Entropy](https://www.quantamagazine.org/the-new-science-of-clocks-prompts-questions-about-the-nature-of-time-20210831/), by Natalie Walchover. The fundamental limits of clocks.
 
+* Research Popularization: [Cardinals between |N| and |R|](https://www.scientificamerican.com/article/a-deep-math-dive-into-why-some-infinities-are-bigger-than-others/), by Martin Goldstern and Jakob Kellner. Exploring cardinalities between that of the naturals and the reals.
+
 Updated through 08/31.
