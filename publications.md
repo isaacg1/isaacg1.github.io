@@ -8,7 +8,10 @@ permalink: /publications/
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
-[\[paper\]](/assets/nudge.pdf) [\[short paper\]](/assets/nudge-short.pdf) [\[slides\]](/assets/sigmetrics-2021-nudge-talk.pptx) [\[talks\]](/talks/#nudge-stochastically-improving-upon-fcfs)
+[\[paper\]](/assets/nudge.pdf) [\[short paper\]](/assets/nudge-short.pdf)
+[\[slides\]](/assets/sigmetrics-2021-nudge-talk.pptx) 
+[\[slides pdf\]](/assets/sigmetrics-nudge-talk.pdf)
+[\[talks\]](/talks/#nudge-stochastically-improving-upon-fcfs)
 
 **Winner of the SIGMETRICS 2021 Best Paper Award**
 

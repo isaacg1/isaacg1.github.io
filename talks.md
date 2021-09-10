@@ -5,7 +5,10 @@ permalink: /talks/
 ---
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
-[\[paper\]](/assets/nudge.pdf)  [\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
+[\[paper\]](/assets/nudge.pdf)
+[\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
+[\[slides pdf\]](/assets/sigmetrics-2021-nudge-talk.pdf)
+[\[slides pptx\]](/assets/sigmetrics-2021-nudge-talk.pptx)
 
 Given at:
 
