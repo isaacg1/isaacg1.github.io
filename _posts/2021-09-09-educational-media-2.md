@@ -10,3 +10,5 @@ Here I'm listing much of the media I've read/watched/listed to/etc., and learned
 * Research Talk: [Unique Games Conjecture] (https://youtu.be/-02d-oCd_xI), by Ryan O'Donnell at  the Institute for Advanced Study. One of the openest conjectures in computational complexity.
 
 * Research Talk: [Implicit Regularization from Gradient Descent](https://youtu.be/aUYfjm6fpWs), by Wei Hi at the Simons Institute. Gradient Descent works well, even when "find an optimal solution" would fail. Why? Gradient Descent has implicit regularization: it select for something on top of low loss, which generalizes well.
+
+* Research Talk: [Fine-grained worst-case to average-case reductions](https://youtu.be/bUAVYnlj3_k), by Andrea Lincoln at the Simons Institute. Andrea is a friend from undergrad. Some problems are exactly characterized within poly time, in the average case. Very exciting new work. 
