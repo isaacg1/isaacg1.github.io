@@ -16,3 +16,5 @@ Here I'm listing much of the media I've read/watched/listed to/etc., and learned
 * Research talk: [Soft Astronomy](https://youtu.be/f50Va_SwWRM), by Alice Quillen, at the Institute for Advanced Study. Using soft-body models to model astronomical bodies, like asteroids being hit by impacts.
 
 * History post: [Invention of the Computer](https://people.idsia.ch//~juergen/turing-oversold.html), by Jürgen Schmidhuber. The history of the hundreds of people who contributed to the development of the computer.
+
+* Research talk: [Quantum Supremacy, rigorously](https://youtu.be/et7S_uopQyM), by Umesh Vazarani at the Simons Institute. Quantum Supremacy is showing that a quantum computer can do something infeasible for classical computers. Working on a theoretically justification for such a claim.
