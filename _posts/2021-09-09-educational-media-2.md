@@ -14,3 +14,5 @@ Here I'm listing much of the media I've read/watched/listed to/etc., and learned
 * Research Talk: [Fine-grained worst-case to average-case reductions](https://youtu.be/bUAVYnlj3_k), by Andrea Lincoln at the Simons Institute. Andrea is a friend from undergrad. Some problems are exactly characterized within poly time, in the average case. Very exciting new work.
 
 * Research talk: [Soft Astronomy](https://youtu.be/f50Va_SwWRM), by Alice Quillen, at the Institute for Advanced Study. Using soft-body models to model astronomical bodies, like asteroids being hit by impacts.
+
+* History post: [Invention of the Computer](https://people.idsia.ch//~juergen/turing-oversold.html), by Jürgen Schmidhuber. The history of the hundreds of people who contributed to the development of the computer.
