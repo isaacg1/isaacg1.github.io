@@ -18,3 +18,5 @@ Here I'm listing much of the media I've read/watched/listed to/etc., and learned
 * History post: [Invention of the Computer](https://people.idsia.ch//~juergen/turing-oversold.html), by Jürgen Schmidhuber. The history of the hundreds of people who contributed to the development of the computer.
 
 * Research talk: [Quantum Supremacy, rigorously](https://youtu.be/et7S_uopQyM), by Umesh Vazarani at the Simons Institute. Quantum Supremacy is showing that a quantum computer can do something infeasible for classical computers. Working on a theoretically justification for such a claim.
+
+* Open Problems Paper: [Open Problems in Quantum Query Complexity](https://www.scottaaronson.com/blog/?p=5837), by Scott Aaronson. Query Complexity: the field where computer scientists can prove lower bounds. Open Problems!
