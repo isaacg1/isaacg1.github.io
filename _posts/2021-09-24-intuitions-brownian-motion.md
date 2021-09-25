@@ -138,7 +138,7 @@ The particle is at the origin on step t
 with probability about `1/t^1.5`.
 Integrating,
 the particle returns to the origin a constant number of times by step t.
-Correspondingly, there's a finite probability
+Correspondingly, there's a nonzero probability
 that the particle never returns to the origin.
 
 ## Wrapup
