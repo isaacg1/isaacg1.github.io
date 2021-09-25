@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Intuitions on Brownian Motion"
+title: "Intuitive Mathematics: Brownian Motion"
 ---
 
 I study [stochastic processes](https://en.wikipedia.org/wiki/Stochastic_process).
@@ -17,8 +17,9 @@ Most teaching, whether in a class or online, teaches procedural understanding:
 how to get the exact answer slowly.
 
 To start changing that,
-I'm going to teach you some intuition about
-[Brownian Motion](https://en.wikipedia.org/wiki/Brownian_motion).
+I'm going to teach you how to intuitively think about
+[Brownian motion](https://en.wikipedia.org/wiki/Brownian_motion),
+an important stochastic process.
 
 ## Brownian Motion
 
@@ -143,11 +144,11 @@ that the particle never returns to the origin.
 ## Wrapup
 
 Through this intuitive analysis, we find different qualitative behaviors in dimensions 1, 2, and 3.
-In 1 dimension, the particle returned often. In 2, rarely, but not never.
+In 1 dimension, the particle returns often. In 2, it returns less often, but it still returns eventually.
 In 3, the particle eventually stops returning at all.
 
-All of these results are correct,
-and can be confirmed through simulation or exact analysis.
+All of these results are correct up to constant factors,
+which can be confirmed through simulation or exact analysis.
 
 Some takeaways, in my opinion:
 
