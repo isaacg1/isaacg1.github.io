@@ -167,4 +167,5 @@ is the hallmark of procedural mathematics.
 Intuitive mathematics avoids such things as much as possible,
 because they almost always bog you down, and rarely aid the intuition.
 
-I hope you enjoyed this taste of intuitive mathematics.
+I hope you enjoyed this taste of intuitive mathematics!
+I definitely did.
