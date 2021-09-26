@@ -20,3 +20,5 @@ Here I'm listing much of the media I've read/watched/listed to/etc., and learned
 * Research talk: [Quantum Supremacy, rigorously](https://youtu.be/et7S_uopQyM), by Umesh Vazarani at the Simons Institute. Quantum Supremacy is showing that a quantum computer can do something infeasible for classical computers. Working on a theoretically justification for such a claim.
 
 * Open Problems Paper: [Open Problems in Quantum Query Complexity](https://www.scottaaronson.com/blog/?p=5837), by Scott Aaronson. Query Complexity: the field where computer scientists can prove lower bounds. Open Problems!
+
+* Research overview paper: [Overview of Geometric Complexity Theory](http://ramakrishnadas.cs.uchicago.edu/gctcacm.pdf), by Ketan Mulmuley. GCT is one of the most impressive attempts at solving P vs. NP. It uses algebraic topology, one of the most high-power areas of mathematics. And it has proven some cool results, though it hasn't made a ton of concrete progress.
