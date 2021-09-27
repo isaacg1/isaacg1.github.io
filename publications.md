@@ -5,6 +5,11 @@ permalink: /publications/
 ---
 ## Papers
 
+### [The Finite-Skip Method for Multiserver Analysis](finite-skip.pdf)
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission to *ACM SIGMETRICS 2022*.
+
+[\[paper\]](/assets/finite-skip.pdf)
+
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
