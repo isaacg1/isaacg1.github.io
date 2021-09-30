@@ -22,3 +22,5 @@ Here I'm listing much of the media I've read/watched/listed to/etc., and learned
 * Open Problems Paper: [Open Problems in Quantum Query Complexity](https://www.scottaaronson.com/blog/?p=5837), by Scott Aaronson. Query Complexity: the field where computer scientists can prove lower bounds. Open Problems!
 
 * Research overview paper: [Overview of Geometric Complexity Theory](http://ramakrishnadas.cs.uchicago.edu/gctcacm.pdf), by Ketan Mulmuley. GCT is one of the most impressive attempts at solving P vs. NP. It uses algebraic topology, one of the most high-power areas of mathematics. And it has proven some cool results, though it hasn't made a ton of concrete progress.
+
+* Research popularization: [The impossible tetraquark](https://www.quantamagazine.org/impossible-particle-discovery-adds-key-piece-to-the-strong-force-puzzle-20210927/), by Charlie Wood at Quanta Magazine. A new composite particle was discovered, a four-quark particle containsling two charm quarks. It's much more stable than previous tetraquark, by a factor of 2000. Approximate simulations had guessed that it wouldn't be exist at all, but experiment proved the simulations wrong.

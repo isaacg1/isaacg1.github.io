@@ -6,7 +6,7 @@ permalink: /publications/
 ## Papers
 
 ### [The Finite-Skip Method for Multiserver Analysis](finite-skip.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission to *ACM SIGMETRICS 2022*.
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission.
 
 [\[paper\]](/assets/finite-skip.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2109.12663)
