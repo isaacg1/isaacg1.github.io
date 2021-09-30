@@ -9,6 +9,7 @@ permalink: /publications/
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission to *ACM SIGMETRICS 2022*.
 
 [\[paper\]](/assets/finite-skip.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2109.12663)
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
