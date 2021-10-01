@@ -5,7 +5,12 @@ permalink: /publications/
 ---
 ## Papers
 
-### [The Finite-Skip Method for Multiserver Analysis](finite-skip.pdf)
+### [Uniform Bounds for Schedulling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
+Ziv Scully, Isaac Grosof, Michael Mitzenmacher. Under submission.
+
+[\[paper\]](/assets/uniform-bounds-estimates.pdf)
+
+### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission.
 
 [\[paper\]](/assets/finite-skip.pdf)
@@ -26,7 +31,8 @@ Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June
 ### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
-[\[paper\]](/assets/gittins-extremely-general.pdf) [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
+[\[paper\]](/assets/gittins-extremely-general.pdf)
+[\[short paper\]](/assets/gittins-extremely-general-short.pdf)
 
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
