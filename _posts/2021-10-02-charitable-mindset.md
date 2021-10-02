@@ -3,13 +3,13 @@ layout: post
 title: "The Charitable Mindset"
 ---
 The uncharitable mindset says:
-"If members of your group do something that I don't like
-and you don't condemn that action unreservedly
+"If members of your group do something that I don't like,
+and you don't condemn that action unreservedly,
 then you are bad, in much the same way as if you had done the thing I don't like."
 
 Example 1:
 
-Some social justice believers cancel-mob on shaky evidence.
+Some social justice believers cancel-mob on shaky evidence, which turns out to be inaccurate.
 
 Many social justice believers don't condemn such people unreservedly (because their focus is on primary harms of discrimination, rather than overreaction harms).
 
