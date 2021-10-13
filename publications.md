@@ -9,6 +9,7 @@ permalink: /publications/
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher. Under submission.
 
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2110.00633)
 
 ### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
