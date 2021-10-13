@@ -11,7 +11,7 @@ Ziv Scully, Isaac Grosof, Michael Mitzenmacher. Under submission.
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
 
 ### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission.
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
 
 [\[paper\]](/assets/finite-skip.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2109.12663)
@@ -35,7 +35,7 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
 
 ### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
 
 [\[paper\]](/assets/multiserverjob-stability.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2010.00631)
@@ -45,7 +45,7 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet peer reviewed.
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
 
 [\[paper\]](/assets/m-gittins-k.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2003.13232)]
+[\[arxiv\]](https://arxiv.org/abs/2003.13232)
 [\[short paper\]](/assets/m-gittins-k-short.pdf)
 
 ### [The CacheLib Caching Engine: Design and Experiences at Scale](/assets/cachelib.pdf)
