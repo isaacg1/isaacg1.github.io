@@ -3,7 +3,22 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made seven rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made eight rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Subdivide, exchange
+
+Algorithm: Start with a very small image. Subdivide each pixel into 4.
+Add random Gaussian noise to each pixel's color.
+Less noise once more pixels.
+Then pick many random pairs of pixels,
+and check if neighboring colors would be more similar
+if swapped.
+If so, swap.
+Repeat until desired size.
+
+[Repository](https://github.com/isaacg1/subdivide-exchange)
+
+![Subdivide, exchange](/assets/subdivide-exchange.png)
 
 ## Midline
 
