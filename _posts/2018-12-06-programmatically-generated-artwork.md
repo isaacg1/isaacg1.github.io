@@ -3,7 +3,25 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made eight rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made nine rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Fractal
+
+Algorithm: Make a list of transformations, of the form:
+
+* Take a source circle.
+
+* Translate
+
+* Rotate
+
+* Tint
+
+Sample transformations with a triangle distribution.
+
+[Repository](https://github.com/isaacg1/fractal)
+
+![Fractal](/assets/fractal.png)
 
 ## Subdivide, exchange
 
