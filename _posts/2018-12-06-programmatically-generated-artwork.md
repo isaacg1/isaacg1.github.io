@@ -3,7 +3,17 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made nine rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made ten rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Orbits
+
+Revisiting the "color-force" idea from threads.
+Objects are attracted by a force proportionate to their masses,
+their color similarity and inverse radius squared.
+
+[Repository](https://github.com/isaacg1/log-gravity)
+
+![Orbits](/assets/orbits.png)
 
 ## Fractal
 
