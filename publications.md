@@ -6,7 +6,8 @@ permalink: /publications/
 ## Papers
 
 ### [Uniform Bounds for Schedulling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
-Ziv Scully, Isaac Grosof, Michael Mitzenmacher. Under submission.
+Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
+To appear in *Innovations in Theoretical Computer Science*, Jan. 2022.
 
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2110.00633)
