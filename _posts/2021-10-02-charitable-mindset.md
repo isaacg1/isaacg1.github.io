@@ -21,7 +21,7 @@ Example 2:
 
 Some conservative people often slight or demean people of color, women, or other negatively stereotyped groups.
 
-Many conservatives don't condemn such people unreservedly (because their focus is on assigning blame primarily based on intent, not harm, and they don't have much of a framework to say an action should be avoided without assigning blame).
+Many conservatives don't condemn such people unreservedly (because their focus is on assigning blame primarily based on intent, not harm).
 
 Uncharitable people then lump many conservatives in the "pro-discriminatory slights and indignities" group.
 
