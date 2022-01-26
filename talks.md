@@ -6,8 +6,8 @@ permalink: /talks/
 
 ### WCFS Queues: A New Analysis Framework
 
-[\[slides pdf\]](wcfs-queues-theory-lunch.pdf)
-[\[slides pptx\]](wcfs-queues-theory-lunch.pptx)
+[\[slides pdf\]](/assets/wcfs-queues-theory-lunch.pdf)
+[\[slides pptx\]](/assets/wcfs-queues-theory-lunch.pptx)
 
 Given at:
 
