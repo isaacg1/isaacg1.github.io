@@ -4,6 +4,15 @@ title: Talks
 permalink: /talks/
 ---
 
+### WCFS Queues: A New Analysis Framework
+
+[\[slides pdf\]](wcfs-queues-theory-lunch.pdf)
+[\[slides pptx\]](wcfs-queues-theory-lunch.pptx)
+
+Given at:
+
+* CMU Theory lunch, January 2022
+
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 [\[paper\]](/assets/nudge.pdf)
 [\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
