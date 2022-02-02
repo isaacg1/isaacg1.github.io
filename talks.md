@@ -5,13 +5,13 @@ permalink: /talks/
 ---
 
 ### WCFS Queues: A New Analysis Framework
-
 [\[slides pdf\]](/assets/wcfs-queues-theory-lunch.pdf)
 [\[slides pptx\]](/assets/wcfs-queues-theory-lunch.pptx)
+[\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
 
 Given at:
 
-* CMU Theory lunch, January 2022
+* CMU Theory lunch, January 2022 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 [\[paper\]](/assets/nudge.pdf)
@@ -24,7 +24,10 @@ Given at:
 * ACM SIGMETRICS, Jun. 2021 [\[video\]](https://www.youtube.com/watch?v=G3NWAOlHpoI)
 
 ### [Asymptotically Optimal Multiserver Scheduling](/assets/asymptotically-optimal.pdf)
-[\[slides pdf\]](/assets/asymptotically-optimal.pdf) [\[slides pptx\]](/assets/asymptotically-optimal.pptx) [\[SRPT paper\]](/assets/srpt.pdf) [\[Gittins paper\]](gittins-extremely-general.pdf)
+[\[slides pdf\]](/assets/asymptotically-optimal.pdf)
+[\[slides pptx\]](/assets/asymptotically-optimal.pptx)
+[\[SRPT paper\]](/assets/srpt.pdf)
+[\[Gittins paper\]](gittins-extremely-general.pdf)
 
 Given at:
 
@@ -33,7 +36,8 @@ Given at:
 * University of Washington Theory Seminar, March 2021
 
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
-[\[paper\]](/assets/multiserverjob-stability.pdf) [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
+[\[paper\]](/assets/multiserverjob-stability.pdf)
+[\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
 
 Given at:
 
@@ -42,7 +46,8 @@ Given at:
 * SQUALL lunch at CMU, Oct. 2020
 
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
-[\[slides\]](/assets/sigmetrics-2019-load-balancing-talk.pptx) [\[paper\]](/assets/load-balancing.pdf)
+[\[slides\]](/assets/sigmetrics-2019-load-balancing-talk.pptx)
+[\[paper\]](/assets/load-balancing.pdf)
 
 Given at:
 
@@ -51,7 +56,9 @@ Given at:
 * SQUALL lunch at CMU, Apr. 2019
 
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf)
-[\[slides\]](/assets/performance-2018-srpt-talk.pptx) [\[video\]](https://www.youtube.com/watch?v=H6PDvOt7R3E) [\[paper\]](/assets/srpt.pdf)
+[\[slides\]](/assets/performance-2018-srpt-talk.pptx)
+[\[video\]](https://www.youtube.com/watch?v=H6PDvOt7R3E)
+[\[paper\]](/assets/srpt.pdf)
 
 Given at:
 
