@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Learning from Partial AI Failures"
-draft: true
+title: "Learning from Partial AI Alignment Failures"
 ---
 
 ## AI Alignment
