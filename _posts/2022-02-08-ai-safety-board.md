@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Learning from Partial AI Alignment Failures"
+title: "Learning from AI Alignment Failures"
 ---
 
 ## AI Alignment
+
+The recent announcement of DeepMind's
+[AlphaCode](https://deepmind.com/blog/article/Competitive-programming-with-AlphaCode)
+got me thinking about the problem of AI Alignment.
 
 I know a good number of people who care a lot about [AI Alignment](https://en.wikipedia.org/wiki/AI_alignment):
 the problem of ensuring that an AI system optimizes for good outcomes,
@@ -29,24 +33,32 @@ Others have explained it better than I,
 but there is essentially no limit to how disastrous such outcomes might be,
 given sufficient optimization power.
 
-## One Approach: Advance Frameworks
+## One Approach: Theoretical Models
 
 One approach to grappling with this problem
-that I have seen explored is to develop mathematical and computational frameworks
-around ensuring that AI systems behave in ways
+that I have seen explored is to develop theoretical mathematical and computational frameworks
+which model how an AI system might behave.
+Within such a system,
+one attempts to develop techniques to ensure that AI systems behave in ways
 that match both the implicit and explicit intentions of the designer.
-The hope is that if such frameworks exist,
+The hope is that if such techniques exist,
 people will use them in their AI systems,
-either voluntarily or under legislative pressure,
-lowering the probability of bad outcomes.
+and that the insights from theoretical models will carry over to real systems.
 
-Personally, I'm not a strong believer in the approach of "create frameworks in advance".
+One step closer to reality,
+one can design exploratory systems,
+which actually perform some form of optimization in a manner intended to mimic or model
+real system behavior.
+One can again try to transfer insights from these exploratory models
+to real systems.
+
+I think these approaches are useful, but ultimately lacking.
 It feels like trying to figure out how to build safe bridges,
-before anyone's ever built a bridge,
-to prevent bridge collapses.
+with only computational modeling of bridges and scale models,
+but no engagement with real bridges.
 It's worth trying, but I don't hold much faith in its success.
-I do think this is a very important problem,
-so I think it's important to find better approaches.
+To improve upon this approach, it is vital to engage with real systems
+undergoing failure in the wild.
 
 ## A Better Approach: Learning from Partial Failures
 
@@ -64,7 +76,7 @@ and does arbitrarily bad things,
 we're likely to see partial failures.
 For instance, an AI system not intended for the purpose of exploiting insecure systems
 might stumble upon a method to do so, but not export itself onto that device.
-Because this has less moving parts, it's likely to happen sooner.
+Because this scenario has far fewer moving parts, it's almost guaranteed to happen sooner.
 
 I think it's critical that we learn from these partial failures,
 and ensure that the insights gained are communicated to everyone who works on
@@ -101,7 +113,7 @@ In each case, a critical component of the process of improving safety
 is an investigatorial organization known as a "safety board".
 In the US, we have the [National Transportation Safety Board](https://en.wikipedia.org/wiki/National_Transportation_Safety_Board) for aviation and transportation in general,
 and the [Chemical Safety Board](https://en.wikipedia.org/wiki/U.S._Chemical_Safety_and_Hazard_Investigation_Board),
-for industrial chemical safety.
+for industrial chemical safety, to name a few.
 
 These safety boards have the responsibility, the resources, and the legal authority
 to investigate accidents in their field,
@@ -118,7 +130,7 @@ which are now essentially universal in their fields.
 What makes safety boards so effective is their exhaustive 
 documentation.
 If an investigation is successful,
-it is often so well documented that no reasonable person who engages with their report
+it is often so well documented that no reasonable person who engages with the report
 can doubt its conclusion.
 This is a major part of what drives the implementation of their recommendations.
 
