@@ -5,12 +5,19 @@ permalink: /publications/
 ---
 ## Papers
 
+### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
+Isaac Grosof, Michael Mitzenmacher.
+*Under submission*.
+
+[\[paper\]](/assets/incentive-compatible.pdf)
+
 ### [Uniform Bounds for Schedulling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
-To appear in *Innovations in Theoretical Computer Science*, Jan. 2022.
+*Innovations in Theoretical Computer Science*, Jan. 2022.
 
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2110.00633)
+[\[video\]](https://www.youtube.com/watch?v=R_KBFNWzxhA)
 
 ### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
