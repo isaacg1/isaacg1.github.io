@@ -11,7 +11,7 @@ permalink: /talks/
 
 Given at:
 
-* CMU Theory lunch, January 2022 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
+* CMU Theory lunch, Jan. 2022 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 [\[paper\]](/assets/nudge.pdf)
@@ -31,9 +31,9 @@ Given at:
 
 Given at:
 
-* Young Europeans in Queueing Theory, June 2021
+* Young Europeans in Queueing Theory, Jun. 2021
 
-* University of Washington Theory Seminar, March 2021
+* University of Washington Theory Seminar, Mar. 2021
 
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 [\[paper\]](/assets/multiserverjob-stability.pdf)

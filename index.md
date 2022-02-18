@@ -6,19 +6,19 @@ layout: page
 ---
 ![Isaac Grosof's portrait](/assets/portrait-small.jpg)
 
-I'm Isaac Grosof, a fifth-year computer-science student at CMU.
+I'm Isaac Grosof, a fifth-year PhD student in CS at CMU,
+advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
+I completed my BS and MEng at MIT under [Vinod Vaikuntanathan](https://people.csail.mit.edu/vinodv/).
+I work on stochastic scheduling and resource allocation, with a focus on optimal policies.
+I received
+the [ACM SIGMETRICS 2021 Best Paper Award](publications/#nudge-stochastically-improving-upon-fcfs),
+the [ACM SIGMETRICS 2019 Best Student Paper Award](publications/#load-balancing-guardrails),
+and the [IFIP Performance 2018 Best Student Paper Award](publications/#srpt-for-multiserver-systems).
 
-I am advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
-
-My research interests include queueing theory, scheduling and performance modeling. I have a particular interest in multiserver scheduling and tail metrics in queueing.
 
 Check out my [publications](publications.md), all of which you can download to read.
 
 Check out my [blog](blog.md).
-
-In the past,
-I have researched the complexity theory of abstract motion planning with [Erik Demaine](http://erikdemaine.org/)
-and information theoretic cryptography with [Vinod Vaikuntanathan](https://people.csail.mit.edu/vinodv/).
 
 Here's some art I made:
 
