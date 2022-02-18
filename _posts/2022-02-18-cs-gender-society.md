@@ -1,5 +1,6 @@
 ---
 published: true
+title: "CS, Gender, and Society"
 ---
 ## CS, Gender, and Society
 
