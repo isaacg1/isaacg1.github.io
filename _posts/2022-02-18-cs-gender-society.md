@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## CS, Gender, and Society
 
