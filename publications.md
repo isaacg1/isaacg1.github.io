@@ -72,6 +72,8 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
 
 **Winner of the SIGMETRICS 2019 Best Student Paper Award**
 
+**Invited paper at [STOC 2021 Theory Fest](https://www.youtube.com/watch?v=kLthfyGPHQM)**
+
 [\[paper\]](/assets/load-balancing.pdf)
 [\[arxiv\]](https://arxiv.org/abs/1905.03439)
 [\[short paper\]](/assets/load-balancing-short.pdf)
