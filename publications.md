@@ -10,6 +10,7 @@ Isaac Grosof, Michael Mitzenmacher.
 *Under submission*.
 
 [\[paper\]](/assets/incentive-compatible.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2202.05747)
 
 ### [Uniform Bounds for Schedulling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
