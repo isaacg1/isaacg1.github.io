@@ -5,6 +5,13 @@ permalink: /publications/
 ---
 ## Papers
 
+### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Under submission*.
+
+[\[paper\]](/assets/wcfs.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2109.12663)
+[\[old version\]](/assets/finite-skip.pdf)
+
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
 Isaac Grosof, Michael Mitzenmacher.
 *Under submission*.
@@ -19,12 +26,6 @@ Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2110.00633)
 [\[video\]](https://www.youtube.com/watch?v=R_KBFNWzxhA)
-
-### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
-
-[\[paper\]](/assets/finite-skip.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2109.12663)
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
