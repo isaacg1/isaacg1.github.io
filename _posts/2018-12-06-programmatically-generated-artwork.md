@@ -3,7 +3,22 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made ten rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made eleven rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+
+## Fans
+
+Revisting the "place pixels close to similarly colored pixels" from circles.
+Every pixel has a facing angle.
+Place a few seed pixels with random facing angles, spread over the image.
+Iterate over all colors in random order.
+For each color, find the most similarly colored pixel already placed.
+Find the closest uncolored pixel withtin a small angle of the facing angle of the similar pixel, wrapping around toroidally.
+Place the new color there.
+If no such pixel exists, as close as possible.
+
+[Repository](https://github.com/isaacg1/angles)
+
+![Fans](/assets/fans.png)
 
 ## Orbits
 
