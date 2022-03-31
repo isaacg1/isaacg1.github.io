@@ -4,7 +4,7 @@ title: "CS, Gender, and Society"
 ---
 ## CS, Gender, and Society
 
-Men are overrepresented in CS and Software engineering, relative to wider society. Trans women are similarly overepresented. Various attempts at explanation have been put forward, including bias/discouragement/socialization, as well as inherent differences. In my opinion, there are likely many overlapping effects, which affect any given person to wildly varying degrees. In particular, I believe in the practical takeaway of "overepresentation indicates that bias may well exist, so look carefully and in an ongoing fashion."
+Men are overrepresented in CS and Software engineering, relative to wider society. Trans women are similarly overrepresented. Various attempts at explanation have been put forward, including bias/discouragement/socialization, as well as inherent differences. In my opinion, there are likely many overlapping effects, which affect any given person to wildly varying degrees. In particular, I believe in the practical takeaway of "overrepresentation indicates that bias may well exist, so look carefully and in an ongoing fashion."
 
 I want to examine one explanation that I've heard proposed:
 
@@ -20,7 +20,7 @@ I'd like to push back against (2), which I feel gets taken for granted too readi
 
 ## Documentation
 
-Documentation is critical to successful software development. Naming things is one of the hardest problems in CS, but also desparately important. Conveying the meaning of code to other people makes up a very large fraction of the job of software development.
+Documentation is critical to successful software development. Naming things is one of the hardest problems in CS, but also desperately important. Conveying the meaning of code to other people makes up a very large fraction of the job of software development.
 
 This is fundamentally a people-focused activity. It's also often undervalued and underemphasized. I wish I'd had a unit in my CS major just about communication around code. I'm sure that asking for documentation samples as part of an interview would help find better employees.
 
@@ -42,4 +42,4 @@ Given that CS has a societally-contingent emphasis, what should we do? Here some
 
 2. When deciding what examples to use when teaching, go with what your students know. Keep in mind that many older works of media are extremely sexist - Star Trek (TOS especially) is a good example. If you don't know what media your students grew up with, what games they played, ask them.
 
-3. Reexamine assumptions around who bears resposibility for discouragement of potential CS students/professionals/researchers. Often, once obvious sources have been eliminated, a big part of the answer is "the system", the patterns and collectove assumptions of many people. The system is made of people. It's made of us. We can change the system, but it takes real effort.
+3. Reexamine assumptions around who bears responsibility for discouragement of potential CS students/professionals/researchers. Often, once obvious sources have been eliminated, a big part of the answer is "the system", the patterns and collective assumptions of many people. The system is made of people. It's made of us. We can change the system, but it takes real effort.
