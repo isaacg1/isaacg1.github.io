@@ -19,7 +19,7 @@ Isaac Grosof, Michael Mitzenmacher.
 [\[paper\]](/assets/incentive-compatible.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2202.05747)
 
-### [Uniform Bounds for Schedulling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
+### [Uniform Bounds for Scheduling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
 *Innovations in Theoretical Computer Science*, Jan. 2022.
 
@@ -66,7 +66,7 @@ Mor Harchol-Balter, Greg Ganger.
 *OSDI*, Nov. 2020.
 
 [\[paper\]](/assets/cachelib.pdf)
-[\[cannonical version\]](https://www.usenix.org/system/files/osdi20-berg.pdf)
+[\[canonical version\]](https://www.usenix.org/system/files/osdi20-berg.pdf)
 
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
 #### Keeping Your Heavy Traffic on the Road to Low Response Times
@@ -80,7 +80,7 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
 [\[arxiv\]](https://arxiv.org/abs/1905.03439)
 [\[short paper\]](/assets/load-balancing-short.pdf)
 [\[poster\]](/assets/load-balancing-poster.pdf)
-[\[talks\]](/talks/#load-balancing-guradrails)
+[\[talks\]](/talks/#load-balancing-guardrails)
 
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf)
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *IFIP Performance*, Dec. 2018. Also in the journal: *Performance Evaluation*, Nov. 2018.
