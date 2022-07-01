@@ -4,6 +4,12 @@ title: Talks
 permalink: /talks/
 ---
 
+### Stochastic Scheduling with Predictions
+
+Given at:
+
+* STOC 2022, invited speaker at the Algorithms with Predictions workshop.
+
 ### WCFS Queues: A New Analysis Framework
 [\[slides pdf\]](/assets/wcfs-queues-theory-lunch.pdf)
 [\[slides pptx\]](/assets/wcfs-queues-theory-lunch.pptx)

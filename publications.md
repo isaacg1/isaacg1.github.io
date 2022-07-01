@@ -5,8 +5,8 @@ permalink: /publications/
 ---
 ## Papers
 
-### [The Finite-Skip Method for Multiserver Analysis](/assets/finite-skip.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Under submission*.
+### [WCFS: A new framework for analyzing multiserver systems](/assets/finite-skip.pdf)
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Accepted for publication in *Queueing Systems*.
 
 [\[paper\]](/assets/wcfs.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2109.12663)
