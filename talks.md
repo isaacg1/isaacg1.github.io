@@ -4,13 +4,17 @@ title: Talks
 permalink: /talks/
 ---
 
-### Stochastic Scheduling with Predictions
+### [Stochastic Scheduling with Predictions](/assets/uniform-bounds-estimates.pdf)
+[\[paper\]](/assets/uniform-bounds-estimates.pdf)
+[\[slides pdf\]](/assets/stochastic-scheduling-with-predictions.pdf)
+[\[slides pptx\]](/assets/stochastic-scheduling-with-predictions.pptx)
 
 Given at:
 
 * STOC 2022, invited speaker at the Algorithms with Predictions workshop.
 
-### WCFS Queues: A New Analysis Framework
+### [WCFS Queues: A New Analysis Framework](/assets/wcfs.pdf)
+[\[paper\]](/assets/wcfs.pdf)
 [\[slides pdf\]](/assets/wcfs-queues-theory-lunch.pdf)
 [\[slides pptx\]](/assets/wcfs-queues-theory-lunch.pptx)
 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
