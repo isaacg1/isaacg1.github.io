@@ -12,3 +12,7 @@ Articles that I read, that I liked and you might like too (videos, etc. also all
 ### Fiction
 
 * [Always Human](https://m.webtoons.com/en/romance/always-human/list?title_no=557&page=1&webtoon-platform-redirect=true), a futuristic science fiction romance story. It's beautiful and touching and gentle and warm, and every page has it's own atmospheric music.
+
+### Cute
+
+* [Dunkin Ducks](https://youtube.com/shorts/8efXQfoUyRU), a channel about cute pet ducks.
