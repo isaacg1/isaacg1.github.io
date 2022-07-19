@@ -18,3 +18,15 @@ Articles that I read, that I liked and you might like too (videos, etc. also all
 ### Cute
 
 * [Dunkin Ducks](https://youtube.com/shorts/8efXQfoUyRU), a channel about cute pet ducks.
+
+---
+
+## Topics I'm thinking of writing about
+
+* Another paper retrospective 
+
+* Living in a postselected world
+
+* Transcribing the process of solving an IMO problem - false starts and all.
+
+* Discord server for (research) computer scientists
