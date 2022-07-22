@@ -13,6 +13,8 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Accepted for publication i
 [\[old version\]](/assets/finite-skip.pdf)
 
 ### [Towards the shortest DRAT proof of the Pigeonhole Principle](/assets/php.pdf)
+Isaac Grosof, Naifeng Zhang, Marijn Heule. To appear in *Pragmatics of SAT*, August 2022.
+
 [\[paper\]](/assets/php.pdf)
 
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
