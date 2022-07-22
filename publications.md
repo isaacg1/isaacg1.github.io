@@ -12,9 +12,12 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Accepted for publication i
 [\[arxiv\]](https://arxiv.org/abs/2109.12663)
 [\[old version\]](/assets/finite-skip.pdf)
 
+### [Towards the shortest DRAT proof of the Pigeonhole Principle](/assets/php.pdf)
+[\[paper\]](/assets/php.pdf)
+
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
 Isaac Grosof, Michael Mitzenmacher.
-*Under submission*.
+Not yet published.
 
 [\[paper\]](/assets/incentive-compatible.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2202.05747)
