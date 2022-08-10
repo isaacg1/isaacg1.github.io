@@ -4,21 +4,23 @@
 
 layout: page
 ---
-![Isaac Grosof's portrait](/assets/portrait-small.jpg)
+![Isaac Grosof's portrait](/assets/mountain.jpg)
 
-Isaac Grosof is a fifth-year PhD student in CS at CMU,
+Isaac Grosof is a sixth-year PhD student in CS at Carnegie Mellon University,
 advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
-Isaac completed their BS and MEng at MIT under [Vinod Vaikuntanathan](https://people.csail.mit.edu/vinodv/).
+They are currently on the academic job market, looking for positions in Theoretical Computer Science and Operations Research.
 They work on stochastic scheduling and resource allocation, with a focus on optimal policies.
 Isaac received
 the [ACM SIGMETRICS 2021 Best Paper Award](publications/#nudge-stochastically-improving-upon-fcfs),
 the [ACM SIGMETRICS 2019 Best Student Paper Award](publications/#load-balancing-guardrails),
 and the [IFIP Performance 2018 Best Student Paper Award](publications/#srpt-for-multiserver-systems).
 
+Check out my [thesis proposal](/assets/thesis-proposal.pdf),
+which gives a good overview of the core of my research.
 
-Check out my [publications](publications.md), all of which you can download to read.
+Check out my [publications](publications), all of which you can download to read.
 
-Check out my [blog](blog.md).
+Check out my [blog](blog).
 
 Here's some art I made:
 
