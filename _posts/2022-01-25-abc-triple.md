@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "My Very Own ABC Triple"
+title: My Very Own ABC Triple
+published: true
 ---
 
 I like the [abc conjecture](https://en.wikipedia.org/wiki/Abc_conjecture).
 It says that numbers that are multiplicatively pretty can't be too closely additively related,
 in a very precise mathematical way.
 
-The conjecture is about abc triples and a function called the ``radical''.
+The conjecture is about abc triples and a function called the "radical".
 
 The radical of an integer is the product of its prime factors.
 For instance, radical(800) = 10.
@@ -117,6 +118,3 @@ But my favorite is still the one that my computer found:
 
 I really like the wide variety of small prime factors that it uses.
 Thanks for exploring abc triples with me!
-
-
-
