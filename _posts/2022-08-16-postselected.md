@@ -1,5 +1,6 @@
 ---
 published: false
+title: Living in a Postselected World
 ---
 ## Living in a postselected world
 
@@ -16,4 +17,3 @@ The degree of postselection, the amount of bias towards something impressive hap
 But if the coin flipping video is just out there on the general internet, a stupendous amount of filtering has happened to bring this video to your attention. Out of millions of people flipping millions of coins, you're watching this one. As a result, one-in-a-million coincidences, like flipping 20 heads in a row, are commonplace.
 
 To illustrate, I will search YouTube for a video of someone flipping coins. If they get five heads in a row, I will count how long their streak is in total.
-
