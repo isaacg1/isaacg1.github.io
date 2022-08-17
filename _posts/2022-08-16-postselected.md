@@ -16,4 +16,10 @@ The degree of postselection, the amount of bias towards something impressive hap
 
 But if the coin flipping video is just out there on the general internet, a stupendous amount of filtering has happened to bring this video to your attention. Out of millions of people flipping millions of coins, you're watching this one. As a result, one-in-a-million coincidences, like flipping 20 heads in a row, are commonplace.
 
-To illustrate, I will search YouTube for a video of someone flipping coins. If they get five heads in a row, I will count how long their streak is in total.
+## Implications of Postselection
+
+Now, instead of coin-flipping, you see a very offensive tweet that someone sent. You want to figure out if the tweet is reflective of the sender's inherent nature (i.e. they're an awful person) or not reflective (i.e. a failed joke, a typo, out of context, etc.).
+
+This question closely parallels the coin flipping question. If we see a coin flipped heads twenty times, do we lean towards a plugged coin (inherent nature) or random chance (not inherent nature).
+
+To answer this question, we must examine the level of postselection that has occurred in bringing the offensive tweet to our attention.
