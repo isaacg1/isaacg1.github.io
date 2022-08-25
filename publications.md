@@ -3,26 +3,25 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-## Papers
+## Published and Submitted Papers
+
+### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf)
+Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission.
+
+[\[paper\]](/assets/msj-srpt.pdf)
 
 ### [WCFS: A new framework for analyzing multiserver systems](/assets/finite-skip.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Accepted for publication in *Queueing Systems*.
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2022.
 
 [\[paper\]](/assets/wcfs.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2109.12663)
+[\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
 [\[old version\]](/assets/finite-skip.pdf)
 
 ### [Towards the shortest DRAT proof of the Pigeonhole Principle](/assets/php.pdf)
-Isaac Grosof, Naifeng Zhang, Marijn Heule. To appear in *Pragmatics of SAT*, August 2022.
+Isaac Grosof, Naifeng Zhang, Marijn Heule. *Pragmatics of SAT*, August 2022.
 
 [\[paper\]](/assets/php.pdf)
-
-### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
-Isaac Grosof, Michael Mitzenmacher.
-Not yet published.
-
-[\[paper\]](/assets/incentive-compatible.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2202.05747)
 
 ### [Uniform Bounds for Scheduling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
@@ -31,6 +30,7 @@ Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2110.00633)
 [\[video\]](https://www.youtube.com/watch?v=R_KBFNWzxhA)
+[\[talks\]](/talks/#stochastic-scheduling-with-predictions)
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
@@ -49,13 +49,6 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
 [\[paper\]](/assets/gittins-extremely-general.pdf)
 [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
-
-### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
-
-[\[paper\]](/assets/multiserverjob-stability.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2010.00631)
-[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
 
 ### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
@@ -110,3 +103,19 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 [\[paper\]](/assets/push-pull.pdf)
 [\[arxiv\]](https://arxiv.org/abs/1709.01241)
 [\[blog post\]](/2021/08/12/paper-push-pull.html)
+
+## Papers not currently under submission
+### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
+Isaac Grosof, Michael Mitzenmacher.
+Not yet published.
+
+[\[paper\]](/assets/incentive-compatible.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2202.05747)
+
+### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
+
+[\[paper\]](/assets/multiserverjob-stability.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2010.00631)
+[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
+
