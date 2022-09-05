@@ -19,4 +19,4 @@ cupping the mental.
 "When have we proven".
 
 Research has rhythm,  
-Thought into theorem.
+thought into theorem.
