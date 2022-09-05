@@ -11,7 +11,7 @@ pattern to meaning.
 Dredging through mudflow,  
 pulling up crystal.  
 Stretching for vapor,  
-cupping the mental.
+sculpting the mental.
 
 "How can we show that",  
 "What can we change in".  
