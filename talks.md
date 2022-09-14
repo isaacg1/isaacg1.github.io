@@ -4,6 +4,16 @@ title: Talks
 permalink: /talks/
 ---
 
+### [Optimal Scheduling in the Multiserver-job Model](/assets/msj-srpt.pdf)
+[\[paper\]](/assets/msj-srpt.pdf)
+[\[slides pptx\]](/assets/msj-srpt-harvard-mit.pptx)
+
+Given at:
+
+* Harvard Theory Seminar, Sep. 2022.
+
+* MIT Algorithms and Complexity Seminar, Sep. 2022.
+
 ### [Stochastic Scheduling with Predictions](/assets/uniform-bounds-estimates.pdf)
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
 [\[slides pdf\]](/assets/stochastic-scheduling-with-predictions.pdf)
