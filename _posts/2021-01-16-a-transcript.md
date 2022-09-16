@@ -64,7 +64,7 @@ Topics mentioned in the letter:
 * Bill Olsen, Kurt Olsen: Not sure who is meant - names are too generic.
 
 * [Kash Patel](https://www.axios.com/kash-patel-cia-gina-haspel-757b92c0-82a5-457b-bde8-d0d683ee222e.html):
-  Former aide to Rep. Devin Nunes. In December, President planned to apoint him Deputy Director of the CIA, under Gina Haspell.
+  Former aide to Rep. Devin Nunes. In December, the President planned to appoint him Deputy Director of the CIA, under Gina Haspell.
   Haspell threatened to resign and convinced the President not to do so.
   
 * [Reportedly](https://twitter.com/maggieNYT/status/1350249903101005824?s=20),

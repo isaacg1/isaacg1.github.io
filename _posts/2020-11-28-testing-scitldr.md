@@ -26,7 +26,7 @@ however.
 Nonetheless, I'm quite impressed, to be honest.
 Of note, this exact sentence appears nowhere in the original text.
 "Stochastic analysis of multiserver SRPT" appears in the paper,
-but not in the abstract, intoduction or conclusion.
+but not in the abstract, introduction or conclusion.
 I'll give it a pass on the weird space before the period,
 that might be an artifact of the PDF copy-paste.
 
@@ -43,7 +43,7 @@ In the compression, the quality suffered somewhat.
 In particular, in the TLDR, it's somewhat unclear whether the original policy
 needs to already have optimal mean response time
 or whether the fix causes the new policy to have optimal mean response time.
-The quote from the abstact makes this clearer.
+The quote from the abstract makes this clearer.
 Also, it's weird to use "We" to refer to me and my collaborators.
 
 #### Paper: The CacheLib Caching Engine: Design and Experiences at Scale
@@ -76,12 +76,12 @@ It seems the TLDR program can't pick which to write, and chooses their intersect
 
 Summary: “We derive a closed-form analytical expression for the stability region of a two-class (non- dropping) multiserver-job system where”
 
-Again, very close. If the final "where" was removed, I would rate it qiute good.
+Again, very close. If the final "where" was removed, I would rate it quite good.
 It seems the system gets caught in between reasonable alternatives fairly easily.
 Here, it would be reasonable to either remove that final where
 or add "each class can have distinct exponential service duration distributions".
 
-#### Paper: The Gittins Policy is Nearly Optimal in the M/G/k under Extremely Geneneral Conditions
+#### Paper: The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions
 
 Summary: “We give the first general analysis of Gittins in the M/G/k.”
 
@@ -94,4 +94,4 @@ neither defining "general" nor mentioning optimality.
 
 One success, two near misses, two so-so, one failure. OK, but not all that good just yet.
 Lots of fun to mess around with.
-Thanks to the team behind SciTLDR for making this publically available so I could mess around with it.
+Thanks to the team behind SciTLDR for making this publicly available so I could mess around with it.

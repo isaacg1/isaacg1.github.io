@@ -61,7 +61,7 @@ called the 2-toggle-and-lock, which we constructed from the 4-toggle:
      |     |     |     |
      |---->|     |<----|
      |     |     |     |
-     |--O--|     |-----|
+     |--O--|     |--X--|
      |     |     |     |
      =======     =======
 
@@ -151,6 +151,8 @@ From the AP2T, we can construct a crossing 2-toggle:
 
 Cost: 12 P2T.
 
+Here the X represents a 4-way connection, not a locked wire.
+
 We can cross from top-left to bottom-right, and top-right to bottom-left,
 both while flipping the state.
 
@@ -191,7 +193,7 @@ From the NTL and the 2-toggles,
 we can create a 2-toggle-lock, which is the object we're looking for to prove hardness!
 Of course, we'll also need a crossover,
 but we'll cross (ha) that bridge when we come to it.
-Specifically, we'll create a "round" parallel 2-toggle.
+Specifically, we'll create a "round" parallel 2-toggle-lock.
 When it comes to 3-pathway objects, there are two possible geometries for the pathways:
 
      Round    Stacked
@@ -274,7 +276,7 @@ Cost: 63 P2T.
 This one's very straightforward,
 the character has no options.
 The right side can be traversed from top-left to bottom-left,
-or from top-right to bottom-right,
+or from bottom-right to top-right,
 in each case flipping the states of all three gadgets.
 The left is just a lock.
 

@@ -1,10 +1,11 @@
 ---
 published: true
+layout: post
 title: "CS, Gender, and Society"
 ---
 ## CS, Gender, and Society
 
-Men are overrepresented in CS and Software engineering, relative to wider society. Trans women are similarly overrepresented. Various attempts at explanation have been put forward, including bias/discouragement/socialization, as well as inherent differences. In my opinion, there are likely many overlapping effects, which affect any given person to wildly varying degrees. In particular, I believe in the practical takeaway of "overrepresentation indicates that bias may well exist, so look carefully and in an ongoing fashion."
+Men are overrepresented in CS and software engineering, relative to wider society. Trans women are similarly overrepresented. Various attempts at explanation have been put forward, including bias/discouragement/socialization, as well as inherent differences. In my opinion, there are likely many overlapping effects, which affect any given person to wildly varying degrees. In particular, I believe in the practical takeaway of "overrepresentation indicates that bias may well exist, so look carefully and in an ongoing fashion."
 
 I want to examine one explanation that I've heard proposed:
 

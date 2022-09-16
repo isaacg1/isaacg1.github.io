@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 title: Living in a Postselected World
 ---
 ## Living in a postselected world

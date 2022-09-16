@@ -21,15 +21,19 @@ The character can push or pull blocks, but walls are fixed.
 The goal of the game is for the character to reach a designated square.
 Another variant of the game involves placing each box on a designated square.
 
-This game is called "Pukoban",
-and an ancient flash version could be found on the internet for many years.
-Now, it's probably easier to reimplement it instead.
+This game is called "Pukoban", and was invented by Dries De Clercq.
+An ancient flash version could be found on the internet for many years at
+[this link](http://puzzles.net23.net/pukoban.htm),
+but it went down sometime between 2018 and 2021.
+A clone is hosted at [sokoban.cn](http://sokoban.cn/variant/psokoban.php),
+which runs natively on Windows and can be run on Linux through [wine](https://www.winehq.org/).
+I've taken the liberty of hosting a copy on this blog at [pukoban.zip](/assets/pukoban.zip).
 
 The game is quite difficult to play casually.
 A memorably hard level (Level 1 of the flash game!) starts in the following state:
 
-    __C#
-    oo#_
+    _oC#
+    _o#_
     o___
     #___
 
@@ -54,16 +58,16 @@ but it is still quite difficult.
 
 Here's a solution path for this level (left to right, top to bottom):
 
-    __C#     ___#     ___#     ___#     ___#     _o_#     oo_#
-    oo#_     o_#_     o_#_     o_#_     o_#_     oC#_     C_#_
+    _oC#     o__#     o__#     o__#     o__#     oo_#     oo_#
+    _o#_     __#_     __#_     __#_     __#_     _C#_     __#_
     o___     oC__     o___     o___     _oC_     ____     ____
-    #___     #o__     #_oC     #_Co     #__o     #__o     #__o
+    #___     #o__     #_oC     #_Co     #__o     #__o     #Co_
 
 
     oo_#     oo_#     oo_#     oo_#     o__#     o__#     o__#
     __#_     _C#_     __#_     __#o     __#o     __#o     __#o
     ____     _o__     __Co     ___C     _o__     __oC     __Co
-    #Co_     #___     #___     #___     #C__     #___     #___
+    #oC_     #___     #___     #___     #C__     #___     #___
 
 
     ___#     ___#     ___#     _o_#     _Co#     __o#     _Co#
@@ -93,7 +97,7 @@ Given how hard the game can be casually,
 we were interested in the computational complexity of the game:
 could we prove that the game is as hard or complete for some well-known complexity class?
 This would be quite difficult, because to the best of my knowledge,
-people had previosly only characterized the complexity of non-reversible variants of the game.
+people had previously only characterized the complexity of non-reversible variants of the game.
 In such settings, it's often a lot easier to construct hard levels,
 because one can force the character to move through the level in a certain direction
 by including one-way features.
