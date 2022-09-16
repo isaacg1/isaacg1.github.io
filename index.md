@@ -6,6 +6,8 @@ layout: page
 ---
 ![Isaac Grosof's portrait](/assets/mountain.jpg)
 
+I'm currently on the academic job market, applying for faculty and postdoc positions in computer science, operations research, and related departments. Click here for my [application materials](/job-market).
+
 Isaac Grosof is a sixth-year PhD student in CS at Carnegie Mellon University,
 advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
 They are currently on the academic job market, looking for positions in Theoretical Computer Science and Operations Research.
