@@ -3,7 +3,7 @@ layout: page
 title: "Job Market"
 permalink: /job-market/
 ---
-I am currently going on the job market, applying for faculty and postdoc positions
+I am currently going on the job market, applying for tenure-track faculty positions and postdoc positions
 in computer science, operations research, and related departments.
 
 ### Application Materials

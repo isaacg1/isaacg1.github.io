@@ -9,6 +9,11 @@ Time for my third paper: ["SRPT for Multiserver Systems"](/assets/srpt.pdf). Thi
 
 The problem that this paper focuses on is optimal stochastic multiserver scheduling. Let me break this down word by word.
 
-In the *scheduling* problem, jobs arrive over time, and we have a limited amount of resources to complete the jobs. We have to decide what order to serve the jobs in.
+In the *scheduling* problem, jobs arrive over time,
+and we have a limited amount of resources to complete the jobs.
+We have to decide what order to serve the jobs in.
 
-Our goal, in this problem, is to minimize 
+Our *optimization* goal is to minimize the mean response time of the jobs.
+A job's response time is the time from when the job arrives to when it completes.
+In this paper, we think of each job as equally important,
+so we just try to minimize the mean response time across all jobs.
