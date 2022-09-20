@@ -9,6 +9,8 @@ permalink: /publications/
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission.
 
 [\[paper\]](/assets/msj-srpt.pdf)
+[\[slides\]](/assets/msj-srpt-harvard-mit.pptx)
+[\[talks\]](/talks/#optimal-scheduling-in-the-multiserver-job-model)
 
 ### [WCFS: A new framework for analyzing multiserver systems](/assets/finite-skip.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2022.
