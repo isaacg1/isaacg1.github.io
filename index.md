@@ -16,6 +16,7 @@ Isaac received
 the [ACM SIGMETRICS 2021 Best Paper Award](publications/#nudge-stochastically-improving-upon-fcfs),
 the [ACM SIGMETRICS 2019 Best Student Paper Award](publications/#load-balancing-guardrails),
 and the [IFIP Performance 2018 Best Student Paper Award](publications/#srpt-for-multiserver-systems).
+They are a [2023 Siebel Scholar](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023), a fellowship recognizing academic excellence and leadership.
 
 Check out my [thesis proposal](/assets/thesis-proposal.pdf),
 which gives a good overview of the core of my research.
