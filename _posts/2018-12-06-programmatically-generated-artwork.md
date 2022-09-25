@@ -3,7 +3,21 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made eleven rust programs for programmatically generating artwork in different styles. Here is a sample in each style, along with an explanation of the algorithms:
+I have made eleven rust programs for programmatically generating artwork in different styles.
+Here is a sample in each style, along with an explanation of the algorithms:
+
+## Sand Walk
+
+Iterate over colors in a random order.
+For each, find the most similar color, take a random walk, biased towards similar colors.
+If we find an unoccupied location, place there.
+If can't find a free slot in a reasonable number of steps,
+sample some random unoccupied locations
+and choose the closest one to the final location of the random walk.
+
+[Repository](https://github.com/isaacg1/angles)
+
+![Sand walk](/assets/sand-walk.png)
 
 ## Fans
 
