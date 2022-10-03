@@ -10,6 +10,10 @@ in computer science, operations research, and related departments.
 
 * [Research statement](/assets/research-statement.pdf)
 
+* [Teaching statement](/assets/teaching-statement.pdf)
+
+* [Diversity, equity, and inclusion statement](/assets/diversity-statement.pdf)
+
 ### Selected papers
 
 * [SRPT for Multiserver Systems](/assets/srpt.pdf) (Performance 2018)
