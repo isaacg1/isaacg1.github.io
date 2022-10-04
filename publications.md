@@ -6,7 +6,8 @@ permalink: /publications/
 ## Published and Submitted Papers
 
 ### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf)
-Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf. Under submission.
+Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
+To appear in *ACM SIGMETRICS*, June 2023.
 
 [\[paper\]](/assets/msj-srpt.pdf)
 [\[slides\]](/assets/msj-srpt-harvard-mit.pptx)
