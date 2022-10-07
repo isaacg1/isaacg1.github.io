@@ -56,7 +56,7 @@ about my paper [WCFS: A new framework for analyzing multiserver systems](/assets
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oEmOs8Tdn-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Here is a shorter (~15 minutes), pre-recorded talk intended for a queueing-theory audience,
+Here is a shorter (~15 minutes), pre-recorded talk intended for a queueing theory audience,
 about my paper [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G3NWAOlHpoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
