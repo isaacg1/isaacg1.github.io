@@ -31,7 +31,19 @@ Given at:
 
 Given at:
 
-* CMU Theory lunch, Jan. 2022 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
+* CMU Theory lunch, Jan. 2022. [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
+
+* MIT LIDS Seminar, Mar. 2022.
+
+* CORS/INFORMS International Meeting, Jun. 2022.
+
+### Multiserver-Job Systems
+[\[slides pdf\]](/assets/msj-informs-2021.pdf)
+[\[slides pptx\]](/assets/msj-informs-2021.pptx)
+
+Given at:
+
+* INFORMS Annual Meeting, Oct. 2021.
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
 [\[paper\]](/assets/nudge.pdf)
@@ -57,6 +69,7 @@ Given at:
 
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
 [\[paper\]](/assets/multiserverjob-stability.pdf)
+[\[slides pptx\]](/assets/two-class-msj.pptx)
 [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
 
 Given at:
@@ -75,6 +88,10 @@ Given at:
 
 * SQUALL lunch at CMU, Apr. 2019
 
+* INFORMS Annual Meeting, Oct. 2019
+
+* Ohio State University Seminar, Jan. 2020
+
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf)
 [\[slides\]](/assets/performance-2018-srpt-talk.pptx)
 [\[video\]](https://www.youtube.com/watch?v=H6PDvOt7R3E)
@@ -87,6 +104,8 @@ Given at:
 * 15-858C at CMU, taught by Prof. Weina Wang, Nov. 2018
 
 * Columbia, Nov. 2018. Hosted by Prof. Augustin Chaintreau.
+
+* INFORMS Annual Meeting 2018, Oct. 2018.
 
 * CMU Theory Lunch, Sept. 2018. [\[video\]](https://www.youtube.com/watch?v=H6PDvOt7R3E)
 
