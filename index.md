@@ -13,10 +13,11 @@ advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
 They are currently on the academic job market, looking for positions in Theoretical Computer Science and Operations Research.
 They work on stochastic scheduling and resource allocation, with a focus on optimal policies.
 Isaac received
-the [ACM SIGMETRICS 2021 Best Paper Award](publications/#nudge-stochastically-improving-upon-fcfs),
-the [ACM SIGMETRICS 2019 Best Student Paper Award](publications/#load-balancing-guardrails),
-and the [IFIP Performance 2018 Best Student Paper Award](publications/#srpt-for-multiserver-systems).
-They are a [2023 Siebel Scholar](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023), a fellowship recognizing academic excellence and leadership.
+the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions),
+the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
+the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
+and the [**IFIP Performance 2018 Best Student Paper Award**](publications/#srpt-for-multiserver-systems).
+They are a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023), a fellowship recognizing academic excellence and leadership.
 
 Check out my [thesis proposal](/assets/thesis-proposal.pdf),
 which gives a good overview of the core of my research.

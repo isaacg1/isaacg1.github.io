@@ -53,6 +53,8 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 [\[paper\]](/assets/gittins-extremely-general.pdf)
 [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
 
+**Winner of the INFORMS 2022 George Nicholson Award**
+
 ### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
 
