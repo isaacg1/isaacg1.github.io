@@ -77,6 +77,8 @@ for general adversarial arrivals.
 We prove two major results in our paper: A bound on multiserver SRPT's mean response time,
 and an asymptotic optimality result which follows from the bound.
 
+Our bound is proven relative to the mean response time in a single-server SRPT system, which we call SRPT-1 system, which is well understood, and is also a lower bound on the optimal policy.
+
 Let's start by talking about how we prove the bound.
 
 To prove this bound, we use a *tagged job* approach.
@@ -102,8 +104,37 @@ The one caveat is that while the tagged job is in service,
 the other servers might be empty, or working on irrelevant jobs.
 We'll call this "virtual work", and we'll account for it in the bound.
 
+### Types of work
+
 We break up the work in the system into four categories:
 
 * Old work: The relevant work in the system when the tagged job arrives.
 
 * New work: Relevant work that arrives while the tagged job is in the system.
+
+* Virtual work: Time when the servers are not completing relevant work.
+
+* Tagged work: the tagged job itself.
+
+All of these except for old work are easy to bound:
+
+* New work is the same as in an SRPT-1 system, and hence well understood.
+
+* Virtual work can only occur when the tagged job is in service, on the other k-1 servers. There is at most (k-1)x virtual work.
+
+* There is x tagged work.
+
+### Old work
+
+Now, let's focus on the old work. Because the arrival process is a Poisson process, by the PASTA principle we know that the distribution of old work that the tagged job encounters is the same as the time average amount of relevant work in the system. We write this random variable W^SRPT-k_x, or W^k_x for short.
+
+We want to show that W^k_x is not much bigger than the corresponding distribution in the SRPT-1 system that we are comparing to, W^1_x.
+
+To do so, let's set up two systems, receiving the same arrivals. One is an SRPT-k system, one is an SRPT-1 system. This is called "coupling" the two systems.
+
+Let's focus on the difference in relevabt work W^k_x - W^1_x betwern he two systems.
+First, notice that arrivals don't change difference, because they contribute the same relevant work to both systems. Next, note that when there are at least k relevant jobs in the SRPT-k system, relevant work is completed at rate 1, the maximum possible rate, and ao the difference isn't increasing (it might decrease).
+
+Thus, to bound the size of the difference, we only have to examine times when the SRPT-k system has less than k relevant jobs, or when jobs become relevant by being served down to remaining size x.
+
+(More to come when I have more free time)
