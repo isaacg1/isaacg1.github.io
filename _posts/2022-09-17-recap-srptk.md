@@ -147,7 +147,7 @@ Now we're ready to put together the bound on mean response time in the SRPT-k sy
     
 There's a tighter bound in the paper, but this one is easier to understand.
 
-To prove asymptotic optimality, we just need to show that E[T^SRPT-1] grows faster than 1/(1-rho) in the rho to 1 limit. This doesn't always hold, but it holds if the job isze distribution satisfies  acondition slightly stronger than finite variance. We hadn an unnecessarily complicated condition in this paper, but in our later paper [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](assets/gittins-extremely-general.pdf), in Theorem 1.3 in Appendix B.2, we showed that asymptotic optimality holds whenever E[S^2 (log S)^+] is finite.
+To prove asymptotic optimality, we just need to show that E[T^SRPT-1] grows faster than 1/(1-rho) in the rho to 1 limit. This doesn't always hold, but it holds if the job isze distribution satisfies  acondition slightly stronger than finite variance. We hadn an unnecessarily complicated condition in this paper, but in our later paper [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf), in Theorem 1.3 in Appendix B.2, we showed that asymptotic optimality holds whenever E[S^2 (log S)^+] is finite.
 
 We've done it! SRPT-k is asymptotically optimal!
 
