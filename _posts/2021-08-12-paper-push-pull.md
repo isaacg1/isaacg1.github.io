@@ -96,7 +96,7 @@ Here's a solution path for this level (left to right, top to bottom):
 
 Given how hard the game can be casually,
 we were interested in the computational complexity of the game:
-could we prove that the game is as hard or complete for some well-known complexity class?
+could we prove that the game is hard or complete for some well-known complexity class?
 This would be quite difficult, because to the best of my knowledge,
 people had previously only characterized the complexity of non-reversible variants of the game.
 In such settings, it's often a lot easier to construct hard levels,
