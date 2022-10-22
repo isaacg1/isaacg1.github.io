@@ -1,8 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
+published: true
 ---
 ![Isaac Grosof's portrait](/assets/mountain.jpg)
 
@@ -12,8 +10,8 @@ Isaac Grosof is a sixth-year PhD student in CS at Carnegie Mellon University,
 advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
 They are currently on the academic job market, looking for positions in Theoretical Computer Science and Operations Research.
 They work on stochastic scheduling and resource allocation, with a focus on optimal policies.
-Isaac received
-the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions),
+Isaac has received
+the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions), the award for the best student paper in the field of operations research. They also have received
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
 the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
 and the [**IFIP Performance 2018 Best Student Paper Award**](publications/#srpt-for-multiserver-systems).
