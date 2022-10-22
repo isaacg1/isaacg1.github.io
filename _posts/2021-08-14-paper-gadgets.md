@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "Paper 2: Computational Complexity of Motion Planning of a Robot through Simple Gadgets"
+title: >-
+  Paper 2: Computational Complexity of Motion Planning of a Robot through Simple
+  Gadgets
+published: true
 ---
 
-Next, my second paper: ["Computational Complexity of Motion Planning of a Robot through Simple Gadgets"](assets/motion-planning.pdf).
+Next, my second paper: ["Computational Complexity of Motion Planning of a Robot through Simple Gadgets"](/assets/motion-planning.pdf).
 This paper was written during my undergrad at MIT with my collaborator
 [Jayson Lynch](https://www.linkedin.com/in/jayson-lynch-b6297ab),
 then a PhD student at MIT and now a Postdoc at University of Waterloo,
@@ -13,7 +16,7 @@ also contributed to the paper.
 We published in FUN 2018.
 
 This paper followed immediately upon my first paper:
-["Push-Pull Puzzles are Hard"](assets/push-pull.pdf).
+["Push-Pull Puzzles are Hard"](/assets/push-pull.pdf).
 In that paper, we proved that mazes with with an gadget called a 4-toggle are
 PSPACE-complete to solve (extremely difficult).
 For comparison, normal mazes with no state-based objects
