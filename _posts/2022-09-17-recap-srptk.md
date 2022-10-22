@@ -163,9 +163,12 @@ This condition on the job size distribution is called "Decreasing Hazard Rate", 
 
 FB-1 has been proven to be optimal for unknown sizes and a DHR job size distribution. We show that FB-k is likewise asymptotically optimal.
 
-### Conclusion
+### Retrospective 
 
+This paper was wonderful, and I'm really glad I wrote it. It's a very clean and self-contained result, and yet it opens up a whole new direction of results on multiserver scheduling, which I explored in my letter work.
 
+In some ways, the key idea of the paper is "The easiest policies to understand are the ones that are close to optimal.", which I think is a really cool takeaway.
 
+### Future Problem
 
-(More to come when I have more free time)
+I'm interested in the question of  when SRPT-k is suboptimal. We know it's asymptotically optimal, but that's not the end of the story. I think a good venue to study this is the setting of deterministic job sizes, because then SRPT-k is just serving jobs nonpreemptively, making it easier for another policy to win.
