@@ -169,6 +169,8 @@ This paper was wonderful, and I'm really glad I wrote it. It's a very clean and 
 
 In some ways, the key idea of the paper is "The easiest policies to understand are the ones that are close to optimal.", which I think is a really cool takeaway.
 
+This paper won the Best Student Paper Award at IFIP Performance, which got me completely by surprise and was a wonderful experience.
+
 ### Future Problem
 
 I'm interested in the question of  when SRPT-k is suboptimal. We know it's asymptotically optimal, but that's not the end of the story. I think a good venue to study this is the setting of deterministic job sizes, because then SRPT-k is just serving jobs nonpreemptively, making it easier for another policy to win.
