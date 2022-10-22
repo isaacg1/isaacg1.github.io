@@ -143,7 +143,7 @@ and traversing it flips the internal state.
 These 2-toggles are very fundamental objects in the theory of reversible motion games.
 
 At the time, we did not know how to make interesting constructions out of 2-toggles.
-That would be remedied in [our later paper](assets/load-balancing.pdf).
+That would be remedied in [our later paper](/assets/load-balancing.pdf).
 
 Fortunately, we can push the above gadget further.
 Imagine taking another copy of the above gadget and rotate it in the third dimension
