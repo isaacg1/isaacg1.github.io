@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Paper 1: Push-Pull Block Puzzles are Hard"
+title: 'Paper 1: Push-Pull Block Puzzles are Hard'
+published: true
 ---
 
 I'm going to write recaps of all of the papers I've written,
 in chronological order.
 
-I'm starting with my first paper: ["Push-Pull Block Puzzles are Hard"](assets/push-pull.pdf).
+I'm starting with my first paper: ["Push-Pull Block Puzzles are Hard"](/assets/push-pull.pdf).
 This paper was written during my undergrad at MIT with my collaborator
 [Jayson Lynch](https://www.linkedin.com/in/jayson-lynch-b6297ab),
 then a PhD student at MIT and now a Posdoc at University of Waterloo,
