@@ -132,9 +132,17 @@ We want to show that W^k_x is not much bigger than the corresponding distributio
 
 To do so, let's set up two systems, receiving the same arrivals. One is an SRPT-k system, one is an SRPT-1 system. This is called "coupling" the two systems.
 
-Let's focus on the difference in relevabt work W^k_x - W^1_x betwern he two systems.
+Let's focus on the difference in relevant work W^k_x - W^1_x between the two systems.
 First, notice that arrivals don't change difference, because they contribute the same relevant work to both systems. Next, note that when there are at least k relevant jobs in the SRPT-k system, relevant work is completed at rate 1, the maximum possible rate, and ao the difference isn't increasing (it might decrease).
 
-Thus, to bound the size of the difference, we only have to examine times when the SRPT-k system has less than k relevant jobs, or when jobs become relevant by being served down to remaining size x.
+Thus, to bound the size of the difference, we only have to examine times when the SRPT-k system has less than k relevant jobs, or when jobs become relevant by being served down to remaining size x. In both cases, there are at most k relevant jobs in the SRPT-k, for a total of at most kx relevant work in the system, and a difference of kx.
+
+As a result, the difference in relevant work between the two systems is at most kx at all times. As a side note, this is also the key idea behind the Leonardi and Raz worst-case result.
+
+### Response time analysis
+
+Now we're ready to put together the bound on mean response time in the SRPT-k system, relative to the SRPT-1 system. After a few intergals, the bound comes out to
+
+    E[T^SRPT-k]
 
 (More to come when I have more free time)
