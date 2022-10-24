@@ -3,7 +3,6 @@ published: true
 layout: post
 title: Living in a Postselected World
 ---
-## Living in a postselected world
 
 Suppose you see someone flip a coin five times, and get five heads. What's the chance that the next time they flip the coin, it's also heads?
 

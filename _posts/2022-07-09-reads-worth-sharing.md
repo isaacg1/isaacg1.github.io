@@ -2,7 +2,6 @@
 published: true
 layout: post
 ---
-## Reads Worth Sharing
 
 Articles that I read, that I liked and you might like too (videos, etc. also allowed). This time I'm going to organize it by subject material.
 

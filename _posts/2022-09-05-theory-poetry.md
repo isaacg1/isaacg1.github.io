@@ -2,7 +2,6 @@
 published: true
 layout: post
 ---
-## Theory Poetry
 
 Paper and guesswork,  
 symbol and feeling.  

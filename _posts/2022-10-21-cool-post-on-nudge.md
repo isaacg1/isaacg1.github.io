@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 title: Cool Post on Nudge
 ---
 
