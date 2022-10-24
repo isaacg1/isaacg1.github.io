@@ -4,4 +4,4 @@ _site
 .jekyll-cache
 *.swp
 *.log
-**/--live-reload
+--livereload/
