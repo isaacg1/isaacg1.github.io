@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Paper 1: Push-Pull Block Puzzles are Hard"
+title: 'Paper 1: Push-Pull Block Puzzles are Hard'
+published: true
 ---
 
 I'm going to write recaps of all of the papers I've written,
 in chronological order.
 
-I'm starting with my first paper: ["Push-Pull Block Puzzles are Hard"](assets/push-pull.pdf).
+I'm starting with my first paper: ["Push-Pull Block Puzzles are Hard"](/assets/push-pull.pdf).
 This paper was written during my undergrad at MIT with my collaborator
 [Jayson Lynch](https://www.linkedin.com/in/jayson-lynch-b6297ab),
 then a PhD student at MIT and now a Posdoc at University of Waterloo,
@@ -95,7 +96,7 @@ Here's a solution path for this level (left to right, top to bottom):
 
 Given how hard the game can be casually,
 we were interested in the computational complexity of the game:
-could we prove that the game is as hard or complete for some well-known complexity class?
+could we prove that the game is hard or complete for some well-known complexity class?
 This would be quite difficult, because to the best of my knowledge,
 people had previously only characterized the complexity of non-reversible variants of the game.
 In such settings, it's often a lot easier to construct hard levels,
@@ -142,7 +143,7 @@ and traversing it flips the internal state.
 These 2-toggles are very fundamental objects in the theory of reversible motion games.
 
 At the time, we did not know how to make interesting constructions out of 2-toggles.
-That would be remedied in [our later paper](assets/load-balancing.pdf).
+That would be remedied in [our later paper](/assets/load-balancing.pdf).
 
 Fortunately, we can push the above gadget further.
 Imagine taking another copy of the above gadget and rotate it in the third dimension

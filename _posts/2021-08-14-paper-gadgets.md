@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "Paper 2: Computational Complexity of Motion Planning of a Robot through Simple Gadgets"
+title: >-
+  Paper 2: Computational Complexity of Motion Planning of a Robot through Simple
+  Gadgets
+published: true
 ---
 
-Next, my second paper: ["Computational Complexity of Motion Planning of a Robot through Simple Gadgets"](assets/motion-planning.pdf).
+Next, my second paper: ["Computational Complexity of Motion Planning of a Robot through Simple Gadgets"](/assets/motion-planning.pdf).
 This paper was written during my undergrad at MIT with my collaborator
 [Jayson Lynch](https://www.linkedin.com/in/jayson-lynch-b6297ab),
 then a PhD student at MIT and now a Postdoc at University of Waterloo,
@@ -13,7 +16,7 @@ also contributed to the paper.
 We published in FUN 2018.
 
 This paper followed immediately upon my first paper:
-["Push-Pull Puzzles are Hard"](assets/push-pull.pdf).
+["Push-Pull Puzzles are Hard"](/assets/push-pull.pdf).
 In that paper, we proved that mazes with with an gadget called a 4-toggle are
 PSPACE-complete to solve (extremely difficult).
 For comparison, normal mazes with no state-based objects
@@ -178,7 +181,7 @@ A noncrossing toggle-lock (NTL):
     ----------|-->|---|-->|----------
               =====   =====
 
-Cost: 38 P2T.
+Cost: 33 P2T.
 
 The upper region is collectively the lock,
 while the lower pathway is the toggle.
@@ -219,7 +222,7 @@ Here's how we construct the round parallel-2-toggle-lock:
      ---------|-O-|------------
               =====
 
-Cost: 51 P2T.
+Cost: 58 P2T.
 
 The lowest pathway is clearly a lock.
 The upper region is a bit more complicated.
@@ -271,7 +274,7 @@ as follows:
      :          | v |
      :          =====
 
-Cost: 63 P2T.
+Cost: 82 P2T.
 
 This one's very straightforward,
 the character has no options.
@@ -292,7 +295,7 @@ It's very straightforward:
       \-|<--|-/
         =====
 
-Cost: 63 P2T.
+Cost: 82 P2T.
 
 Now, we're going to construct another 3-pathway gadget, the stacked tripwire-lock-tripwire (SWLW):
 
@@ -308,7 +311,7 @@ Now, we're going to construct another 3-pathway gadget, the stacked tripwire-loc
     ----|-*-|---|-*-|----
         =====   =====
 
-Cost: 252 P2T.
+Cost: 328 P2T.
 
 The unlocked states of the SWLW are the ones like the diagrammed state,
 where the inner 4 locks are in a checkerboard pattern - this pattern or all flipped.
@@ -352,7 +355,7 @@ and it can be traversed top to bottom or left to right, but in no other way.
     | =====              |   |
     \--------------------|-*-|--
                          =====
-Cost: 1008 P2T!
+Cost: 1312 P2T!
 
 I know this looks complicated, but it's not so bad.
 There's two pathways: From top left to bottom right,

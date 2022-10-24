@@ -3,7 +3,6 @@ published: true
 title: 'Post 3: SRPT for Multiserver Systems'
 layout: post
 ---
-## Post 3: SRPT for Multiserver Systems
 
 Time for my third paper: ["SRPT for Multiserver Systems"](/assets/srpt.pdf). This was the first paper I wrote during my PhD at CMU, submitted around the end of my first year. My coauthors were [Ziv Scully](https://ziv.codes/), then a fellow PhD student, now a postdoc at the Simons institute, soon to be a professor at Cornell, and [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/), my advisor (and Ziv's).
 
@@ -77,6 +76,8 @@ for general adversarial arrivals.
 We prove two major results in our paper: A bound on multiserver SRPT's mean response time,
 and an asymptotic optimality result which follows from the bound.
 
+Our bound is proven relative to the mean response time in a single-server SRPT system, which we call SRPT-1 system, which is well understood, and is also a lower bound on the optimal policy.
+
 Let's start by talking about how we prove the bound.
 
 To prove this bound, we use a *tagged job* approach.
@@ -102,8 +103,73 @@ The one caveat is that while the tagged job is in service,
 the other servers might be empty, or working on irrelevant jobs.
 We'll call this "virtual work", and we'll account for it in the bound.
 
+### Types of work
+
 We break up the work in the system into four categories:
 
 * Old work: The relevant work in the system when the tagged job arrives.
 
 * New work: Relevant work that arrives while the tagged job is in the system.
+
+* Virtual work: Time when the servers are not completing relevant work.
+
+* Tagged work: the tagged job itself.
+
+All of these except for old work are easy to bound:
+
+* New work is the same as in an SRPT-1 system, and hence well understood.
+
+* Virtual work can only occur when the tagged job is in service, on the other k-1 servers. There is at most (k-1)x virtual work.
+
+* There is x tagged work.
+
+### Old work
+
+Now, let's focus on the old work. Because the arrival process is a Poisson process, by the PASTA principle we know that the distribution of old work that the tagged job encounters is the same as the time average amount of relevant work in the system. We write this random variable W^SRPT-k_x, or W^k_x for short.
+
+We want to show that W^k_x is not much bigger than the corresponding distribution in the SRPT-1 system that we are comparing to, W^1_x.
+
+To do so, let's set up two systems, receiving the same arrivals. One is an SRPT-k system, one is an SRPT-1 system. This is called "coupling" the two systems.
+
+Let's focus on the difference in relevant work W^k_x - W^1_x between the two systems.
+First, notice that arrivals don't change difference, because they contribute the same relevant work to both systems. Next, note that when there are at least k relevant jobs in the SRPT-k system, relevant work is completed at rate 1, the maximum possible rate, and ao the difference isn't increasing (it might decrease).
+
+Thus, to bound the size of the difference, we only have to examine times when the SRPT-k system has less than k relevant jobs, or when jobs become relevant by being served down to remaining size x. In both cases, there are at most k relevant jobs in the SRPT-k, for a total of at most kx relevant work in the system, and a difference of kx.
+
+As a result, the difference in relevant work between the two systems is at most kx at all times. As a side note, this is also the key idea behind the Leonardi and Raz worst-case result.
+
+### Response time analysis
+
+Now we're ready to put together the bound on mean response time in the SRPT-k system, relative to the SRPT-1 system. After a few intergals, the bound comes out to
+
+    E[T^SRPT-k] <= E[T^SRPT-1] + 2kE[S](ln(1/(1-rho))+1)
+    
+There's a tighter bound in the paper, but this one is easier to understand.
+
+To prove asymptotic optimality, we just need to show that E[T^SRPT-1] grows faster than 1/(1-rho) in the rho to 1 limit. This doesn't always hold, but it holds if the job isze distribution satisfies  acondition slightly stronger than finite variance. We hadn an unnecessarily complicated condition in this paper, but in our later paper [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf), in Theorem 1.3 in Appendix B.2, we showed that asymptotic optimality holds whenever E[S^2 (log S)^+] is finite.
+
+We've done it! SRPT-k is asymptotically optimal!
+
+### Other policies
+
+The same techniques also allow us to analyze Preemptive Shortest Job First, PSJF, and FB, Foreground-Background.
+
+PSJF prioritizes jobs of least original size, in contrast to SRPT, which prioritizes jobs of least remaining size. Our proof works just the same on PSJF-k as on SRPT-k, and shows that PSJF-k is also asymptotically optimal.
+
+FB prioritizes jobs of least age, the job that has received the keast esrvice so far. FB is a policy best suited to situations where the scheduling policy doesn't know the job size in advance, and where jobs that have been served for a while and have not completed are less likely to finish soon.
+
+This condition on the job size distribution is called "Decreasing Hazard Rate", and many important distributions, such as the Weibull and (shifted) Pareto distributions, have this property.
+
+FB-1 has been proven to be optimal for unknown sizes and a DHR job size distribution. We show that FB-k is likewise asymptotically optimal.
+
+### Retrospective 
+
+This paper was wonderful, and I'm really glad I wrote it. It's a very clean and self-contained result, and yet it opens up a whole new direction of results on multiserver scheduling, which I explored in my letter work.
+
+In some ways, the key idea of the paper is "The easiest policies to understand are the ones that are close to optimal.", which I think is a really cool takeaway.
+
+This paper won the Best Student Paper Award at IFIP Performance, which got me completely by surprise and was a wonderful experience.
+
+### Future Problem
+
+I'm interested in the question of  when SRPT-k is suboptimal. We know it's asymptotically optimal, but that's not the end of the story. I think a good venue to study this is the setting of deterministic job sizes, because then SRPT-k is just serving jobs nonpreemptively, making it easier for another policy to win.
