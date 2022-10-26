@@ -1,6 +1,6 @@
 ---
 published: true
-title: 'Post 3: SRPT for Multiserver Systems'
+title: 'Paper 3: SRPT for Multiserver Systems'
 layout: post
 ---
 
