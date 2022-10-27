@@ -67,7 +67,7 @@ where n is the number of jobs, and P is the ratio of the sizes of the largest an
 * Any online policy's competitve ratio with respect to the optimal offline policy is at least
 Ω(log n) and at least Ω(log P).
 
-Combining these results, we find that SRPT is within a constant factor fo the optimal online policy,
+Combining these results, we find that SRPT is within a constant factor of the optimal online policy,
 but also that no online policy can achieve a constant competitive ratio,
 for general adversarial arrivals.
 
@@ -140,13 +140,13 @@ As a result, the difference in relevant work between the two systems is at most 
 
 ### Response time analysis
 
-Now we're ready to put together the bound on mean response time in the SRPT-k system, relative to the SRPT-1 system. After a few intergals, the bound comes out to
+Now we're ready to put together the bound on mean response time in the SRPT-k system, relative to the SRPT-1 system. After a few integrals, the bound comes out to
 
     E[T^SRPT-k] <= E[T^SRPT-1] + 2kE[S](ln(1/(1-rho))+1)
     
 There's a tighter bound in the paper, but this one is easier to understand.
 
-To prove asymptotic optimality, we just need to show that E[T^SRPT-1] grows faster than 1/(1-rho) in the rho to 1 limit. This doesn't always hold, but it holds if the job isze distribution satisfies  acondition slightly stronger than finite variance. We hadn an unnecessarily complicated condition in this paper, but in our later paper [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf), in Theorem 1.3 in Appendix B.2, we showed that asymptotic optimality holds whenever E[S^2 (log S)^+] is finite.
+To prove asymptotic optimality, we just need to show that E[T^SRPT-1] grows faster than 1/(1-rho) in the rho to 1 limit. This doesn't always hold, but it holds if the job size distribution satisfies a condition slightly stronger than finite variance. We had an unnecessarily complicated condition in this paper, but in our later paper [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf), in Theorem 1.3 in Appendix B.2, we showed that asymptotic optimality holds whenever E[S^2 (log S)^+] is finite.
 
 We've done it! SRPT-k is asymptotically optimal!
 
@@ -156,7 +156,7 @@ The same techniques also allow us to analyze Preemptive Shortest Job First, PSJF
 
 PSJF prioritizes jobs of least original size, in contrast to SRPT, which prioritizes jobs of least remaining size. Our proof works just the same on PSJF-k as on SRPT-k, and shows that PSJF-k is also asymptotically optimal.
 
-FB prioritizes jobs of least age, the job that has received the keast esrvice so far. FB is a policy best suited to situations where the scheduling policy doesn't know the job size in advance, and where jobs that have been served for a while and have not completed are less likely to finish soon.
+FB prioritizes jobs of least age, the job that has received the least service so far. FB is a policy best suited to situations where the scheduling policy doesn't know the job size in advance, and where jobs that have been served for a while and have not completed are less likely to finish soon.
 
 This condition on the job size distribution is called "Decreasing Hazard Rate", and many important distributions, such as the Weibull and (shifted) Pareto distributions, have this property.
 
@@ -164,11 +164,13 @@ FB-1 has been proven to be optimal for unknown sizes and a DHR job size distribu
 
 ### Retrospective 
 
-This paper was wonderful, and I'm really glad I wrote it. It's a very clean and self-contained result, and yet it opens up a whole new direction of results on multiserver scheduling, which I explored in my letter work.
+This paper was wonderful, and I'm really glad I wrote it. It's a very clean and self-contained result, and yet it opens up a whole new direction of results on multiserver scheduling, which I explored in my latter work.
 
 In some ways, the key idea of the paper is "The easiest policies to understand are the ones that are close to optimal.", which I think is a really cool takeaway.
 
-This paper won the Best Student Paper Award at IFIP Performance, which got me completely by surprise and was a wonderful experience.
+This paper won the Best Student Paper Award at IFIP Performance 2018 in Toulouse, France,
+the first conference I ever attended.
+The award took me completely by surprise and was a wonderful experience.
 
 ### Future Problem
 
