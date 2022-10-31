@@ -26,4 +26,4 @@ Check out my [blog](blog).
 
 Here's some art I made:
 
-![Art](/assets/broken-glass.svg)
+<img src="/assets/broken-glass.svg" alt="Art" width="200"/>
