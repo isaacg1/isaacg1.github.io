@@ -25,6 +25,7 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2
 Isaac Grosof, Naifeng Zhang, Marijn Heule. *Pragmatics of SAT*, August 2022.
 
 [\[paper\]](/assets/php.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2207.11284)
 
 ### [Uniform Bounds for Scheduling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf)
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
