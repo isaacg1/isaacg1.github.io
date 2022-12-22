@@ -16,3 +16,7 @@ So while Discovery is at war and most prior shows were at peace, Discovery does 
 ---
 
 Also, Stamets and Culber are gay and it's not a big deal, just wholesome. I love it!
+
+## After S1E6
+
+I correctly predicted that after the Admiral said "When I get back, you're stepping down" to Lorca, that she wasn't coming back.
