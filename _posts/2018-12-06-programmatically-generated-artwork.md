@@ -3,8 +3,16 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made eleven rust programs for programmatically generating artwork in different styles.
+I have made fourteen rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Watercolors
+
+Points are seeded. Colors initially diffuse wildly, then more gently as distance from seed increases. Mixture of DFS and Random selection of pixels to fill in. Small amount of fuzzing to smooth edges and fill in gaps.
+
+[Repository](https://github.com/isaacg1/water-me)
+
+![Watercolors](/assets/watercolors.png)
 
 ## Sand Walk
 
