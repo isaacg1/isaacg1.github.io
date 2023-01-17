@@ -25,7 +25,7 @@ then there would be about c<sup>2</sup>n ways to write `n` as the sum of
 two of those integers, and so a linear density would not be maintainable.
 
 However, the reality is very different.
-The `i`th Ulam number is trends towards 13.5167`i` as `i` gets large.
+The `i`th Ulam number trends towards 13.5167`i` as `i` gets large.
 In other words, the true density is about 1/13.5167 ~ 0.0739879.
 Here's a plot showing this behavior up to the 3 millionth Ulam number:
 
@@ -33,7 +33,7 @@ Here's a plot showing this behavior up to the 3 millionth Ulam number:
 
 Why does this happen?
 While this is an open problem,
-we can get bit of intuition by looking at a sequence I'll call the
+we can get a bit of intuition by looking at a sequence I'll call the
 "Ulam-0" numbers,
 which are the positive integers that can be written as the sum of two distinct smaller Ulam
 numbers in exactly **zero** ways, with 1 and 2 as base cases.
@@ -66,7 +66,7 @@ modulo `𝜆`:
 Outside that middle third there are almost no Ulam numbers:
 there are only 6495 outliers among the first trillion Ulam numbers.
 Despite how rare these outliers are,
-the outliers are incredible important.
+the outliers are incredibly important.
 The sum of two numbers in the interval `(𝜆/3, 2𝜆/3)`
 will always be outside that interval,
 so almost all Ulam numbers are the sum of one number in the interval and one outlier.
