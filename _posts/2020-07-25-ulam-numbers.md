@@ -52,7 +52,7 @@ to the Ulam numbers.
 So is there a modulus hiding in the Ulam numbers?
 The answer, surprisingly enough, is yes.
 The best research on this has been conducted in the (pre-print) paper
-[The Ulam Numbers up to One Trillion](_Gibbs/publication/320980165_The_Ulam_Numbers_up_to_One_Trillion/links/5a058786aca2726b4c78588d/The-Ulam-Numbers-up-to-One-Trillion.pdf)
+[The Ulam Numbers up to One Trillion](https://www.researchgate.net/profile/Philip-Gibbs-2/publication/320980165_The_Ulam_Numbers_up_to_One_Trillion/links/5a058786aca2726b4c78588d/The-Ulam-Numbers-up-to-One-Trillion.pdf)
 by Philip Gibbs and Judson McCranie.
 The hidden modulus is ``2.443442967784743433...``,
 which the authors call `𝜆`.
