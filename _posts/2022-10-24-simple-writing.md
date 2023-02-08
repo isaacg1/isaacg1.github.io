@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "What I Think About and Prove"
+title: What I think about and prove (1000 most common words)
+published: true
 ---
 
 (A description of my research, using only the thousand most common words, as checked by [XKCD's Simple Writer](https://xkcd.com/simplewriter/))
@@ -46,10 +47,3 @@ or if we just have a guess for its size.
 A final line of my work looks at the waiting time of the slowest few jobs to finish,
 while everything above is about the mean waiting time.
 I've got lots of new ideas that I'm working on right now -- I hope I can prove new and exciting things!
-
-
-
-
-
-
-
