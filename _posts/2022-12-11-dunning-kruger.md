@@ -37,8 +37,8 @@ width=500/>
 
 The nonmonotonic DK claim is the standard understanding of the Dunning-Kruger effect
 among members of the general public.
-If I do a Google Image search of [dunning kruger effect](dunning kruger effect),
-the first 20 images are all depictions of the nonmonotonic DK claim.
+If I do a Google Image search of "[dunning kruger effect](https://www.google.com/search?q=dunning+kruger+effect&tbm=isch)",
+19 of the first 20 images are all depictions of the nonmonotonic DK claim.
 
 But if we look inside a research paper on the Dunning-Kruger effect,
 we see something very different,
@@ -89,7 +89,7 @@ the authors, including Dunning and Kruger, start their paper with the following 
 > and understanding are filled with doubt and indecision.
 > Bertrand Russell (1951)
 
-This is fundamentally a statement of nonmonotonic DK - "those who feel certainty are stupid."
+This is fundamentally a statement of nonmonotonic DK -- "those who feel certainty are stupid."
 It is a claim of negative correlation between perception and reality.
 
 However, immediately afterwards, the authors go on to state:
@@ -102,7 +102,7 @@ However, immediately afterwards, the authors go on to state:
 > found not only in the laboratory but also in the class-
 > room, health clinic, and the workplace.
 
-This is a claim of flattening DK - "only modestly correlated"!
+This is a claim of flattening DK -- "only modestly correlated"!
 The conflation between the two claims has been present from the start.
 The paper then goes on to demonstrates flattening DK, not nonmonotonic DK.
 A reader who is not reading very closely could easily come away thinking that
