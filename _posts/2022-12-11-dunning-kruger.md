@@ -38,7 +38,7 @@ width=500/>
 The nonmonotonic DK claim is the standard understanding of the Dunning-Kruger effect
 among members of the general public.
 If I do a Google Image search of "[dunning kruger effect](https://www.google.com/search?q=dunning+kruger+effect&tbm=isch)",
-19 of the first 20 images are all depictions of the nonmonotonic DK claim.
+19 of the first 20 images are depictions of the nonmonotonic DK claim.
 
 But if we look inside a research paper on the Dunning-Kruger effect,
 we see something very different,
@@ -75,7 +75,7 @@ and certainly not widely believed.
 
 ## The source of the confusion
 
-When tracing the source of this confusion, we must go all the way back to the source.
+When tracing the source of this confusion, we must go all the way back to the beginning.
 Researchers including Dunning and Kruger commonly conflate
 nonmonotonic DK and flattening DK.
 Nonmonotonic DK draws people in and gets people excited,
@@ -104,7 +104,7 @@ However, immediately afterwards, the authors go on to state:
 
 This is a claim of flattening DK -- "only modestly correlated"!
 The conflation between the two claims has been present from the start.
-The paper then goes on to demonstrates flattening DK, not nonmonotonic DK.
+The paper then goes on to demonstrate flattening DK, not nonmonotonic DK.
 A reader who is not reading very closely could easily come away thinking that
 nonmonotonic DK had been demonstrated, given the conflation of the claims.
 This conflation of claims, in this paper and others,
