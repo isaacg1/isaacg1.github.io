@@ -252,7 +252,7 @@ This indicates that the specific context of the probability problem
 caused it to fail at basic arithmetic,
 not just the content of the arithmetic itself.
 
-In each of the 8 attempts at the two problems,
+In each of the 8 attempts at the two probability problems,
 the response was thoroughly incorrect,
 and would have received a failing grade.
 If a student submitted these answers,
