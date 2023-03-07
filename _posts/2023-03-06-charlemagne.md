@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Charlemagne's Eldest Descendants"
+title: Charlemagne's Eldest Descendants
 layout: post
 ---
 
@@ -93,7 +93,7 @@ Duke of the Franks, Count of Paris
 Duke of Upper Lorraine
   * m 985: Richilde of Bliesgau and Metz
   * (990-?: [Adelaide](https://en.wikipedia.org/wiki/Waleran_I_of_Limburg),
-  Countess of Alon. 2 descendants? History muddled)
+  Countess of Arlon. 2 descendants? History muddled)
 10. 995-1026: [Frederick II](https://en.wikipedia.org/wiki/Frederick_II,_Duke_of_Upper_Lorraine),
 Duke of Upper Lorraine
   * m 1012: [Matilda of Swabia](https://en.wikipedia.org/wiki/Matilda_of_Swabia), 990-1032
