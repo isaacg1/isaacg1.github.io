@@ -107,7 +107,7 @@ Count of Montbeliard, Count of Bar, Lord of Mousson, Count of Verdun
 Count of Montbeliard
   * m: ?
   * (?-1155?: [Theodoric III](), Count of Montbeliard. Unknown children?)
-14. ?-1148: Sophie, Countess of Montfaucon
+14. 1111?-1148: Sophie, Countess of Montfaucon
   * m 1128: [Richard II](https://fr.m.wikipedia.org/wiki/Richard_II_de_Montfaucon),
   Count of Montfaucon
 15. 1130-1195: [Amadeus II](https://en.wikipedia.org/wiki/Amadeus_II_of_Montfaucon),
@@ -118,7 +118,7 @@ Count of Montbeliard
   * m: Agnes de Bourgogne
 17. 1205-1283: [Thierry III](https://fr.m.wikipedia.org/wiki/Thierry_III_de_Montb%C3%A9liard),
 Count of Montbeliard
-  * m: Alix vor Pfirt, Lady of Belfort
+  * m: Alix von Pfirt, Lady of Belfort
   * (?-1279: Richard de Montfaucon. Unknown children?)
 18. ?-1277: Sibylle de Montfaucon
   * m: [Rudolf III](https://fr.m.wikipedia.org/wiki/Rodolphe_III_de_Neuch%C3%A2tel),
@@ -139,11 +139,10 @@ Countess of Montbeliard
   Lord of Montfaucon, 1318-1367
 22. 1325-1397: [Stephen](https://en.wikipedia.org/wiki/Stephen_of_Montfaucon),
 Lord of Monfaucon, Count of Montbeliard
-  * m: Marguerite of Chalon-Arlay
-  * (?-?: Louis. Died in childhood)
-23. ?-1396: [Henry II](https://fr.wikipedia.org/wiki/Henri_de_Montb%C3%A9liard),
+  * m 1354: Marguerite of Chalon-Arlay, 1338-1392
+23. 1360-1396: [Henry II](https://fr.wikipedia.org/wiki/Henri_de_Montb%C3%A9liard),
 Lord of Montbeliard, Orbe, Echallens, Marnay, and Montagny-le-Corbos
-  * m 1383: Marie, Vincountess of Bligny
+  * m 1383: Marie of Chatillon, Vincountess of Bligny
 24. 1387-1444: [Henriette](https://en.wikipedia.org/wiki/Henriette,_Countess_of_Montb%C3%A9liard),
 Countess of Montbeliard
   * m: [Eberhard IV](https://en.wikipedia.org/wiki/Eberhard_IV,_Count_of_W%C3%BCrttemberg),
@@ -195,7 +194,7 @@ Margrave of Baden-Baden
   Margrave of Baden-Baden. 4 descendants. Extinct 1789)
   * (1703-1709: Wilhelm Georg of Baden-Baden. Died in childhood)
 34. 1704-1726: [Auguste of Baden-Baden](https://en.wikipedia.org/wiki/Auguste_of_Baden-Baden)
-  * m 1724: [Louis](https://en.wikipedia.org/wiki/Louis,_Duke_of_Orl%C3%A9ans_(1703%E2%80%931752),
+  * m 1724: [Louis](https://en.wikipedia.org/wiki/Louis,_Duke_of_Orl%C3%A9ans_(1703%E2%80%931752)),
   Duke of Orleans, First Prince of the Blood, 1703-1752
 35. 1725-1785: [Louis Philippe I](https://en.wikipedia.org/wiki/Louis_Philippe_I,_Duke_of_Orl%C3%A9ans), Duke of Orleans, First Prince of the Blood
   * m 1743: [Louise Henriette de Bourbon](https://en.wikipedia.org/wiki/Louise_Henriette_de_Bourbon),
@@ -227,7 +226,7 @@ Princess of Savoy-Aosta
   * m 1953: [Robert](https://en.wikipedia.org/wiki/Robert,_Archduke_of_Austria-Este),
   Archduke of Austria-Este, 1915-1966
 43. **1954-current: Maria Beatrice, Archduchess of Austria-Este**
-  * m: Riprand, Count of Arco-Zinneberg, 1955-2021
+  * m 1980: Riprand, Count of Arco-Zinneberg, 1955-2021
 44. **1981-current: Anna Theressa, Countess of Arco-Zinneberg**
   * m 2019: Colin McKenzie, 1976-current
 45. **2019-current: Josephine**
