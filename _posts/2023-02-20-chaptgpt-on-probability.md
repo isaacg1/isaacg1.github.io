@@ -238,7 +238,7 @@ A human, having made a mistake, might at this point realize that they had made a
 and go back to try to correct things.
 ChatGPT never does this,
 presumably because it was trained on text that didn't contain many mistakes,
-and contained very few examples of people realizing mistakes halfway through and correct them.
+and contained very few examples of people realizing mistakes halfway through and correcting them.
 
 ChatGPT performs worst of all on basic arithmetic such as working with fractions,
 and basic algebra.
