@@ -13,7 +13,7 @@ To appear in *ACM SIGMETRICS*, June 2023.
 [\[slides\]](/assets/msj-srpt-harvard-mit.pptx)
 [\[talks\]](/talks/#optimal-scheduling-in-the-multiserver-job-model)
 
-### [WCFS: A new framework for analyzing multiserver systems](/assets/finite-skip.pdf)
+### [WCFS: A new framework for analyzing multiserver systems](/assets/wcfs.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2022.
 
 [\[paper\]](/assets/wcfs.pdf)
