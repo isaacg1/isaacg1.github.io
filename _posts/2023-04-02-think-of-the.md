@@ -38,6 +38,10 @@ Keep in mind that a "Think of the children" or any "Think of the ____"-type argu
 
 For instance, if someone says "Swearing on TV should be banned! Think of the children!", it wouldn't be very effective to say "Swearing is great! It's critical for the realism of many shows! Children will love it!". Instead, one could say "So, what I'm hearing is it's important for you to know which shows have swearing, so you can select from the ones without swearing to show to your children". This reframing implicitly removes the ability of the other party to speak for all children, instead framing them as just speaking for their own children - which is probably more accurate. This allows the discourse to proceed, rather than be derailed into an argument about who cares about children more.
 
-The "Think of the ____" rhetorical tactic is an important one to be aware of, and has the potential to derail many weighty conversations. Keep an eye out for it, and respond appropriately.
+## Conclusion 
+
+The "Think of the ____" rhetorical tactic is an important one to be aware of, and has the potential to derail many important conversations. Keep an eye out for it, and respond appropriately.
+
+At the same time, don't instinctively shun discussion of how a proposal will affect a group seen as in need of protection. Instead, consider whether the group is being discussed for reasons inherent to the topic, or more to win the argument.
 
 
