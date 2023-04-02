@@ -11,7 +11,7 @@ In the discourse around trans kids playing school sports, you'll see arguments l
 
 The refrain, "Think of the children!" serves primarily to move the discourse away from an analytical, evidence based mode of argument and into a more instinctive, emotional mode of argument.
 
-I've seen similar argument tactics used in situations where certain marginalized groups, especially intersectionally marginalized groups, will be the focus of the conversation. Members of the marginalized group, and other people in the discussion, will frame their preferences as protecting or supporting members of the marginalized group, moving to supercede any considerations other than what's based for that group, even if the connection between the preference and the marginalized group is tenuous at based.
+I've seen similar argument tactics used in situations where certain marginalized groups, especially intersectionally marginalized groups, will be the focus of the conversation. Members of the marginalized group, and other people in the discussion, will frame their preferences as protecting or supporting members of the marginalized group, moving to supercede any considerations other than what's best for that group, even if the connection between the preference and the marginalized group is tenuous at best.
 
 The common thread is framing one's arguments around protecting a group that all members of the discussion agree is in need of protection, implying that one's preferred position is the only way to protect members of that group, and that anyone who takes a different position doesn't care about members of that group.
 
@@ -34,7 +34,7 @@ I also want to clarify that this rhetorical tactic is by no means confined to an
 
 ## How can one effectively respond when this tactic is invoked?
 
-Keep in mind that a "Think of the children" or any "Think of the ____"-type argument is effectively a call to move to a more emotional and intuitive discourse framework. If one doesn't want to engage in that type of discourse, taking a step back, reframing the conversation, or shifting to a different level of specificity can all be helpful.
+Keep in mind that a "Think of the children" or any "Think of the ____"-type argument is effectively a call to move to a more emotional and intuitive discourse framework. If one doesn't want to engage in that type of discourse, taking a step back, reframing the conversation, or shifting to a different level of specificity can all be helpful. Directly engaging with the question of what is best for the group invoked is often not useful.
 
 For instance, if someone says "Swearing on TV should be banned! Think of the children!", it wouldn't be very effective to say "swearing is great! It's critical for the realism of many shows!". Instead, one could say "So, what I'm hearing is it's important for you to know which shows have swearing, so you can select from the ones without swearing to show to your children". This reframing implicitly removes the ability of the other party to speak for all children, instead framing them as just speaking for their own children - which is probably more accurate. This allows the discourse to proceed, rather than be derailed into an argument about who cares about children more.
 
