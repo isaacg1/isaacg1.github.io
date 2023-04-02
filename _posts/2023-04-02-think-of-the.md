@@ -30,7 +30,7 @@ What I find disingenuous is taking a topic that doesn't inherently center member
 
 The particularly bad use of this tactic is when such reframing is done by people who are not members of the group affected and who don't do much to verify whether the actions that they claim will protect the group will actually do so. Instead, people often just use the group as a rhetorical device to push whatever their preference is, by claiming without much evidence that it's the only way to protect the members of such a group.
 
-I also want to clarify that this rhetorical tactic is by no means confined to any one discourse community. The groups framed as in need of protection often change from community to community, but the underlying pattern is the same.
+I also want to clarify that this rhetorical tactic is by no means confined to any one discourse community. The groups framed as in need of protection often changes from community to community, but the underlying pattern is the same.
 
 ## How can one effectively respond when this tactic is invoked?
 
