@@ -4,18 +4,16 @@ published: true
 ---
 ![Isaac Grosof's portrait](/assets/mountain.jpg)
 
-I'm currently on the academic job market, applying for faculty and postdoc positions in computer science, operations research, and related departments. Click here for my [application materials](/job-market), as well as sample recorded talks.
+I have accepted a faculty position at Northwestern University, Industrial Engineering and Management Sciences department. I will start there in Fall 2024. I will be doing a postdoc in the intervening year, at Georgia Tech from August 1 '23 to February 1 '24, and at UIUC from February 1 '24 to August 1 '24.
 
-Isaac Grosof is a sixth-year PhD student in CS at Carnegie Mellon University,
-advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
-They are currently on the academic job market, looking for positions in Theoretical Computer Science and Operations Research.
-They work on stochastic scheduling and resource allocation, with a focus on optimal policies.
-Isaac has received
-the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions), the award for the best student paper in the field of operations research. They also have received
+I work on stochastic scheduling and resource allocation, with a focus on optimal policies.
+I have received
+the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions), the award for the best student paper in the field of operations research.
+I also have received
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
 the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
 and the [**IFIP Performance 2018 Best Student Paper Award**](publications/#srpt-for-multiserver-systems).
-They are a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023), a fellowship recognizing academic excellence and leadership.
+I am a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023), a fellowship recognizing academic excellence and leadership.
 
 Check out my [thesis proposal](/assets/thesis-proposal.pdf),
 which gives a good overview of the core of my research.
