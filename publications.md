@@ -61,6 +61,7 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
 
 [\[paper\]](/assets/m-gittins-k.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2003.13232)
+[\[MAMA paper\]](/assets/m-gittins-k-mama.pdf)
 [\[short paper\]](/assets/m-gittins-k-short.pdf)
 
 ### [The CacheLib Caching Engine: Design and Experiences at Scale](/assets/cachelib.pdf)
@@ -93,6 +94,7 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *IFIP Performance*, Dec. 2018. Als
 
 [\[paper\]](/assets/srpt.pdf)
 [\[arxiv\]](https://arxiv.org/abs/1805.07686)
+[\[MAMA paper\]](/assets/srpt-mama.pdf)
 [\[short paper\]](/assets/srpt-short.pdf)
 [\[talks\]](/talks/#srpt-for-multiserver-systems)
 
