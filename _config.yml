@@ -23,9 +23,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  isaacg1
 
 header_pages:
-    - job-market.md
     - publications.md
     - talks.md
+    - project-ideas.md
     - cv.md
     - blog.md
 
