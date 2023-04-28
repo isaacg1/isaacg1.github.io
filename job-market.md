@@ -3,8 +3,9 @@ layout: page
 title: "Job Market"
 permalink: /job-market/
 ---
-I am currently going on the job market, applying for tenure-track faculty positions and postdoc positions
-in computer science, operations research, and related departments.
+I have recently completed going on the academic job market. I will be a professor at Northwestern University, starting Fall 2024!
+
+For the benefit of future applicants, I'm leaving up my job market info here.
 
 ### Application Materials
 
@@ -42,7 +43,7 @@ in computer science, operations research, and related departments.
   * **Winner of the SIGMETRICS 2021 Best Paper Award.**
 
 * [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf)
-(Under submission)
+(SIGMETRICS 2023)
   * In modern computing systems, jobs often require large and variable amounts of resources,
   modeled by the multiserver-job system.
   We create *ServerFilling-SRPT*,
