@@ -10,6 +10,8 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
 To appear in *ACM SIGMETRICS*, June 2023.
 
 [\[paper\]](/assets/msj-srpt.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2211.02762)
+[\[short paper\]](/assets/msj-srpt-short.pdf)
 [\[slides\]](/assets/msj-srpt-harvard-mit.pptx)
 [\[talks\]](/talks/#optimal-scheduling-in-the-multiserver-job-model)
 
