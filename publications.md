@@ -3,7 +3,42 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-## Published and Submitted Papers
+
+[Submitted papers](#submitted-papers)
+
+[Full papers](#full-papers)
+
+## Submitted Papers
+
+### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
+Isaac Grosof, Michael Mitzenmacher.
+
+[\[paper\]](/assets/incentive-compatible.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2202.05747)
+
+### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf)
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
+Submitted to the MAMA workshop at SIGMETRICS 2023.
+
+[\[paper\]](/assets/product-mama.pdf)
+[\[old full version\]](/assets/multiserverjob-stability.pdf)
+[\[old full arxiv\]](https://arxiv.org/abs/2010.00631)
+[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
+
+The old version of the above paper was not accepted, with good reason.
+Much of the old paper was devoted to rederiving standard results on the saturated system,
+which we missed in our literature review.
+However, the product form result is still novel, and that's the focus of the MAMA version.
+
+
+### [ServerFilling: A better approach to packing multiserver jobs](/assets/applied.pdf)
+Isaac Grosof, Mor Harchol-Balter.
+Submitted to the ApPLIED workshop at PODC 2023.
+
+[\[paper\]](/assets/applied.pdf)
+
+## Full Papers
+If there is also a short version of a paper, it is listed together with the full version.
 
 ### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf)
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
@@ -115,17 +150,5 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 [\[blog post\]](/2021/08/12/paper-push-pull.html)
 
 ## Papers not currently under submission
-### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
-Isaac Grosof, Michael Mitzenmacher.
-Not yet published.
 
-[\[paper\]](/assets/incentive-compatible.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2202.05747)
-
-### [Stability for Two-Class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. Not yet published.
-
-[\[paper\]](/assets/multiserverjob-stability.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2010.00631)
-[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
 
