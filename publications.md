@@ -8,6 +8,10 @@ permalink: /publications/
 
 [Full papers](#full-papers)
 
+[Short papers](#short-papers)
+
+[//]: # [Other work](#other-work)
+
 ## Submitted Papers
 
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
@@ -149,6 +153,13 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 [\[arxiv\]](https://arxiv.org/abs/1709.01241)
 [\[blog post\]](/2021/08/12/paper-push-pull.html)
 
-## Papers not currently under submission
+## Short Papers
+
+### [Open Problem—M/G/k/SRPT Under Medium Load](/assets/srpt-medium.pdf)
+Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
+
+[\[paper\]](/assets/srpt-medium.pdf)
+
+[//]: # ## Papers not currently under submission
 
 
