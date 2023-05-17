@@ -20,26 +20,6 @@ Isaac Grosof, Michael Mitzenmacher.
 [\[paper\]](/assets/incentive-compatible.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2202.05747)
 
-### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf)
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
-Submitted to the MAMA workshop at SIGMETRICS 2023.
-
-[\[paper\]](/assets/product-mama.pdf)
-[\[old full version\]](/assets/multiserverjob-stability.pdf)
-[\[old full arxiv\]](https://arxiv.org/abs/2010.00631)
-[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
-
-The old version of the above paper was not accepted, with good reason.
-Much of the old paper was devoted to rederiving standard results on the saturated system,
-which we missed in our literature review.
-However, the product form result is still novel, and that's the focus of the MAMA version.
-
-
-### [ServerFilling: A better approach to packing multiserver jobs](/assets/applied.pdf)
-Isaac Grosof, Mor Harchol-Balter.
-Submitted to the ApPLIED workshop at PODC 2023.
-
-[\[paper\]](/assets/applied.pdf)
 
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
@@ -154,6 +134,29 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 [\[blog post\]](/2021/08/12/paper-push-pull.html)
 
 ## Short Papers
+
+### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf)
+Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
+To appear at the MAMA workshop at SIGMETRICS 2023.
+
+[\[paper\]](/assets/product-mama.pdf)
+[\[old full version\]](/assets/multiserverjob-stability.pdf)
+[\[old full arxiv\]](https://arxiv.org/abs/2010.00631)
+[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
+
+The old version of the above paper was not accepted, with good reason.
+Much of the old paper was devoted to rederiving
+[standard](http://www.math.nsc.ru/LBRT/v1/foss/saturat.pdf)
+[results](https://orsj.org/wp-content/or-archives50/pdf/e_mag/Vol.47_04_275.pdf)
+on the saturated system,
+which we missed in our literature review.
+However, the product form result is still novel, and that's the focus of the MAMA version.
+
+### [ServerFilling: A better approach to packing multiserver jobs](/assets/applied.pdf)
+Isaac Grosof, Mor Harchol-Balter.
+To appear at the ApPLIED workshop at PODC 2023.
+
+[\[paper\]](/assets/applied.pdf)
 
 ### [Open Problem—M/G/k/SRPT Under Medium Load](/assets/srpt-medium.pdf)
 Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
