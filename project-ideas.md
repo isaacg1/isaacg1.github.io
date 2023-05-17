@@ -1,14 +1,15 @@
 ---
 layout: page
-title: "Project Ideas"
+title: Project Ideas
 permalink: /project-ideas/
+published: true
 ---
 
 These are queueing research ideas that I'm interested in, but haven't gotten around to yet. If you're interested in any of them as a potential collaborator or advisee, let me know!
 
 I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
 
-Last updated: April 27, 2023.
+Last updated: May 17, 2023.
 
 ### Known size dispatching to FCFS queues
 
@@ -106,3 +107,18 @@ Compare against ServerFilling-SRPT, Guardrails, etc.
 
 Analyze RC in the PFSS for the MF.
 
+### Optimal Transform
+  
+My Nudge paper works very hard to do even the most basic analysis of the tail probability P(T>t). But maybe the reason this is hard is because we're effectively comparing the response time random variable against a constant, and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
+  
+The smoothest random variable is the exponential random variable. If we use that as our cutoff, we get P(T>Exp(s)), which is the [Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform) of response time. This still captures similar information, if we set s=1/t. It is also much easier to analyze: All SOAP policies and Nudge have transform analysis. So let's try to optimize the transform.
+  
+**Intuition:** Effectively, jobs abandon at rate s, and we want to maximize the fraction that we complete before they abandon. If jobs told us when they abandoned, the optimal policy is straightforward: run the small job that hasn't abandoned yet. But we don't know which jobs have abandoned. We need to use time in system as a proxy.
+  
+**First step:** Compute the transform for some common policies, like FCFS, SRPT, Nudge, via simulation and/or formula. Compare against simulated P(T>t), which we can call the "hard tail".
+  
+**Future steps:** Is the transform a good proxy for the hard tail?
+  
+Is the inverse transform a good proxy for the inverse hard tail, e.g. a percentile?
+  
+For a given pair of (time in system, remaining size), what's the optimal 2-job policy? Is it that index policy I came up with a while back? What's a semantic understanding of that policy? Can we analyze it? Is it empirically optimal in the full M/G/1? Does it perform well for the hard tail/percentiles?
