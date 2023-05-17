@@ -111,7 +111,7 @@ Analyze RC in the PFSS for the MF.
   
 My Nudge paper works very hard to do even the most basic analysis of the tail probability P(T>t). But maybe the reason this is hard is because we're effectively comparing the response time random variable against a constant, and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
   
-The smoothest random variable is the exponential random variable. If we use that as our cutoff, we get P(T>Exp(s)), which is the [Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform) of response time. This still captures similar information, if we set s=1/t. It is also much easier to analyze: All SOAP policies and Nudge have transform analysis. So let's try to optimize the transform.
+The smoothest random variable is the exponential random variable. If we use that as our cutoff, we get P(T>Exp(s)), which is the [Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform) of response time (Technically, it's P(T<Exp(s)), not P(T>Exp(s)) BM. This still captures similar information, if we set s=1/t. It is also much easier to analyze: All SOAP policies and Nudge have transform analysis. So let's try to optimize the transform.
   
 **Intuition:** Effectively, jobs abandon at rate s, and we want to maximize the fraction that we complete before they abandon. If jobs told us when they abandoned, the optimal policy is straightforward: run the small job that hasn't abandoned yet. But we don't know which jobs have abandoned. We need to use time in system as a proxy.
   
@@ -122,3 +122,13 @@ The smoothest random variable is the exponential random variable. If we use that
 Is the inverse transform a good proxy for the inverse hard tail, e.g. a percentile?
   
 For a given pair of (time in system, remaining size), what's the optimal 2-job policy? Is it that index policy I came up with a while back? What's a semantic understanding of that policy? Can we analyze it? Is it empirically optimal in the full M/G/1? Does it perform well for the hard tail/percentiles?
+  
+**Update:** The optimal 2-job strategy is to serve the job that maximizes e^-st e^-sr/(1-e^-sr).
+  
+Semantically, this is the probability of not abandoning prior to completion if run immediately, divided by the probability of abandoning while being run.
+  
+Note that this is a "conveyer belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
+  
+**Further steps:** Implement this policy in simulation. What's it's empirical transform?
+  
+Is the policy the optimal 3-job policy? Optimal without arrivals?
