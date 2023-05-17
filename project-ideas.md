@@ -129,6 +129,6 @@ Semantically, this is the probability of not abandoning prior to completion if r
   
 Note that this is a "conveyer belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
   
-**Further steps:** Implement this policy in simulation. What's it's empirical transform?
+**Further steps:** Implement this policy in simulation. What's its empirical transform? Is it empirically optimal?
   
 Is the policy the optimal 3-job policy? Optimal without arrivals?
