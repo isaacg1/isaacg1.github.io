@@ -125,7 +125,7 @@ For a given pair of (time in system, remaining size), what's the optimal 2-job p
   
 **Update:** The optimal 2-job strategy is to serve the job that maximizes e^-st e^-sr/(1-e^-sr).
   
-Semantically, this is the probability of not abandoning prior to completion if run immediately, divided by the probability of abandoning while being run.
+Semantically, this is the probability of not abandoning prior to the time of the decision, times the probability of not abandoning while run, divided by the probability of abandoning while being run.
   
 Note that this is a "conveyer belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
   
