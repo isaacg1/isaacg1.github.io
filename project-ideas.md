@@ -9,7 +9,7 @@ These are queueing research ideas that I'm interested in, but haven't gotten aro
 
 I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
 
-Last updated: May 17, 2023.
+Last updated: May 19, 2023.
 
 ### Known size dispatching to FCFS queues
 
@@ -73,6 +73,18 @@ David A. Stanford, Peter Taylor & Ilze Ziedins
 **First step**: Implement this policy. Compare it against SRPT-k. Fiddle around with job size distributions, loads, and a and b thresholds to find a relatively large separation (0.1% is normal, 1% is good).
 
 **Future steps**: Use a Nudge-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
+
+### Scheduling in the low-load limit
+
+**Setting:** The known-size M/G/k, under low load.
+
+**Intuition:** The dominant term comes from jobs arriving alone, then two-job interactions, etc. We find which policy is optimal, for which number of jobs. It's similar to the no-arrivals setting, for which SRPT-k is optimal, but more stochastic.
+
+**Basics:** For at most k jobs, there are no nontrivial decisions. For k+1 jobs, just be sure to serve the smallest job. For k+2, it becomes nontrivial.
+
+**First step:** If k=2, and we consider 4-job sequences, I believe we find that we must serve the smallest pair of any 3 jobs. Confirm?
+
+**Future steps:** Is SRPT-2 uniquely optimal at low load? Is SRPT-k? Expand to dispatching, MSJ, unknown sizes?
 
 ### M/G/k response time lower bounds (known size)
 
