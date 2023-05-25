@@ -27,11 +27,11 @@ Duckhouse is a fast-paced, aggressive game, just like Bughouse. Attacking is fav
 
 * The duck can aid in trapping pieces or giving smothered mate. This is especially powerful in concert with dropping pieces from the reserve, particularly knights and pawns.
 
-* The duck can hold squares open for future moves, especially future drops. Remember, the opponent is compelled to move the duck every turn. This can alone one to invade with a pawn chain, by using the duck to hold open the next square in the chain.
+* The duck can hold squares open for future moves, especially future drops. Remember, the opponent is compelled to move the duck every turn. This can allow one to invade with a pawn chain, by using the duck to hold open the next square in the chain.
 
 * The duck can cut off the opposing king's retreat. An important strategy in Duckhouse is sacrificing material to draw the opposing king into the open. The duck can be placed behind the opposing king to force it farther and farther out.
 
-* Distance checks can be bridged with the duck. In Bughouse, giving check when there is an open square between the checking piece and the opposing king is often not that effective. However, by giving check at distance 2 and placing the duck in the middle, the check is effectively converted into a contact check: the opponent cannot block the check, and must either move the king or capture the checking piece.
+* Distance checks can be bridged with the duck. In Bughouse, giving check when there is an open square between the checking piece and the opposing king is often not that effective, because the opponent can drop a piece to block. However, by giving check at distance 2 and placing the duck in the middle, the check is effectively converted into a contact check: the opponent cannot block the check, and must either move the king or capture the checking piece.
 
 ## Takeaways
 
