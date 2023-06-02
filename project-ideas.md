@@ -9,7 +9,7 @@ These are queueing research ideas that I'm interested in, but haven't gotten aro
 
 I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
 
-Last updated: May 19, 2023.
+Last updated: June 1, 2023.
 
 ### Known size dispatching to FCFS queues
 
@@ -144,3 +144,14 @@ Note that this is a "conveyer belt" policy: jobs never interchange priority. Thi
 **Further steps:** Implement this policy in simulation. What's its empirical transform? Is it empirically optimal?
   
 Is the policy the optimal 3-job policy? Optimal without arrivals?
+
+### Mutliserver Nudge
+
+Nudge was defined for the single-server setting.
+However, much of the analysis of Nudge relative to FCFS only relied on the arrival process,
+not the departure process. Does Nudge have better asymptotic tail than FCFS in the M/G/k?
+Stochastic dominance?
+
+**First step:** Simulate Nudge in the M/G/k.
+
+**Future step:** Port the analysis to the M/G/k. How much transfers?
