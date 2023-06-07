@@ -139,13 +139,13 @@ For a given pair of (time in system, remaining size), what's the optimal 2-job p
   
 Semantically, this is the probability of not abandoning prior to the time of the decision, times the probability of not abandoning while run, divided by the probability of abandoning while being run.
   
-Note that this is a "conveyer belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
+Note that this is a "conveyor belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
   
 **Further steps:** Implement this policy in simulation. What's its empirical transform? Is it empirically optimal?
   
 Is the policy the optimal 3-job policy? Optimal without arrivals?
 
-### Mutliserver Nudge
+### Multiserver Nudge
 
 Nudge was defined for the single-server setting.
 However, much of the analysis of Nudge relative to FCFS only relied on the arrival process,
