@@ -22,7 +22,7 @@ I want to focus purely on the question, "What does the Torah actually say?"
 
 I want to focus in particular on two passages in the Torah that are often interpreted
 as banning gay relationships and/or sex,
-[Leviticus 18:22](https://reformjudaism.org/learning/torah-study/text/acharei-mot),
+[Leviticus 18:22](https://reformjudaism.org/learning/torah-study/text/acharei-mot)
 and [Leviticus 20:13](https://reformjudaism.org/learning/torah-study/text/kdoshim).
 I will be using the translation found in "The Torah: A Modern Commentary, Revised Edition",
 edited by Rabbi W. Gunther Plaut, linked above.
@@ -88,7 +88,7 @@ which is most commonly translated as "bed" or "bedchamber".
 "mish-ke-bay" is the construct form of "mish-kab".
 
 The [construct form](https://en.wikipedia.org/wiki/Construct_state)
-is a Hebrew grammatical pattern
+is a Hebrew grammatical pattern which
 indicates that a given noun belongs to someone.
 It's sort of an inverse to the English possessive.
 Where English would say "I found John's watch",
@@ -105,7 +105,7 @@ Here, Leviticus 20:13 (the other passage often interpreted as banning gay sex) a
 Unfortunately, the Tanakh is one of the only Hebrew texts of that time period that has
 survived to the present, so we don't have other reference material to go by.
 
-The rarity of this euphemism is in contrast to the other terms for sex used in Leviticus 18.
+The rarity of this word is in contrast to the other terms for sex used in Leviticus 18.
 The term used in lines 18:6-19,
 "תְגַלֵּ֑ה עֶרְוַ֥ת",
 "te-gal-leh er-wat"
@@ -163,7 +163,7 @@ they shall be put to death-and they retain the bloodguilt".
 The context is important:
 The line immediately before,
 20:12, prohibits sex between a man and his daughter in law,
-punishable by death, with the same phrasing as Leviticus 20:13.
+punishable by death, with the same phrasing of the punishment as Leviticus 20:13.
 The line immediately after,
 20:14, prohibits marriage between a man and his wife's mother,
 again punishable by death.
@@ -270,7 +270,7 @@ we find that the passages are best read as prohibiting homosexual *incest*, not 
 
 The passages fall during or immediately after prohibitions on incest,
 which only prohibit heterosexual incest, leaving homosexual incest otherwise glaringly unaddressed.
-Moreover, the word "mish-ke-bay" is better understood as a specific euphemism for incestuous sex,
+Moreover, the word "mish-ke-bay" used in these passages is better understood as a specific euphemism for incestuous sex,
 rather than sex in general.
 This reading is motivated by its usage elsewhere in the Torah,
 by the ancient reasoning about who is harmed when incest occurs,
