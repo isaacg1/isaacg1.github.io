@@ -5,7 +5,7 @@ title: The Pulverarchy
 ---
 I see a lot of criticism of capitalism. Much of this criticism I agree with. Capitalism promotes the pursuit of profit above all else, with no flexibility for goodness. Capitalism concentrates power in the hands of very few, selected for their ability to pursue profit and exploit the system. Capitalism condemns many to decades of drudgery and toil. Capitalism grinds the unfortunate under foot.
 
-Yet this criticism does not sit right with me, for two reasons. First, I think the criticism is too narrow. For instance, essentially the same complaints can be levied at many instances of state communism, with "pursuit of profit" replaced by "party loyalty". Second, I think that there are cases when capitalism does things worth celebrating. Ideally, capitalism gives individuals choice, of what purpose they want to direct their skills towards. Ideally, capitalism distributes power, in the form of income, to individuals. That ideal case doesn't happen as much as it should. But we to separate these two narratives of capitalism, and point at the exact problem.
+Yet this criticism does not sit right with me, for two reasons. First, I think the criticism is too narrow. For instance, essentially the same complaints can be levied at many instances of state communism, with "pursuit of profit" replaced by "party loyalty". Second, I think that there are cases when capitalism does things worth celebrating. Ideally, capitalism gives individuals choice, of what purpose they want to direct their skills towards. Ideally, capitalism distributes power, in the form of income, to individuals. That ideal case doesn't happen as much as it should. But we should separate these two narratives of capitalism, and point at the exact problem.
 
 ## Pulverarchy 
 
@@ -33,11 +33,11 @@ The pulverarchy is among our greatest foes in creating a better future.
 
 ## Narratives of escape from pulverarchy:
 
-* Ideal capitalism: everyone will have valuable things to contribute to society, and the market will reward them accordingly, and there'll be lots of small businesses and everyone will be well-off.
+* Ideal capitalism: Everyone will have valuable things to contribute to society, and the market will reward them accordingly, and there'll be lots of small businesses and everyone will be well-off.
 
 * Ideal socialism: Entities like democratic goverments and unions will ensure that individuals/the working class have the power to shape society, which will ensure that everyone's needs are taken care of.
 
-* Ideal libertarianism: everything would be great if everyone was free. Let's just do the least amount of societal structure to protect freedom, abd then everyone will be able to do whatever they want, freely, and everything will be great.
+* Ideal libertarianism: Everything would be great if everyone was free. Let's just have the least amount of societal structure to protect freedom, and then everyone will be able to do whatever they want, freely, and everything will be great.
 
 All of these narratives share common themes of personal choice and distributed control.
 
