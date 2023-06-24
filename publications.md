@@ -4,21 +4,15 @@ title: Publications
 permalink: /publications/
 ---
 
-[Submitted papers](#submitted-papers)
+[//]: [Submitted papers](#submitted-papers)
 
 [Full papers](#full-papers)
 
 [Short papers](#short-papers)
 
-[//]: # [Other work](#other-work)
+[Other work](#other-work)
 
-## Submitted Papers
-
-### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
-Isaac Grosof, Michael Mitzenmacher.
-
-[\[paper\]](/assets/incentive-compatible.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2202.05747)
+[//]: ## Submitted Papers
 
 
 ## Full Papers
@@ -135,9 +129,19 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 
 ## Short Papers
 
+### [The RESET Technique for Multiserver-job Analysis](/assets/reset-src)
+Isaac Grosof,
+Student Research Competition at SIGMETRICS 2023.
+Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
+
+[\[paper\]](/assets/reset-src)
+[\[talks\]](/talks/#reset)
+
+**Winner of the ACM SIGMETRICS 2023 Graduate Student Research Competition**
+
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf)
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
-To appear at the MAMA workshop at SIGMETRICS 2023.
+MAMA workshop at SIGMETRICS 2023.
 
 [\[paper\]](/assets/product-mama.pdf)
 [\[old full version\]](/assets/multiserverjob-stability.pdf)
@@ -154,7 +158,7 @@ However, the product form result is still novel, and that's the focus of the MAM
 
 ### [ServerFilling: A better approach to packing multiserver jobs](/assets/applied.pdf)
 Isaac Grosof, Mor Harchol-Balter.
-To appear at the ApPLIED workshop at PODC 2023.
+ApPLIED workshop at PODC 2023.
 
 [\[paper\]](/assets/applied.pdf)
 
@@ -163,6 +167,11 @@ Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
 
 [\[paper\]](/assets/srpt-medium.pdf)
 
-[//]: # ## Papers not currently under submission
+## Papers not currently under submission {#other-work}
 
+### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
+Isaac Grosof, Michael Mitzenmacher.
+
+[\[paper\]](/assets/incentive-compatible.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2202.05747)
 

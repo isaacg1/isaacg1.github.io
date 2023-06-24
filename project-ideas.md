@@ -9,15 +9,19 @@ These are queueing research ideas that I'm interested in, but haven't gotten aro
 
 I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
 
-Last updated: June 1, 2023.
+Last updated: June 24, 2023.
 
 ### Known size dispatching to FCFS queues
+
+Starting point: [CRAB](https://www.sigmetrics.org/mama/abstracts/Xie-S.pdf),
+by Runhan Xie and Ziv Scully,
+initial work presented at [MAMA 2023](https://www.sigmetrics.org/mama/index.shtml).
 
 **Setup**: Imagine web requests are arriving to a server farm. Jobs arrive, are dispatched to servers, and are served. Let's optimize this.
 
 When a job arrives, it must be dispatched to one of several servers. At dispatch time, the size of the job is known (or estimated), and that size is used for the dispatching decision. Once at a server, jobs are served in FCFS order.
 
-What's a good dispatching policy to minimize mean response time? What's optimal? I'm especially interested in heavy traffic (arrival rate near capacity)
+What's a good dispatching policy to minimize mean response time? What's optimal? I'm especially interested in heavy traffic (arrival rate near capacity).
 
 **Idea**: There's an unavoidable amount of work in the system, M/G/1 lower bound. However, if we concentrate almost all of the work onto one server, and only dispatch large jobs to that server, then almost all of the jobs will avoid that long delay. Of course, we need to keep the other servers busy to avoid wasting capacity, but we'll keep their queue lengths short.
 
@@ -115,9 +119,23 @@ Using this value function, in systems with constrained service such as MSJ or th
 **Future steps**: Implement the policy.
 Compare against ServerFilling-SRPT, Guardrails, etc.
 
-### Coming soon: An idea based on a paper to appear.
+### Optimal Relative Completions in the Multiserver-job system
 
-Analyze RC in the PFSS for the MF.
+As I showed in my preliminary [RESET](/assets/reset-src.pdf) paper,
+the mean response time in the First-Come First-Served Multiserver-job system
+is controlled by the throughput and relative completions of the corresponding saturated system.
+It is therefore natural to find the optimal scheduling policy,
+minimizing throughput and relative completions,
+under some scheduling restriction,
+such as the restriction that only the k oldest jobs in arrival order can be served.
+
+**First step**: Implement a way to specify a such a policy and compute its throughput and relative completions, perhaps in a 3 server system.
+
+**Future steps**:
+Search over all possible policies with an MDP solver.
+Find the pareto-optimal tradeoff of relative completions vs. throughput,
+perhaps corresponding to best policies at a variety of loads.
+Solve symbollically for throughput and relative completions.
 
 ### Optimal Transform
   
