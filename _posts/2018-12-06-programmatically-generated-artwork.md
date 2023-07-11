@@ -3,8 +3,20 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made fourteen rust programs for programmatically generating artwork in different styles.
+I have made fifteen rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Streams
+
+Forces are generated at certain points, some inward, some outward, some linear.
+Then faucets are generated, which are associated with certain colors at certain points.
+Streams are generated, with colors similar to their faucet, flowing according to the forces.
+Colors are summed, past through a sigmoid-type function,
+and transformed into the [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space) color space.
+
+[Repository](https://github.com/isaacg1/streams/)
+
+![Streams](/assets/streams.png)
 
 ## Watercolors
 
