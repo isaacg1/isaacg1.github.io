@@ -15,8 +15,9 @@ the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balanc
 and the [**IFIP Performance 2018 Best Student Paper Award**](publications/#srpt-for-multiserver-systems).
 I am a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023), a fellowship recognizing academic excellence and leadership.
 
-Check out my [thesis proposal](/assets/thesis-proposal.pdf),
-which gives a good overview of the core of my research.
+Check out my (draft) [thesis document](/assets/isaac-thesis.pdf),
+which provides a guided tour of my PhD research,
+and is designed to be more approachable than diving into my papers directly.
 
 Check out my [publications](publications), all of which you can download to read.
 
