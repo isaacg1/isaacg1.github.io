@@ -29,4 +29,7 @@ Here's an archive of my [job market materials](job-market).
 
 Here's some [art I made](2018/12/06/programmatically-generated-artwork.html):
 
+A good way to contact me is via my
+<a rel="me" href="https://mathstodon.xyz/@isaacg">Mastodon account, @isaacg@mathstodon.xyz</a>.
+
 <img src="/assets/broken-glass.svg" alt="Art" width="400"/>
