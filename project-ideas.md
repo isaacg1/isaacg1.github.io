@@ -9,7 +9,7 @@ These are queueing research ideas that I'm interested in, but haven't gotten aro
 
 I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
 
-Last updated: June 24, 2023.
+Last updated: July 14, 2023.
 
 ### Known size dispatching to FCFS queues
 
@@ -163,6 +163,20 @@ Note that this is a "conveyor belt" policy: jobs never interchange priority. Thi
   
 Is the policy the optimal 3-job policy? Optimal without arrivals?
 
+**Important update:** This is a pretty bad tail metric, and hence a pretty bad policy.
+This metric gives jobs *diminishing* importance as they age, while a good tail metric
+should give jobs *increasing* importance as they age.
+This issue is reflected in the policy,
+which rates jobs as *less* important the larger their time in system.
+
+Instead, one should consider the metric E[T^(st)], in contrast
+to the above discussion of E[e^(-st)]. The optimal 2-job strategy is then
+to maximize e^st e^sr / (1-e^sr).
+This is a better metric and a better policy.
+It's equivalent to using negative inputs to the transform,
+so it's still extractable from the transform.
+One must be careful to only consider values of s for which the metric is finite.
+
 ### Multiserver Nudge
 
 Nudge was defined for the single-server setting.
@@ -173,3 +187,34 @@ Stochastic dominance?
 **First step:** Simulate Nudge in the M/G/k.
 
 **Future step:** Port the analysis to the M/G/k. How much transfers?
+
+### Product forms from Graph Structure
+
+The 2-class MSJ saturated system has a product form steady-steady distribution,
+as a consequence of the graph structure of the Markov chain.
+This is in contrast to the single-exponential saturated system,
+for which the transition rates are also important to the product-form argument.
+
+In general, a directed graph has a product form if there is an "directed elimination ordering"
+to its vertices, defined as follows:
+
+* For each vertex i, define its neighborhood to be all vertices j for which there exists an edge j->i, as well as i itself.
+
+* Start with a source vertex, and place it in the "eliminated" set.
+
+* Repeatedly select vertex neighborhoods that contains exactly one uneliminated vertex.
+Each time such a neighborhood is selected, eliminate the new vertex.
+
+* If this process can be continued until all vertices are eliminated,
+the directed graph has a "directed elimination ordering".
+
+All Markov chains with such an underlying graph have product form steady-state distributions.
+Moreover, such chains have summation-form relative completions,
+a new concept which allows relative completions to be characterized in closed-form.
+
+**First step:** What are some classes of graphs that have elimination orderings?
+I know undirected trees and the ladder graphs are examples. What others?
+
+**Future steps:** Have these graphs been studied already, likely under a different name?
+Can we give a closed-form characterization of this family of graphs?
+Are they closed under any operations, such as taking minors?
