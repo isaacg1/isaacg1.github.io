@@ -18,7 +18,7 @@ permalink: /publications/
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
 
-### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf)
+### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf) {#sf-srpt}
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
 To appear in *ACM SIGMETRICS*, June 2023.
 

@@ -9,7 +9,7 @@ These are queueing research ideas that I'm interested in, but haven't gotten aro
 
 I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
 
-Last updated: July 14, 2023.
+Last updated: July 15, 2023.
 
 1. [Known size dispatching to FCFS queues](#disp-fcfs)
 
@@ -40,8 +40,8 @@ Last updated: July 14, 2023.
 14. [Optimal scheduling in the general MSJ model](#general-msj)
 
 ### Known size dispatching to FCFS queues {#disp-fcfs}
-
-Starting point: [CRAB](https://www.sigmetrics.org/mama/abstracts/Xie-S.pdf),
+Starting point:
+[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching)
 by Runhan Xie and Ziv Scully,
 initial work presented at [MAMA 2023](https://www.sigmetrics.org/mama/index.shtml).
 
@@ -94,7 +94,7 @@ David A. Stanford, Peter Taylor & Ilze Ziedins
 
 **Policy**: Time Index. Priority is s - t, where s is a job's size and t is the job's time in system.Lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
 
-**First step**: Implement this policy. Compare against FCFS, Nudge.
+**First step**: Implement this policy. Compare against FCFS, [Nudge](/publications/#nudge).
 
 **Future steps**: By how much does it dominate FCFS? Characterize leading constant of asymptotic?
 
@@ -112,7 +112,7 @@ but it can be beaten outside of heavy traffic.
 
 **First step**: Implement this policy. Compare it against SRPT-k. Fiddle around with job size distributions, loads, and a and b thresholds to find a relatively large separation (0.1% is normal, 1% is good).
 
-**Future steps**: Use a Nudge-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
+**Future steps**: Use a [Nudge](/publications/#nudge)-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
 
 ### Scheduling in the low-load limit {#low-load}
 
@@ -163,7 +163,7 @@ Using this value function, in systems with constrained service such as MSJ or th
 **First step**: Derive the value function.
 
 **Future steps**: Implement the policy.
-Compare against ServerFilling-SRPT, Guardrails, etc.
+Compare against [ServerFilling-SRPT](/publications/#sf-srpt), [Guardrails](/publications/#guardrails), etc.
 
 ### Optimal Relative Completions in the Multiserver-job system {#optimal-relative}
 
@@ -185,12 +185,21 @@ Solve symbollically for throughput and relative completions.
 
 ### Optimal Transform {#optimal-transform}
   
-My [Nudge](#nudge) paper works very hard to do even the most basic analysis of the tail probability P(T>t).
+My [Nudge](/publications/#nudge) paper works very hard
+to do even the most basic analysis of the tail probability P(T>t).
 But maybe the reason this is hard is because we're effectively
 comparing the response time random variable against a constant,
 and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
   
-The smoothest random variable is the exponential random variable. If we use that as our cutoff, we get P(T>Exp(s)), which is the [Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform) of response time (Technically, it's P(T<Exp(s)), not P(T>Exp(s)). This still captures similar information, if we set s=1/t. It is also much easier to analyze: All SOAP policies and Nudge have transform analysis. So let's try to optimize the transform.
+The smoothest random variable is the exponential random variable.
+If we use that as our cutoff, we get P(T>Exp(s)), which is the
+[Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform)
+of response time (Technically, it's P(T<Exp(s)), not P(T>Exp(s)).
+This still captures similar information, if we set s=1/t.
+It is also much easier to analyze:
+All
+[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies/)
+policies and Nudge have transform analysis. So let's try to optimize the transform.
   
 **Intuition:** Effectively, jobs abandon at rate s, and we want to maximize the fraction that we complete before they abandon. If jobs told us when they abandoned, the optimal policy is straightforward: run the small job that hasn't abandoned yet. But we don't know which jobs have abandoned. We need to use time in system as a proxy.
   
@@ -288,9 +297,12 @@ For each server, calculate how long the arriving job
 will have to wait behind all other jobs at that server, in expectation.
 Also calculate how long other jobs will have to wait behind the arriving job, in expectation.
 Send to the server were the total expected waiting is minimized.
+We can use
+[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies)
+to do this analysis.
 
 **First step:** Choose a size distribution for which Gittins is simple.
-Try the above greedy policy. Compare against e.g. JSQ.
+Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
 
 **Future steps:** Can we prove that unbalancing isn't worth it,
 if the dispatcher and the server have the same information?
@@ -300,8 +312,9 @@ Can we prove any convergence to resource-pooled Gittins, if the distribution is 
 
 See Section 8.3.4 of [my thesis](/assets/isaac-thesis.pdf).
 
-Outside of the divisible server need setting behind the DivisorFilling-SRPT policy,
-we can't guarantee that all of the servers can be filled by any set of k jobs.
+Outside of the divisible server need setting behind the
+[DivisorFilling-SRPT](/publications/#sf-srpt) policy,
+we can't guarantee that all of the servers can be filled by an arbitrary set of k jobs.
 This can cause problems in two ways:
 
 1. The smallest jobs might not pack well.
@@ -321,6 +334,8 @@ Proving that this is optimal will be challenging.
 
 To fix problem 2, we should set a floor on the number of 1-server jobs
 that we want to keep in the system,
+in the style of
+[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching),
 and when we reach the floor, use the least 1-server-intensive strategy.
 Proving this is optimal will also be hard.
 
@@ -337,7 +352,8 @@ Practical systems often have feedback mechanisms on the arrival rate,
 resulting in this pattern of high load but relatively short queue lengths.
 
 MSJ FCFS satisfies this "no starvation" goal, as do many backfilling policies.
-In contrast, ServerFilling does not: A small-server-need job can be delayed until the system empties.
+In contrast, [ServerFilling](/publications/#server-filling)
+does not: A small-server-need job can be delayed until the system empties.
 
 To overcome this, consider a policy which serves a 95%/5% mixture of ServerFilling and FCFS,
 or ServerFilling and a backfilling policy.
@@ -346,5 +362,5 @@ in terms of the number of jobs seen on arrival,
 and the size of the job.
 Load doesn't enter into it.
 We could define this as "no starvation".
-We could analyze this policy with our finite-skip analysis.
+We could analyze this policy with our [finite-skip analysis](/publications/#reset).
 
