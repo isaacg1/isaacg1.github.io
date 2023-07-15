@@ -77,7 +77,9 @@ See Section 8.3.5 of [my thesis](/assets/isaac-thesis.pdf).
 
 **Setting**: M/G/1 scheduling for tail, e.g. minimize E[T^2].
 
-**Policy**: Priority is (time in system)/size (TOS, Time Over Size). Higher is better. Without preemption, to start. Note that this is an "Accumulating Priority Queue", but with infinite continuous classes, not 2 classes.
+**Policy**: Priority is t/s, where t is a job's time in system and s is the job's size.
+Higher is better. Without preemption to start, for simplicity of analysis.
+Note that this is an "Accumulating Priority Queue", but with infinite continuous classes, not 2 classes.
 
 [Waiting time distributions in the accumulating priority queue](https://link.springer.com/article/10.1007/s11134-013-9382-6),
 David A. Stanford, Peter Taylor & Ilze Ziedins
@@ -90,7 +92,7 @@ David A. Stanford, Peter Taylor & Ilze Ziedins
 
 **Setting**: M/G/1 scheduling for the tail, especially the asymptotic tail, especially in comparison to FCFS.
 
-**Policy**: Time Index. Priority is (size - time-in-system), lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
+**Policy**: Time Index. Priority is s - t, where s is a job's size and t is the job's time in system.Lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
 
 **First step**: Implement this policy. Compare against FCFS, Nudge.
 
@@ -100,7 +102,9 @@ David A. Stanford, Peter Taylor & Ilze Ziedins
 
 See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
 
-**Setting**: SRPT-k (M/G/k/SRPT) is heavy-traffic optimal for mean response time, but it can be beaten outside of heavy traffic.
+**Setting**: SRPT-k (M/G/k/SRPT) is heavy-traffic optimal for mean response time,
+as I proved in [SRPT for Multiserver Systems](/publications/#srptk),
+but it can be beaten outside of heavy traffic.
 
 **Idea**: Consider a 2-server system with 3 jobs in it: Two are small, one is large. There are two scheduling options: Run both small jobs first (SRPT), or one small and one large first (New concept). Once a small job finishes, start running the third job. If no new jobs arrive before the long job finishes, both options have the same total response time. If new jobs arrive after the small jobs finish but before the large job finishes, starting the large job sooner (New concept) is better. If new jobs arrive before both small jobs are done, SRPT is preferable.
 
@@ -115,6 +119,8 @@ See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
 **Setting:** The known-size M/G/k, under low load.
 
 **Intuition:** The dominant term comes from jobs arriving alone, then two-job interactions, etc. We find which policy is optimal, for which number of jobs. It's similar to the no-arrivals setting, for which SRPT-k is optimal, but more stochastic.
+SRPT-k was proven to be optimal in the no-arrivals setting by Robert McNaughton in
+"[Scheduling with deadlines and loss functions](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.6.1.1)."
 
 **Basics:** For at most k jobs, there are no nontrivial decisions. For k+1 jobs, just be sure to serve the smallest job. For k+2, it becomes nontrivial.
 
@@ -128,7 +134,7 @@ See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
 
 There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
 
-**Idea**: Use WINE, with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
+**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
 
 **Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
 
@@ -140,7 +146,13 @@ There are two straightforward lower bounds on mean response time for the M/G/k: 
 
 The Multiserver-job system and the switch can both be thought of as special cases of the "Constrained service queue": Jobs have classes, and a certain multisets of classes can be served at once. In the 2x2 switch, the service options are (ad, bc), while in the 2-server MSJ setting, the service options are (aa, b).
 
-What policies and analysis make sense in the general constrained-service queue? MaxWeight seems to be always throughput-optimal. When does a ServerFilling equivalent exist? <Upcoming paper> seems like it always applies.
+What policies and analysis make sense in the general constrained-service queue?
+MaxWeight, used e.g. in
+"[Stochastic models of load balancing and scheduling in cloud computing clusters](
+https://core.ac.uk/download/pdf/4836445.pdf)", seems to be always throughput-optimal.
+When does a [ServerFilling](/publications/#server-filling)
+equivalent exist?
+My [RESET paper](/publications/#reset) seems like it always applies to FCFS-type service.
 
 ### Value function service and dispatching {#value-function}
 
@@ -155,7 +167,7 @@ Compare against ServerFilling-SRPT, Guardrails, etc.
 
 ### Optimal Relative Completions in the Multiserver-job system {#optimal-relative}
 
-As I showed in my preliminary [RESET](/assets/reset-src.pdf) paper,
+As I showed in my preliminary [RESET](/publications/#reset) paper,
 the mean response time in the First-Come First-Served Multiserver-job system
 is controlled by the throughput and relative completions of the corresponding saturated system.
 It is therefore natural to find the optimal scheduling policy,
@@ -173,7 +185,10 @@ Solve symbollically for throughput and relative completions.
 
 ### Optimal Transform {#optimal-transform}
   
-My Nudge paper works very hard to do even the most basic analysis of the tail probability P(T>t). But maybe the reason this is hard is because we're effectively comparing the response time random variable against a constant, and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
+My [Nudge](#nudge) paper works very hard to do even the most basic analysis of the tail probability P(T>t).
+But maybe the reason this is hard is because we're effectively
+comparing the response time random variable against a constant,
+and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
   
 The smoothest random variable is the exponential random variable. If we use that as our cutoff, we get P(T>Exp(s)), which is the [Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform) of response time (Technically, it's P(T<Exp(s)), not P(T>Exp(s)) BM. This still captures similar information, if we set s=1/t. It is also much easier to analyze: All SOAP policies and Nudge have transform analysis. So let's try to optimize the transform.
   
@@ -213,7 +228,7 @@ One must be careful to only consider values of s for which the metric is finite.
 
 ### Multiserver Nudge {#multi-nudge}
 
-Nudge was defined for the single-server setting.
+[Nudge](/publications/#nudge) was defined for the single-server setting.
 However, much of the analysis of Nudge relative to FCFS only relied on the arrival process,
 not the departure process. Does Nudge have better asymptotic tail than FCFS in the M/G/k?
 Stochastic dominance?
@@ -224,7 +239,7 @@ Stochastic dominance?
 
 ### Product forms steady-state distributions from graph structure {#graph-product-form}
 
-The 2-class MSJ saturated system has a product form steady-steady distribution,
+The 2-class MSJ saturated system has a [product form](/publications/#product-form-msj) steady-steady distribution,
 as a consequence of the graph structure of the Markov chain.
 This is in contrast to the single-exponential saturated system,
 for which the transition rates are also important to the product-form argument.
@@ -257,9 +272,10 @@ Are they closed under any operations, such as taking minors?
 
 See Section 8.3.3 of [my thesis](/assets/isaac-thesis.pdf).
 
-In my guardrails paper, I studied optimal dispatching with full size information.
+In my [guardrails](/publications/#guardrails) paper, I studied optimal dispatching with full size information.
 But what if we just have estimates? Or no info?
-A good candidate for the scheduling policy is Gittins,
+A good candidate for the scheduling policy is the
+[Gittins index](https://en.wikipedia.org/wiki/Gittins_index#Queueing_theory) policy,
 and we are trying to match resource-pooled Gittins,
 which intuitively
 requires that we always spread out the jobs of each rank across all of the servers.

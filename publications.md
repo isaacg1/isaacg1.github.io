@@ -28,7 +28,7 @@ To appear in *ACM SIGMETRICS*, June 2023.
 [\[slides\]](/assets/msj-srpt-harvard-mit.pptx)
 [\[talks\]](/talks/#optimal-scheduling-in-the-multiserver-job-model)
 
-### [WCFS: A new framework for analyzing multiserver systems](/assets/wcfs.pdf)
+### [WCFS: A new framework for analyzing multiserver systems](/assets/wcfs.pdf) {#server-filling}
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2022.
 
 [\[paper\]](/assets/wcfs.pdf)
@@ -51,7 +51,7 @@ Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
 [\[video\]](https://www.youtube.com/watch?v=R_KBFNWzxhA)
 [\[talks\]](/talks/#stochastic-scheduling-with-predictions)
 
-### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf)
+### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf) {#nudge}
 Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
 [\[paper\]](/assets/nudge.pdf)
@@ -88,7 +88,7 @@ Mor Harchol-Balter, Greg Ganger.
 [\[paper\]](/assets/cachelib.pdf)
 [\[canonical version\]](https://www.usenix.org/system/files/osdi20-berg.pdf)
 
-### [Load Balancing Guardrails](/assets/load-balancing.pdf)
+### [Load Balancing Guardrails](/assets/load-balancing.pdf) {#guardrails}
 #### Keeping Your Heavy Traffic on the Road to Low Response Times
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
 
@@ -102,7 +102,7 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
 [\[poster\]](/assets/load-balancing-poster.pdf)
 [\[talks\]](/talks/#load-balancing-guardrails)
 
-### [SRPT for Multiserver Systems](/assets/srpt.pdf)
+### [SRPT for Multiserver Systems](/assets/srpt.pdf) {#srptk}
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *IFIP Performance*, Dec. 2018. Also in the journal: *Performance Evaluation*, Nov. 2018.
 
 **Winner of the Performance 2018 Best Student Paper Award**
@@ -129,7 +129,7 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 
 ## Short Papers
 
-### [The RESET Technique for Multiserver-job Analysis](/assets/reset-src)
+### [The RESET Technique for Multiserver-job Analysis](/assets/reset-src) {#reset}
 Isaac Grosof,
 Student Research Competition at SIGMETRICS 2023.
 Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
@@ -139,7 +139,7 @@ Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
 
 **Winner of the ACM SIGMETRICS 2023 Graduate Student Research Competition**
 
-### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf)
+### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf) {#product-form-msj}
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
 MAMA workshop at SIGMETRICS 2023.
 
