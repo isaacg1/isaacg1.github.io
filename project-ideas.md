@@ -7,7 +7,9 @@ published: true
 
 These are queueing research ideas that I'm interested in, but haven't gotten around to yet. If you're interested in any of them as a potential collaborator or advisee, let me know!
 
-I'm particularly interested in working with either students at the school I am at, or people who already have a background in queueing theory research.
+I'm particularly interested in working with either students
+at the school I am at (Georgia Tech, UIUC, or Northwestern),
+or people who already have a background in queueing theory research.
 
 Last updated: July 15, 2023.
 
