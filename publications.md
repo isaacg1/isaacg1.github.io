@@ -20,7 +20,7 @@ If there is also a short version of a paper, it is listed together with the full
 
 ### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf) {#sf-srpt}
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
-To appear in *ACM SIGMETRICS*, June 2023.
+*ACM SIGMETRICS*, June 2023.
 
 [\[paper\]](/assets/msj-srpt.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2211.02762)
