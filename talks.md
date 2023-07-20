@@ -4,6 +4,12 @@ title: Talks
 permalink: /talks/
 ---
 
+### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf) (Thesis defense)
+[\[thesis (draft)\]](/assets/isaac-thesis.pdf)
+[\[slides\]](/assets/thesis-defense.pptx)
+
+* CMU, July 2023.
+
 ### [Optimal Scheduling in the Multiserver-job Model](/assets/msj-srpt.pdf)
 [\[paper\]](/assets/msj-srpt.pdf)
 [\[slides - SIGMETRICS\]](/assets/msj-srpt-sigmetrics.pptx)
