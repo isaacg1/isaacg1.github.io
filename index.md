@@ -12,9 +12,12 @@ Check out my [thesis document](/assets/isaac-thesis.pdf)
 which provides a guided tour of my PhD research,
 and is designed to be more approachable than diving into my papers directly.
 
-I will be a postdoc at Georgia Tech until February 2024, when I am moving to UIUC to do another 6-month postdoc with
-[R. Srikant](https://sites.google.com/a/illinois.edu/srikant/).
-Starting in Fall 2024, I will be starting as a professor at Northwestern University,
+My name is Isaac Grosof, and I go by Izzy for short. I am nonbinary, and I use they/them pronouns.
+Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info.
+
+I will be a postdoc at Georgia Tech until February 2024, when I am moving to UIUC to do another 6-month postdoc,
+this one with [R. Srikant](https://sites.google.com/a/illinois.edu/srikant/).
+In Fall 2024, I will be starting as a professor at Northwestern University,
 in the Industrial Engineering and Management Sciences department.
 
 I research stochastic queueing theory, with a focus on scheduling and resource allocation,
