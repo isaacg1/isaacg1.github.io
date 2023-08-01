@@ -41,6 +41,8 @@ Last updated: July 15, 2023.
 
 14. [Optimal scheduling in the general MSJ model](#general-msj)
 
+15. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
+
 ### Known size dispatching to FCFS queues {#disp-fcfs}
 Starting point:
 [CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching)
