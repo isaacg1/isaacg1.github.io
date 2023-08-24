@@ -5,7 +5,7 @@ permalink: /talks/
 ---
 
 ### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf) (Thesis defense)
-[\[thesis (draft)\]](/assets/isaac-thesis.pdf)
+[\[thesis\]](/assets/isaac-thesis.pdf)
 [\[slides\]](/assets/thesis-defense.pptx)
 
 * CMU, July 2023.
