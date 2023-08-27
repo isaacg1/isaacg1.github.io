@@ -18,7 +18,7 @@ so we can't just slowly accumulate money over a long time.
 Now, the question is, how much money should we bet?
 Well, it depends on our goal.
 
-If the goal is to maximimize our *mean money*,
+If the goal is to maximize our *mean money*,
 the best strategy is to bet all of our money every round.
 Suppose there were 9 rounds.
 This strategy would have a 0.2% chance of making about $20,000,
@@ -62,7 +62,7 @@ so that one can calculate the optimal strategy with no external aid.
 
 Unlike the previous two strategies, this is a state-dependent strategy:
 It relies on knowing how many rounds are left, and how many heads or tails you've flipped so far.
-In the end, you'll make a fixed amoount of money half the time, if you flip more heads than tails,
+In the end, you'll make a fixed amount of money half the time, if you flip more heads than tails,
 and lose it all the other half of the time, if you flip more tails than heads.
 
 ### Optimal Median Strategy
@@ -131,7 +131,7 @@ so we won't bet any more money to avoid losing it.
 One way of looking at the effect of this strategy is that we've taken our 9 rounds of 3x bets
 with a 50% chance of success
 and turned them into one round of a 6.9x bet, still with a 50% chance of success.
-We're compressing our repeated bets to have the same effect a a single bet with a better payoff,
+We're compressing our repeated bets to have the same effect as a single bet with a better payoff,
 but the same odds of success.
 This is in contrast to the "bet it all" strategy, which turns the 9 rounds
 into a single round of a 19683x payoff, with a 1/512 chance of success.
