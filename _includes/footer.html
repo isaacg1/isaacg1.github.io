@@ -18,6 +18,9 @@
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
+            {%- if site.email2 -%}
+            <li><a class="u-email" href="mailto:{{ site.email2 }}">{{ site.email2 }}</a></li>
+            {%- endif -%}
             {%- if site.office -%}
             <li>{{ site.office | escape }}</li>
             {%- endif -%}
