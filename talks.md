@@ -8,7 +8,9 @@ permalink: /talks/
 [\[thesis\]](/assets/isaac-thesis.pdf)
 [\[slides\]](/assets/thesis-defense.pptx)
 
-* CMU, July 2023.
+* Georgia Tech, ISyE Student Seminar, Sep. 2023.
+
+* CMU, Jul. 2023.
 
 ### [Optimal Scheduling in the Multiserver-job Model](/assets/msj-srpt.pdf)
 [\[paper\]](/assets/msj-srpt.pdf)
