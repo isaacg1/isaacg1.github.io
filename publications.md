@@ -18,6 +18,23 @@ permalink: /publications/
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
 
+### [The RESET and MARC Techniques, with Application to Multiserver-Job Analysis](/assets/reset-and-marc.pdf) {#reset}
+Isaac Grosof, Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
+*IFIP Performance*, November 2023.
+
+An in-progress version appeared as [The RESET Technique for Multiserver-job Analysis](/assets/reset-src)
+Isaac Grosof,
+Student Research Competition at SIGMETRICS 2023.
+Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf. 
+
+[\[paper\]](/assets/reset-and-marc.pdf)
+[\[SRC paper\]](/assets/reset-src.pdf)
+[\[short paper\]](/assets/reset-and-marc-short.pdf)
+[\[talks\]](/talks/#reset)
+
+**Winner of the ACM SIGMETRICS 2023 Graduate Student Research Competition**
+
+
 ### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf) {#sf-srpt}
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
 *ACM SIGMETRICS*, June 2023.
@@ -128,16 +145,6 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 [\[blog post\]](/2021/08/12/paper-push-pull.html)
 
 ## Short Papers
-
-### [The RESET Technique for Multiserver-job Analysis](/assets/reset-src) {#reset}
-Isaac Grosof,
-Student Research Competition at SIGMETRICS 2023.
-Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
-
-[\[paper\]](/assets/reset-src)
-[\[talks\]](/talks/#reset)
-
-**Winner of the ACM SIGMETRICS 2023 Graduate Student Research Competition**
 
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf) {#product-form-msj}
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
