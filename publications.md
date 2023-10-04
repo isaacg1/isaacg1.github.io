@@ -28,6 +28,7 @@ Student Research Competition at SIGMETRICS 2023.
 Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf. 
 
 [\[paper\]](/assets/reset-and-marc.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2310.01621)
 [\[SRC paper\]](/assets/reset-src.pdf)
 [\[short paper\]](/assets/reset-and-marc-short.pdf)
 [\[talks\]](/talks/#reset)
