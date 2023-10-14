@@ -4,7 +4,12 @@ title: Talks
 permalink: /talks/
 ---
 
-### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf) (Thesis defense)
+### Relative Arrivals: A New Drift Method for Time-Varying Arrivals
+[\[slides\]](/assets/relative-arrivals-snapp.pptx)
+
+* SNAPP Seminar, Oct. 2023.
+
+### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf) (Thesis defense) {#thesis}
 [\[thesis\]](/assets/isaac-thesis.pdf)
 [\[slides\]](/assets/thesis-defense.pptx)
 

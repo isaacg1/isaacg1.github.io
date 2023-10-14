@@ -10,6 +10,8 @@ permalink: /publications/
 
 [Short papers](#short-papers)
 
+[Thesis](#thesis)
+
 [Other work](#other-work)
 
 [//]: ## Submitted Papers
@@ -174,6 +176,15 @@ ApPLIED workshop at PODC 2023.
 Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
 
 [\[paper\]](/assets/srpt-medium.pdf)
+
+## Thesis document {#thesis}
+
+### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf)
+Isaac Grosof. July 2023.
+
+[\[thesis document\]](/assets/isaac-thesis.pdf)
+[\[talks\]](/talks/#thesis)
+[\[thesis proposal\]](/assets/thesis-proposal.pdf)
 
 ## Papers not currently under submission {#other-work}
 
