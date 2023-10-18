@@ -13,67 +13,67 @@ or people who already have a background in queueing theory research.
 
 Last updated: July 15, 2023.
 
+## Table of contents
+
+I've separated my ideas into three categories:
+
+* Ideas that I think are quite promising,
+where I have promising directions for a result.
+
+* Ideas that are just starting out, or where I don't quite know how I'd prove a result.
+
+* Ideas that I'm actively pursuing, or have written a paper about.
+
+I'm most interested in collaborating on ideas in the "quite promising" category,
+but all of them are worth looking at and discussing.
+
+The order within a category is roughly chronological.
+
+### [Quite promising](#promising)
+
+1. [Scheduling to minimize E[T^2]](#t2)
+
+2. [Beating SRPT-k](#beating-srptk)
+
+3. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
+
+4. [Optimal Transform](#optimal-transform)
+
+5. [Optimal scheduling in the general MSJ model](#general-msj)
+
+6. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
+
+7. [Scheduling with epsilon prediction errors](#epsilon-error)
+
+8. [Tails for ServerFilling](#sf-tails)
+
+9. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
+
+### [Starting out/Not sure how to proceed](#starting-out)
+
+1. [The Time Index scheduling policy](#time-index)
+
+2. [Scheduling in the low-load limit](#low-load)
+
+3. [M/G/k response time lower bounds (known size)](#mgk-lower)
+
+4. [General constrained-service queue](#constrained-service)
+
+5. [Value function service and dispatching](#value-function)
+
+6. [Multiserver Nudge](#multi-nudge)
+
+7. [Optimal dispatching to Gittins queues](#gittins-dispatch)
+
+8. [Restless MDPs for tail scheduling](#restless-tail)
+
+### [Active projects](#active)
+
 1. [Known size dispatching to FCFS queues](#disp-fcfs)
 
-2. [Scheduling to minimize E[T^2]](#t2)
+2. [Product form steady-state distributions from graph structure](#graph-product-form)
 
-3. [The Time Index scheduling policy](#time-index)
-
-4. [Beating SRPT-k](#beating-srptk)
-
-5. [Scheduling in the low-load limit](#low-load)
-
-6. [M/G/k response time lower bounds (known size)](#mgk-lower)
-
-7. [General constrained-service queue](#constrained-service)
-
-8. [Value function service and dispatching](#value-function)
-
-9. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
-
-10. [Optimal Transform](#optimal-transform)
-
-11. [Multiserver Nudge](#multi-nudge)
-
-12. [Product forms steady-state distributions from graph structure](#graph-product-form)
-
-13. [Optimal dispatching to Gittins queues](#gittins-dispatch)
-
-14. [Optimal scheduling in the general MSJ model](#general-msj)
-
-15. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
-
-### Known size dispatching to FCFS queues {#disp-fcfs}
-Starting point:
-[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching)
-by Runhan Xie and Ziv Scully,
-initial work presented at [MAMA 2023](https://www.sigmetrics.org/mama/index.shtml).
-
-**Setup**: Imagine web requests are arriving to a server farm. Jobs arrive, are dispatched to servers, and are served. Let's optimize this.
-
-When a job arrives, it must be dispatched to one of several servers. At dispatch time, the size of the job is known (or estimated), and that size is used for the dispatching decision. Once at a server, jobs are served in FCFS order.
-
-What's a good dispatching policy to minimize mean response time? What's optimal? I'm especially interested in heavy traffic (arrival rate near capacity).
-
-**Idea**: There's an unavoidable amount of work in the system, M/G/1 lower bound. However, if we concentrate almost all of the work onto one server, and only dispatch large jobs to that server, then almost all of the jobs will avoid that long delay. Of course, we need to keep the other servers busy to avoid wasting capacity, but we'll keep their queue lengths short.
-
-**Concrete policy**: "Many Short Servers" (MASS). Based on size, divide jobs into classes small, medium, and large. Set these cutoffs so that the small jobs make up (k-1)/k - ε fraction of the load, where k is the number of servers, the large jobs are 1/k - ε of the load, and the medium jobs are the other 2ε of the load. ε is a small constant to be determined.
-
-Designate k-1 servers as the short servers (low workload), and one as the long server (high workload). Small jobs go to the short server, large jobs go the long server, and for medium jobs it depends.
-
-Designate a target amount of work for the short servers. This should be o(1/(1-ρ)), to be smaller than the long server, and it should be omega(log(1/(1-ρ))), so it doesn't run empty due to bad luck. sqrt(1/(1-ρ)), for instance.
-
-Whenever a small job arrives, send it to the short queue with least work. Whenever a large job arrives, send it to the long server. When a medium job arrives, if the short server with the least work is below the target amount of work, send the medium job there. If all short servers are above the target, send the medium job to the long server.
-
-**First step**: Implement this policy. Start with k=2, for simplicity. Compare it against JSQ, LWL, SITA. Poisson arrivals, high variance sizes, high load. Does it do well empirically, for appropriate settings of ε and the target work?
-
-**Refinement**: Dynamic relabeling. Whenever a job arrives, the long server is whichever has the most work at that moment, not static.
-
-**Future steps**: Prove state space collapse. The system is almost always close to having all short servers at the target, or all servers below the target.
-
-Use SSC to bound response time/waiting time.
-
-Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and theres theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
+## Quite promising {#promising}
 
 ### Scheduling to minimize E[T^2] {#t2}
 
@@ -92,16 +92,6 @@ David A. Stanford, Peter Taylor & Ilze Ziedins
 
 **Future steps**: Use APQ methods to characterize steady state. Poisson point process of (size, time in system). Characterize for arbitrary joint (Size, Accumulation rate) distribution, specialize to above setting. Characterize transform of response time, moments of response time.
 
-### The Time Index scheduling policy {#time-index}
-
-**Setting**: M/G/1 scheduling for the tail, especially the asymptotic tail, especially in comparison to FCFS.
-
-**Policy**: Time Index. Priority is s - t, where s is a job's size and t is the job's time in system.Lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
-
-**First step**: Implement this policy. Compare against FCFS, [Nudge](/publications/#nudge).
-
-**Future steps**: By how much does it dominate FCFS? Characterize leading constant of asymptotic?
-
 ### Beating SRPT-k {#beating-srptk}
 
 See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
@@ -118,57 +108,6 @@ but it can be beaten outside of heavy traffic.
 
 **Future steps**: Use a [Nudge](/publications/#nudge)-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
 
-### Scheduling in the low-load limit {#low-load}
-
-**Setting:** The known-size M/G/k, under low load.
-
-**Intuition:** The dominant term comes from jobs arriving alone, then two-job interactions, etc. We find which policy is optimal, for which number of jobs. It's similar to the no-arrivals setting, for which SRPT-k is optimal, but more stochastic.
-SRPT-k was proven to be optimal in the no-arrivals setting by Robert McNaughton in
-"[Scheduling with deadlines and loss functions](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.6.1.1)."
-
-**Basics:** For at most k jobs, there are no nontrivial decisions. For k+1 jobs, just be sure to serve the smallest job. For k+2, it becomes nontrivial.
-
-**First step:** If k=2, and we consider 4-job sequences, I believe we find that we must serve the smallest pair of any 3 jobs. Confirm?
-
-**Future steps:** Is SRPT-2 uniquely optimal at low load? Is SRPT-k? Expand to dispatching, MSJ, unknown sizes?
-
-### M/G/k response time lower bounds (known size) {#mgk-lower}
-
-See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
-
-There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
-
-**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
-
-**Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
-
-**First step**: Derive the WINE bound.
-
-**Future step**: Quantity expected work in the increasing-speed queue, perhaps with renewal-reward.
-
-### General constrained-service queue {#constrained-service}
-
-The Multiserver-job system and the switch can both be thought of as special cases of the "Constrained service queue": Jobs have classes, and a certain multisets of classes can be served at once. In the 2x2 switch, the service options are (ad, bc), while in the 2-server MSJ setting, the service options are (aa, b).
-
-What policies and analysis make sense in the general constrained-service queue?
-MaxWeight, used e.g. in
-"[Stochastic models of load balancing and scheduling in cloud computing clusters](
-https://core.ac.uk/download/pdf/4836445.pdf)", seems to be always throughput-optimal.
-When does a [ServerFilling](/publications/#server-filling)
-equivalent exist?
-My [RESET paper](/publications/#reset) seems like it always applies to FCFS-type service.
-
-### Value function service and dispatching {#value-function}
-
-Can define a SRPT value function, which quantifies the total future response time impact of a set of jobs. If we started two systems, one from empty and one from this set of jobs, and then ran both forever, in expectation by how much would the total response time go up? Relatively simple function, e.g. using WINE.
-
-Using this value function, in systems with constrained service such as MSJ or the switch, serve the subset of jobs that most rapidly decreases the value function. Or dispatch to minimize the value function impact.
-
-**First step**: Derive the value function.
-
-**Future steps**: Implement the policy.
-Compare against [ServerFilling-SRPT](/publications/#sf-srpt), [Guardrails](/publications/#guardrails), etc.
-
 ### Optimal Relative Completions in the Multiserver-job system {#optimal-relative}
 
 As I showed in my preliminary [RESET](/publications/#reset) paper,
@@ -183,9 +122,9 @@ such as the restriction that only the k oldest jobs in arrival order can be serv
 
 **Future steps**:
 Search over all possible policies with an MDP solver.
-Find the pareto-optimal tradeoff of relative completions vs. throughput,
+Find the Pareto-optimal tradeoff of relative completions vs. throughput,
 perhaps corresponding to best policies at a variety of loads.
-Solve symbollically for throughput and relative completions.
+Solve symbolically for throughput and relative completions.
 
 ### Optimal Transform {#optimal-transform}
   
@@ -238,79 +177,6 @@ This is a better metric and a better policy.
 It's equivalent to using negative inputs to the transform,
 so it's still extractable from the transform.
 One must be careful to only consider values of s for which the metric is finite.
-
-### Multiserver Nudge {#multi-nudge}
-
-[Nudge](/publications/#nudge) was defined for the single-server setting.
-However, much of the analysis of Nudge relative to FCFS only relied on the arrival process,
-not the departure process. Does Nudge have better asymptotic tail than FCFS in the M/G/k?
-Stochastic dominance?
-
-**First step:** Simulate Nudge in the M/G/k.
-
-**Future step:** Port the analysis to the M/G/k. How much transfers?
-
-### Product forms steady-state distributions from graph structure {#graph-product-form}
-
-The 2-class MSJ saturated system has a [product form](/publications/#product-form-msj) steady-steady distribution,
-as a consequence of the graph structure of the Markov chain.
-This is in contrast to the single-exponential saturated system,
-for which the transition rates are also important to the product-form argument.
-
-In general, a directed graph has a product form if there is an "directed elimination ordering"
-to its vertices, defined as follows:
-
-* For each vertex i, define its neighborhood to be all vertices j for which there exists an edge j->i, as well as i itself.
-
-* Start with a source vertex, and place it in the "eliminated" set.
-
-* Repeatedly select vertex neighborhoods that contains exactly one uneliminated vertex.
-Each time such a neighborhood is selected, eliminate the new vertex.
-
-* If this process can be continued until all vertices are eliminated,
-the directed graph has a "directed elimination ordering".
-
-All Markov chains with such an underlying graph have product form steady-state distributions.
-Moreover, such chains have summation-form relative completions,
-a new concept which allows relative completions to be characterized in closed-form.
-
-**First step:** What are some classes of graphs that have elimination orderings?
-I know undirected trees and the ladder graphs are examples. What others?
-
-**Future steps:** Have these graphs been studied already, likely under a different name?
-Can we give a closed-form characterization of this family of graphs?
-Are they closed under any operations, such as taking minors?
-
-### Optimal dispatching to Gittins queues {#gittins-dispatch}
-
-See Section 8.3.3 of [my thesis](/assets/isaac-thesis.pdf).
-
-In my [guardrails](/publications/#guardrails) paper, I studied optimal dispatching with full size information.
-But what if we just have estimates? Or no info?
-A good candidate for the scheduling policy is the
-[Gittins index](https://en.wikipedia.org/wiki/Gittins_index#Queueing_theory) policy,
-and we are trying to match resource-pooled Gittins,
-which intuitively
-requires that we always spread out the jobs of each rank across all of the servers.
-
-If estimates are relatively good,
-a combination that makes sense is estimated-Gittins + PSJF with estimates.
-
-If we have no information, we might just use the greedy policy.
-For each server, calculate how long the arriving job
-will have to wait behind all other jobs at that server, in expectation.
-Also calculate how long other jobs will have to wait behind the arriving job, in expectation.
-Send to the server were the total expected waiting is minimized.
-We can use
-[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies)
-to do this analysis.
-
-**First step:** Choose a size distribution for which Gittins is simple.
-Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
-
-**Future steps:** Can we prove that unbalancing isn't worth it,
-if the dispatcher and the server have the same information?
-Can we prove any convergence to resource-pooled Gittins, if the distribution is simple enough?
 
 ### Optimal scheduling in the general MSJ model {#general-msj}
 
@@ -367,4 +233,251 @@ and the size of the job.
 Load doesn't enter into it.
 We could define this as "no starvation".
 We could analyze this policy with our [finite-skip analysis](/publications/#reset).
+
+### Scheduling with epsilon prediction errors {#epsilon-error}
+
+**Setting**: M/G/1 scheduling for the mean.
+Predictions are given, and there's a small (epsilon-sized) error in the predictions.
+
+**Goal**: Schedule to achieve a mean response time performance of the form E\[T^SRPT](1+f(epsilon)), for some function f that goes to zero as epsilon goes to zero. This is called "Consistency".
+
+**Twist**: There are many kinds of epsilon-error to consider. In our [SRPT-Bounce](/publications/#estimates) paper, we show that our SRPT-Bounce policy can handle the situation where all predictions may be off by a multiplicative error of epsilon. Adam Wierman has a paper (TODO: Cite) looking at predictions being off by an additive error - consistency is not possible there.
+
+I'd like to instead consider the situation where an epsilon fraction of jobs may have seriously poor predictions, but all other predictions are accurate. There are two natural scenarios:
+
+1. Epsilon-fraction of jobs have null predictions. In this case, we know that we're getting no prediction information.
+
+2. Epsilon-fraction of jobs have predictions that are incorrect by an arbitrary magnitude. In this case, we don't know that we're getting no prediction information.
+
+We could also look at load-fractions rather than job fractions.
+
+Even in scenario 1, which is much simpler, things aren't trivial by any means. If we did something simple like put the null-prediction jobs at the end of the queue, their response time would be something horrible like 1/(1-rho)^2 in the epsilon->0 limit, which would dominate mean response time and not remotely achieve consistency.
+
+**Initial question:**
+What's the mean response time impact of a misprediction from true size x to predicted size x', under a policy like SRPT-Checkmark or SRPT-Bounce?
+
+**Longer-term question**: Can we achieve consistency against rare large errors? Can we define a useful misprediction-distance metric such that if that metric is small, we have consistent performance?
+
+### Tails for ServerFilling {#sf-tails}
+
+**Setting**: MSJ Scheduling, ServerFilling policy (or generally WCFS scheduling).
+Want to analyze tail of response time.
+
+In our [WCFS](/publications/#server-filling) paper, we analyze the ServerFilling policy's mean response time, and more generally any WCFS policy's mean response time, showing that it is near that of resource-pooled FCFS. Because these policies are near-FCFS, we would like to analyze their tail of response time, which is likely quite good in the light-tail-sizes/bounded expected remaining size setting of the paper.
+
+Our analysis separates response time into two pieces: Time in the "front" and time in the "back" (the back is called the queue in the paper, but we've since changed terminology to clarify that some of the jobs in the front are not in service).
+
+Time in the back dominates mean response time in heavy traffic, and our analysis could likely be generalized to tightly bound the transform of time in the front to be near that of resource-pooled FCFS. We would just have to change out the W^2 test function in the paper for an exponential test function.
+
+For time in the front, things are trickier. In the paper, we used Little's law, which allows us to bound mean time in front but does not say anything about the distribution of time in the front.
+Because ServerFilling prioritizes the largest server-need jobs in the front, we have to worry about the smallest server-need jobs and the tail of their time in the front.
+
+In the worst-case, a 1-server job can only be guaranteed to run
+once there are k 1-server jobs in the front.
+Thus, the time-in-front of 1-server jobs could be about k times the interarrival time of 1-server jobs. The k-times is fine, but the issue is the interarrival time of 1-server jobs.
+
+If 1-server jobs are very rare, then their interarrival time will be very large. However, because these jobs are so rare, that won't have a big impact on metrics like the transform or the tail probability. If 1-server jobs are exceptionally rare, then we can bound their response time by the excess of a busy period, at which point the system will run low on jobs and all jobs remaining in the system will be in service.
+
+**Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
+
+### Relative arrivals/completions with infinite state spaces {#infinite-ra}
+
+**Setting**: Markovian arrivals/markovian service systems.
+
+In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my SNAPP talk (TODO: Link video once it's up), which is a cleaner presentation of the idea and focuses on markovian arrivals.
+
+The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
+
+A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
+
+**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
+
+## Starting out/Not sure how to proceed {#starting-out}
+
+### The Time Index scheduling policy {#time-index}
+
+**Setting**: M/G/1 scheduling for the tail, especially the asymptotic tail, especially in comparison to FCFS.
+
+**Policy**: Time Index. Priority is s - t, where s is a job's size and t is the job's time in system.Lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
+
+**First step**: Implement this policy. Compare against FCFS, [Nudge](/publications/#nudge).
+
+**Future steps**: By how much does it dominate FCFS? Characterize leading constant of asymptotic?
+
+### Scheduling in the low-load limit {#low-load}
+
+**Setting:** The known-size M/G/k, under low load.
+
+**Intuition:** The dominant term comes from jobs arriving alone, then two-job interactions, etc. We find which policy is optimal, for which number of jobs. It's similar to the no-arrivals setting, for which SRPT-k is optimal, but more stochastic.
+SRPT-k was proven to be optimal in the no-arrivals setting by Robert McNaughton in
+"[Scheduling with deadlines and loss functions](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.6.1.1)."
+
+**Basics:** For at most k jobs, there are no nontrivial decisions. For k+1 jobs, just be sure to serve the smallest job. For k+2, it becomes nontrivial.
+
+**First step:** If k=2, and we consider 4-job sequences, I believe we find that we must serve the smallest pair of any 3 jobs. Confirm?
+
+**Future steps:** Is SRPT-2 uniquely optimal at low load? Is SRPT-k? Expand to dispatching, MSJ, unknown sizes?
+
+### M/G/k response time lower bounds (known size) {#mgk-lower}
+
+See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
+
+There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
+
+**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
+
+**Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
+
+**First step**: Derive the WINE bound.
+
+**Future step**: Quantity expected work in the increasing-speed queue, perhaps with renewal-reward.
+
+### General constrained-service queue {#constrained-service}
+
+The Multiserver-job system and the switch can both be thought of as special cases of the "Constrained service queue": Jobs have classes, and a certain multisets of classes can be served at once. In the 2x2 switch, the service options are (ad, bc), while in the 2-server MSJ setting, the service options are (aa, b).
+
+What policies and analysis make sense in the general constrained-service queue?
+MaxWeight, used e.g. in
+"[Stochastic models of load balancing and scheduling in cloud computing clusters](
+https://core.ac.uk/download/pdf/4836445.pdf)", seems to be always throughput-optimal.
+When does a [ServerFilling](/publications/#server-filling)
+equivalent exist?
+My [RESET paper](/publications/#reset) seems like it always applies to FCFS-type service.
+
+### Value function service and dispatching {#value-function}
+
+Can define a SRPT value function, which quantifies the total future response time impact of a set of jobs. If we started two systems, one from empty and one from this set of jobs, and then ran both forever, in expectation by how much would the total response time go up? Relatively simple function, e.g. using WINE.
+
+Using this value function, in systems with constrained service such as MSJ or the switch, serve the subset of jobs that most rapidly decreases the value function. Or dispatch to minimize the value function impact.
+
+**First step**: Derive the value function.
+
+**Future steps**: Implement the policy.
+Compare against [ServerFilling-SRPT](/publications/#sf-srpt), [Guardrails](/publications/#guardrails), etc.
+
+### Multiserver Nudge {#multi-nudge}
+
+[Nudge](/publications/#nudge) was defined for the single-server setting.
+However, much of the analysis of Nudge relative to FCFS only relied on the arrival process,
+not the departure process. Does Nudge have better asymptotic tail than FCFS in the M/G/k?
+Stochastic dominance?
+
+**First step:** Simulate Nudge in the M/G/k.
+
+**Future step:** Port the analysis to the M/G/k. How much transfers?
+
+### Optimal dispatching to Gittins queues {#gittins-dispatch}
+
+See Section 8.3.3 of [my thesis](/assets/isaac-thesis.pdf).
+
+In my [guardrails](/publications/#guardrails) paper, I studied optimal dispatching with full size information.
+But what if we just have estimates? Or no info?
+A good candidate for the scheduling policy is the
+[Gittins index](https://en.wikipedia.org/wiki/Gittins_index#Queueing_theory) policy,
+and we are trying to match resource-pooled Gittins,
+which intuitively
+requires that we always spread out the jobs of each rank across all of the servers.
+
+If estimates are relatively good,
+a combination that makes sense is estimated-Gittins + PSJF with estimates.
+
+If we have no information, we might just use the greedy policy.
+For each server, calculate how long the arriving job
+will have to wait behind all other jobs at that server, in expectation.
+Also calculate how long other jobs will have to wait behind the arriving job, in expectation.
+Send to the server where the total expected added waiting time is minimized.
+We can use
+[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies)
+to do this analysis.
+
+**First step:** Choose a size distribution for which Gittins is simple.
+Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
+
+**Future steps:** Can we prove that unbalancing isn't worth it,
+if the dispatcher and the server have the same information?
+Can we prove any convergence to resource-pooled Gittins, if the distribution is simple enough?
+
+### Restless MDPs for tail scheduling {#restless-tail}
+
+In our [Gittins-k]() paper and in Ziv Scully's Gittins paper (TODO: Cite),
+we relate the Gittins policy to that of the Gittins Game,
+a corresponding MDP whose optimal solution describes the Gittins scheduling policy,
+and gives rise to the optimality of the scheduling policy.
+This relationship is at the heart of Gittins' original paper (TODO: Cite)
+which introduces both the MDP policy and the scheduling policy.
+
+For the mean response time objective, the corresponding MDP is a *restful* MDP,
+giving the optimal solution strong enough properties to carry over to the scheduling setting.
+In contrast, for a *tail* response time objective such as T^2,
+the corresponding MDP is a *restless* MDP.
+Recently, there have been advances in the theory of multiarmed restless MDPs,
+such as the Follow-the-Virtual-Leader (FTVL) policy of Yige Hong and Weina Wang (TODO: Cite).
+
+**Question**: Can we formulate a restless Gittins game, solve the single-arm version,
+and use the FTVL policy or something similar to design a scheduling policy?
+
+## Active projects
+
+### Known size dispatching to FCFS queues {#disp-fcfs}
+Starting point:
+[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching)
+by Runhan Xie and Ziv Scully,
+initial work presented at [MAMA 2023](https://www.sigmetrics.org/mama/index.shtml).
+
+**Setup**: Imagine web requests are arriving to a server farm. Jobs arrive, are dispatched to servers, and are served. Let's optimize this.
+
+When a job arrives, it must be dispatched to one of several servers. At dispatch time, the size of the job is known (or estimated), and that size is used for the dispatching decision. Once at a server, jobs are served in FCFS order.
+
+What's a good dispatching policy to minimize mean response time? What's optimal? I'm especially interested in heavy traffic (arrival rate near capacity).
+
+**Idea**: There's an unavoidable amount of work in the system, M/G/1 lower bound. However, if we concentrate almost all of the work onto one server, and only dispatch large jobs to that server, then almost all of the jobs will avoid that long delay. Of course, we need to keep the other servers busy to avoid wasting capacity, but we'll keep their queue lengths short.
+
+**Concrete policy**: "Many Short Servers" (MASS). Based on size, divide jobs into classes small, medium, and large. Set these cutoffs so that the small jobs make up (k-1)/k - ε fraction of the load, where k is the number of servers, the large jobs are 1/k - ε of the load, and the medium jobs are the other 2ε of the load. ε is a small constant to be determined.
+
+Designate k-1 servers as the short servers (low workload), and one as the long server (high workload). Small jobs go to the short server, large jobs go the long server, and for medium jobs it depends.
+
+Designate a target amount of work for the short servers. This should be o(1/(1-ρ)), to be smaller than the long server, and it should be omega(log(1/(1-ρ))), so it doesn't run empty due to bad luck. sqrt(1/(1-ρ)), for instance.
+
+Whenever a small job arrives, send it to the short queue with least work. Whenever a large job arrives, send it to the long server. When a medium job arrives, if the short server with the least work is below the target amount of work, send the medium job there. If all short servers are above the target, send the medium job to the long server.
+
+**First step**: Implement this policy. Start with k=2, for simplicity. Compare it against JSQ, LWL, SITA. Poisson arrivals, high variance sizes, high load. Does it do well empirically, for appropriate settings of ε and the target work?
+
+**Refinement**: Dynamic relabeling. Whenever a job arrives, the long server is whichever has the most work at that moment, not static.
+
+**Future steps**: Prove state space collapse. The system is almost always close to having all short servers at the target, or all servers below the target.
+
+Use SSC to bound response time/waiting time.
+
+Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and theres theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
+
+### Product form steady-state distributions from graph structure {#graph-product-form}
+
+The 2-class MSJ saturated system has a [product form](/publications/#product-form-msj) steady-steady distribution,
+as a consequence of the graph structure of the Markov chain.
+This is in contrast to the single-exponential saturated system,
+for which the transition rates are also important to the product-form argument.
+
+In general, a directed graph has a product form if there is an "directed elimination ordering"
+to its vertices, defined as follows:
+
+* For each vertex i, define its neighborhood to be all vertices j for which there exists an edge j->i, as well as i itself.
+
+* Start with a source vertex, and place it in the "eliminated" set.
+
+* Repeatedly select vertex neighborhoods that contains exactly one uneliminated vertex.
+Each time such a neighborhood is selected, eliminate the new vertex.
+
+* If this process can be continued until all vertices are eliminated,
+the directed graph has a "directed elimination ordering".
+
+All Markov chains with such an underlying graph have product form steady-state distributions.
+Moreover, such chains have summation-form relative completions,
+a new concept which allows relative completions to be characterized in closed-form.
+
+**First step:** What are some classes of graphs that have elimination orderings?
+I know undirected trees and the ladder graphs are examples. What others?
+
+**Future steps:** Have these graphs been studied already, likely under a different name?
+Can we give a closed-form characterization of this family of graphs?
+Are they closed under any operations, such as taking minors?
 
