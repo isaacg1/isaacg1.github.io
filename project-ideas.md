@@ -448,7 +448,7 @@ Whenever a small job arrives, send it to the short queue with least work. Whenev
 
 Use SSC to bound response time/waiting time.
 
-Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and theres theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
+Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and there's theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
 
 ### Product form steady-state distributions from graph structure {#graph-product-form}
 
@@ -480,4 +480,6 @@ I know undirected trees and the ladder graphs are examples. What others?
 **Future steps:** Have these graphs been studied already, likely under a different name?
 Can we give a closed-form characterization of this family of graphs?
 Are they closed under any operations, such as taking minors?
+
+**Update:** Elimination ordering seems better for summation-form relative arrivals/relative completions. Instead, for product-form you need something slightly stronger: A sequence of cuts such that on each side of the cut, there's exactly one vertex with transitions across the cut.
 
