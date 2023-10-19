@@ -9,12 +9,21 @@ permalink: /talks/
 
 * SNAPP Seminar, Oct. 2023.
 
+### [The RESET and MARC Techniques for Multiserver-job Analysis](/assets/reset-and-marc.pdf) {#reset}
+[\[paper\]](/assets/reset-and-marc.pdf)
+[\[slides\]](/assets/reset-and-marc-talk.pptx)
+[\[short paper\]](/assets/reset-src.pdf)
+[\[short slides\]](/assets/reset-src-talk.pptx)
+[\[poster\]](/assets/reset-poster.pdf)
+
+* INFORMS Annual Meeting, Oct. 2023.
+* ACM SIGMETRICS Student Research Competition, Jun. 2023.
+
 ### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf) (Thesis defense) {#thesis}
 [\[thesis\]](/assets/isaac-thesis.pdf)
 [\[slides\]](/assets/thesis-defense.pptx)
 
 * Georgia Tech, ISyE Student Seminar, Sep. 2023.
-
 * CMU, Jul. 2023.
 
 ### [Optimal Scheduling in the Multiserver-job Model](/assets/msj-srpt.pdf)
@@ -23,17 +32,8 @@ permalink: /talks/
 [\[slides - Harvard & MIT\]](/assets/msj-srpt-harvard-mit.pptx)
 
 * ACM SIGMETRICS, Jun. 2023.
-
 * Harvard Theory Seminar, Sep. 2022. Hosted by Prof. Michael Mitzenmacher.
-
 * MIT Algorithms and Complexity Seminar, Sep. 2022. Hosted by Prof. Ronitt Rubinfeld.
-
-### [The RESET Technique for Multiserver-job Analysis](/assets/reset-src) {#reset}
-[\[paper\]](/assets/reset-src)
-[\[slides\]](/assets/reset-src-talk.pptx)
-[\[poster\]](/assets/reset-poster.pdf)
-
-* ACM SIGMETRICS Student Research Competition, Jun. 2023.
 
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf)
 [\[paper\]](/assets/product-mama.pdf)
@@ -55,9 +55,7 @@ permalink: /talks/
 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
 
 * CMU Theory lunch, Jan. 2022. [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
-
 * MIT LIDS Seminar, Mar. 2022. Hosted by Prof. Eytan Modiano.
-
 * CORS/INFORMS International Meeting, Jun. 2022.
 
 ### Multiserver-Job Systems
@@ -81,7 +79,6 @@ permalink: /talks/
 [\[Gittins paper\]](gittins-extremely-general.pdf)
 
 * Young Europeans in Queueing Theory, Jun. 2021
-
 * University of Washington Theory Seminar, Mar. 2021
 
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
@@ -90,7 +87,6 @@ permalink: /talks/
 [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
 
 * CMU Theory lunch, Oct. 2020. [\[video\]](https://www.youtube.com/watch?v=w0e5NaKlpBY)
-
 * SQUALL lunch at CMU, Oct. 2020
 
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf)
@@ -98,11 +94,8 @@ permalink: /talks/
 [\[paper\]](/assets/load-balancing.pdf)
 
 * ACM SIGMETRICS, Jun. 2019
-
 * SQUALL lunch at CMU, Apr. 2019
-
 * INFORMS Annual Meeting, Oct. 2019
-
 * Ohio State University Seminar, Jan. 2020
 
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf)
@@ -111,15 +104,9 @@ permalink: /talks/
 [\[paper\]](/assets/srpt.pdf)
 
 * IFIP Performance, Dec. 2018
-
 * 15-858C at CMU, taught by Prof. Weina Wang, Nov. 2018
-
 * Columbia, Nov. 2018. Hosted by Prof. Augustin Chaintreau.
-
 * INFORMS Annual Meeting 2018, Oct. 2018.
-
 * CMU Theory Lunch, Sept. 2018. [\[video\]](https://www.youtube.com/watch?v=H6PDvOt7R3E)
-
 * SQUALL lunch at CMU, Sept. 2018
-
 * MAMA workshop at SIGMETRICS, July 2018
