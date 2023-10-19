@@ -241,7 +241,11 @@ Predictions are given, and there's a small (epsilon-sized) error in the predicti
 
 **Goal**: Schedule to achieve a mean response time performance of the form E\[T^SRPT](1+f(epsilon)), for some function f that goes to zero as epsilon goes to zero. This is called "Consistency".
 
-**Twist**: There are many kinds of epsilon-error to consider. In our [SRPT-Bounce](/publications/#estimates) paper, we show that our SRPT-Bounce policy can handle the situation where all predictions may be off by a multiplicative error of epsilon. Adam Wierman has a paper (TODO: Cite) looking at predictions being off by an additive error - consistency is not possible there.
+**Twist**: There are many kinds of epsilon-error to consider. In our [SRPT-Bounce](/publications/#estimates) paper,
+we show that our SRPT-Bounce policy can handle the situation where all predictions may be off by a multiplicative error of epsilon.
+Adam Wierman and Misja Nuyens have a paper,
+["Scheduling despite inexact job-size information"](https://dl.acm.org/doi/abs/10.1145/1375457.1375461),
+looking at predictions being off by an additive error - consistency is not possible there.
 
 I'd like to instead consider the situation where an epsilon fraction of jobs may have seriously poor predictions, but all other predictions are accurate. There are two natural scenarios:
 
@@ -399,11 +403,12 @@ Can we prove any convergence to resource-pooled Gittins, if the distribution is 
 
 ### Restless MDPs for tail scheduling {#restless-tail}
 
-In our [Gittins-k]() paper and in Ziv Scully's Gittins paper (TODO: Cite),
+In our [Gittins-k](/publications/#gittins-k) paper and in Ziv Scully's Gittins paper, ["The Gittins Policy in the M/G/1 Queue"](https://ziv.codes/publications/#the-gittins-policy-in-the-mg1-queue),
 we relate the Gittins policy to that of the Gittins Game,
 a corresponding MDP whose optimal solution describes the Gittins scheduling policy,
 and gives rise to the optimality of the scheduling policy.
-This relationship is at the heart of Gittins' original paper (TODO: Cite)
+This relationship is at the heart of Gittins' original paper,
+["Bandit Processes and Dynamic Allocation Indices"](https://doi.org/10.1111/j.2517-6161.1979.tb01068.x),
 which introduces both the MDP policy and the scheduling policy.
 
 For the mean response time objective, the corresponding MDP is a *restful* MDP,
@@ -411,7 +416,8 @@ giving the optimal solution strong enough properties to carry over to the schedu
 In contrast, for a *tail* response time objective such as T^2,
 the corresponding MDP is a *restless* MDP.
 Recently, there have been advances in the theory of multiarmed restless MDPs,
-such as the Follow-the-Virtual-Leader (FTVL) policy of Yige Hong and Weina Wang (TODO: Cite).
+such as the Follow-the-Virtual-Leader (FTVL) policy of Yige Hong and Weina Wang,
+in their paper ["Restless Bandits with Average Reward: Breaking the Uniform Global Attractor Assumption"](https://arxiv.org/abs/2306.00196).
 
 **Question**: Can we formulate a restless Gittins game, solve the single-arm version,
 and use the FTVL policy or something similar to design a scheduling policy?

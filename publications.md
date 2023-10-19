@@ -83,7 +83,7 @@ Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June
 
 **Winner of the SIGMETRICS 2021 Best Paper Award**
 
-### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf)
+### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf) {#gittins-k}
 Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 
 [\[paper\]](/assets/gittins-extremely-general.pdf)
