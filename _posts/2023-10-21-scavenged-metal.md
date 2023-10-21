@@ -24,4 +24,8 @@ I particularly like the blue-tape-wrapped object which looks like a motor. Quite
 
 ### Why I like it
 
-I think I like finding bits of broken or discarded metal because metal is so permanent, and so indelibly marked by civilization.
+I think I like finding bits of broken or discarded metal because metal is so permanent, and so indelibly marked by civilization. Essentially every piece of metal went through a grand industrial process, from ore mining to smelting to a factory manufacturing process. None of this would have been possible in almost all of history. And now it's lost and discarded, detached from its purpose. Lying on the ground for me to pocket.
+
+And yet, despite having lost its purpose, it persists. It might rust, and it might get bent and scraped, but those little bits of metal will last for years and decades to come.
+
+I like that its become detached from industry and enterprise, from commerce and payment. Once, some company payed another company vast amounts of money to fabricate vast quantites of these.
