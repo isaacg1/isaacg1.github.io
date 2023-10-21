@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Scavenged Metal Collection"
 layout: post
 ---
@@ -28,4 +28,6 @@ I think I like finding bits of broken or discarded metal because metal is so per
 
 And yet, despite having lost its purpose, it persists. It might rust, and it might get bent and scraped, but those little bits of metal will last for years and decades to come.
 
-I like that its become detached from industry and enterprise, from commerce and payment. Once, some company payed another company vast amounts of money to fabricate vast quantites of these.
+I like that these objects have become detached from industry and enterprise, from commerce and payment. Once, some company payed another company vast amounts of money to fabricate vast quantites of these. Now, no one cares about them, and I can have them for the cost of finding and carrying them: free.
+
+Lastly, I'm turning an eyesore and a tetanus hazard into cherished collection, and that feels nice.
