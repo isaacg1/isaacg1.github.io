@@ -14,11 +14,11 @@ I have more elsewhere, and when I was
 younger I just held onto things for a
 bit, then recycled or discarded them.
 
-![Scavenged metal collection at home](/assets/scavenged-home.jpg)
+![Scavenged metal collection at home](/assets/scavenged/scavenged-home.jpg)
 
 While I was out and about today (I like to blog while walking), I found several more pieces to add to my collection:
 
-![Scavenged metal in my hand](/assets/scavenged-outside.jpg)
+![Scavenged metal in my hand](/assets/scavenged/scavenged-outside.jpg)
 
 I particularly like the blue-tape-wrapped object which looks like a motor. Quite a unique find!
 
@@ -31,3 +31,11 @@ And yet, despite having lost its purpose, it persists. It might rust, and it mig
 I like that these objects have become detached from industry and enterprise, from commerce and payment. Once, some company payed another company vast amounts of money to fabricate vast quantites of these. Now, no one cares about them, and I can have them for the cost of finding and carrying them: free.
 
 Lastly, I'm turning an eyesore and a tetanus hazard into cherished collection, and that feels nice.
+
+### Update: Pittsburgh Collection
+
+I found my Pittsburgh scavenged metal collection:
+
+![Scavenged metal Pittsburgh](/assets/scavenged/scavenged-previous.jpg)
+
+It has a lot of more unique pieces, including a spring, a chain, a magnet, some partial spherical object, and multiple keys!
