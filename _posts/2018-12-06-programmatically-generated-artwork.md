@@ -16,7 +16,7 @@ and transformed into the [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_spa
 
 [Repository](https://github.com/isaacg1/streams/)
 
-![Streams](/assets/streams.png)
+![Streams](/assets/art/streams.png)
 
 ## Watercolors
 
@@ -24,7 +24,7 @@ Points are seeded. Colors initially diffuse wildly, then more gently as distance
 
 [Repository](https://github.com/isaacg1/water-me)
 
-![Watercolors](/assets/watercolors.png)
+![Watercolors](/assets/art/watercolors.png)
 
 ## Sand Walk
 
@@ -37,7 +37,7 @@ and choose the closest one to the final location of the random walk.
 
 [Repository](https://github.com/isaacg1/angles)
 
-![Sand walk](/assets/sand-walk.png)
+![Sand walk](/assets/art/sand-walk.png)
 
 ## Fans
 
@@ -52,7 +52,7 @@ If no such pixel exists, as close as possible.
 
 [Repository](https://github.com/isaacg1/angles)
 
-![Fans](/assets/fans.png)
+![Fans](/assets/art/fans.png)
 
 ## Orbits
 
@@ -62,7 +62,7 @@ their color similarity and inverse radius squared.
 
 [Repository](https://github.com/isaacg1/log-gravity)
 
-![Orbits](/assets/orbits.png)
+![Orbits](/assets/art/orbits.png)
 
 ## Fractal
 
@@ -80,7 +80,7 @@ Sample transformations with a triangle distribution.
 
 [Repository](https://github.com/isaacg1/fractal)
 
-![Fractal](/assets/fractal.png)
+![Fractal](/assets/art/fractal.png)
 
 ## Subdivide, exchange
 
@@ -95,7 +95,7 @@ Repeat until desired size.
 
 [Repository](https://github.com/isaacg1/subdivide-exchange)
 
-![Subdivide, exchange](/assets/subdivide-exchange.png)
+![Subdivide, exchange](/assets/art/subdivide-exchange.png)
 
 ## Midline
 
@@ -103,7 +103,7 @@ Algorithm: Generate seed pixels, place new pixels randomly on the line between t
 
 [Repository](https://github.com/isaacg1/midline)
 
-![Midline](/assets/midline.png)
+![Midline](/assets/art/midline.png)
 
 ## Threads
 
@@ -115,7 +115,7 @@ Draw traces of each particle.
 
 [Repository](https://github.com/isaacg1/torus)
 
-![Toroidal Gravity](/assets/torus.png)
+![Toroidal Gravity](/assets/art/torus.png)
 
 ## Brushstrokes
 
@@ -126,7 +126,7 @@ Find the brush whose pixels have the least average color distance from the middl
 Set the pixel at that location to the middlemost color.
 Repeat this process a couple of times.
 
-![Brushstrokes](/assets/brush-1600.png)
+![Brushstrokes](/assets/art/brush-1600.png)
 
 ## Smeared Mandelbrot
 
@@ -134,7 +134,7 @@ Algorithm: Generate mandelbrot-like sets by iterating f(z) = z^p + c, for each p
 
 [Repository](https://github.com/isaacg1/mandel)
 
-![Smeared Mandelbrot](/assets/mandel-1000-400.png)
+![Smeared Mandelbrot](/assets/art/mandel-1000-400.png)
 
 ## Disrupted continuity
 
@@ -142,7 +142,7 @@ Algorithm: Choose locations in a random order. At each location, choose the pixe
 
 [Repository](https://github.com/isaacg1/color-cont)
 
-![Disrupted continuity](/assets/continuous.png)
+![Disrupted continuity](/assets/art/continuous.png)
 
 ## Peaks
 
@@ -150,7 +150,7 @@ Algorithm: Add together many circles of colors, measured relative to gray, where
 
 [Repository](https://github.com/isaacg1/peaks)
 
-![Peaks](/assets/peaks.png)
+![Peaks](/assets/art/peaks.png)
 
 ## Broken Glass
 
@@ -158,7 +158,7 @@ Algorithm: Split one region in half with a black line. Color each side a variati
 
 [Repository](https://github.com/isaacg1/broken_glass)
 
-![Broken Glass](/assets/broken-glass.svg)
+![Broken Glass](/assets/art/broken-glass.svg)
 
 ## Circles
 
@@ -169,4 +169,4 @@ each at the nearest unoccupied location to the most similar color placed thus fa
 
 Note that this one looks better at larger scales. A very large image can be found in the repository readme.
 
-![Circles](/assets/circles.png)
+![Circles](/assets/art/circles.png)
