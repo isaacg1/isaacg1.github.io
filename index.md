@@ -49,4 +49,4 @@ A good way to contact me is via my
 
 Here's some [art I made](2018/12/06/programmatically-generated-artwork.html):
 
-<img src="/assets/broken-glass.svg" alt="Art" width="400"/>
+<img src="/assets/art/broken-glass.svg" alt="Art" width="400"/>

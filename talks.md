@@ -7,7 +7,7 @@ permalink: /talks/
 ### Relative Arrivals: A New Drift Method for Time-Varying Arrivals
 [\[slides\]](/assets/relative-arrivals-snapp.pptx)
 
-* SNAPP Seminar, Oct. 2023.
+* SNAPP Seminar, Oct. 2023. [\[video\]](https://www.youtube.com/watch?v=Zr6cf4p83AA)
 
 ### [The RESET and MARC Techniques for Multiserver-job Analysis](/assets/reset-and-marc.pdf) {#reset}
 [\[paper\]](/assets/reset-and-marc.pdf)

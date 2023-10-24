@@ -288,7 +288,7 @@ If 1-server jobs are very rare, then their interarrival time will be very large.
 
 **Setting**: Markovian arrivals/markovian service systems.
 
-In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my SNAPP talk (TODO: Link video once it's up), which is a cleaner presentation of the idea and focuses on markovian arrivals.
+In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
 
 The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
 
