@@ -27,7 +27,7 @@ feel free to reach out to me, I am looking to recruit students.
 
 I'm looking for students with a **strong mathematical background**, so please emphasize that element of your background if you reach out. A math background can be demonstrated via taking advanced math-heavy classes, class projects, or theoretical research. Backgrounds in math, statistics, theoretical computer science, or operations research are all conducive to my style of research.
 
-I have received
+I have received the [**ACM SIGMETRICS 2023 Doctoral Dissertation Award**](https://sigmetrics.org/dissertationaward-2023.shtml),
 the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions), the award for the best student paper in the field of operations research,
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
 the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
