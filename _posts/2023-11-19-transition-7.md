@@ -17,3 +17,7 @@ These were taken at the Waterworks Atlanta park.
 ![Picture  6](/assets/album-11-19-23/pic6.jpg)
 ![Picture  7](/assets/album-11-19-23/pic7.jpg)
 ![Picture  8](/assets/album-11-19-23/pic8.jpg)
+
+As a bonus, here's a picture of me at Northwestern University, sitting by the shore of Lake Michigan:
+
+![Bonus picture](/assets/album-11-19-23/bonus.jpg)
