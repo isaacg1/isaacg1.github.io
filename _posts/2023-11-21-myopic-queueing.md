@@ -7,7 +7,11 @@ layout: post
 This post is about an unsuccessful research exploration that I undertook.
 I wanted to share my thoughts, even if they didn't lead to any breakthrough.
 
-I've been thinking about Yuan Zhong's talk at the RL&MAS workshop at performance. He considered myopic policies for the X system with unknown service rates, and proved that several classes of myopic policies cannot have full stability region. One class of policies left open were policies where the service threshold curves switched back and forth infinitely often, with the switching points getting rarer and rarer sufficiently fast. I want to examine these policies.
+## Myopic queueing
+
+I've been thinking about Yuan Zhong's talk at the RL&MAS workshop at performance. He considered myopic policies for the X system with unknown service rates, and proved that several classes of myopic policies cannot have full stability region. "Myopic" hear means that the policy cannot incorporate or learn any information about the service rates of the different service options.
+
+One class of policies left open were policies where the service threshold curves switched back and forth infinitely often, with the switching points getting rarer and rarer sufficiently fast. I want to examine these policies.
 
 ## Simplification: the 112 system
 
