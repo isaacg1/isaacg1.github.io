@@ -4,6 +4,9 @@ title: 'Myopic queueing policies with superexponential switching'
 layout: post
 ---
 
+This post is about an unsuccessful research exploration that I undertook.
+I wanted to share my thoughts, even if they didn't lead to any breakthrough.
+
 I've been thinking about Yuan Zhong's talk at the RL&MAS workshop at performance. He considered myopic policies for the X system with unknown service rates, and proved that several classes of myopic policies cannot have full stability region. One class of policies left open were policies where the service threshold curves switched back and forth infinitely often, with the switching points getting rarer and rarer sufficiently fast. I want to examine these policies.
 
 ## Simplification: the 112 system
@@ -19,7 +22,7 @@ By "myopic policy", I mean that the policy maps each queue length q to either se
 A myopic policy can be defined by its switching points, the queue lengths at which the service option changes. Let's say that we use service 1 between switching points 2i and 2i+1, and option 2 between points 2i+1 and 2i+2.
 
 Suppose (without loss of generality) that service option 1 has rate above λ, but service option 2 has rate below λ.
-Let's call service option 1 rate μ, and sevice option 2 rate ε, where μ > λ > ε.
+Let's call service option 1 rate μ, and service option 2 rate ε, where μ > λ > ε.
 
 
 If the difference between switching points is large, the system will accumulate around even switching points of the form 2i, having drift away from odd switching points.
@@ -46,6 +49,12 @@ So far, I've just made heuristic arguments - does this policy actually achieve f
 
 ## Next steps
 
-First, I want to simulate this policy. I'll measure the mean queue length over different intervals of time, for μ = 1, λ = 0.9, ε = 0.1. If the policy is stabilizing, mean queue length should converge. If the policy is unstable, mean queue length should diverge as we examine longer and longer interals.
+First, I want to simulate this policy. I'll measure the mean queue length over different intervals of time, for μ = 1, λ = 0.9, ε = 0.1. If the policy is stabilizing, mean queue length should converge. If the policy is unstable, mean queue length should diverge as we examine longer and longer integrals.
+
+Answer: I can't really tell - the simulations take too long to clearly indicate whether it's stable or not.
 
 Second, I want to calculate the stationary distribution. A stable policy gives rise to a stationary probability distribution, and an unstable system doesn't. Does this policy have a stationary probability distribution?
+
+Answer: It doesn't look stable. The relative state probabilities are diverging, at least in a liminf sense. This seems inevitable or even provable: If most states up until q have received epsilon service rate, the relative state probability has grow exponentially in q, which is incompatible with having a stationary distribution.
+
+So how does this jibe with the analysis above? I think the answer might be that the system isn't stable, but that the embedded chain corresponding to visiting new switching points is stable. In other words, E[Q] might be infinite, but E[ln(Q)] might be finite.
