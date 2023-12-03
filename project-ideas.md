@@ -11,11 +11,11 @@ I'm particularly interested in working with either students
 at the school I am at (Georgia Tech, UIUC, or Northwestern),
 or people who already have a background in queueing theory research.
 
-Last updated: July 15, 2023.
+Last updated: December 2nd, 2023.
 
 ## Table of contents
 
-I've separated my ideas into three categories:
+I've separated my ideas into four categories:
 
 * Ideas that I think are quite promising,
 where I have promising directions for a result.
@@ -23,6 +23,8 @@ where I have promising directions for a result.
 * Ideas that are just starting out, or where I don't quite know how I'd prove a result.
 
 * Ideas that I'm actively pursuing, or have written a paper about.
+
+* Ideas I'm no longer interested in, that I'm keeping around for archival purposes.
 
 I'm most interested in collaborating on ideas in the "quite promising" category,
 but all of them are worth looking at and discussing.
@@ -37,41 +39,43 @@ The order within a category is roughly chronological.
 
 3. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
 
-4. [Optimal Transform](#optimal-transform)
+4. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
 
-5. [Optimal scheduling in the general MSJ model](#general-msj)
+5. [Scheduling with epsilon prediction errors](#epsilon-error)
 
-6. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
-
-7. [Scheduling with epsilon prediction errors](#epsilon-error)
-
-8. [Tails for ServerFilling](#sf-tails)
-
-9. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
+6. [Tails for ServerFilling](#sf-tails)
 
 ### [Starting out/Not sure how to proceed](#starting-out)
 
-1. [The Time Index scheduling policy](#time-index)
+1. [Scheduling in the low-load limit](#low-load)
 
-2. [Scheduling in the low-load limit](#low-load)
+2. [M/G/k response time lower bounds (known size)](#mgk-lower)
 
-3. [M/G/k response time lower bounds (known size)](#mgk-lower)
+3. [General constrained-service queue](#constrained-service)
 
-4. [General constrained-service queue](#constrained-service)
+4. [Value function service and dispatching](#value-function)
 
-5. [Value function service and dispatching](#value-function)
+5. [Multiserver Nudge](#multi-nudge)
 
-6. [Multiserver Nudge](#multi-nudge)
+6. [Optimal dispatching to Gittins queues](#gittins-dispatch)
 
-7. [Optimal dispatching to Gittins queues](#gittins-dispatch)
-
-8. [Restless MDPs for tail scheduling](#restless-tail)
+7. [Restless MDPs for tail scheduling](#restless-tail)
 
 ### [Active projects](#active)
 
 1. [Known size dispatching to FCFS queues](#disp-fcfs)
 
 2. [Product form steady-state distributions from graph structure](#graph-product-form)
+
+3. [Optimal scheduling in the general MSJ model](#general-msj)
+
+4. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
+
+### [Archive: No longer interested](#archive)
+
+1. [The Time Index scheduling policy](#time-index)
+
+2. [Optimal Transform](#optimal-transform)
 
 ## Quite promising {#promising}
 
@@ -126,90 +130,8 @@ Find the Pareto-optimal tradeoff of relative completions vs. throughput,
 perhaps corresponding to best policies at a variety of loads.
 Solve symbolically for throughput and relative completions.
 
-### Optimal Transform {#optimal-transform}
-  
-My [Nudge](/publications/#nudge) paper works very hard
-to do even the most basic analysis of the tail probability P(T>t).
-But maybe the reason this is hard is because we're effectively
-comparing the response time random variable against a constant,
-and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
-  
-The smoothest random variable is the exponential random variable.
-If we use that as our cutoff, we get P(T>Exp(s)), which is the
-[Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform)
-of response time (Technically, it's P(T<Exp(s)), not P(T>Exp(s)).
-This still captures similar information, if we set s=1/t.
-It is also much easier to analyze:
-All
-[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies/)
-policies and Nudge have transform analysis. So let's try to optimize the transform.
-  
-**Intuition:** Effectively, jobs abandon at rate s, and we want to maximize the fraction that we complete before they abandon. If jobs told us when they abandoned, the optimal policy is straightforward: run the small job that hasn't abandoned yet. But we don't know which jobs have abandoned. We need to use time in system as a proxy.
-  
-**First step:** Compute the transform for some common policies, like FCFS, SRPT, Nudge, via simulation and/or formula. Compare against simulated P(T>t), which we can call the "hard tail".
-  
-**Future steps:** Is the transform a good proxy for the hard tail?
-  
-Is the inverse transform a good proxy for the inverse hard tail, e.g. a percentile?
-  
-For a given pair of (time in system, remaining size), what's the optimal 2-job policy? Is it that index policy I came up with a while back? What's a semantic understanding of that policy? Can we analyze it? Is it empirically optimal in the full M/G/1? Does it perform well for the hard tail/percentiles?
-  
-**Update:** The optimal 2-job strategy is to serve the job that maximizes e^-st e^-sr/(1-e^-sr).
-  
-Semantically, this is the probability of not abandoning prior to the time of the decision, times the probability of not abandoning while run, divided by the probability of abandoning while being run.
-  
-Note that this is a "conveyor belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
-  
-**Further steps:** Implement this policy in simulation. What's its empirical transform? Is it empirically optimal?
-  
-Is the policy the optimal 3-job policy? Optimal without arrivals?
+Mean-variance tradeoff: Follow up with Shubhada.
 
-**Important update:** This is a pretty bad tail metric, and hence a pretty bad policy.
-This metric gives jobs *diminishing* importance as they age, while a good tail metric
-should give jobs *increasing* importance as they age.
-This issue is reflected in the policy,
-which rates jobs as *less* important the larger their time in system.
-
-Instead, one should consider the metric E[T^(st)], in contrast
-to the above discussion of E[e^(-st)]. The optimal 2-job strategy is then
-to maximize e^st e^sr / (1-e^sr).
-This is a better metric and a better policy.
-It's equivalent to using negative inputs to the transform,
-so it's still extractable from the transform.
-One must be careful to only consider values of s for which the metric is finite.
-
-### Optimal scheduling in the general MSJ model {#general-msj}
-
-See Section 8.3.4 of [my thesis](/assets/isaac-thesis.pdf).
-
-Outside of the divisible server need setting behind the
-[DivisorFilling-SRPT](/publications/#sf-srpt) policy,
-we can't guarantee that all of the servers can be filled by an arbitrary set of k jobs.
-This can cause problems in two ways:
-
-1. The smallest jobs might not pack well.
-
-2. If we prioritize the smallest jobs,
-the jobs that are left over might not be able to fill the servers.
-
-For example, consider a system with k=3 servers and jobs of server need 1 and 2.
-If the 2-server jobs have smaller size, we can't fill the servers with just 2-server jobs.
-If the 1-server jobs have smaller size, and we prioritize them,
-we'll run out of 1-server jobs and have just 2-server jobs left,
-which can't fill the servers.
-
-To fix problem 1, we should just find the set of jobs with smallest sizes
-that can fill the servers, and serve those jobs.
-Proving that this is optimal will be challenging.
-
-To fix problem 2, we should set a floor on the number of 1-server jobs
-that we want to keep in the system,
-in the style of
-[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching),
-and when we reach the floor, use the least 1-server-intensive strategy.
-Proving this is optimal will also be hard.
-
-**First step:** Find a prospective policy for the k=3 setting that "feels" optimal.
 
 ### Hybrid ServerFilling and MSJ FCFS to avoid starvation {#hybrid-sf-fcfs}
 
@@ -284,29 +206,7 @@ If 1-server jobs are very rare, then their interarrival time will be very large.
 
 **Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
 
-### Relative arrivals/completions with infinite state spaces {#infinite-ra}
-
-**Setting**: Markovian arrivals/markovian service systems.
-
-In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
-
-The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
-
-A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
-
-**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
-
 ## Starting out/Not sure how to proceed {#starting-out}
-
-### The Time Index scheduling policy {#time-index}
-
-**Setting**: M/G/1 scheduling for the tail, especially the asymptotic tail, especially in comparison to FCFS.
-
-**Policy**: Time Index. Priority is s - t, where s is a job's size and t is the job's time in system.Lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
-
-**First step**: Implement this policy. Compare against FCFS, [Nudge](/publications/#nudge).
-
-**Future steps**: By how much does it dominate FCFS? Characterize leading constant of asymptotic?
 
 ### Scheduling in the low-load limit {#low-load}
 
@@ -489,3 +389,116 @@ Are they closed under any operations, such as taking minors?
 
 **Update:** Elimination ordering seems better for summation-form relative arrivals/relative completions. Instead, for product-form you need something slightly stronger: A sequence of cuts such that on each side of the cut, there's exactly one vertex with transitions across the cut.
 
+### Optimal scheduling in the general MSJ model {#general-msj}
+
+See Section 8.3.4 of [my thesis](/assets/isaac-thesis.pdf).
+
+Outside of the divisible server need setting behind the
+[DivisorFilling-SRPT](/publications/#sf-srpt) policy,
+we can't guarantee that all of the servers can be filled by an arbitrary set of k jobs.
+This can cause problems in two ways:
+
+1. The smallest jobs might not pack well.
+
+2. If we prioritize the smallest jobs,
+the jobs that are left over might not be able to fill the servers.
+
+For example, consider a system with k=3 servers and jobs of server need 1 and 2.
+If the 2-server jobs have smaller size, we can't fill the servers with just 2-server jobs.
+If the 1-server jobs have smaller size, and we prioritize them,
+we'll run out of 1-server jobs and have just 2-server jobs left,
+which can't fill the servers.
+
+To fix problem 1, we should just find the set of jobs with smallest sizes
+that can fill the servers, and serve those jobs.
+Proving that this is optimal will be challenging.
+
+To fix problem 2, we should set a floor on the number of 1-server jobs
+that we want to keep in the system,
+in the style of
+[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching),
+and when we reach the floor, use the least 1-server-intensive strategy.
+Proving this is optimal will also be hard.
+
+**First step:** Find a prospective policy for the k=3 setting that "feels" optimal.
+
+### Relative arrivals/completions with infinite state spaces {#infinite-ra}
+
+**Setting**: Markovian arrivals/markovian service systems.
+
+In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
+
+The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
+
+A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
+
+**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
+
+## Archived: No longer interested {#archive}
+
+These are projects that I was once interested in, but I'm not interested in any more.
+Maybe the approaches that I wanted to pursue didn't pan out,
+maybe others took it in more interesting directions.
+Either way, you can see my old ideas here.
+
+### The Time Index scheduling policy {#time-index}
+
+**Setting**: M/G/1 scheduling for the tail, especially the asymptotic tail, especially in comparison to FCFS.
+
+**Policy**: Time Index. Priority is s - t, where s is a job's size and t is the job's time in system.Lower is better. Relatively simple proof that waiting time dominates FCFS waiting time.
+
+**First step**: Implement this policy. Compare against FCFS, [Nudge](/publications/#nudge).
+
+**Future steps**: By how much does it dominate FCFS? Characterize leading constant of asymptotic?
+
+### Optimal Transform {#optimal-transform}
+  
+My [Nudge](/publications/#nudge) paper works very hard
+to do even the most basic analysis of the tail probability P(T>t).
+But maybe the reason this is hard is because we're effectively
+comparing the response time random variable against a constant,
+and the constant random variable is obnoxious to work with -- it has a sharp cutoff.
+  
+The smoothest random variable is the exponential random variable.
+If we use that as our cutoff, we get P(T>Exp(s)), which is the
+[Laplace-Stieltjes Transform](https://en.wikipedia.org/wiki/Laplace%E2%80%93Stieltjes_transform)
+of response time (Technically, it's P(T<Exp(s)), not P(T>Exp(s)).
+This still captures similar information, if we set s=1/t.
+It is also much easier to analyze:
+All
+[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies/)
+policies and Nudge have transform analysis. So let's try to optimize the transform.
+  
+**Intuition:** Effectively, jobs abandon at rate s, and we want to maximize the fraction that we complete before they abandon. If jobs told us when they abandoned, the optimal policy is straightforward: run the small job that hasn't abandoned yet. But we don't know which jobs have abandoned. We need to use time in system as a proxy.
+  
+**First step:** Compute the transform for some common policies, like FCFS, SRPT, Nudge, via simulation and/or formula. Compare against simulated P(T>t), which we can call the "hard tail".
+  
+**Future steps:** Is the transform a good proxy for the hard tail?
+  
+Is the inverse transform a good proxy for the inverse hard tail, e.g. a percentile?
+  
+For a given pair of (time in system, remaining size), what's the optimal 2-job policy? Is it that index policy I came up with a while back? What's a semantic understanding of that policy? Can we analyze it? Is it empirically optimal in the full M/G/1? Does it perform well for the hard tail/percentiles?
+  
+**Update:** The optimal 2-job strategy is to serve the job that maximizes e^-st e^-sr/(1-e^-sr).
+  
+Semantically, this is the probability of not abandoning prior to the time of the decision, times the probability of not abandoning while run, divided by the probability of abandoning while being run.
+  
+Note that this is a "conveyor belt" policy: jobs never interchange priority. This is a class containing SOAP and Nudge.
+  
+**Further steps:** Implement this policy in simulation. What's its empirical transform? Is it empirically optimal?
+  
+Is the policy the optimal 3-job policy? Optimal without arrivals?
+
+**Important update:** This is a pretty bad tail metric, and hence a pretty bad policy.
+This metric gives jobs *diminishing* importance as they age, while a good tail metric
+should give jobs *increasing* importance as they age.
+This issue is reflected in the policy,
+which rates jobs as *less* important the larger their time in system.
+
+Instead, one should consider the metric E[T^(st)], in contrast
+to the above discussion of E[e^(-st)]. The optimal 2-job strategy is then
+to maximize e^st e^sr / (1-e^sr).
+This is a better metric and a better policy.
+It's equivalent to using negative inputs to the transform,
+so it's still extractable from the transform.
+One must be careful to only consider values of s for which the metric is finite.
