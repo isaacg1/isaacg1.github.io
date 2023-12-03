@@ -2,7 +2,7 @@
 layout: page
 published: true
 ---
-![Isaac Grosof's portrait](/assets/mountain.jpg)
+![Isaac Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a purple top in front of a flowerbed.](/assets/small-flowers.jpg)
 
 I am currently the [Tennenbaum Postdoctoral Fellow](https://www.isye.gatech.edu/research/isye-postdoctoral-fellowship-program)
 at the Georgia Tech School of Industrial and Systems Engineering,
@@ -28,12 +28,11 @@ feel free to reach out to me, I am looking to recruit students.
 I'm looking for students with a **strong mathematical background**, so please emphasize that element of your background if you reach out. A math background can be demonstrated via taking advanced math-heavy classes, class projects, or theoretical research. Backgrounds in math, statistics, theoretical computer science, or operations research are all conducive to my style of research.
 
 I have received the [**ACM SIGMETRICS 2023 Doctoral Dissertation Award**](https://sigmetrics.org/dissertationaward-2023.shtml),
-the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions), the award for the best student paper in the field of operations research,
+the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions),
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
 the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
 and the [**IFIP Performance 2018 Best Student Paper Award**](publications/#srpt-for-multiserver-systems).
-I was a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023),
-a fellowship recognizing academic excellence and leadership.
+I was a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023).
 
 Check out my [publications](publications), all of which you can download to read.
 
