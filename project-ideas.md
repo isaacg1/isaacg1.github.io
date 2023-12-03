@@ -45,21 +45,21 @@ The order within a category is roughly chronological.
 
 6. [Tails for ServerFilling](#sf-tails)
 
+7. [M/G/k response time lower bounds (known size)](#mgk-lower)
+
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
 
-2. [M/G/k response time lower bounds (known size)](#mgk-lower)
+2. [General constrained-service queue](#constrained-service)
 
-3. [General constrained-service queue](#constrained-service)
+3. [Value function service and dispatching](#value-function)
 
-4. [Value function service and dispatching](#value-function)
+4. [Multiserver Nudge](#multi-nudge)
 
-5. [Multiserver Nudge](#multi-nudge)
+5. [Optimal dispatching to Gittins queues](#gittins-dispatch)
 
-6. [Optimal dispatching to Gittins queues](#gittins-dispatch)
-
-7. [Restless MDPs for tail scheduling](#restless-tail)
+6. [Restless MDPs for tail scheduling](#restless-tail)
 
 ### [Active projects](#active)
 
@@ -206,6 +206,36 @@ If 1-server jobs are very rare, then their interarrival time will be very large.
 
 **Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
 
+### M/G/k response time lower bounds (known size) {#mgk-lower}
+
+See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
+
+There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
+
+**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
+
+**Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
+
+**First step**: Derive the WINE bound.
+
+**Future step**: Quantity expected work in the increasing-speed queue, perhaps with renewal-reward.
+
+**Update**: We can analyze the increasing-speed queue via the constant-drift/affine-drift method,
+akin to the MARC method from my [RESET and MARC paper](/publications/#reset)
+and my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA).
+
+See my photo-notes on the subject. For the 2-server setting, the constant-drift test function is:
+
+    f(w, 1) = w, f(0, 0) = 0,
+    f(w, 1/2) = (1-e^(-2lw))/2l
+
+The affine-drift test function is:
+
+    f(w, 1) = w^2, f(0, 0) = 0,
+    f(w, 1/2) = (1-e^(-2lw))/2l^2 + w/l
+
+These should be sufficient to compute mean work!
+
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}
@@ -221,20 +251,6 @@ SRPT-k was proven to be optimal in the no-arrivals setting by Robert McNaughton 
 **First step:** If k=2, and we consider 4-job sequences, I believe we find that we must serve the smallest pair of any 3 jobs. Confirm?
 
 **Future steps:** Is SRPT-2 uniquely optimal at low load? Is SRPT-k? Expand to dispatching, MSJ, unknown sizes?
-
-### M/G/k response time lower bounds (known size) {#mgk-lower}
-
-See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
-
-There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
-
-**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
-
-**Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
-
-**First step**: Derive the WINE bound.
-
-**Future step**: Quantity expected work in the increasing-speed queue, perhaps with renewal-reward.
 
 ### General constrained-service queue {#constrained-service}
 
