@@ -37,7 +37,7 @@ written in a language very different from English, translation is difficult,
 and we must be careful to not make assumptions about what certain words mean.
 I decided to use a translation based on the Jewish tradition,
 rather than the Christian tradition,
-as I think it is more closely tracks the underlying Hebrew.
+as I think it more closely tracks the underlying Hebrew.
 I will seek to illuminate the context in which these two passages occur,
 as well as discuss the specific word-choices made,
 in order to better understand what the text means.
