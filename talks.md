@@ -26,6 +26,11 @@ permalink: /talks/
 * Georgia Tech, ISyE Student Seminar, Sep. 2023.
 * CMU, Jul. 2023.
 
+### Multiserver Stochastic Scheduling: Analysis and Optimality (Job talk) {#job-talk}
+[\[slides\]](/assets/job-talk.pptx)
+
+* Northwestern University, Jan. 2023.
+
 ### [Optimal Scheduling in the Multiserver-job Model](/assets/msj-srpt.pdf)
 [\[paper\]](/assets/msj-srpt.pdf)
 [\[slides - SIGMETRICS\]](/assets/msj-srpt-sigmetrics.pptx)

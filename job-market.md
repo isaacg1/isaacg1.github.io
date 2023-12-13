@@ -15,6 +15,8 @@ For the benefit of future applicants, I'm leaving up my job market info here.
 
 * [Diversity, equity, and inclusion statement](/assets/diversity-statement.pdf)
 
+### [Job Talk](/assets/job-talk.pptx)
+
 ### Selected papers
 
 * [SRPT for Multiserver Systems](/assets/srpt.pdf) (Performance 2018)
