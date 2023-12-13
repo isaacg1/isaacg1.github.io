@@ -61,7 +61,9 @@ Topics mentioned in the letter:
   
 * [Sidney Powel](https://en.wikipedia.org/wiki/Sidney_Powell): Election fraud conspiracy theorist lawyer.
 
-* Bill Olsen, Kurt Olsen: Not sure who is meant - names are too generic.
+* Bill Olsen: Not sure, maybe Kurt Olsen's relative?
+
+* [Kurt Olsen](https://www.thedailybeast.com/this-pro-trump-lawyer-was-a-rising-stop-the-steal-star-his-firm-erased-him): Attorney who aided the Texas Attorney General's effort to overturn 17 other states election results.
 
 * [Kash Patel](https://www.axios.com/kash-patel-cia-gina-haspel-757b92c0-82a5-457b-bde8-d0d683ee222e.html):
   Former aide to Rep. Devin Nunes. In December, the President planned to appoint him Deputy Director of the CIA, under Gina Haspell.
