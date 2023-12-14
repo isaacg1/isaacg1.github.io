@@ -188,7 +188,7 @@ Margrave of Baden-Baden
   * (1694-1695: Leopold William, Hereditary Prince of Baden-Baden. Died in childhood)
   * (1696-1700: Charlotte of Baden-Baden. Died in childhood)
   * (1697-1703: Charles Joseph, Hereditary Prince of Baden-Baden. Died in childhood)
-  * (1700-1702: Wilhlmine of Baden-Baden. Died in childhood)
+  * (1700-1702: Wilhelmine of Baden-Baden. Died in childhood)
   * (1701-1707: Luise of Baden-Baden. Died in childhood)
   * (1702-1761: [Louis George](https://en.wikipedia.org/wiki/Louis_George,_Margrave_of_Baden-Baden),
   Margrave of Baden-Baden. 4 descendants. Extinct 1789)
