@@ -227,14 +227,22 @@ and my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA).
 See my photo-notes on the subject. For the 2-server setting, the constant-drift test function is:
 
     f(w, 1) = w, f(0, 0) = 0,
-    f(w, 1/2) = (1-e^(-2lw))/2l
+    f(w, 1/2) = w + (1-e^(-2lw))/2l
 
 The affine-drift test function is:
 
     f(w, 1) = w^2, f(0, 0) = 0,
-    f(w, 1/2) = (1-e^(-2lw))/2l^2 + w/l
+    f(w, 1/2) = w^2 + w/l + (1-e^(-2lw))/2l^2
 
 These should be sufficient to compute mean work!
+
+If we make the state space consist of work, time until next arrival, and speed,
+we can simplify this considerably. The constant-drift test function is now:
+
+    f(w, 1) = w, f(0, 0) = 0,
+    f(w, a, 1/2) = w + min(w, a/2)
+
+If we plug in `a = Exp(l)` and take expectations, we get the first expression above.
 
 ## Starting out/Not sure how to proceed {#starting-out}
 
