@@ -21,3 +21,8 @@ These were taken at the Atlanta Botanical Garden.
 ![Picture 10](/assets/album-12-16-23/pic10.jpg)
 ![Picture 11](/assets/album-12-16-23/pic11.jpg)
 
+As a bonus, here's some picture from the next weekend, when I went to a reservoir:
+
+![Bonus 1](/assets/album-12-16-23/bonus1.jpg)
+![Bonus 2](/assets/album-12-16-23/bonus2.jpg)
+![Bonus 3](/assets/album-12-16-23/bonus3.jpg)
