@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Play Fort!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="next-player counter">
+                <button class="button" onclick="undo()"><p>Undo</p></button>
+                <div class="display-row">
+                    <div class="occupied white" id="next-player-marker"></div>
+                    <p id="next-player-text"> player</p>
+                </div>
+                <button class="button" onclick="pass()"><p>Pass steps</p></button>
+            </div>
+            <div class="game" id="game"></div>
+        </div>
+        <script src="fort.js"></script>
+    </body>
+</html>
+
