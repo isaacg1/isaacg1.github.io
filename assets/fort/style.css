@@ -50,7 +50,7 @@ body {
     font-size: 20px;
     background-color: #3BAEFA;
     border-radius: 5px;
-    margin-left: 10px
+    margin: 0px 10px;
 }
 .occupied {
   width: 30px;
