@@ -39,13 +39,11 @@ let board = [
         [0,0,0,0,0],
 ];
 
-const stepsPerTurn = 3;
 const midPoint = (board.length - 1)/2;
 
 let gameOver = false;
 // 1 or -1
 let currentPlayer = 1;
-// 1, 2, 3, or 4
 let currentPhase = 1;
 
 let newPiecesPositions = [];
@@ -55,13 +53,34 @@ let readyToMove = null;
 let undoStack = [];
 
 /* TODO's:
- * To incentivize fort-building, creating a fort removes all neighboring enemy dots from the 
- * Fix pass button
  * Long term:
  * - Count repetition
  * - Row and column markers
  * - Game log
  */
+
+function numForts() {
+    const currentFort = currentPlayer * 2;
+    let fortsCount = 0;
+    for (let row_index = 0; row_index < board.length; row_index++) {
+        const row = board[row_index];
+        for (let col_index = 0; col_index < row.length; col_index++) {
+            const cell = row[col_index];
+            if (cell == currentFort) {
+                fortsCount += 1
+            }
+        }
+    }
+    return fortsCount
+}
+
+function getStepsPerTurn() {
+    return Math.ceil(numForts() / 2) + 2
+}
+
+function getSpawnsPerTurn() {
+    return Math.floor(numForts() / 2) + 1
+}
 
 function movePiece(e) {
     if (gameOver) {
@@ -80,6 +99,7 @@ function movePiece(e) {
     const currentPiece = currentPlayer;
     const currentFort = currentPlayer * 2;
 
+    const stepsPerTurn = getStepsPerTurn();
     if (currentPhase <= stepsPerTurn && kind == currentPiece) {
         findPossiblePositions(p, false);
     } else if (currentPhase > stepsPerTurn && kind == currentFort) {
@@ -100,6 +120,7 @@ function enableToMove(p) {
             break;
         }
     }
+    let recheck = false;
     if (eligibleCell) {
         // Save old game state
         const oldPlayer = currentPlayer;
@@ -135,23 +156,37 @@ function enableToMove(p) {
             board[readyToMove.row][readyToMove.col] = 0;
             currentPhase++;
         } else if (kindToMove == currentFort) {
+            // Only change turn if last spawn
             board[p.row][p.col] = currentPiece;
-            currentPhase = 1;
-            currentPlayer = -currentPlayer;
+
+            const stepsPerTurn = getStepsPerTurn();
+            const spawnsPerTurn = getSpawnsPerTurn();
+            if (currentPhase == stepsPerTurn + spawnsPerTurn) {
+                currentPhase = 1;
+                currentPlayer = -currentPlayer;
+            } else {
+                currentPhase++;
+                recheck = true;
+            }
         } else {
             console.log("readyToMove doesn't point at current player");
         }
     }
+    const oldReadyToMove = readyToMove;
     readyToMove = null;
     newPiecesPositions = [];
     skipToSpawn();
     checkGameOver();
     displayCurrentPlayer();
     buildBoard();
+    if (recheck) {
+        findPossiblePositions(oldReadyToMove, true);
+    }
 }
 
 function skipToSpawn() {
-    if (currentPhase === stepsPerTurn + 1) {
+    const stepsPerTurn = getStepsPerTurn();
+    if (currentPhase > stepsPerTurn) {
         return;
     }
     // If current player has no pieces that have legal steps, skip to the spawn phase.
@@ -176,6 +211,7 @@ function skipToSpawn() {
 }
 
 function checkGameOver() {
+    const stepsPerTurn = getStepsPerTurn();
     if (currentPhase <= stepsPerTurn) {
         return;
     }
@@ -203,6 +239,8 @@ function checkGameOver() {
 
 
 function displayCurrentPlayer() {
+    const stepsPerTurn = getStepsPerTurn();
+    const spawnsPerTurn = getSpawnsPerTurn();
     let playerMarker = document.getElementById("next-player-marker");
     if (!playerMarker) {
         console.log("Player marker is null! Oh no!");
@@ -216,9 +254,11 @@ function displayCurrentPlayer() {
     if (gameOver) {
         playerDiv.innerText = "wins! Game over!"
     } else if (currentPhase <= stepsPerTurn) {
-        playerDiv.innerText = "player, step " + currentPhase + "/" + stepsPerTurn;
+        const stepsLeft = stepsPerTurn - currentPhase + 1;
+        playerDiv.innerText = "player, " + stepsLeft + "/" + stepsPerTurn + " steps left (" + spawnsPerTurn + ")";
     } else {
-        playerDiv.innerText = "player, spawn";
+        const spawnsLeft = spawnsPerTurn + stepsPerTurn - currentPhase + 1;
+        playerDiv.innerText = "player, " + spawnsLeft + "/" + spawnsPerTurn + " spawns left (" + stepsPerTurn + ")";
     }
 }
 
@@ -298,7 +338,9 @@ function undo() {
     }
 }
 
+// Pass to spawn
 function pass() {
+    const stepsPerTurn = getStepsPerTurn();
     currentPhase = stepsPerTurn + 1;
     displayCurrentPlayer();
     buildBoard();
