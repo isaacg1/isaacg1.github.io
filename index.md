@@ -12,8 +12,8 @@ Check out my [thesis document](/assets/isaac-thesis.pdf)
 which provides a guided tour of my PhD research,
 and is designed to be more approachable than diving into my papers directly.
 
-My name is Isaac Grosof, and I go by Izzy for short. I am nonbinary, and I use they/them pronouns.
-Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info.
+My name is Isaac Grosof, and I go by Izzy for short. I am nonbinary, and I use both they/them and she/her pronouns.
+Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info on my gender, and my [they/she Q&A](/2024/01/19/they-she.html) for more info on my pronouns.
 
 I will be a postdoc at Georgia Tech until February 2024, when I am moving to UIUC to do another 6-month postdoc,
 this one with [R. Srikant](https://sites.google.com/a/illinois.edu/srikant/).
