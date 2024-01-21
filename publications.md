@@ -189,8 +189,13 @@ Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
 Isaac Grosof. July 2023.
 
 [\[thesis document\]](/assets/isaac-thesis.pdf)
+[\[short version\]](/assets/isaac-thesis-short.pdf)
 [\[talks\]](/talks/#thesis)
 [\[thesis proposal\]](/assets/thesis-proposal.pdf)
+
+**Winner of the SIGMETRICS 2024 Doctoral Dissertation Award**
+
+**One of two CMU nominees for the ACM Dissertation Award**
 
 ## Papers not currently under submission {#other-work}
 
