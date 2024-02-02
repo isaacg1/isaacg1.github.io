@@ -4,10 +4,13 @@ published: true
 ---
 ![Isaac Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a purple top in front of a flowerbed.](/assets/small-flowers.jpg)
 
-I am currently the [Tennenbaum Postdoctoral Fellow](https://www.isye.gatech.edu/research/isye-postdoctoral-fellowship-program)
-at the Georgia Tech School of Industrial and Systems Engineering,
-where I am mentored by [Siva Theja Maguluri](https://sites.google.com/site/sivatheja/).
-I just defended my PhD at Carnegie Mellon University, where I was advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
+I am currently a [Postdoctoral Research Associate](https://ece.illinois.edu/about/directory/researchers/igrosof)
+at the University of Illinois, Urbana-Champaign,
+Department of Electrical and Computer Engineering,
+where I am mentored by [R. Srikant](https://sites.google.com/a/illinois.edu/srikant/).
+In fall 2023, I was a postdoc at the Georgia Tech School of Industrial and Systems Engineering,
+where I was mentored by [Siva Theja Maguluri](https://sites.google.com/site/sivatheja/).
+In the summer of 2023, I defended my PhD at Carnegie Mellon University, where I was advised by [Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/).
 Check out my [thesis document](/assets/isaac-thesis.pdf)
 which provides a guided tour of my PhD research,
 and is designed to be more approachable than diving into my papers directly.
@@ -15,8 +18,6 @@ and is designed to be more approachable than diving into my papers directly.
 My name is Isaac Grosof, and I go by Izzy for short. I am nonbinary, and I use both they/them and she/her pronouns.
 Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info on my gender, and my [they/she Q&A](/2024/01/19/they-she.html) for more info on my pronouns.
 
-I will be a postdoc at Georgia Tech until February 2024, when I am moving to UIUC to do another 6-month postdoc,
-this one with [R. Srikant](https://sites.google.com/a/illinois.edu/srikant/).
 In Fall 2024, I will be starting as a professor at Northwestern University,
 in the Industrial Engineering and Management Sciences department.
 
