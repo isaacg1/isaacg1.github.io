@@ -49,7 +49,7 @@ Senior-most descendant line of Charlemagne by absolute primogeniture.
 
 1. 747-814: [Charlemagne](https://en.wikipedia.org/wiki/Charlemagne),
 King of the Franks, King of the Lombards, Emperor of the Romans
-    - (m 768: [Hilitrude](https://en.wikipedia.org/wiki/Himiltrude), 742-780)
+    - (m 768: [Himilitrude](https://en.wikipedia.org/wiki/Himiltrude), 742-780)
         - (769-811: [Pepin the Hunchback](https://en.wikipedia.org/wiki/Pepin_the_Hunchback). No children)
     - (m 770: [Desiderata of the Lombards](https://en.wikipedia.org/wiki/Desiderata_of_the_Lombards),
     742-780. No children)
@@ -57,6 +57,8 @@ King of the Franks, King of the Lombards, Emperor of the Romans
     754-783
     - (772-811: [Charles the Younger](https://en.wikipedia.org/wiki/Charles_the_Younger).
     No children)
+    - (774: Adalhaid. Died in childhood)
+    - (775-810: [Rotrude](https://en.wikipedia.org/wiki/Rotrude). 1 descendant, extinct 867)
 
 2. 777-810: [Pepin](https://en.wikipedia.org/wiki/Pepin_of_Italy), King of Italy
   * m 796: Chrotais
@@ -67,6 +69,7 @@ King of the Franks, King of the Lombards, Emperor of the Romans
 4. 817-850: [Pepin II](https://en.wikipedia.org/wiki/Pepin,_Count_of_Vermandois),
 Count of Vermandois
   * m: ?
+  * (830-866: Richilde of Vermandois, at least 2 descendants, at least through 886, unknown?)
   * (845-893: [Bernard II](https://en.wikipedia.org/wiki/Bernard_II,_Count_of_Laon),
   Count of Laon. Unknown children?)
   * (846-893: [Pepin III](https://en.wikipedia.org/wiki/Pepin_III,_Count_of_Vermandois),
