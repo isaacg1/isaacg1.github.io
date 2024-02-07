@@ -4,7 +4,9 @@ title: Publications
 permalink: /publications/
 ---
 
-[//]: [Submitted papers](#submitted-papers)
+[//]: [//]:
+
+[Submitted papers](#submitted-papers)
 
 [Full papers](#full-papers)
 
@@ -14,7 +16,14 @@ permalink: /publications/
 
 [Other work](#other-work)
 
-[//]: ## Submitted Papers
+[//]: [//]:
+## Submitted Papers
+
+### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf)
+Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+Under submission.
+
+[\[paper\]](/assets/npg.pdf)
 
 
 ## Full Papers
