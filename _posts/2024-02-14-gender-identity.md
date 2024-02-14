@@ -37,11 +37,11 @@ I wear little shorts with pockets under my skirts, so I can carry around everyth
 
 I walk next to the railroad tracks under the bright sun, wearing a skirt and thigh-highs and a silky tank-top.
 
-I collect little bits of metal strewn on the street.
+I collect little bits of [metal](2023/10/21/scavenged-metal) strewn on the street.
 
 I draw pink hearts on my cheeks, to express, not hide.
 
-I speak in my new way, and my voice is so smooth and clean and natural that I can't remember that it was ever different.
+I [speak](/2023/11/25/learning-to-talk) in my new way, and my voice is so smooth and clean and natural that I can't remember that it was ever different.
 
 I drop two octaves to a otherworldly undertone, then pop right back up.
 
