@@ -30,10 +30,11 @@ Under submission.
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
 
-### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](https://arxiv.org/abs/2312.16377)
+### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](/assets/card.pdf)
 Runhan Xie, Isaac Grosof, Ziv Scully.
 Accepted to *ACM SIGMETRICS / IFIP Performance*, June 2024.
 
+[\[paper\]](/assets/card.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2312.16377)
 
 ### [The RESET and MARC Techniques, with Application to Multiserver-Job Analysis](/assets/reset-and-marc.pdf) {#reset}
