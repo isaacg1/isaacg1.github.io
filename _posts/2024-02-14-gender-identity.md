@@ -73,7 +73,7 @@ ul-zil-na
 
 * ul: joy, pleasure, satisfaction; star; flower; bud; to glitter, to shine.
 * zil: To make beautiful; to be loving, gentle, affectionate; to caress
-* na: they, she, he
+* na: they (third-person singular pronoun)
 
 In [ancient Sumerian](http://www.sumerian.org/sumerian.pdf),
 the language of Inanna and the Gala,
@@ -85,7 +85,7 @@ That's my gender, at least a facet of it.
 
 For short, I'm a zilna. /zɪlnə/.
 
-I'm a good zilna. Not a good enby, not a good boy or girl. A good zilna.
+I'm a good zilna. Not a good enby, not a good boy or girl or man or woman. A good zilna.
 
 I feel that joy when I write those words. The relief of seeing and being seen. The euphoria of identity.
 
