@@ -35,7 +35,7 @@ the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-i
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
 the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
 and the [**IFIP Performance 2018 Best Student Paper Award**](publications/#srpt-for-multiserver-systems).
-I was the [**2023 Fennenbaum Postdoctoral Fellow**](https://www.isye.gatech.edu/research/isye-postdoctoral-fellowship-program) and a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023).
+I was the [**2023 Tennenbaum Postdoctoral Fellow**](https://www.isye.gatech.edu/research/isye-postdoctoral-fellowship-program) and a [**2023 Siebel Scholar**](https://www.businesswire.com/news/home/20220922005006/en/Siebel-Scholars-Foundation-Announces-Class-of-2023).
 
 Check out my [publications](publications), all of which you can download to read.
 
