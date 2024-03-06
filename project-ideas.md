@@ -11,7 +11,7 @@ I'm particularly interested in working with either students
 at the school I am at (Georgia Tech, UIUC, or Northwestern),
 or people who already have a background in queueing theory research.
 
-Last updated: March 6th, 2023.
+Last updated: March 6th, 2024.
 
 ## Table of contents
 
