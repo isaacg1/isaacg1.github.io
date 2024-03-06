@@ -19,7 +19,7 @@ permalink: /publications/
 [//]: [//]:
 ## Submitted Papers
 
-### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf)
+### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf) {#npg}
 Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 Under submission.
 
@@ -30,7 +30,7 @@ Under submission.
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
 
-### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](/assets/card.pdf)
+### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](/assets/card.pdf) {#card}
 Runhan Xie, Isaac Grosof, Ziv Scully.
 Accepted to *ACM SIGMETRICS / IFIP Performance*, June 2024.
 

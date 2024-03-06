@@ -11,23 +11,32 @@ I'm particularly interested in working with either students
 at the school I am at (Georgia Tech, UIUC, or Northwestern),
 or people who already have a background in queueing theory research.
 
-Last updated: December 2nd, 2023.
+Last updated: March 6th, 2023.
 
 ## Table of contents
 
-I've separated my ideas into four categories:
+I've separated my ideas into five categories:
 
 * Ideas that I think are quite promising,
 where I have promising directions for a result.
 
 * Ideas that are just starting out, or where I don't quite know how I'd prove a result.
 
-* Ideas that I'm actively pursuing, or have written a paper about.
+* Ideas that I'm actively pursuing.
 
-* Ideas I'm no longer interested in, that I'm keeping around for archival purposes.
+* Ideas I pursued to some kind of completion, and am not currently pursuing.
+I'm keeping these around for archival purposes.
+
+* Ideas I'm no longer interested in. I'm keeping these around for archival purposes.
 
 I'm most interested in collaborating on ideas in the "quite promising" category,
 but all of them are worth looking at and discussing.
+
+This page is for ideas that look promising but I'm not pursuing yet,
+or were in that stage earlier but I am now pursuing.
+I typically have several more projects that I'm actively pursuing,
+that never went through the "look promising but not pursuing" stage,
+and so aren't listed here.
 
 The order within a category is roughly chronological.
 
@@ -63,15 +72,17 @@ The order within a category is roughly chronological.
 
 ### [Active projects](#active)
 
+1. [Product form steady-state distributions from graph structure](#graph-product-form)
+
+2. [Optimal scheduling in the general MSJ model](#general-msj)
+
+3. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
+
+### [Archive: Completed](#archive-done)
+
 1. [Known size dispatching to FCFS queues](#disp-fcfs)
 
-2. [Product form steady-state distributions from graph structure](#graph-product-form)
-
-3. [Optimal scheduling in the general MSJ model](#general-msj)
-
-4. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
-
-### [Archive: No longer interested](#archive)
+### [Archive: No longer interested](#archive-nope)
 
 1. [The Time Index scheduling policy](#time-index)
 
@@ -348,37 +359,6 @@ and use the FTVL policy or something similar to design a scheduling policy?
 
 ## Active projects
 
-### Known size dispatching to FCFS queues {#disp-fcfs}
-Starting point:
-[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching)
-by Runhan Xie and Ziv Scully,
-initial work presented at [MAMA 2023](https://www.sigmetrics.org/mama/index.shtml).
-
-**Setup**: Imagine web requests are arriving to a server farm. Jobs arrive, are dispatched to servers, and are served. Let's optimize this.
-
-When a job arrives, it must be dispatched to one of several servers. At dispatch time, the size of the job is known (or estimated), and that size is used for the dispatching decision. Once at a server, jobs are served in FCFS order.
-
-What's a good dispatching policy to minimize mean response time? What's optimal? I'm especially interested in heavy traffic (arrival rate near capacity).
-
-**Idea**: There's an unavoidable amount of work in the system, M/G/1 lower bound. However, if we concentrate almost all of the work onto one server, and only dispatch large jobs to that server, then almost all of the jobs will avoid that long delay. Of course, we need to keep the other servers busy to avoid wasting capacity, but we'll keep their queue lengths short.
-
-**Concrete policy**: "Many Short Servers" (MASS). Based on size, divide jobs into classes small, medium, and large. Set these cutoffs so that the small jobs make up (k-1)/k - ε fraction of the load, where k is the number of servers, the large jobs are 1/k - ε of the load, and the medium jobs are the other 2ε of the load. ε is a small constant to be determined.
-
-Designate k-1 servers as the short servers (low workload), and one as the long server (high workload). Small jobs go to the short server, large jobs go the long server, and for medium jobs it depends.
-
-Designate a target amount of work for the short servers. This should be o(1/(1-ρ)), to be smaller than the long server, and it should be omega(log(1/(1-ρ))), so it doesn't run empty due to bad luck. sqrt(1/(1-ρ)), for instance.
-
-Whenever a small job arrives, send it to the short queue with least work. Whenever a large job arrives, send it to the long server. When a medium job arrives, if the short server with the least work is below the target amount of work, send the medium job there. If all short servers are above the target, send the medium job to the long server.
-
-**First step**: Implement this policy. Start with k=2, for simplicity. Compare it against JSQ, LWL, SITA. Poisson arrivals, high variance sizes, high load. Does it do well empirically, for appropriate settings of ε and the target work?
-
-**Refinement**: Dynamic relabeling. Whenever a job arrives, the long server is whichever has the most work at that moment, not static.
-
-**Future steps**: Prove state space collapse. The system is almost always close to having all short servers at the target, or all servers below the target.
-
-Use SSC to bound response time/waiting time.
-
-Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and there's theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
 
 ### Product form steady-state distributions from graph structure {#graph-product-form}
 
@@ -458,7 +438,43 @@ A good starting point would an N-system where the recipient server is critically
 
 **Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
 
-## Archived: No longer interested {#archive}
+## Archived: Completed {#archive-done}
+
+### Known size dispatching to FCFS queues {#disp-fcfs}
+
+This paper has been accepted to SIGMETRICS 2024: [Heavy-Traffic Optimal Size-and State-Aware Dispatching](/publications/card)!
+
+Starting point:
+[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching)
+by Runhan Xie and Ziv Scully,
+initial work presented at [MAMA 2023](https://www.sigmetrics.org/mama/index.shtml).
+
+**Setup**: Imagine web requests are arriving to a server farm. Jobs arrive, are dispatched to servers, and are served. Let's optimize this.
+
+When a job arrives, it must be dispatched to one of several servers. At dispatch time, the size of the job is known (or estimated), and that size is used for the dispatching decision. Once at a server, jobs are served in FCFS order.
+
+What's a good dispatching policy to minimize mean response time? What's optimal? I'm especially interested in heavy traffic (arrival rate near capacity).
+
+**Idea**: There's an unavoidable amount of work in the system, M/G/1 lower bound. However, if we concentrate almost all of the work onto one server, and only dispatch large jobs to that server, then almost all of the jobs will avoid that long delay. Of course, we need to keep the other servers busy to avoid wasting capacity, but we'll keep their queue lengths short.
+
+**Concrete policy**: "Many Short Servers" (MASS). Based on size, divide jobs into classes small, medium, and large. Set these cutoffs so that the small jobs make up (k-1)/k - ε fraction of the load, where k is the number of servers, the large jobs are 1/k - ε of the load, and the medium jobs are the other 2ε of the load. ε is a small constant to be determined.
+
+Designate k-1 servers as the short servers (low workload), and one as the long server (high workload). Small jobs go to the short server, large jobs go the long server, and for medium jobs it depends.
+
+Designate a target amount of work for the short servers. This should be o(1/(1-ρ)), to be smaller than the long server, and it should be omega(log(1/(1-ρ))), so it doesn't run empty due to bad luck. sqrt(1/(1-ρ)), for instance.
+
+Whenever a small job arrives, send it to the short queue with least work. Whenever a large job arrives, send it to the long server. When a medium job arrives, if the short server with the least work is below the target amount of work, send the medium job there. If all short servers are above the target, send the medium job to the long server.
+
+**First step**: Implement this policy. Start with k=2, for simplicity. Compare it against JSQ, LWL, SITA. Poisson arrivals, high variance sizes, high load. Does it do well empirically, for appropriate settings of ε and the target work?
+
+**Refinement**: Dynamic relabeling. Whenever a job arrives, the long server is whichever has the most work at that moment, not static.
+
+**Future steps**: Prove state space collapse. The system is almost always close to having all short servers at the target, or all servers below the target.
+
+Use SSC to bound response time/waiting time.
+
+Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and there's theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
+## Archived: No longer interested {#archive-nope}
 
 These are projects that I was once interested in, but I'm not interested in any more.
 Maybe the approaches that I wanted to pursue didn't pan out,
