@@ -6,6 +6,13 @@ title: "Programmatically generated artwork"
 I have made fifteen rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
 
+## Spirals
+
+Iterate over colors in a random order. For each, find the most similar color. Walk in a gentle spiral to nearest open pixel. Record final angle, start from there.
+
+[Repository](https://github.com/isaacg1/spiral/)
+
+![Spirals](/assets/art/spiral.png)
 ## Streams
 
 Forces are generated at certain points, some inward, some outward, some linear.
