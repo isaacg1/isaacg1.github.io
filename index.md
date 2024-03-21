@@ -15,7 +15,7 @@ Check out my [thesis document](/assets/isaac-thesis.pdf)
 which provides a guided tour of my PhD research,
 and is designed to be more approachable than diving into my papers directly.
 
-My name is Isaac Grosof, and I go by Izzy for short. I am nonbinary, and I use both they/them and she/her pronouns.
+My name is Izzy Grosof, where Izzy is short for Isaac. I am nonbinary, and I use both they/them and she/her pronouns.
 Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info on my gender,
 my [they/she Q&A](/2024/01/19/they-she) for more info on my pronouns,
 or all of my [gender-related posts](gender).

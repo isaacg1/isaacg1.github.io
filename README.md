@@ -1,6 +1,6 @@
 ## Overview
 
-This is Isaac Grosof's academic and personal website.
+This is Izzy Grosof's academic and personal website.
 
 It is based on the minima jekyll theme.
 
