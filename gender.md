@@ -38,7 +38,7 @@ Building upon the previous post,
 gender identity isn't about adopting a standardized label.
 It's about feeling gender from the inside.
 
-[Trans Brainworms](2024/03/26/trans-brainworms): Discussing and dismantling the mental parasites that tell us we can't be trans, or we don't deserve it, and keep us trapped in the shell or in the closet.
+[Trans Brainworms](/2024/03/26/trans-brainworms): Discussing and dismantling the mental parasites that tell us we can't be trans, or we don't deserve it, and keep us trapped in the shell or in the closet.
 
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.
