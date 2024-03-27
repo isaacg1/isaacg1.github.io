@@ -9,7 +9,7 @@ is finding reasons why we can't be trans.
 These reasons are borne of our fears, our self-doubts,
 our internalized transphobia, and many other negative thoughts we have towards ourselves.
 
-I call these self-repressing reasons *brainworms*.
+In the trans community, we call these self-repressing reasons *brainworms*.
 It's a somewhat common term in trans circles, but definitely not universal.
 
 A major part of hatching (i.e. coming to understand that we are trans)
