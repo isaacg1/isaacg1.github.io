@@ -39,7 +39,7 @@ gender identity isn't about adopting a standardized label.
 It's about feeling gender from the inside.
 
 [Trans Brainworms](/2024/03/26/trans-brainworms):
-A discussion of the narratives that get into trans people's heads,
+Discussing and dismantling the narratives that get into trans people's heads,
 before we hatch and understand ourselves.
 Narratives about why we can't be trans or we can't explore or we can't come out.
 

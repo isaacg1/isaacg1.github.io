@@ -9,7 +9,7 @@ is finding reasons why we can't be trans.
 These reasons are borne of our fears, our self-doubts,
 our internalized transphobia, and many other negative thoughts we have towards ourselves.
 
-I call these self-repressing reasons *brainworms*.
+In the trans community, we call these self-repressing reasons *brainworms*.
 It's a somewhat common term in trans circles, but definitely not universal.
 
 A major part of hatching (i.e. coming to understand that we are trans)
@@ -119,7 +119,7 @@ believe that.
 But there's more than that.
 For many of us, exploring gender can be a minefield.
 Clothes that could be gender-affirming,
-if they fit poorly or not at all,
+but fit poorly or not at all,
 can feel worse than not even trying.
 An incongruous gender expression,
 like lipstick with facial hair,
@@ -128,7 +128,7 @@ And if this happens a couple of times,
 and if these narratives are already circulating,
 then the full-blown brainworm can arise.
 
-This is not true.
+But it's not true.
 Gender exploration is, in fact, wonderful and beautiful,
 regardless of how much practice you have.
 Regardless of whether it's being done in a nonconforming way
@@ -152,7 +152,7 @@ So trans people, to be visible, often had to leave no room for uncertainty or vu
 
 Moreover, the trans people whose stories were promoted enough to be heard far and wide
 were selected to be (or sound like) the kind of trans people who are the most appealing to
-cis audiences who only wanted their boat rocked a little bit:
+cis audiences, to the kind of person who only wanted their boat rocked a little bit. Those stories were:
 
 * Straight (e.g. attracted to people of the opposite gender to their true gender)
 
@@ -165,9 +165,11 @@ since they first heard about the concept of gender.
 
 * Is interested in, and succeeds in obtaining, all imaginable gender-affirming care.
 
+* Is conventionally attractive as a member of their gender.
+
 Only a tiny sliver a trans people actually check every box on this list.
-If you don't, you're still valid!
-And that certainly applies if you haven't always known you were trans.
+If you don't, you're valid!
+And that certainly applies to anyone who hasn't always known you were trans. Which is definitely most of us.
 
 It's becoming more common for trans people to be open about their uncertainty,
 and about the long path towards hatching (like me! Hi!),
@@ -226,7 +228,7 @@ I think this brainworm is particularly common among
 transfem people primarily attracted to women,
 and transmasc people primarily attracted to men.
 We don't have an in to the queer community prior to hatching,
-the way people who identify as gay, lesbian, or bi prior to hatching have an in.
+the way people who identify as gay, lesbian, bi, or other parts of the community, prior to hatching, have an in.
 And the queer community is a great place for gender exploration.
 But it's totally valid to just hang out with queer people and talk about these topics,
 even if you're not identifying as trans, or even as exploring or questioning.
@@ -245,7 +247,7 @@ We often receive explicit and repeated pressure in that direction.
 To be a man or be a woman.
 To be simple and easy for other people to understand and put in a box.
 
-So that brainworm circles: I just have to accept my body. I just have to accept my gender.
+So that brainworm arises: I just have to accept my body. I just have to accept my gender.
 
 But, you don't.
 You don't have to accept what you're handed in life.
@@ -255,7 +257,7 @@ Or a lot of changes.
 Or you can explore,
 and discover what you actually like,
 what actually feels right,
-not just what you're handed.
+without knowing what that'll look like.
 
 A common but not very accurate saying is that "trans people are born in the wrong body",
 a boy brain in a girl body or all that.
@@ -273,7 +275,7 @@ In neither case do you have to accept what you're given.
 Due to the medicalization of transness,
 the narrative has been pushed that to be trans, you need to have gender dysphoria,
 namely a irritation, pain, discomfort, itchiness, revulsion, etc.,
-brought on by gendered aspects of bodies or social interactions or other elements of society.
+brought on by gendered aspects of your body or social interactions or other elements of society.
 This narrative is based on the premise that transness is a malady that doctors treat.
 Dysphoria is the symptom, trans is the diagnosis, medicine is the treatment,
 insurance pays for it, simple and easy to understand for cis people.
@@ -283,7 +285,8 @@ First, some trans people don't have dysphoria.
 Just because someone is a woman, or wants to be a woman,
 doesn't automatically mean that they have discomfort or pain
 or any of that from being seen as a man, or having masculine bodily characteristics.
-Nothing is simple and automatic, there's a range of experiences.
+Nothing is simple and automatic, there's a range of experiences. 
+Escaping pain isn't the only valid motivation. Lots of motivations are valid.
 
 But secondly, and applying to far more people (including myself),
 it's hard to notice you have dysphoria if you're structuring your life
@@ -291,16 +294,15 @@ around coping with that dysphoria, to the point where coping is automatic.
 And trans people who don't know they're trans get really good at coping.
 On top of that, without the benefit of exploration and trying out different options
 and community,
-it can be really hard to notice that dysphoria exists.
+it can be really hard to notice that dysphoria exists, or recognize it for what it is.
 
 For example, I definitely get dysphoric when I hear the default voice I produce without trying.
-I'm gradually getting less overwhelmed by it, but it takes time.
+I'm gradually getting less overwhelmed by it, in parallel with learning my new voice, but it takes time.
 So what did I do for all those years, and what do I still do now?
 I avoid hearing myself. Hearing my own voice is edited out of my stream of conciousness.
 All I hear is my internal narrative, which has no sound.
 
-I have had similar experiences,
-with regards to coping by ignoring or avoiding noticing,
+I have had similar experiences, coping by ignoring or avoiding noticing,
 with my facial hair, my face in the mirror,
 and aspects of my personal hygiene.
 All have greatly improved now that
@@ -321,7 +323,6 @@ And you definitely don't need to know whether you have dysphoria to be trans.
 And the insurance company can keep putting whatever it wants on the forms,
 and the doctors can call it whatever they want.
 They don't define us.
-They can help us, but that's it.
 
 ### I'd be too ugly, so I can't be trans
 
@@ -374,7 +375,7 @@ I'd recommend reading the whole sequence until the July 17th comic, if you get a
 A lot of us have internalized the message that good things in life take struggle,
 have to be earned,
 have to be a reward.
-When it comes to gender-affirmation,
+When it comes to gender affirmation,
 that feels like something we have to earn.
 
 For me, the way it felt like I had to earn my way out of masculinity
@@ -386,7 +387,8 @@ I didn't deserve anything better than masculinity.
 This is a brainworm, and it's bullshit.
 First of all, this whole "anything good in life must be a reward for something"
 is bullshit. Life can just be nice, it doesn't have to be a struggle.
-Second, I was myself as a lot more harmfully-masculine than I really was,
+Second, gender is a part of who we are, not a reward. You don't have to earn your gender card, and no one gets to take it away.
+Third, I saw myself as a lot more harmfully-masculine than I really was,
 because I didn't like seeing masculinity in myself.
 As with many of these brainworms,
 it was being reinforced by my transness, even as it told me I couldn't be trans.
@@ -403,7 +405,7 @@ you're just as valid as them (very valid).
 ### Reflection
 
 I wrote this for you, hypothetical trans person who doesn't know you're trans
-(if that is you, hi! Email me or message me on Mastodon! Let's chat!)
+(if that is you, hi! Email me or message me on Mastodon! Let's chat!).
 
 But I also wrote it for me.
 I'm thinking back to those long years of being trans and not knowing it,
