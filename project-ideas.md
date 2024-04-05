@@ -54,8 +54,6 @@ The order within a category is roughly chronological.
 
 6. [Tails for ServerFilling](#sf-tails)
 
-7. [M/G/k response time lower bounds (known size)](#mgk-lower)
-
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
@@ -77,6 +75,8 @@ The order within a category is roughly chronological.
 2. [Optimal scheduling in the general MSJ model](#general-msj)
 
 3. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
+
+4. [M/G/k response time lower bounds (known size)](#mgk-lower)
 
 ### [Archive: Completed](#archive-done)
 
@@ -216,44 +216,6 @@ Thus, the time-in-front of 1-server jobs could be about k times the interarrival
 If 1-server jobs are very rare, then their interarrival time will be very large. However, because these jobs are so rare, that won't have a big impact on metrics like the transform or the tail probability. If 1-server jobs are exceptionally rare, then we can bound their response time by the excess of a busy period, at which point the system will run low on jobs and all jobs remaining in the system will be in service.
 
 **Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
-
-### M/G/k response time lower bounds (known size) {#mgk-lower}
-
-See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
-
-There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
-
-**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
-
-**Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
-
-**First step**: Derive the WINE bound.
-
-**Future step**: Quantity expected work in the increasing-speed queue, perhaps with renewal-reward.
-
-**Update**: We can analyze the increasing-speed queue via the constant-drift/affine-drift method,
-akin to the MARC method from my [RESET and MARC paper](/publications/#reset)
-and my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA).
-
-See my photo-notes on the subject. For the 2-server setting, the constant-drift test function is:
-
-    f(w, 1) = w, f(0, 0) = 0,
-    f(w, 1/2) = w + (1-e^(-2lw))/2l
-
-The affine-drift test function is:
-
-    f(w, 1) = w^2, f(0, 0) = 0,
-    f(w, 1/2) = w^2 + w/l + (1-e^(-2lw))/2l^2
-
-These should be sufficient to compute mean work!
-
-If we make the state space consist of work, time until next arrival, and speed,
-we can simplify this considerably. The constant-drift test function is now:
-
-    f(w, 1) = w, f(0, 0) = 0,
-    f(w, a, 1/2) = w + min(w, a/2)
-
-If we plug in `a = Exp(l)` and take expectations, we get the first expression above.
 
 ## Starting out/Not sure how to proceed {#starting-out}
 
@@ -437,6 +399,44 @@ The "finite modulation chain" assumption isn't really necessary - the actual ass
 A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
 
 **Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
+
+### M/G/k response time lower bounds (known size) {#mgk-lower}
+
+See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
+
+There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
+
+**Idea**: Use WINE (see my thesis), with M/G/1 and M/G/infinity work bounds at different sizes. Mainly only improves things at lower loads.
+
+**Idea**: Look at the "Increasing Speed Queue", which starts at speed 1/k at the beginning of a busy period, then 2/k, etc., capping at speed 1 until the end of the busy period. Provides a lower bound on work. A higher lower bound than the M/G/1. Incorporate into the WINE bound.
+
+**First step**: Derive the WINE bound.
+
+**Future step**: Quantity expected work in the increasing-speed queue, perhaps with renewal-reward.
+
+**Update**: We can analyze the increasing-speed queue via the constant-drift/affine-drift method,
+akin to the MARC method from my [RESET and MARC paper](/publications/#reset)
+and my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA).
+
+See my photo-notes on the subject. For the 2-server setting, the constant-drift test function is:
+
+    f(w, 1) = w, f(0, 0) = 0,
+    f(w, 1/2) = w + (1-e^(-2lw))/2l
+
+The affine-drift test function is:
+
+    f(w, 1) = w^2, f(0, 0) = 0,
+    f(w, 1/2) = w^2 + w/l + (1-e^(-2lw))/2l^2
+
+These should be sufficient to compute mean work!
+
+If we make the state space consist of work, time until next arrival, and speed,
+we can simplify this considerably. The constant-drift test function is now:
+
+    f(w, 1) = w, f(0, 0) = 0,
+    f(w, a, 1/2) = w + min(w, a/2)
+
+If we plug in `a = Exp(l)` and take expectations, we get the first expression above.
 
 ## Archived: Completed {#archive-done}
 
