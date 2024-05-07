@@ -19,13 +19,10 @@ permalink: /publications/
 [//]: [//]:
 ## Submitted Papers
 
-### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf) {#npg}
-Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-Under submission.
+### [Analysis of Markovian Arrivals and Service with Applications to Intermittent Overload](/assets/mams.pdf)
+Isaac Grosof, Yige Hong, Mor Harchol-Balter.
 
-[\[paper\]](/assets/npg.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2402.05274)
-
+[\[paper\]](/assets/mams.pdf)
 
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
@@ -209,6 +206,14 @@ Isaac Grosof. July 2023.
 **One of two CMU nominees for the ACM Dissertation Award**
 
 ## Papers not currently under submission {#other-work}
+
+### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf) {#npg}
+Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+Under submission.
+
+[\[paper\]](/assets/npg.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2402.05274)
+
 
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
 Isaac Grosof, Michael Mitzenmacher.
