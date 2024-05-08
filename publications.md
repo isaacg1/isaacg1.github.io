@@ -23,6 +23,7 @@ permalink: /publications/
 Isaac Grosof, Yige Hong, Mor Harchol-Balter.
 
 [\[paper\]](/assets/mams.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2405.04102)
 
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
