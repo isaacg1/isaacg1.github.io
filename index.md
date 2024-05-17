@@ -2,7 +2,7 @@
 layout: page
 published: true
 ---
-![Isaac Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a purple top in front of a flowerbed.](/assets/small-flowers.jpg)
+![Isaac Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a purple top.](/assets/website-photo.jpg)
 
 I am currently a [Postdoctoral Research Associate](https://ece.illinois.edu/about/directory/researchers/igrosof)
 at the University of Illinois, Urbana-Champaign,
