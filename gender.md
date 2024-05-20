@@ -49,6 +49,12 @@ I asked people to ask me questions about being trans,
 and I answered them here.
 I'm planning to make this an annual thing.
 
+[SGGO 1: Community Approach to Gender](/2024/05/19/sggo-1):
+The initial episode of my podcast, Some Gender Going On.
+This episode is about focusing on community when it comes to understanding
+gender, rather than systems of classification, such as the medical, scientific, or binary models.
+I'm planning to make more episodes.
+
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.
 Every month since then,
@@ -66,3 +72,4 @@ to document and celebrate how my appearance changes.
 * [Month 9](/2024/01/20/transition-9)
 * [Month 10](/2024/02/18/transition-10)
 * [Month 11](/2024/03/17/transition-11)
+* [Month 12](/2024/05/08/transition-12). One year!
