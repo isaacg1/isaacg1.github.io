@@ -402,6 +402,8 @@ A good starting point would an N-system where the recipient server is critically
 
 ### M/G/k response time lower bounds (known size) {#mgk-lower}
 
+See [our preliminary work on this topic](/publications/#mgk-lower).
+
 See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
 
 There are two straightforward lower bounds on mean response time for the M/G/k: kE[S], the mean service duration, and E[T^SRPT-1], response time in an M/G/1/SRPT. Empirically, as ρ->1, SRPT-k achieves a mean response time around E[T^SRPT-1] + kE[S]. Can we prove a lower bound that's asymptotically additively larger than E[T^SRPT-1]?
