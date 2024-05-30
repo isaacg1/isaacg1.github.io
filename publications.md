@@ -164,6 +164,18 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 
 ## Short Papers
 
+### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower}
+Isaac Grosof, Ziyuan Wang.
+Accepted to the MAMA workshop at SIGMETRICS 2024.
+
+[\[paper\]](/assets/mgk-lower-short.pdf)
+
+### [Simple Policies for Multiresource Job Scheduling](/assets/simple-multiresource.pdf)
+Zhongrui Chen, Isaac Grosof, Benjamin Berg.
+Accepted to the MAMA workshop at SIGMETRICS 2024.
+
+[\[paper\]](/assets/simple-multiresource.pdf)
+
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf) {#product-form-msj}
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
 MAMA workshop at SIGMETRICS 2023.
