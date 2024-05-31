@@ -25,6 +25,12 @@ Isaac Grosof, Yige Hong, Mor Harchol-Balter.
 [\[paper\]](/assets/mams.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.04102)
 
+### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
+Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+
+[\[paper\]](npg-approx.pdf)
+
+
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
 
@@ -222,7 +228,6 @@ Isaac Grosof. July 2023.
 
 ### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf) {#npg}
 Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-Under submission.
 
 [\[paper\]](/assets/npg.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2402.05274)
