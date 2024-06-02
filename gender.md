@@ -82,3 +82,9 @@ Cis vs. Trans is not a good way to divy up the world.
 The real lines are more like gender transgression and gender enforcement.
 And it's not at all simple how that shakes out for any given person.
 And it very much can be both.
+
+[SGGO 3: On Not Being a Woman](/2024/06/01/sggo-3):
+I've been seeing myself move in a more feminine direction, more woman-adjacent direction.
+And it's scary, I feel like I'm losing something,
+some core nonbinary part of myself that I can't name.
+I'm exploring what that essence of nonbinariness is.
