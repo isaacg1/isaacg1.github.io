@@ -3,8 +3,16 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made fifteen rust programs for programmatically generating artwork in different styles.
+I have made sixteen rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Plaid
+
+Check straight-line triples of pixels, swap pixels to make lower distance. Optimize L-half norm.
+
+[Repository](https://github.com/isaacg1/walk-exchange)
+
+![Plaid](/assets/art/plaid.png)
 
 ## Spirals
 
