@@ -29,7 +29,7 @@ Isaac Grosof, Yige Hong, Mor Harchol-Balter.
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 
 [\[paper\]](npg-approx.pdf)
-
+[\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
