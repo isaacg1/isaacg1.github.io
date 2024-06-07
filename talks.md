@@ -4,6 +4,13 @@ title: Talks
 permalink: /talks/
 ---
 
+### [Analyzing Queues with␋Markovian Arrivals and Markovian Service](/assets/mams-tutorial.pptx)
+[\[slides\]](/assets/mams-tutorial.pptx)
+[\[slides (pdf)\]](/assets/mams-tutorial.pdf)
+[\[worksheet\]](/assets/mams-worksheet.pdf)
+
+* ACM SIGMETRICS Tutorial, Jun. 2024. 
+
 ### Relative Arrivals: A New Drift Method for Time-Varying Arrivals
 [\[slides\]](/assets/relative-arrivals-snapp.pptx)
 

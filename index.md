@@ -2,6 +2,9 @@
 layout: page
 published: true
 ---
+
+**I am presenting a tutorial at SIGMETRICS 2024 on June 10th. Click to download the [slides](/assets/mams-tutorial.pptx) ([pdf](/assets/mams-tutorial.pdf)) and the [worksheet](/assets/mams-worksheet.pdf), if you prefer an electronic copy to a physical copy.**
+
 ![Isaac Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a white scoope-necked top with large purple flowers.](/assets/website-photo.jpg)
 
 I am currently a [Postdoctoral Research Associate](https://ece.illinois.edu/about/directory/researchers/igrosof)
