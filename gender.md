@@ -88,3 +88,9 @@ I've been seeing myself move in a more feminine direction, more woman-adjacent d
 And it's scary, I feel like I'm losing something,
 some core nonbinary part of myself that I can't name.
 I'm exploring what that essence of nonbinariness is.
+
+[SGGO 4: Seeing Myself](/2024/06/08/sggo-4.html):
+It took me a long time to be comfortable seeing my body,
+and especially to be comfortable seeing my face.
+Now I can look forward to seeing my face and know I'm going to like it!
+But I still don't feel like I look 'different', somehow.
