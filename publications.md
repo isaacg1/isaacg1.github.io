@@ -24,6 +24,7 @@ Isaac Grosof, Yige Hong, Mor Harchol-Balter.
 
 [\[paper\]](/assets/mams.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.04102)
+[\[talk (tutorial)\]](/talks/#mams-tutorial)
 
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
@@ -175,6 +176,7 @@ Isaac Grosof, Ziyuan Wang.
 Accepted to the MAMA workshop at SIGMETRICS 2024.
 
 [\[paper\]](/assets/mgk-lower-short.pdf)
+[\[talk\]](/talks/#mgk-lower)
 
 ### [Simple Policies for Multiresource Job Scheduling](/assets/simple-multiresource.pdf)
 Zhongrui Chen, Isaac Grosof, Benjamin Berg.

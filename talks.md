@@ -4,7 +4,13 @@ title: Talks
 permalink: /talks/
 ---
 
-### [Analyzing Queues with␋Markovian Arrivals and Markovian Service](/assets/mams-tutorial.pptx)
+### [Bounds on Scheduling in the M/G/k](/assets/mgk-lower-short.pdf) {#mgk-lower}
+[\[short paper\]](/assets/mgk-lower-short.pdf)
+[\[short slides\]](/assets/mgk-lower.pptx)
+
+* MAMA Workshop at ACM SIGMETRICS, Jun. 2024.
+
+### [Analyzing Queues with Markovian Arrivals and Markovian Service](/assets/mams-tutorial.pptx) {#mams-tutorial}
 [\[slides\]](/assets/mams-tutorial.pptx)
 [\[slides (pdf)\]](/assets/mams-tutorial.pdf)
 [\[worksheet\]](/assets/mams-worksheet.pdf)
