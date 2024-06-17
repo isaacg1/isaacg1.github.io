@@ -233,7 +233,7 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 
 [\[paper\]](/assets/npg.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2402.05274)
-
+[\[talks\]](/talks/#npg)
 
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
 Isaac Grosof, Michael Mitzenmacher.

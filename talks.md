@@ -4,6 +4,12 @@ title: Talks
 permalink: /talks/
 ---
 
+### [Natual Policy Gradient for Queues](/assets/npg.pdf) {#npg}
+[\[paper\]](/assets/npg.pdf)
+[\[slides\]](/assets/npg.pptx)
+
+* Reinforcement Learning for Stochastic Networks, Jun. 2024.
+
 ### [Bounds on Scheduling in the M/G/k](/assets/mgk-lower-short.pdf) {#mgk-lower}
 [\[short paper\]](/assets/mgk-lower-short.pdf)
 [\[short slides\]](/assets/mgk-lower.pptx)
