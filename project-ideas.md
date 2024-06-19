@@ -44,15 +44,13 @@ The order within a category is roughly chronological.
 
 1. [Scheduling to minimize E[T^2]](#t2)
 
-2. [Beating SRPT-k](#beating-srptk)
+2. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
 
-3. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
+3. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
 
-4. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
+4. [Scheduling with epsilon prediction errors](#epsilon-error)
 
-5. [Scheduling with epsilon prediction errors](#epsilon-error)
-
-6. [Tails for ServerFilling](#sf-tails)
+5. [Tails for ServerFilling](#sf-tails)
 
 ### [Starting out/Not sure how to proceed](#starting-out)
 
@@ -78,6 +76,8 @@ The order within a category is roughly chronological.
 
 4. [M/G/k response time lower bounds (known size)](#mgk-lower)
 
+5. [Beating SRPT-k](#beating-srptk)
+
 ### [Archive: Completed](#archive-done)
 
 1. [Known size dispatching to FCFS queues](#disp-fcfs)
@@ -96,6 +96,8 @@ See Section 8.3.5 of [my thesis](/assets/isaac-thesis.pdf).
 
 **Setting**: M/G/1 scheduling for tail, e.g. minimize E[T^2].
 
+#### **Scheduling policy: t/s**
+
 **Policy**: Priority is t/s, where t is a job's time in system and s is the job's size.
 Higher is better. Without preemption to start, for simplicity of analysis.
 Note that this is an "Accumulating Priority Queue", but with infinite continuous classes, not 2 classes.
@@ -107,21 +109,17 @@ David A. Stanford, Peter Taylor & Ilze Ziedins
 
 **Future steps**: Use APQ methods to characterize steady state. Poisson point process of (size, time in system). Characterize for arbitrary joint (Size, Accumulation rate) distribution, specialize to above setting. Characterize transform of response time, moments of response time.
 
-### Beating SRPT-k {#beating-srptk}
+#### **Achievable region method of lower bounds**
 
-See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
+**Background**: The key idea behind E[T] lower bounds is that if you prioritize jobs by remaining size, you minimize the amount of work below a given remaining size in the system. Using WINE, this bound can be converted into a response time bound, proving that SRPT is optimal. Similar proofs work for Gittins and in various multiserver systems.
 
-**Setting**: SRPT-k (M/G/k/SRPT) is heavy-traffic optimal for mean response time,
-as I proved in [SRPT for Multiserver Systems](/publications/#srptk),
-but it can be beaten outside of heavy traffic.
+We can call this the "achievable region" method - for each relevant work threshold, there is an achievable region of how much relevant work there can be in steady state, depending on the policy.
 
-**Idea**: Consider a 2-server system with 3 jobs in it: Two are small, one is large. There are two scheduling options: Run both small jobs first (SRPT), or one small and one large first (New concept). Once a small job finishes, start running the third job. If no new jobs arrive before the long job finishes, both options have the same total response time. If new jobs arrive after the small jobs finish but before the large job finishes, starting the large job sooner (New concept) is better. If new jobs arrive before both small jobs are done, SRPT is preferable.
+**Idea**: If you prioritize jobs by time in system (FCFS), you minimize the amount of work above each time threshold in the system. "Work with time-in-system above t". However, this cannot be converted into a bound on tail metrics such as E[T^2], because there is not a conversion from work to number of jobs or response time or anything like that.
 
-**Policy**: Flip-3. In an M/G/2, if there are at least 4 jobs, just run SRPT. If there are 3 jobs, and 2 have remaining size below a, and the third has size above b, run the smallest and largest jobs. Otherwise, SRPT. Set a at roughly 20% of the mean job size, and b at roughly the mean job size.
+However, we can get additional bounds by assigning jobs different deadlines based on their sizes, and then prioritizing jobs in a Earliest Deadline First fashion, where jobs reach maximum priority when they are past their deadline. Each such policy minimizes the amount of work of jobs past their deadline.
 
-**First step**: Implement this policy. Compare it against SRPT-k. Fiddle around with job size distributions, loads, and a and b thresholds to find a relatively large separation (0.1% is normal, 1% is good).
-
-**Future steps**: Use a [Nudge](/publications/#nudge)-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
+If jobs are classed exponential jobs (Exp(μ\_1), Exp(μ\_2), ...), then we can convert directly from an amount of work to a number of jobs. We'll get bounds of the form "N_1^t/μ\_1 + N_2^t/μ\_1 \ge x", where N_i^t is the number of jobs of class i that have been in the system for over t time. Perhaps we can integrate results like this, incorporating different deadlines for different classes of job, to get a good T^2 lower bound.
 
 ### Optimal Relative Completions in the Multiserver-job system {#optimal-relative}
 
@@ -439,6 +437,35 @@ we can simplify this considerably. The constant-drift test function is now:
     f(w, a, 1/2) = w + min(w, a/2)
 
 If we plug in `a = Exp(l)` and take expectations, we get the first expression above.
+
+### Beating SRPT-k {#beating-srptk}
+
+See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
+
+See our [MAMA paper](/publications/#mgk-lower).
+
+**Setting**: SRPT-k (M/G/k/SRPT) is heavy-traffic optimal for mean response time,
+as I proved in [SRPT for Multiserver Systems](/publications/#srptk),
+but it can be beaten outside of heavy traffic.
+
+**Idea**: Consider a 2-server system with 3 jobs in it: Two are small, one is large. There are two scheduling options: Run both small jobs first (SRPT), or one small and one large first (New concept). Once a small job finishes, start running the third job. If no new jobs arrive before the long job finishes, both options have the same total response time. If new jobs arrive after the small jobs finish but before the large job finishes, starting the large job sooner (New concept) is better. If new jobs arrive before both small jobs are done, SRPT is preferable.
+
+**Policy**: Flip-3. (A variant of this is the SEK policy from my thesis and the MAMA paper). In an M/G/2, if there are at least 4 jobs, just run SRPT. If there are 3 jobs, and 2 have remaining size below a, and the third has size above b, run the smallest and largest jobs. Otherwise, SRPT. Set a at roughly 20% of the mean job size, and b at roughly the mean job size.
+
+**First step**: Implement this policy. Compare it against SRPT-k. Fiddle around with job size distributions, loads, and a and b thresholds to find a relatively large separation (0.1% is normal, 1% is good).
+
+**Future steps**: Use a [Nudge](/publications/#nudge)-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
+
+**Details**: Consider the case where we have jobs of size ε, ε, 1. The SEK policy runs ε, 1 for ε time, then ε, 1 for ε time, at time 2ε having the state 1-2ε. SRPT-k runs ε, ε for ε time, then 1 for ε time, at time 2ε having the state 1-ε. This is worse.
+
+To prove that SEK in this specific instance is beneficial, proof sketch:
+
+1. 1-2ε sample-path dominates 1-ε, by at least ε response time.
+2. If a job arrives in the first 2ε time to disrupt things,
+there is a coupling for SRPT-k and SEK such that until the end of the busy period,
+system states differ by at most ε at all times,
+resulting in only O(ε) worse total response time in the SEK system.
+3. 1-2ε achieves ε+Omega(ε) better total response time that 1-ε, because more jobs could arrive.
 
 ## Archived: Completed {#archive-done}
 
