@@ -16,6 +16,8 @@ permalink: /publications/
 
 [Other work](#other-work)
 
+[Notes](#notes)
+
 [//]: [//]:
 ## Submitted Papers
 
@@ -241,3 +243,9 @@ Isaac Grosof, Michael Mitzenmacher.
 [\[paper\]](/assets/incentive-compatible.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2202.05747)
 
+## Notes (short works not intended for publication) {#notes}
+
+### [Moments of Integrated Work in the M/G/1](/assets/work-area.pdf)
+Isaac Grosof
+
+[\[paper\]](/assets/work-area.pdf)
