@@ -68,6 +68,7 @@ to document and celebrate how my appearance changes.
 * [Month 11](/2024/03/17/transition-11)
 * [Month 12](/2024/05/08/transition-12). One year!
 * [Month 13](/2024/05/19/transition-13)
+* [Month 14](/2024/07/12/transition-14)
 
 ### Some Gender Going On Podcast
 
@@ -89,8 +90,15 @@ And it's scary, I feel like I'm losing something,
 some core nonbinary part of myself that I can't name.
 I'm exploring what that essence of nonbinariness is.
 
-[SGGO 4: Seeing Myself](/2024/06/08/sggo-4.html):
+[SGGO 4: Seeing Myself](/2024/06/08/sggo-4):
 It took me a long time to be comfortable seeing my body,
 and especially to be comfortable seeing my face.
 Now I can look forward to seeing my face and know I'm going to like it!
 But I still don't feel like I look 'different', somehow.
+
+[SGGO 5: Against 'a girl in a boy's body'](/2024/06/19/sggo-5):
+There's a shorthand summary for describing trans people:
+A trans girl will be described as "a girl trapped in a boy's body".
+I don't like it. I don't the mindset,
+I don't like how it introduces the concept of transness
+to trans people who don't know that they're trans.
