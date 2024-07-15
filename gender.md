@@ -102,3 +102,8 @@ A trans girl will be described as "a girl trapped in a boy's body".
 I don't like it. I don't the mindset,
 I don't like how it introduces the concept of transness
 to trans people who don't know that they're trans.
+
+[SGGO 6: Music 1](/2024/07/14/sggo-6)
+A review of some of the first songs from my gender playlist, 'Them'.
+Songs that have really helped me think about myself,
+and I've listened to them so much I've memorized them.
