@@ -49,6 +49,12 @@ I asked people to ask me questions about being trans,
 and I answered them here.
 I'm planning to make this an annual thing.
 
+[Ritual for Hormones](/2024/07/27/ritual-for-hormones):
+A ritual to accompany taking my daily hormones, morning and evening.
+A reminder of the miracle of creation,
+every day,
+by the power of science, medicine, and the trans community.
+
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.
 Every month since then,
