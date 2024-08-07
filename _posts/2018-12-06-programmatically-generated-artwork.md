@@ -3,8 +3,20 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made sixteen rust programs for programmatically generating artwork in different styles.
+I have made seventeen rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Dual Colors
+
+This is the dual algorithm to my [very first algorithm, Circles](#circles).
+
+That algorithm iterated randomly through colors, found the most similar used color, found its location, found the most similar open location, and put the color at the location.
+
+In contrast, this algorithm iterates randomly through locations, finds the most similar used location, finds its color, finds the most similar unused color, and puts the color at the location.
+
+[Repository](https://github.com/isaacg1/dual-colors/tree/main)
+
+![Dual Colors: Rainbow watercolors with a sprinkling of darkness](/assets/art/dual-colors.png)
 
 ## Plaid
 
@@ -175,7 +187,7 @@ Algorithm: Split one region in half with a black line. Color each side a variati
 
 ![Broken Glass](/assets/art/broken-glass.svg)
 
-## Circles
+## Circles {#circles}
 
 Algorithm: Place pixels of each possible color in a random order,
 each at the nearest unoccupied location to the most similar color placed thus far.
