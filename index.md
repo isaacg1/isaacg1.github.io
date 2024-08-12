@@ -9,6 +9,15 @@ I am an [assistant professor](https://www.mccormick.northwestern.edu/research-fa
 
 I research stochastic queueing theory, with a focus on scheduling and resource allocation,
 and optimal multiserver policies in particular.
+
+I am advising two wonderful PhD students:
+
+* [Ziyuan Wang](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#ziyuan-wang)
+([Linkedin](https://www.linkedin.com/in/ziyuan-wang-826178238)).
+* [Cameron Curtis](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#cameron-curtis)
+([Linkedin](https://www.linkedin.com/in/cameron-curtis-238071197)),
+joint advised with Seyed Irvani. 
+
 If you are a first-year PhD student at Northwestern, a prospective student, or thinking of applying,
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.
 

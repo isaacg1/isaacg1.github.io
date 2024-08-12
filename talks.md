@@ -20,6 +20,7 @@ permalink: /talks/
 [\[slides\]](/assets/mams-tutorial.pptx)
 [\[slides (pdf)\]](/assets/mams-tutorial.pdf)
 [\[worksheet\]](/assets/mams-worksheet.pdf)
+[\[video\]](https://www.youtube.com/watch?v=YBYtZ_NRWmM)
 
 * ACM SIGMETRICS Tutorial, Jun. 2024. 
 
