@@ -119,3 +119,9 @@ and I've listened to them so much I've memorized them.
 [SGGO 7: I'll Always be Misgendered](/2024/07/27/sggo-7):
 The vast majority of strangers don't have a concept of a person who's nonbinary.
 And I fucking hate it.
+
+[SGGO 8: Internalized Transphobia: Digust and Evil](/2024/08/24/sggo-8):
+When I was young, I internalized the message that gender exploration
+was wrong and bad and ugly and gross and evil.
+And I did it anyways.
+The world's a lot better now.
