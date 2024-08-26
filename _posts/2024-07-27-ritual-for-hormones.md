@@ -27,8 +27,8 @@ Under my tongue, into my blood.
 I know who I am <br>
 I know what I want <br>
 I cast my will <br>
-Upon my body <br>
 Upon my mind <br>
+Upon my body <br>
 Upon the world
 
 ### Ritual for evening hormones
@@ -55,6 +55,6 @@ Swell my boobs, let me sleep <br>
 I know who I am <br>
 I know what I want <br>
 I cast my will <br>
-Upon my body <br>
 Upon my mind <br>
+Upon my body <br>
 Upon the world
