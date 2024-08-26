@@ -101,7 +101,7 @@ permalink: /talks/
 [\[slides pdf\]](/assets/asymptotically-optimal.pdf)
 [\[slides pptx\]](/assets/asymptotically-optimal.pptx)
 [\[SRPT paper\]](/assets/srpt.pdf)
-[\[Gittins paper\]](gittins-extremely-general.pdf)
+[\[Gittins paper\]](/assets/gittins-extremely-general.pdf)
 
 * Young Europeans in Queueing Theory, Jun. 2021
 * University of Washington Theory Seminar, Mar. 2021

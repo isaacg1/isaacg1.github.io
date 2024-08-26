@@ -31,7 +31,7 @@ Isaac Grosof, Yige Hong, Mor Harchol-Balter.
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 
-[\[paper\]](npg-approx.pdf)
+[\[paper\]](/assets/npg-approx.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
 ## Full Papers
@@ -48,7 +48,7 @@ Accepted to *ACM SIGMETRICS / IFIP Performance*, June 2024.
 Isaac Grosof, Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
 *IFIP Performance*, November 2023.
 
-An in-progress version appeared as [The RESET Technique for Multiserver-job Analysis](/assets/reset-src)
+An in-progress version appeared as [The RESET Technique for Multiserver-job Analysis](/assets/reset-src.pdf), 
 Isaac Grosof,
 Student Research Competition at SIGMETRICS 2023.
 Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf. 

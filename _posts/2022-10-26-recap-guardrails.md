@@ -163,7 +163,7 @@ I'm really proud of this.
 
 In the setting where job sizes are unknown are estimated, there's an analogue of SRPT
 called the Gittins policy.
-We later proved the asymptotic optimality of [multiserver Gittins](gittins-extremely-general)
+We later proved the asymptotic optimality of [multiserver Gittins](/publications/#gittins-k)
 in a central queue setting.
 How should we dispatch in a setting where we don't know job sizes?
 
