@@ -22,7 +22,7 @@ Now, instead of coin flipping, you see a very offensive tweet that someone sent.
 
 This question closely parallels the coin flipping question. If we see a coin flipped heads twenty times, do we lean towards a plugged coin (inherent nature) or random chance (not inherent nature).
 
-To answer this question, we must examine the level of postselection that has occurred in bringing the offensive tweet to our attention. If the tweet has gone viral and spread to millions of people, an extreme degree of postselection has occured, and every aspect of the tweet is likely to be perfect for the spread.
+To answer this question, we must examine the level of postselection that has occurred in bringing the offensive tweet to our attention. If the tweet has gone viral and spread to millions of people, an extreme degree of postselection has occurred, and every aspect of the tweet is likely to be perfect for the spread.
 
 A good example of this is a tweet sent by [Justine Sacco](https://www.nytimes.com/2015/02/15/magazine/how-one-stupid-tweet-ruined-justine-saccos-life.html). To briefly summarize, Sacco wrote an incredibly offensive tweet in a failed attempt at a joke. Compounding factors include:
 
@@ -32,7 +32,7 @@ A good example of this is a tweet sent by [Justine Sacco](https://www.nytimes.co
 
 In this case, an incredible degree of postselection occurred. Her tweet was seen by a large fraction of the people on Twitter. It was rebroadcast through the wider media system, reaching people like me who don't even use Twitter. And Sacco originally only had 170 followers. This represents at least a million-to-one postselection factor, and probably significantly more.
 
-As a result, we shouldn't be surprised that a bunch of rare events happened in a row. Is it rare for someone to misjudge their joke incredibly badly? Yes. Is it rare to specifically do so in a highly offsensive manner? Yes. Is it rare for that misjudged joke to be made on a public, easily spreadable platform? Yes. Is it rare for the person who did so to also have a high-profile, communications-based profession? Yes. Is it rare for the person who did so to be unable to communicate for a long time afterwards? Yes. Each of these rare events might be a 10-to-1 or 100-to-1 rare event. And yet, the postselection power is sufficient to overcome this, and bring this case to wide attention. We should therefore not be surprised if this case was truly the result of many rare events stacking up, and not reflective of the inherent nature of the person in question.
+As a result, we shouldn't be surprised that a bunch of rare events happened in a row. Is it rare for someone to misjudge their joke incredibly badly? Yes. Is it rare to specifically do so in a highly offensive manner? Yes. Is it rare for that misjudged joke to be made on a public, easily spreadable platform? Yes. Is it rare for the person who did so to also have a high-profile, communications-based profession? Yes. Is it rare for the person who did so to be unable to communicate for a long time afterwards? Yes. Each of these rare events might be a 10-to-1 or 100-to-1 rare event. And yet, the postselection power is sufficient to overcome this, and bring this case to wide attention. We should therefore not be surprised if this case was truly the result of many rare events stacking up, and not reflective of the inherent nature of the person in question.
 
 Now, I will mention an alternative scenario: Where little postselection has occurred,
 so we can draw conclusions more immediately about inherent nature.
