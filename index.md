@@ -16,7 +16,8 @@ I am advising two wonderful PhD students:
 ([Linkedin](https://www.linkedin.com/in/ziyuan-wang-826178238)).
 * [Cameron Curtis](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#cameron-curtis)
 ([Linkedin](https://www.linkedin.com/in/cameron-curtis-238071197)),
-joint advised with Seyed Irvani. 
+joint advised with
+[Seyed Iravani](http://users.iems.northwestern.edu/~iravani/).
 
 If you are a first-year PhD student at Northwestern, a prospective student, or thinking of applying,
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.

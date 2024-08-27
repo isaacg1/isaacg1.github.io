@@ -30,7 +30,7 @@ Otherwise, the setting is once again the same as in the SRPT-k paper: Poisson ar
 In this paper, we decided to build off of three building blocks:
 The [Gittins policy](https://ziv.codes/pdf/wiopt2021-scully.pdf)
 for the single-server queue, dating back to 1980,
-he [SOAP](https://ziv.codes/pdf/sigmetrics2018-scully.pdf) analysis by my coauthors,
+the [SOAP](https://ziv.codes/pdf/sigmetrics2018-scully.pdf) analysis by my coauthors,
 and the multiserver tagged-job approach from the SRPT-k paper.
 
 The Gittins policy is the policy which minimizes mean response time in the single-server setting.
@@ -49,7 +49,7 @@ The Gittins scheduling policy is an *index* policy, which means it maps job ages
 
 To analyze the mean response time of single-server policies such as the Gittins policy,
 my coauthor Ziv developed the SOAP analysis.
-SOAP stands for ``Schedule Ordered by Age-based Priority''.
+SOAP stands for "Schedule Ordered by Age-based Priority".
 It gives a unified analysis of mean response time
 for all age-based index policies in the single-server setting,
 and in particular it gave the first mean response time analysis for the Gittins policy.
