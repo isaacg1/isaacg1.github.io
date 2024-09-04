@@ -3,8 +3,21 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made seventeen rust programs for programmatically generating artwork in different styles.
+I have made eighteen Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Hilbert Tree
+
+This art is based on a minumum spanning tree, where vertices are the pixels and edges are horizontal and vertical adjacency, and edge weights are uniformly random.
+
+The minimum spanning tree is explored in depth-first order, starting at a random vertex, and vertices are assigned colors in Hilbert curve order.
+
+[Repository](https://github.com/isaacg1/mst-hilbert)
+
+![A programmatically generated artwork, rainbow colored, square,
+with fractal boundaries between smoothly-varying regions.
+Blue-purple in the center, red at top left and bottom left,
+yellow-green at top right, and bottom right](/assets/art/hilbert-tree.png)
 
 ## Dual Colors
 
