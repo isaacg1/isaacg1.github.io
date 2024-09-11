@@ -125,3 +125,9 @@ When I was young, I internalized the message that gender exploration
 was wrong and bad and ugly and gross and evil.
 And I did it anyways.
 The world's a lot better now.
+
+[SGGO 9: Unshakeable Confidence](/2024/09/10/sggo-9):
+Cisnormative and binary-normative people are so intensely confident.
+They know how gender is, how gender should be.
+How can we be uncertain, how can we explore,
+when we're surrounded and pelted by absolute certainty.
