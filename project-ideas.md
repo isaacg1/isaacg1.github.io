@@ -11,7 +11,7 @@ I'm particularly interested in working with either students
 at the school I am at (Georgia Tech, UIUC, or Northwestern),
 or people who already have a background in queueing theory research.
 
-Last updated: April 5th, 2024.
+Last updated: September 24th, 2024.
 
 ## Table of contents
 
@@ -65,6 +65,8 @@ The order within a category is roughly chronological.
 5. [Optimal dispatching to Gittins queues](#gittins-dispatch)
 
 6. [Restless MDPs for tail scheduling](#restless-tail)
+
+7. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
 ### [Active projects](#active)
 
@@ -316,6 +318,40 @@ in their paper ["Restless Bandits with Average Reward: Breaking the Uniform Glob
 
 **Question**: Can we formulate a restless Gittins game, solve the single-arm version,
 and use the FTVL policy or something similar to design a scheduling policy?
+
+### Optimal Nonpreemptive MSJ scheduling {#nonpreemptive-msj}
+
+An important aspect of MSJ scheduling in the really world
+is that we often want to scheduling nonpreemptively -- jobs that need lots of resources simultaneously tend to be expensive to set up and shut down.
+
+The challenge of nonpreemptive scheduling in the MSJ is that it's expensive to switch between service configurations.
+
+Consider an MSJ system, where we have 10 servers and jobs either take 1 or 10 servers. If we feel like serving 10-server jobs, we can keep serving 10-server jobs for as long as we have them available,
+with no wasted capacity.
+If we want to switch to serving 1-server jobs, we can wait until a 10-server job finishes, and put 10 1-server jobs into service, again without wasting capacity.
+But if we now want to switch back to serving 10-server jobs, we're going to have to wait until all of the 1-server jobs finish, to free up space.
+Due to stochasticity, we'll waste a substantial amount of capacity in the process. If the 1-server jobs take Exp(1) seconds,
+it'll take an average of 2.93 seconds to empty out the system,
+and we'll only complete 10 jobs, compared to the average completion rate of 29.3 jobs in that time.
+We've wasted an amount of capacity equal to 19 job completions in this process.
+
+This raises the question: When is it worth it to waste this capacity and perform this switch, towards the goal of reducing response times?
+
+The advantage of doing a switch is that we can start on a different class of jobs without waiting for the system to empty.
+The different class of jobs could have lower mean size (or higher importance), aiding response times.
+
+If we waste capacity too often, the system will become unstable. As we approach that boundary, response times will suffer.
+
+**Question:** What's the optimal threshold (# of small and large jobs in the queue) to switch configurations?
+
+**Starter question:** Let's simulate a variety of thresholds and see what seems good.
+
+**Alternate approach:** In heavy traffic, how often should we be switching, optimally?
+We could get into cycles, where we wait until we accumulate x jobs of one class, then serve then all, paying the overhead, then switch back to the other class, which has a very long queue.
+The response time of the higher-priority class will be determined by the cycle length,
+while the response time of the lower-priority class will be determined by the amount of wasted capacity pushing the system closer to the capacity boundary.
+Can we (approximately) determine how long these cycles should optimally be, given the switching overhead?
+
 
 ## Active projects
 
