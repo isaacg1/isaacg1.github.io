@@ -55,6 +55,10 @@ A reminder of the miracle of creation,
 every day,
 by the power of science, medicine, and the trans community.
 
+[Having fun making a webpage~~! ⟨^v^⟩](/2024/09/24/fun):
+Getting in touch with the feeling of being a kid having fun on the internet,
+in ways I never could when I was young, because I wasn't myself yet.
+
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.
 Every month since then,
