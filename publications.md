@@ -4,9 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-[//]: [//]:
-
-[Submitted papers](#submitted-papers)
+[//]: [//]: [Submitted papers](#submitted-papers)
 
 [Full papers](#full-papers)
 
@@ -14,25 +12,13 @@ permalink: /publications/
 
 [Thesis](#thesis)
 
-[Other work](#other-work)
+[Planning to incorporate into a future submission](#future-submission)
+
+[Not planning to submit/publish](#no-publish)
 
 [Notes](#notes)
 
-[//]: [//]:
-## Submitted Papers
-
-### [Analysis of Markovian Arrivals and Service with Applications to Intermittent Overload](/assets/mams.pdf)
-Isaac Grosof, Yige Hong, Mor Harchol-Balter.
-
-[\[paper\]](/assets/mams.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2405.04102)
-[\[talk (tutorial)\]](/talks/#mams-tutorial)
-
-### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
-Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-
-[\[paper\]](/assets/npg-approx.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2405.20467)
+[//]: [//]: ## Submitted Papers
 
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
@@ -61,6 +47,9 @@ Acknowledging Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
 
 **Winner of the ACM SIGMETRICS 2023 Graduate Student Research Competition**
 
+Note: while correct, the results of the MARC section of this paper are not novel.
+See the [MAMS technical report](/assets/mams.pdf)'s literature review for details.
+The RESET section of this paper is novel, in contrast.
 
 ### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf) {#sf-srpt}
 Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
@@ -232,7 +221,16 @@ Isaac Grosof. July 2023.
 
 **One of two CMU nominees for the ACM Dissertation Award**
 
-## Papers not currently under submission {#other-work}
+## Papers which may be incorporated into a future submission {#future-submission}
+
+These are papers where the presentation/exposition wasn't great,
+but where I/we think the results are sufficiently strong/novel for a revised submission.
+
+### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
+Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+
+[\[paper\]](/assets/npg-approx.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
 ### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf) {#npg}
 Isaac Grosof, Siva Theja Maguluri, R. Srikant.
@@ -240,6 +238,22 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 [\[paper\]](/assets/npg.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2402.05274)
 [\[talks\]](/talks/#npg)
+
+## Papers which I'm not planning to submit
+
+These are papers where I/we think the results are accurate, but not strong or novel enough to warrant peer-reviewed publication.
+
+### [Analysis of Markovian Arrivals and Service with Applications to Intermittent Overload](/assets/mams.pdf)
+Isaac Grosof, Yige Hong, Mor Harchol-Balter.
+
+[\[paper\]](/assets/mams.pdf)
+[\[old paper\]](/assets/mams-old.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2405.04102)
+[\[talk (tutorial)\]](/talks/#mams-tutorial)
+
+I do not stand by the novelty claims in the old paper and the tutorial.
+The new paper (technical report) has removed those claims and introduced a detailed literature review, which I stand by.
+
 
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
 Isaac Grosof, Michael Mitzenmacher.
