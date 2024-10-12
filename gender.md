@@ -136,3 +136,9 @@ Cisnormative and binary-normative people are so intensely confident.
 They know how gender is, how gender should be.
 How can we be uncertain, how can we explore,
 when we're surrounded and pelted by absolute certainty.
+
+[SGGO 10: The Joy of Not Giving a Shit](/2024/10/12/sggo-10):
+Over the years, I have reached the point where I can do things
+that might be considered odd, nonnormative, weird, strange.
+I don't give a shit, and I love it.
+It's the only way I could possibly be trans.
