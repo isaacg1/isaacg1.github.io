@@ -59,6 +59,10 @@ by the power of science, medicine, and the trans community.
 Getting in touch with the feeling of being a kid having fun on the internet,
 in ways I never could when I was young, because I wasn't myself yet.
 
+[Caring about Eggs](/2024/10/14/caring-about-eggs)
+How do we best care about eggs?
+How do we manage considerations that point us in opposite directions?
+
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.
 Every month since then,
