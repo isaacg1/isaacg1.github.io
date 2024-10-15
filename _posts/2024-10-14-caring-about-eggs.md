@@ -17,7 +17,7 @@ I don't think there's remotely a uniform consensus on how to approach this, and 
 
 These are potential options for how to respond when one sees egg vibes in someone. After I've listed these options, I'll discuss my thoughts on which options I like and dislike.
 
-I'm ordering these options in vaguely increasing order of activeness and decisiveness 
+I'm ordering these options in vaguely increasing order of activeness and decisiveness.
 
 1. **Say nothing**. Only broach the subject if and when someone reaches out.
 
