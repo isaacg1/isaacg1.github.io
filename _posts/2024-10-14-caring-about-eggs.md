@@ -3,7 +3,7 @@ published: true
 title: 'Caring about Eggs'
 layout: post
 ---
-*Note: I was inspired to write this essay because of a recent [Stained Glass Woman]() essay on the same topic, which I agreed with parts of and disagreed with parts of. I'm glad she wrote that essay. Please do not send any criticism her way as a result of reading this, there's been far too much of that recently.*
+*Note: I was inspired to write this essay because of a recent [Stained Glass Woman](https://stainedglasswoman.substack.com/p/lets-fly) essay on the same topic, which I agreed with parts of and disagreed with parts of. I'm glad she wrote that essay. Please do not send any criticism her way as a result of reading this, there's been far too much of that recently.*
 
 An **egg** is someone who is displaying some gendered traits or doing some things gender-wise that indicate they might be trans, non-cis, or otherwise have some gender going on. Note that this is inherently observer-specific: I might be picking up egg vibes from someone, but somebody else might not pick up those vibes, or might disagree on their interpretation.
 
@@ -151,6 +151,7 @@ To describe another case, I know multiple people whose eggs hatched (they realiz
 when were sent the [Mae Dean](https://reallifecomics.com/comic-mobile.php?comic=june-29-2020) comic I mentioned in my description of Option 4,
 by someone who knew them very well,
 and who had seen their egginess and their mentality of denial for a long time.
+And that realization helped them, and made their lives majorly better.
 This felt like a good approach for this circumstance.
 
 I think Option 4 is more appropriate the better one knows the egg, what they're going through, the options they're considering, and whether they're already inundated with people saying similar things.
