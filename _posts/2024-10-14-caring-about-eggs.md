@@ -170,7 +170,7 @@ act upon their transness or be out.
 This would meditate against something like Option 4
 in circumstances where societal transphobia is extremely severe.
 I can't evaluate this argument very well because I'm not in this circumstance and I don't know many people who are.
-That is a form of priveledge I have, and I want to acknowledge it and leave the argument out there
+That is a form of privilege I have, and I want to acknowledge it and leave the argument out there
 for those with more experience to evaluate.
 
 As another consideration,
@@ -178,7 +178,7 @@ people may find the weight of societal pressure
 towards cisness to be an overwhelming burden,
 and that their only way out is with someone pushing them out of that pit.
 This would meditate towards an option with repeated
-or even constant enouragement towards gender exploration, rather than a gentle suggestion.
+or even constant encouragement towards gender exploration, rather than a gentle suggestion.
 While this is what's best for some people,
 I don't really know how to determine who this would be right for,
 outside of someone asking for this sort of push.
@@ -247,7 +247,7 @@ This comes from a [January 2023 thread](https://ruffboijuliaburnsides.tumblr.com
 
 The point of this slogan is twofold: Don't try to force eggs to hatch, and do build an environment where its safe for them to develop and come to understand themselves.
 
-It thus advocates against Options 5 and 6 (pushing an identity), which are trying to crack the egg, as well Option 1 (say nothing), which doesn't build the nest. It's borderline on Option 4, but given that I only advocate that option when one knows the egg in question very well, I think that's Ok. Slogans are primarily for the more common circumstance where one doesn't know the egg very well.
+It thus advocates against Options 5 and 6 (pushing an identity), which are trying to crack the egg, as well Option 1 (say nothing), which doesn't build the nest. It's borderline on Option 4, but less negative on it than the Egg Prime Directive is, given the different framing of "don't tell" versus "don't crack". Given that I only advocate Option 4 when one knows the egg in question very well, I think that it's Ok for it to be a borderline case. Slogans are primarily for the more common circumstance where one doesn't know the egg very well.
 
 ## Conclusion
 
@@ -273,7 +273,9 @@ Important shades of meaning and intention I'm glossing over.
 There probably are.
 But hopefully some good comes of this approach.
 
-My prefered options are options 2, 3, and 4, depending on how well I know the person:
+My preferred options are options 2, 3, and 4, depending on how well I know the person:
 Provide resources, suggest a vague identity, and tentatively suggest a specific identity,
 respectively.
 My preferred slogan is "Don't crack eggs, build a nest".
+
+Whatever your prefered approach is, I respect it.
