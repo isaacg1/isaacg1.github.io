@@ -59,7 +59,7 @@ It's not a recommendation one can make for someone else, even if that person kno
 
 And certainly, if one doesn't even know for sure that they're trans,
 and they haven't chosen the identity, it's not something one should be recommending at all.
-It can give a message of ``if you were trans, you'd want this. If you don't want this, you must not be trans'', and that's a terrible message to place on a potential trans person. It can really make things a lot worse, whehter or not they're trans, and whether or not they end up going with the medical intervention.
+It can give a message of "if you were trans, you'd want this. If you don't want this, you must not be trans", and that's a terrible message to place on a potential trans person. It can really make things a lot worse, whehter or not they're trans, and whether or not they end up going with the medical intervention.
 
 ## I don't like Option 5: Pushing an identity
 
