@@ -86,6 +86,7 @@ to document and celebrate how my appearance changes.
 * [Month 15](/2024/07/27/transition-15)
 * [Month 16](/2024/08/23/transition-16)
 * [Month 17](/2024/09/24/transition-17)
+* [Month 18](/2024/10/27/transition-18)
 
 ### Some Gender Going On Podcast
 
