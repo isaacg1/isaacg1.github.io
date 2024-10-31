@@ -4,7 +4,9 @@ title: Publications
 permalink: /publications/
 ---
 
-[//]: [//]: [Submitted papers](#submitted-papers)
+[//]: [//]:
+
+[Submitted papers](#submitted-papers)
 
 [Full papers](#full-papers)
 
@@ -12,14 +14,27 @@ permalink: /publications/
 
 [Thesis](#thesis)
 
-[Planning to incorporate into a future submission](#future-submission)
+[//]: [//]: [Planning to incorporate into a future submission](#future-submission)
 
 [Not planning to submit/publish](#no-publish)
 
 [Notes](#notes)
 
-[//]: [//]: ## Submitted Papers
+## Submitted Papers {#submitted-papers}
 
+### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
+Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+
+[\[paper\]](/assets/npg-approx.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2405.20467)
+
+### [Convergence for Natural Policy Gradient on Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
+Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+
+[\[paper\]](/assets/npg.pdf)
+[\[old paper\]](/assets/old-npg.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2402.05274)
+[\[talks\]](/talks/#npg)
 ## Full Papers
 If there is also a short version of a paper, it is listed together with the full version.
 
@@ -221,10 +236,10 @@ Isaac Grosof. July 2023.
 
 **One of two CMU nominees for the ACM Dissertation Award**
 
-## Papers which may be incorporated into a future submission {#future-submission}
+[//]: ## Papers which may be incorporated into a future submission {#future-submission}
 
-These are papers where the presentation/exposition wasn't great,
-but where I/we think the results are sufficiently strong/novel for a revised submission.
+[//]: These are papers where the presentation/exposition wasn't great,
+[//]: but where I/we think the results are sufficiently strong/novel for a revised submission.
 
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.

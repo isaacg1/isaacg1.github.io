@@ -56,17 +56,15 @@ The order within a category is roughly chronological.
 
 1. [Scheduling in the low-load limit](#low-load)
 
-2. [General constrained-service queue](#constrained-service)
+2. [Value function service and dispatching](#value-function)
 
-3. [Value function service and dispatching](#value-function)
+3. [Multiserver Nudge](#multi-nudge)
 
-4. [Multiserver Nudge](#multi-nudge)
+4. [Optimal dispatching to Gittins queues](#gittins-dispatch)
 
-5. [Optimal dispatching to Gittins queues](#gittins-dispatch)
+5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
-6. [Restless MDPs for tail scheduling](#restless-tail)
-
-7. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
+6. [Most Servers First in the M/G/k](#mgk-msf)
 
 ### [Active projects](#active)
 
@@ -89,6 +87,10 @@ The order within a category is roughly chronological.
 1. [The Time Index scheduling policy](#time-index)
 
 2. [Optimal Transform](#optimal-transform)
+
+3. [General constrained-service queue](#constrained-service)
+
+4. [Restless MDPs for tail scheduling](#restless-tail)
 
 ## Quite promising {#promising}
 
@@ -233,18 +235,6 @@ SRPT-k was proven to be optimal in the no-arrivals setting by Robert McNaughton 
 
 **Future steps:** Is SRPT-2 uniquely optimal at low load? Is SRPT-k? Expand to dispatching, MSJ, unknown sizes?
 
-### General constrained-service queue {#constrained-service}
-
-The Multiserver-job system and the switch can both be thought of as special cases of the "Constrained service queue": Jobs have classes, and a certain multisets of classes can be served at once. In the 2x2 switch, the service options are (ad, bc), while in the 2-server MSJ setting, the service options are (aa, b).
-
-What policies and analysis make sense in the general constrained-service queue?
-MaxWeight, used e.g. in
-"[Stochastic models of load balancing and scheduling in cloud computing clusters](
-https://core.ac.uk/download/pdf/4836445.pdf)", seems to be always throughput-optimal.
-When does a [ServerFilling](/publications/#server-filling)
-equivalent exist?
-My [RESET paper](/publications/#reset) seems like it always applies to FCFS-type service.
-
 ### Value function service and dispatching {#value-function}
 
 Can define a SRPT value function, which quantifies the total future response time impact of a set of jobs. If we started two systems, one from empty and one from this set of jobs, and then ran both forever, in expectation by how much would the total response time go up? Relatively simple function, e.g. using WINE.
@@ -298,27 +288,6 @@ Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
 if the dispatcher and the server have the same information?
 Can we prove any convergence to resource-pooled Gittins, if the distribution is simple enough?
 
-### Restless MDPs for tail scheduling {#restless-tail}
-
-In our [Gittins-k](/publications/#gittins-k) paper and in Ziv Scully's Gittins paper, ["The Gittins Policy in the M/G/1 Queue"](https://ziv.codes/publications/#the-gittins-policy-in-the-mg1-queue),
-we relate the Gittins policy to that of the Gittins Game,
-a corresponding MDP whose optimal solution describes the Gittins scheduling policy,
-and gives rise to the optimality of the scheduling policy.
-This relationship is at the heart of Gittins' original paper,
-["Bandit Processes and Dynamic Allocation Indices"](https://doi.org/10.1111/j.2517-6161.1979.tb01068.x),
-which introduces both the MDP policy and the scheduling policy.
-
-For the mean response time objective, the corresponding MDP is a *restful* MDP,
-giving the optimal solution strong enough properties to carry over to the scheduling setting.
-In contrast, for a *tail* response time objective such as T^2,
-the corresponding MDP is a *restless* MDP.
-Recently, there have been advances in the theory of multiarmed restless MDPs,
-such as the Follow-the-Virtual-Leader (FTVL) policy of Yige Hong and Weina Wang,
-in their paper ["Restless Bandits with Average Reward: Breaking the Uniform Global Attractor Assumption"](https://arxiv.org/abs/2306.00196).
-
-**Question**: Can we formulate a restless Gittins game, solve the single-arm version,
-and use the FTVL policy or something similar to design a scheduling policy?
-
 ### Optimal Nonpreemptive MSJ scheduling {#nonpreemptive-msj}
 
 An important aspect of MSJ scheduling in the really world
@@ -352,8 +321,11 @@ The response time of the higher-priority class will be determined by the cycle l
 while the response time of the lower-priority class will be determined by the amount of wasted capacity pushing the system closer to the capacity boundary.
 Can we (approximately) determine how long these cycles should optimally be, given the switching overhead?
 
+### Most Servers First in the M/G/k {#mgk-msf)
 
-## Active projects
+In our recent MAMA paper, Ziyuan and I introduced
+
+## Active projects {#active}
 
 
 ### Product form steady-state distributions from graph structure {#graph-product-form}
@@ -607,3 +579,37 @@ This is a better metric and a better policy.
 It's equivalent to using negative inputs to the transform,
 so it's still extractable from the transform.
 One must be careful to only consider values of s for which the metric is finite.
+
+### General constrained-service queue {#constrained-service}
+
+The Multiserver-job system and the switch can both be thought of as special cases of the "Constrained service queue": Jobs have classes, and a certain multisets of classes can be served at once. In the 2x2 switch, the service options are (ad, bc), while in the 2-server MSJ setting, the service options are (aa, b).
+
+What policies and analysis make sense in the general constrained-service queue?
+MaxWeight, used e.g. in
+"[Stochastic models of load balancing and scheduling in cloud computing clusters](
+https://core.ac.uk/download/pdf/4836445.pdf)", seems to be always throughput-optimal.
+When does a [ServerFilling](/publications/#server-filling)
+equivalent exist?
+My [RESET paper](/publications/#reset) seems like it always applies to FCFS-type service.
+
+### Restless MDPs for tail scheduling {#restless-tail}
+
+In our [Gittins-k](/publications/#gittins-k) paper and in Ziv Scully's Gittins paper, ["The Gittins Policy in the M/G/1 Queue"](https://ziv.codes/publications/#the-gittins-policy-in-the-mg1-queue),
+we relate the Gittins policy to that of the Gittins Game,
+a corresponding MDP whose optimal solution describes the Gittins scheduling policy,
+and gives rise to the optimality of the scheduling policy.
+This relationship is at the heart of Gittins' original paper,
+["Bandit Processes and Dynamic Allocation Indices"](https://doi.org/10.1111/j.2517-6161.1979.tb01068.x),
+which introduces both the MDP policy and the scheduling policy.
+
+For the mean response time objective, the corresponding MDP is a *restful* MDP,
+giving the optimal solution strong enough properties to carry over to the scheduling setting.
+In contrast, for a *tail* response time objective such as T^2,
+the corresponding MDP is a *restless* MDP.
+Recently, there have been advances in the theory of multiarmed restless MDPs,
+such as the Follow-the-Virtual-Leader (FTVL) policy of Yige Hong and Weina Wang,
+in their paper ["Restless Bandits with Average Reward: Breaking the Uniform Global Attractor Assumption"](https://arxiv.org/abs/2306.00196).
+
+**Question**: Can we formulate a restless Gittins game, solve the single-arm version,
+and use the FTVL policy or something similar to design a scheduling policy?
+
