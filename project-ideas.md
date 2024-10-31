@@ -64,7 +64,7 @@ The order within a category is roughly chronological.
 
 5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
-6. [Most Servers First in the M/G/k](#mgk-msf)
+6. [Largest Remaining Size in the M/G/k](#mgk-lrs)
 
 ### [Active projects](#active)
 
@@ -321,9 +321,26 @@ The response time of the higher-priority class will be determined by the cycle l
 while the response time of the lower-priority class will be determined by the amount of wasted capacity pushing the system closer to the capacity boundary.
 Can we (approximately) determine how long these cycles should optimally be, given the switching overhead?
 
-### Most Servers First in the M/G/k {#mgk-msf)
+### Largest Remaining Size in the M/G/k {#mgk-lrs}
 
-In our recent MAMA paper, Ziyuan and I introduced
+In our recent [MAMA paper](/publications/#mgk-lower),
+Ziyuan and I introduced the WINE lower-bounding framework,
+which proves lower bounds on mean response time in the M/G/k under arbitrary scheduling
+via lower bounds on mean relevant work under arbitrary scheduling.
+
+The optimal policy for mean total work under arbitrary scheduling is the most servers first policy, I'm fairly certain.
+The reasoning is fairly simple: Total work is minimized if as many servers are running as possible at each moment in time.
+The only thing that can get in the way of that is too much work concentrated into too few jobs.
+So, we should schedule the job of largest remaining size. This is the opposite of the SRPT policy/
+
+**First step:** Can we prove rigorously that LRS minimizes total work in the M/G/k?
+This should be true in a sample-path sense, which should make the proof relatively straightforward.
+
+**Next step:** Can we analyze LRS for the M/D/k, or even just the M/D/2? (D for Deterministic).
+I think that the ISQ methods described in the same MAMA paper might be useful.
+In particular, drift functions derived via differential equations to give constant drift might be useful.
+
+**Future:** Can we prove tighter bounds by thinking about bounding LRS, rather than trying to bound an arbitrary policy? Even if we can't get an exact analysis.
 
 ## Active projects {#active}
 
