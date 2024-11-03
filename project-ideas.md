@@ -52,6 +52,8 @@ The order within a category is roughly chronological.
 
 5. [Tails for ServerFilling](#sf-tails)
 
+6. [Continuous MSJ](#continuous-msj)
+
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
@@ -219,6 +221,49 @@ If 1-server jobs are very rare, then their interarrival time will be very large.
 
 **Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
 
+### Continuous MSJ {#continuous-msj}
+
+Existing theoretical multiserver-job research has overwhelmingly focused on the case of a discrete, finite set of resource requirements (e.g. numbers of servers). Moreover, policies make heavy use of this fact, often selecting a job to serve based on the number of identical jobs that are present in the system (e.g. MaxWeight). To learn more, see my [MSR MAMA paper](/publications/#simple-mrj) with Ben and Zhongrui.
+In the real world, it's common for resource requirements to be real-valued (e.g. 0.35 CPUs), and for no two jobs to be completely identical.
+
+**Model:** A natural model to capture this is: The total capacity of the system is 1. Jobs have a server need which is in the interval (0, 1]. Any set of jobs with total server need at most 1 can be served simultaneously. Jobs arrive according to a Poisson process with fixed rate λ, and have server need and duration sampled i.i.d. from some joint distribution.
+
+**Goal:** A natural goal is throughput optimality -- stabilizing the system whenever it is possible to do so.
+
+**Example setting:** A concrete example setting is: Server needs are Uniform(0, 1), and durations are Exp(1), independent of server need. This setting should be stabilizable for any λ<2.
+
+**Policies:** One way to construct a policy which is definitely stable is to discretize the server needs by rounding them up to the nearest multiple of 1/n, for some large integer n chosen as a function of the system load. Then, we apply a standard policy like MaxWeight or the [MSR policies](/publications/#simple-mrj) on the discretized system.
+
+This is fine as far as it goes, but these policies have poor performance as a function of n, the discretization parameter. It would be nice to have a throughput-optimal policy that isn't discretization-based.
+
+One could empirically evaluate the performance of existing non-identical-job-based policies, such as best-fit backfilling (most servers first) and first-fit backfilling.
+
+However, a policy worthy of further investigation is the infinite-n limit of the infinite-switching version of the MSR policy. MaxWeight doesn't have a natural infinite-n limit, it relies on having many jobs of the same class to function. MSR can be adapted to a continuous policy. For instance, with uniform server need, one version of the policy would be:
+
+* For each threshold x in (0, 0.5], find the job with largest server need below x, and with largest server need below 1-x.
+
+* For each interval of thresholds of width dx, serve that pair of jobs at rate 2dx.
+
+Concretely, if the jobs in the system are of sizes {0.21, 0.41, 0.61, 0.81},
+this policy would serve:
+
+* [0.81] at rate 0.38 (thresholds [0, 0.19]),
+
+* [0.61] at rate 0.04 (thresholds (0.19, 0.21)),
+
+* [0.61, 0.21] at rate 0.36 (thresholds [0.21, 0.39]),
+
+* [0.41, 0.21] at rate 0.22 (thresholds (0.39, 0.5)).
+
+Note that this policy is straightforwardly suboptimal. It would be better to serve [0.61, 0.21] rather than ever serving [0.61], for instance.
+Nonetheless,
+I believe that this policy would be throughput optimal via a simple discretization proof,
+along the same lines as the discretized MSR policy, but without requiring actual discretization.
+
+**Project:** Define the limit-MSJ policy concretely, and prove that it is throughput optimal,
+likely using a discretization proof.
+
+**Further direction:** Define a strictly-better version of the policy which doesn't do silly things like idle servers, and show the result carries over.
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}

@@ -188,7 +188,7 @@ Accepted to the MAMA workshop at SIGMETRICS 2024.
 [\[paper\]](/assets/mgk-lower-short.pdf)
 [\[talk\]](/talks/#mgk-lower)
 
-### [Simple Policies for Multiresource Job Scheduling](/assets/simple-multiresource.pdf)
+### [Simple Policies for Multiresource Job Scheduling](/assets/simple-multiresource.pdf) {#simple-mrj}
 Zhongrui Chen, Isaac Grosof, Benjamin Berg.
 Accepted to the MAMA workshop at SIGMETRICS 2024.
 
