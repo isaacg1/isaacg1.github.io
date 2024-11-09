@@ -11,7 +11,7 @@ I'm particularly interested in working with either Northwestern students,
 undergrad or grad,
 or people who already have a background in queueing theory research.
 
-Last updated: November 3rd, 2024.
+Last updated: November 9th, 2024.
 
 ## Table of contents
 
@@ -67,6 +67,8 @@ The order within a category is roughly chronological.
 5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
 6. [Largest Remaining Size in the M/G/k](#mgk-lrs)
+
+7. [Half-batch MSJ](#half-batch-msj)
 
 ### [Active projects](#active)
 
@@ -264,6 +266,39 @@ along the same lines as the discretized MSR policy, but without requiring actual
 likely using a discretization proof.
 
 **Further direction:** Define a strictly-better version of the policy which doesn't do silly things like idle servers, and show the result carries over.
+
+## Half-Batch MSJ {#half-batch-msj}
+
+In large-scale computing systems, such as high-performance computing clusters, there are often two types of jobs:
+
+* **Large jobs**: High priority, latency-sensitive jobs which need a large amount of resources (e.g. compute nodes) at once, often a large fraction of the capacity of the entire system.
+* **Small jobs**: Low priority, batch jobs (non-latency sensitive), which need a small amount of resources at once - many nodes, but a small fraction of the entire system.
+
+The large jobs are the reason the cluster exists, at the size that it does. These jobs need to run on a very large cluster, and they're the jobs the cluster cares about.
+
+However, there aren't enough karge jobs to utilize a large fraction of the capacity of the cluster.
+
+So the cluster is also available for use by small jobs. Small jobs could run on this cluster, or on another lower resource system. They're not the priority, but they help keep the utilization high.
+
+One challenge is that typically,  either type of job is preemptible.
+
+**Model**: We will model this scenario with a MSJ system with two types of jobs, with two different arrival process: Large jobs arrive according to an external stochastic arrival process (e.g. Poisson process). Small jobs are always available. Neither type of job can be preempted.
+
+There are two objects: Response time of large jobs and overall throughput, or equivalently throughput of small jobs. The goal is to optimize the tradeoff between the two.
+
+In general, we would want general distributions of resource requirements and durations for small and large jobs. As a starting point, we can consider small jobs that take one server and large jobs that take n/k servers where n is the number of servers and k is a small integer, and exponential service times specific to the class.
+
+As an extreme first step, we can consider the k=1 case.
+
+**Starting point**: In the k=1 case, the default policy is: While there are large jobs in the system, no small jobs may enter service - we need to free up space. When all large jobs are done, small jobs may enter service.
+
+There are two variations worth considering, to improve each objective:
+
+* **Reserved capcity**: We can avoid using some of the capacity on small jobs even when there are no large jobs present. With exponential durations, it's more efficient to sometimes allow no small jobs to run, sometimes allow all small jobs to run, rather than only using some of the servers.
+* **Batching together large jobs**: Rather than serving large jobs whenever they arrive, wait to accumulate many large jobs before servjng them all in a row. This avoids the overhead of emptying out the servers for each job. It's optimal to always batch up to a threshold, rather than a variety of batch sizes.
+
+**First step**: Derive the optimal tradeoff curve between mean response time of large jobs and throughput of small jobs.
+
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}
