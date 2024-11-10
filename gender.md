@@ -147,3 +147,7 @@ Over the years, I have reached the point where I can do things
 that might be considered odd, nonnormative, weird, strange.
 I don't give a shit, and I love it.
 It's the only way I could possibly be trans.
+
+[SGGO 11: A World of Norms](/2024/11/10/sggo-11):
+The default, societally, is think of oneself as normal, and to fear what's abnormal.
+So how does one live one's life when one is considered abnormal, and one fears what's normal?
