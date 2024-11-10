@@ -54,6 +54,8 @@ The order within a category is roughly chronological.
 
 6. [Continuous MSJ](#continuous-msj)
 
+7. [Half-batch MSJ](#half-batch-msj)
+
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
@@ -67,8 +69,6 @@ The order within a category is roughly chronological.
 5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
 6. [Largest Remaining Size in the M/G/k](#mgk-lrs)
-
-7. [Half-batch MSJ](#half-batch-msj)
 
 ### [Active projects](#active)
 
