@@ -254,7 +254,7 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 [\[arxiv\]](https://arxiv.org/abs/2402.05274)
 [\[talks\]](/talks/#npg)
 
-## Papers which I'm not planning to submit
+## Papers which I'm not planning to submit {#no-publish}
 
 These are papers where I/we think the results are accurate, but not strong or novel enough to warrant peer-reviewed publication.
 
