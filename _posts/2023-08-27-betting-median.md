@@ -71,7 +71,7 @@ To calculate the optimal median strategy, you need two pieces of information:
 The number of flips remaining (which we'll call `f`) and the number of remaining tails you can afford
 (which we'll call `t`). `t` starts at `(f-1)/2` (we'll assume `f` is odd), and goes down by 1 whenever we flip a tails.
 If `t` goes negative, that means we've flipped more tails than we can possibly flip heads, and we'll have lost all our money.
-If `t` reaches `f`, that means we've flipped enough heads to reach our target, and we won't be any more money.
+If `t` reaches `f`, that means we've flipped enough heads to reach our target, and we won't bet any more money.
 
 Our bet size is a fraction of our total money:
 
