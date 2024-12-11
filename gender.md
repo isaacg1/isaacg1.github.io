@@ -152,3 +152,7 @@ It's the only way I could possibly be trans.
 [SGGO 11: A World of Norms](/2024/11/10/sggo-11):
 The default, societally, is think of oneself as normal, and to fear what's abnormal.
 So how does one live one's life when one is considered abnormal, and one fears what's normal?
+
+[SGGO 12: Transition Experiences](/2024/12/10/sggo-12):
+In this episode, I'm going through notes I've taken on my transition experiences,
+dating back to September 2023, and giving my commentary and thoughts on my experiences.
