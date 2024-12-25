@@ -157,3 +157,10 @@ So how does one live one's life when one is considered abnormal, and one fears w
 [SGGO 12: Transition Experiences](/2024/12/10/sggo-12):
 In this episode, I'm going through notes I've taken on my transition experiences,
 dating back to September 2023, and giving my commentary and thoughts on my experiences.
+
+[SGGO 13: Showering](/2024/12/25/sggo-13):
+Showering is so hard, for me.
+Dysphoria and neurodivergence interlace to bring an intense depth of difficulty.
+And yet, I've built up some modicum of skill.
+And still I feel horrible.
+What does the path look like? What may the future bring?
