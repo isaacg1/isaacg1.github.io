@@ -66,7 +66,7 @@ King of the Franks, King of the Lombards, Emperor of the Romans
 3. 797-818: [Bernard](https://en.wikipedia.org/wiki/Bernard_of_Italy), King of Italy
   * m: Cunigunde of Laon
 
-4. 817-850: [Pepin II](https://en.wikipedia.org/wiki/Pepin,_Count_of_Vermandois),
+4. 817-850: [Pepin II](https://en.wikipedia.org/wiki/Pepin_II,_Count_of_Vermandois),
 Count of Vermandois
   * m: ?
   * (830-866: Richilde of Vermandois, at least 2 descendants, at least through 886, unknown?)
