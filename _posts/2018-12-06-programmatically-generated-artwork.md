@@ -3,8 +3,16 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made eighteen Rust programs for programmatically generating artwork in different styles.
+I have made nineteen Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Balance
+
+This art is balanced on an incremenetal nearest-neighbor graph, which is then turned into a incrementally balanced tree. The tree is then colored by adding up color contributions from an edge to the root.
+
+[Repository](https://github.com/isaacg1/average-tree)
+
+![A programmatically generated artwork, in a rainbow variety of colors, emphasizing near-black in the bottom center, mostly purple in the center and left, and mostly yellow in the top and right. Square, with tree-like feathered patterning.](/assets/art/balance.png)
 
 ## Hilbert Tree
 
