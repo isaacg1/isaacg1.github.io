@@ -6,21 +6,46 @@ permalink: /publications/
 
 [//]: [//]:
 
-[Submitted papers](#submitted-papers)
+[Submitted & under-revision papers](#submitted-papers)
 
-[Full papers](#full-papers)
+[Full, published papers](#full-papers)
 
 [Short papers](#short-papers)
 
 [Thesis](#thesis)
 
-[//]: [//]: [Planning to incorporate into a future submission](#future-submission)
-
 [Not planning to submit/publish](#no-publish)
 
 [Notes](#notes)
 
-## Submitted Papers {#submitted-papers}
+## Submitted & Under-Revision Papers {#submitted-papers}
+
+### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
+Céline Comte and Isaac Grosof.
+
+[\[paper\]](/assets/graph-structure.pdf)
+
+Joint first authors.
+
+### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
+Ziyuan Wang and Isaac Grosof.
+
+[\[paper\]](/assets/mgk-lower.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2502.08804)
+
+Expands upon a [short paper](#mgk-lower-short) from MAMA 2024.
+
+### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf)
+Zhongrui Chen, Isaac Grosof, Ben Berg.
+
+[\[arxiv\]](https://arxiv.org/abs/2412.08915)
+
+### [Optimal Multiserver Scheduling under General Service Constraints in Heavy Traffic](/assets/seb.pdf) {#seb}
+Runhan Xie, Ziv Scully, Isaac Grosof.
+
+[\[paper\]](/assets/seb.pdf)
+
+Currently under revision.
 
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
@@ -181,7 +206,7 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 
 ## Short Papers
 
-### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower}
+### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower-short}
 Isaac Grosof, Ziyuan Wang.
 Accepted to the MAMA workshop at SIGMETRICS 2024.
 
@@ -275,6 +300,14 @@ Isaac Grosof, Michael Mitzenmacher.
 
 [\[paper\]](/assets/incentive-compatible.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2202.05747)
+
+### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
+As [discussed above](#product-form-msj), much of this paper is not novel.
+The two-class results are good work, however.
+
+[\[paper\]](/assets/multiserverjob-stability.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2010.00631)
+[\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
 
 ## Notes (short works not intended for publication) {#notes}
 

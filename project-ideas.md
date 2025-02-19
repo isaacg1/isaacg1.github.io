@@ -54,8 +54,6 @@ The order within a category is roughly chronological.
 
 6. [Continuous MSJ](#continuous-msj)
 
-7. [Half-batch MSJ](#half-batch-msj)
-
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
@@ -72,19 +70,21 @@ The order within a category is roughly chronological.
 
 ### [Active projects](#active)
 
-1. [Product form steady-state distributions from graph structure](#graph-product-form)
+1. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
 
-2. [Optimal scheduling in the general MSJ model](#general-msj)
+2. [Beating SRPT-k](#beating-srptk)
 
-3. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
+3. [Half-batch MSJ](#half-batch-msj)
 
-4. [M/G/k response time lower bounds (known size)](#mgk-lower)
+### [Archive: Submitted or Completed](#archive-done)
 
-5. [Beating SRPT-k](#beating-srptk)
+1. [M/G/k response time lower bounds (known size)](#mgk-lower)
 
-### [Archive: Completed](#archive-done)
+2. [Product form steady-state distributions from graph structure](#graph-product-form)
 
-1. [Known size dispatching to FCFS queues](#disp-fcfs)
+3. [Optimal scheduling in the general MSJ model](#general-msj)
+
+4. [Known size dispatching to FCFS queues](#disp-fcfs)
 
 ### [Archive: No longer interested](#archive-nope)
 
@@ -401,9 +401,53 @@ The response time of the higher-priority class will be determined by the cycle l
 while the response time of the lower-priority class will be determined by the amount of wasted capacity pushing the system closer to the capacity boundary.
 Can we (approximately) determine how long these cycles should optimally be, given the switching overhead?
 
+## Active projects {#active}
+
+
+### Relative arrivals/completions with infinite state spaces {#infinite-ra}
+
+**Setting**: Markovian arrivals/markovian service systems.
+
+In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
+
+The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
+
+A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
+
+**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
+
+### Beating SRPT-k {#beating-srptk}
+
+See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
+
+See our [MAMA paper](/publications/#mgk-lower).
+
+**Setting**: SRPT-k (M/G/k/SRPT) is heavy-traffic optimal for mean response time,
+as I proved in [SRPT for Multiserver Systems](/publications/#srptk),
+but it can be beaten outside of heavy traffic.
+
+**Idea**: Consider a 2-server system with 3 jobs in it: Two are small, one is large. There are two scheduling options: Run both small jobs first (SRPT), or one small and one large first (New concept). Once a small job finishes, start running the third job. If no new jobs arrive before the long job finishes, both options have the same total response time. If new jobs arrive after the small jobs finish but before the large job finishes, starting the large job sooner (New concept) is better. If new jobs arrive before both small jobs are done, SRPT is preferable.
+
+**Policy**: Flip-3. (A variant of this is the SEK policy from my thesis and the MAMA paper). In an M/G/2, if there are at least 4 jobs, just run SRPT. If there are 3 jobs, and 2 have remaining size below a, and the third has size above b, run the smallest and largest jobs. Otherwise, SRPT. Set a at roughly 20% of the mean job size, and b at roughly the mean job size.
+
+**First step**: Implement this policy. Compare it against SRPT-k. Fiddle around with job size distributions, loads, and a and b thresholds to find a relatively large separation (0.1% is normal, 1% is good).
+
+**Future steps**: Use a [Nudge](/publications/#nudge)-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
+
+**Details**: Consider the case where we have jobs of size ε, ε, 1. The SEK policy runs ε, 1 for ε time, then ε, 1 for ε time, at time 2ε having the state 1-2ε. SRPT-k runs ε, ε for ε time, then 1 for ε time, at time 2ε having the state 1-ε. This is worse.
+
+To prove that SEK in this specific instance is beneficial, proof sketch:
+
+1. 1-2ε sample-path dominates 1-ε, by at least ε response time.
+2. If a job arrives in the first 2ε time to disrupt things,
+there is a coupling for SRPT-k and SEK such that until the end of the busy period,
+system states differ by at most ε at all times,
+resulting in only O(ε) worse total response time in the SEK system.
+3. 1-2ε achieves ε+Omega(ε) better total response time that 1-ε, because more jobs could arrive.
+
 ### Largest Remaining Size in the M/G/k {#mgk-lrs}
 
-In our recent [MAMA paper](/publications/#mgk-lower),
+In our recent [MAMA paper](/publications/#mgk-lower-short),
 Ziyuan and I introduced the WINE lower-bounding framework,
 which proves lower bounds on mean response time in the M/G/k under arbitrary scheduling
 via lower bounds on mean relevant work under arbitrary scheduling.
@@ -422,90 +466,13 @@ In particular, drift functions derived via differential equations to give consta
 
 **Future:** Can we prove tighter bounds by thinking about bounding LRS, rather than trying to bound an arbitrary policy? Even if we can't get an exact analysis.
 
-## Active projects {#active}
-
-
-### Product form steady-state distributions from graph structure {#graph-product-form}
-
-The 2-class MSJ saturated system has a [product form](/publications/#product-form-msj) steady-steady distribution,
-as a consequence of the graph structure of the Markov chain.
-This is in contrast to the single-exponential saturated system,
-for which the transition rates are also important to the product-form argument.
-
-In general, a directed graph has a product form if there is an "directed elimination ordering"
-to its vertices, defined as follows:
-
-* For each vertex i, define its neighborhood to be all vertices j for which there exists an edge j->i, as well as i itself.
-
-* Start with a source vertex, and place it in the "eliminated" set.
-
-* Repeatedly select vertex neighborhoods that contains exactly one uneliminated vertex.
-Each time such a neighborhood is selected, eliminate the new vertex.
-
-* If this process can be continued until all vertices are eliminated,
-the directed graph has a "directed elimination ordering".
-
-All Markov chains with such an underlying graph have product form steady-state distributions.
-Moreover, such chains have summation-form relative completions,
-a new concept which allows relative completions to be characterized in closed-form.
-
-**First step:** What are some classes of graphs that have elimination orderings?
-I know undirected trees and the ladder graphs are examples. What others?
-
-**Future steps:** Have these graphs been studied already, likely under a different name?
-Can we give a closed-form characterization of this family of graphs?
-Are they closed under any operations, such as taking minors?
-
-**Update:** Elimination ordering seems better for summation-form relative arrivals/relative completions. Instead, for product-form you need something slightly stronger: A sequence of cuts such that on each side of the cut, there's exactly one vertex with transitions across the cut.
-
-### Optimal scheduling in the general MSJ model {#general-msj}
-
-See Section 8.3.4 of [my thesis](/assets/isaac-thesis.pdf).
-
-Outside of the divisible server need setting behind the
-[DivisorFilling-SRPT](/publications/#sf-srpt) policy,
-we can't guarantee that all of the servers can be filled by an arbitrary set of k jobs.
-This can cause problems in two ways:
-
-1. The smallest jobs might not pack well.
-
-2. If we prioritize the smallest jobs,
-the jobs that are left over might not be able to fill the servers.
-
-For example, consider a system with k=3 servers and jobs of server need 1 and 2.
-If the 2-server jobs have smaller size, we can't fill the servers with just 2-server jobs.
-If the 1-server jobs have smaller size, and we prioritize them,
-we'll run out of 1-server jobs and have just 2-server jobs left,
-which can't fill the servers.
-
-To fix problem 1, we should just find the set of jobs with smallest sizes
-that can fill the servers, and serve those jobs.
-Proving that this is optimal will be challenging.
-
-To fix problem 2, we should set a floor on the number of 1-server jobs
-that we want to keep in the system,
-in the style of
-[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching),
-and when we reach the floor, use the least 1-server-intensive strategy.
-Proving this is optimal will also be hard.
-
-**First step:** Find a prospective policy for the k=3 setting that "feels" optimal.
-
-### Relative arrivals/completions with infinite state spaces {#infinite-ra}
-
-**Setting**: Markovian arrivals/markovian service systems.
-
-In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
-
-The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
-
-A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
-
-**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
+## Archived: Completed {#archive-done}
 
 ### M/G/k response time lower bounds (known size) {#mgk-lower}
 
-See [our preliminary work on this topic](/publications/#mgk-lower).
+See [our submitted paper](/publications/#mgk-lower).
+
+See [our preliminary work on this topic](/publications/#mgk-lower-short).
 
 See Section 8.3.2 of [my thesis](/assets/isaac-thesis.pdf).
 
@@ -543,36 +510,75 @@ we can simplify this considerably. The constant-drift test function is now:
 
 If we plug in `a = Exp(l)` and take expectations, we get the first expression above.
 
-### Beating SRPT-k {#beating-srptk}
+### Product form steady-state distributions from graph structure {#graph-product-form}
 
-See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
+See our [submitted paper](/publications/#graph-structure).
 
-See our [MAMA paper](/publications/#mgk-lower).
+The 2-class MSJ saturated system has a [product form](/publications/#product-form-msj) steady-steady distribution,
+as a consequence of the graph structure of the Markov chain.
+This is in contrast to the single-exponential saturated system,
+for which the transition rates are also important to the product-form argument.
 
-**Setting**: SRPT-k (M/G/k/SRPT) is heavy-traffic optimal for mean response time,
-as I proved in [SRPT for Multiserver Systems](/publications/#srptk),
-but it can be beaten outside of heavy traffic.
+In general, a directed graph has a product form if there is an "directed elimination ordering"
+to its vertices, defined as follows:
 
-**Idea**: Consider a 2-server system with 3 jobs in it: Two are small, one is large. There are two scheduling options: Run both small jobs first (SRPT), or one small and one large first (New concept). Once a small job finishes, start running the third job. If no new jobs arrive before the long job finishes, both options have the same total response time. If new jobs arrive after the small jobs finish but before the large job finishes, starting the large job sooner (New concept) is better. If new jobs arrive before both small jobs are done, SRPT is preferable.
+* For each vertex i, define its neighborhood to be all vertices j for which there exists an edge j->i, as well as i itself.
 
-**Policy**: Flip-3. (A variant of this is the SEK policy from my thesis and the MAMA paper). In an M/G/2, if there are at least 4 jobs, just run SRPT. If there are 3 jobs, and 2 have remaining size below a, and the third has size above b, run the smallest and largest jobs. Otherwise, SRPT. Set a at roughly 20% of the mean job size, and b at roughly the mean job size.
+* Start with a source vertex, and place it in the "eliminated" set.
 
-**First step**: Implement this policy. Compare it against SRPT-k. Fiddle around with job size distributions, loads, and a and b thresholds to find a relatively large separation (0.1% is normal, 1% is good).
+* Repeatedly select vertex neighborhoods that contains exactly one uneliminated vertex.
+Each time such a neighborhood is selected, eliminate the new vertex.
 
-**Future steps**: Use a [Nudge](/publications/#nudge)-style argument to prove that if a is small enough and b is large enough, the Flip-3 policy has lower mean response time than SRPT-2.
+* If this process can be continued until all vertices are eliminated,
+the directed graph has a "directed elimination ordering".
 
-**Details**: Consider the case where we have jobs of size ε, ε, 1. The SEK policy runs ε, 1 for ε time, then ε, 1 for ε time, at time 2ε having the state 1-2ε. SRPT-k runs ε, ε for ε time, then 1 for ε time, at time 2ε having the state 1-ε. This is worse.
+All Markov chains with such an underlying graph have product form steady-state distributions.
+Moreover, such chains have summation-form relative completions,
+a new concept which allows relative completions to be characterized in closed-form.
 
-To prove that SEK in this specific instance is beneficial, proof sketch:
+**First step:** What are some classes of graphs that have elimination orderings?
+I know undirected trees and the ladder graphs are examples. What others?
 
-1. 1-2ε sample-path dominates 1-ε, by at least ε response time.
-2. If a job arrives in the first 2ε time to disrupt things,
-there is a coupling for SRPT-k and SEK such that until the end of the busy period,
-system states differ by at most ε at all times,
-resulting in only O(ε) worse total response time in the SEK system.
-3. 1-2ε achieves ε+Omega(ε) better total response time that 1-ε, because more jobs could arrive.
+**Future steps:** Have these graphs been studied already, likely under a different name?
+Can we give a closed-form characterization of this family of graphs?
+Are they closed under any operations, such as taking minors?
 
-## Archived: Completed {#archive-done}
+**Update:** Elimination ordering seems better for summation-form relative arrivals/relative completions. Instead, for product-form you need something slightly stronger: A sequence of cuts such that on each side of the cut, there's exactly one vertex with transitions across the cut.
+
+### Optimal scheduling in the general MSJ model {#general-msj}
+
+See [our paper which is under revision](/publications/#seb).
+
+See Section 8.3.4 of [my thesis](/assets/isaac-thesis.pdf).
+
+Outside of the divisible server need setting behind the
+[DivisorFilling-SRPT](/publications/#sf-srpt) policy,
+we can't guarantee that all of the servers can be filled by an arbitrary set of k jobs.
+This can cause problems in two ways:
+
+1. The smallest jobs might not pack well.
+
+2. If we prioritize the smallest jobs,
+the jobs that are left over might not be able to fill the servers.
+
+For example, consider a system with k=3 servers and jobs of server need 1 and 2.
+If the 2-server jobs have smaller size, we can't fill the servers with just 2-server jobs.
+If the 1-server jobs have smaller size, and we prioritize them,
+we'll run out of 1-server jobs and have just 2-server jobs left,
+which can't fill the servers.
+
+To fix problem 1, we should just find the set of jobs with smallest sizes
+that can fill the servers, and serve those jobs.
+Proving that this is optimal will be challenging.
+
+To fix problem 2, we should set a floor on the number of 1-server jobs
+that we want to keep in the system,
+in the style of
+[CRAB](https://ziv.codes/publications/#reducing-heavy-traffic-response-time-with-asymmetric-dispatching),
+and when we reach the floor, use the least 1-server-intensive strategy.
+Proving this is optimal will also be hard.
+
+**First step:** Find a prospective policy for the k=3 setting that "feels" optimal.
 
 ### Known size dispatching to FCFS queues {#disp-fcfs}
 
