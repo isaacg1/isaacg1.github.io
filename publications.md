@@ -24,6 +24,7 @@ permalink: /publications/
 Céline Comte and Isaac Grosof.
 
 [\[paper\]](/assets/graph-structure.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2502.13890)
 
 Joint first authors.
 
