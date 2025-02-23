@@ -63,6 +63,8 @@ in ways I never could when I was young, because I wasn't myself yet.
 How do we best care about eggs?
 How do we manage considerations that point us in opposite directions?
 
+[Patreon](/2025/02/23/patreon): All of the people I subscribe to on Patreon, most of whom are trans or otherwise have gender going on.
+
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.
 Every month since then,
