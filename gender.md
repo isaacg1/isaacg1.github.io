@@ -65,7 +65,7 @@ How do we manage considerations that point us in opposite directions?
 
 [Patreon](/2025/02/23/patreon): All of the people I subscribe to on Patreon, most of whom are trans or otherwise have gender going on.
 
-[Visibility](/2025/03/30/visibility): An essay for the upcoming Trans Day of Visibility.
+[Visibility](/2025/03/05/visibility): An essay for the upcoming Trans Day of Visibility.
 
 ### Transition photos
 I started estrogen HRT on April 18th, 2023.

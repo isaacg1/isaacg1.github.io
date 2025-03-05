@@ -4,7 +4,7 @@ title: 'Visibility'
 layout: post
 ---
 
-For the upcoming Trans Day of Visibilty (March 30th), I wrote the following essay, to perhaps be read (or shouted) at an upcoming rally.
+For the upcoming Trans Day of Visibilty (March 31st), I wrote the following essay, to perhaps be read (or shouted) at an upcoming rally.
 
 ### Visibility
 
