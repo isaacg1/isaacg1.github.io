@@ -43,7 +43,7 @@ All are welcome.
 ### Context: About me
 
 Here's [more stuff I've written about gender](/gender).
-Here's [last year's answers](2024/03/31/trans-qa).
+Here's [last year's answers](/2024/03/31/trans-qa).
 
 If you'd like to ask questions about specific experiences that I can speak to,
 feel free to do so!
