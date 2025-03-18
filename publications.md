@@ -36,11 +36,6 @@ Ziyuan Wang and Isaac Grosof.
 
 Expands upon a [short paper](#mgk-lower-short) from MAMA 2024.
 
-### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf)
-Zhongrui Chen, Isaac Grosof, Ben Berg.
-
-[\[arxiv\]](https://arxiv.org/abs/2412.08915)
-
 ### [Optimal Multiserver Scheduling under General Service Constraints in Heavy Traffic](/assets/seb.pdf) {#seb}
 Runhan Xie, Ziv Scully, Isaac Grosof.
 
@@ -61,12 +56,20 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 [\[old paper\]](/assets/old-npg.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2402.05274)
 [\[talks\]](/talks/#npg)
-## Full Papers
+## Full, Accepted Papers
+
 If there is also a short version of a paper, it is listed together with the full version.
+
+
+### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf)
+Zhongrui Chen, Isaac Grosof, Ben Berg.
+Accepted to *ACM SIGMETRICS*, June 2025.
+
+[\[arxiv\]](https://arxiv.org/abs/2412.08915)
 
 ### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](/assets/card.pdf) {#card}
 Runhan Xie, Isaac Grosof, Ziv Scully.
-Accepted to *ACM SIGMETRICS / IFIP Performance*, June 2024.
+*ACM SIGMETRICS / IFIP Performance*, June 2024.
 
 [\[paper\]](/assets/card.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2312.16377)
