@@ -56,7 +56,8 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 [\[old paper\]](/assets/old-npg.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2402.05274)
 [\[talks\]](/talks/#npg)
-## Full, Accepted Papers
+
+## Full, Accepted Papers {#full-papers}
 
 If there is also a short version of a paper, it is listed together with the full version.
 
