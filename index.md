@@ -19,8 +19,19 @@ I am advising two wonderful PhD students:
 joint advised with
 [Seyed Iravani](http://users.iems.northwestern.edu/~iravani/).
 
+I am leading an exciting independent study:
+
+* [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
+([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)), Spring 2025.
+
+I am advising an excellent undergraduate researcher:
+
+* Jay Kowalik
+
 If you are a first-year PhD student at Northwestern, a prospective student, or thinking of applying,
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.
+If you're an undergraduate student at Northwestern interested in doing research,
+you should also feel free to get in touch.
 
 My name is Izzy Grosof, where Izzy is short for Isaac. I am nonbinary, and I use both they/them and she/her pronouns.
 Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info on my gender,
