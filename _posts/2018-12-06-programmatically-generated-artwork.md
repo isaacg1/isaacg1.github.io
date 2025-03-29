@@ -3,8 +3,16 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made nineteen Rust programs for programmatically generating artwork in different styles.
+I have made twenty Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Dual Peaks
+
+This art finds the two color centers of the nearby pixels, then moves the given pixel towards the closer of the two color centers.
+
+[Repository](https://github.com/isaacg1/dual-peaks)
+
+![A programmatically geneated artwork, a rainbow shifting matrix with two colors predominating at each location, with an irridescent sheen.](/assets/art/dual-peaks.png)
 
 ## Balance
 
