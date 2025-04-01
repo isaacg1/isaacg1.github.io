@@ -66,6 +66,6 @@ Here's an archive of my [job market materials](job-market).
 A good way to contact me is via my email at the bottom of the page, or via my
 <a rel="me" href="https://mathstodon.xyz/@isaacg">Mastodon account, @isaacg@mathstodon.xyz</a>.
 
-Here's some [art I made](2018/12/06/programmatically-generated-artwork.html):
+Here's some art I made, and check out [many more of my pieces](2018/12/06/programmatically-generated-artwork.html).
 
 <img src="/assets/art/broken-glass.svg" alt="Art" width="400"/>

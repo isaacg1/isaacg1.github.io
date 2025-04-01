@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Izzy Grosof (Isaac)
+title: Izzy Grosof
 email: izzy.grosof@northwestern.edu
 office: Tech E280
 description: >- # this means to ignore newlines until "baseurl:"
-    Izzy Grosof (Isaac)'s website
+    Izzy Grosof's website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  isaacg1
@@ -30,6 +30,7 @@ header_pages:
     - talks.md
     - project-ideas.md
     - cv.md
+    - gender.md
     - blog.md
 
 # Build settings

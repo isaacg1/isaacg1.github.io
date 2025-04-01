@@ -4,7 +4,7 @@ title: "Gender"
 permalink: /gender/
 ---
 
-Here I will link to all of my gender-related pages on this site,
+Here are links to all of my gender-related pages on this site,
 with brief summaries.
 
 ### Blog posts
@@ -42,12 +42,6 @@ It's about feeling gender from the inside.
 Discussing and dismantling the narratives that get into trans people's heads,
 before we hatch and understand ourselves.
 Narratives about why we can't be trans or we can't explore or we can't come out.
-
-[Trans Q&A for TDoV](/2024/03/31/trans-qa):
-For Trans Day of Visibility (March 31st),
-I asked people to ask me questions about being trans,
-and I answered them here.
-I'm planning to make this an annual thing.
 
 [Ritual for Hormones](/2024/07/27/ritual-for-hormones):
 A ritual to accompany taking my daily hormones, morning and evening.
@@ -171,3 +165,21 @@ Dysphoria and neurodivergence interlace to bring an intense depth of difficulty.
 And yet, I've built up some modicum of skill.
 And still I feel horrible.
 What does the path look like? What may the future bring?
+
+### Trans Q&A for Trans Day of Visibility
+
+Every March, I solicit questions about being trans.
+Every March 31st (Trans Day of Visibility), I answer them here.
+
+[First Annual Q&A](/2024/03/31/trans-qa):
+* Gender: personal or societal?
+* Identifying as, versus being identified as?
+* Being both nonbinary and trans
+* Nonbinary and no gender
+* Actively exploring gender
+
+[Second Annual Q&A](/2024/03/31/trans-qa-ii):
+* Common mistakes when referring to trans people
+* Moving to the next phase of gender
+* Abstraction and overthinking
+* Changing views on maculinity
