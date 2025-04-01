@@ -38,6 +38,22 @@ Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for mo
 my [they/she Q&A](/2024/01/19/they-she) for more info on my pronouns,
 or all of my [gender-related posts](gender).
 
+Teaching:
+* [IEMS 315](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/315.html): Stochastic Models.
+Mostly undergraduate course, mostly juniors and seniors.
+Covers modeling with Markov chains and Poisson processes, and a bit of queueing theory.
+Taught fall 2024, returning fall 2025!
+* [IEMS 460-1](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/460-1.html): Stochastic Processes 1.
+Mostly graduate class, mostly first-year PhD students.
+A mathematically rigorous look at Markov chains and Poisson processes, and a bit of queueing theory.
+Taught winter 2025, returning winter 2026!
+* [IEMS 464](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/keep/464.html): Advanced Queueing Theory.
+Mostly graduate class, mix of years of PhD students.
+Exploring a variety of topics in queueing theory, from classical results to recent developments!
+More details to come as I decide what to put in the class.
+Coming winter 2026!
+
+
 I have received the [**ACM SIGMETRICS 2023 Doctoral Dissertation Award**](https://sigmetrics.org/dissertationaward-2023.shtml),
 the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions),
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
