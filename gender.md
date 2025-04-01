@@ -178,7 +178,7 @@ Every March 31st (Trans Day of Visibility), I answer them here.
 * Nonbinary and no gender
 * Actively exploring gender
 
-[Second Annual Q&A](/2024/03/31/trans-qa-ii):
+[Second Annual Q&A](/2025/03/31/trans-qa-ii):
 * Common mistakes when referring to trans people
 * Moving to the next phase of gender
 * Abstraction and overthinking
