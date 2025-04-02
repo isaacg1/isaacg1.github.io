@@ -39,7 +39,7 @@ I'm answering these questions in the order they came in.
 
 > What are common mistakes (when trying to respect trans but have a certain misunderstanding) that others make when referring to trans people?
 
-I'll go through four common mistakes, where they're coming from, and suggestions for change.
+I'll go through three common mistakes, where they're coming from, and suggestions for change.
 And I want to clarify that mistakes are a normal part of learning,
 they're not exceptional and they don't mean you're a bad person.
 
