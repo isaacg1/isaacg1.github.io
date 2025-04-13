@@ -166,6 +166,14 @@ And yet, I've built up some modicum of skill.
 And still I feel horrible.
 What does the path look like? What may the future bring?
 
+[SGGO 14: New Developments](/2025/04/13):
+I'm trying out some new directions,
+in terms of my gender self-concept (transchromatic)
+my sex self-concept (trans-E)
+and new gender things I'm trying out:
+nail polish dots, how I feel about my belly,
+and growing in my arm hair.
+
 ### Trans Q&A for Trans Day of Visibility
 
 Every March, I solicit questions about being trans.
@@ -182,4 +190,4 @@ Every March 31st (Trans Day of Visibility), I answer them here.
 * Common mistakes when referring to trans people
 * Moving to the next phase of gender
 * Abstraction and overthinking
-* Changing views on maculinity
+* Changing views on masculinity
