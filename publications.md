@@ -62,11 +62,13 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 If there is also a short version of a paper, it is listed together with the full version.
 
 
-### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf)
+### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf) {#simple-mrj}
 Zhongrui Chen, Isaac Grosof, Ben Berg.
 Accepted to *ACM SIGMETRICS*, June 2025.
 
+[\[paper\]](/assets/msr.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2412.08915)
+[\[short paper\]](/assets/simple-multiresource.pdf)
 
 ### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](/assets/card.pdf) {#card}
 Runhan Xie, Isaac Grosof, Ziv Scully.
@@ -74,6 +76,7 @@ Runhan Xie, Isaac Grosof, Ziv Scully.
 
 [\[paper\]](/assets/card.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2312.16377)
+[\[short paper\]]()
 
 ### [The RESET and MARC Techniques, with Application to Multiserver-Job Analysis](/assets/reset-and-marc.pdf) {#reset}
 Isaac Grosof, Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
@@ -217,12 +220,6 @@ Accepted to the MAMA workshop at SIGMETRICS 2024.
 
 [\[paper\]](/assets/mgk-lower-short.pdf)
 [\[talk\]](/talks/#mgk-lower)
-
-### [Simple Policies for Multiresource Job Scheduling](/assets/simple-multiresource.pdf) {#simple-mrj}
-Zhongrui Chen, Isaac Grosof, Benjamin Berg.
-Accepted to the MAMA workshop at SIGMETRICS 2024.
-
-[\[paper\]](/assets/simple-multiresource.pdf)
 
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf) {#product-form-msj}
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
