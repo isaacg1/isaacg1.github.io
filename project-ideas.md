@@ -11,7 +11,7 @@ I'm particularly interested in working with either Northwestern students,
 undergrad or grad,
 or people who already have a background in queueing theory research.
 
-Last updated: November 9th, 2024.
+Last updated: May 1st, 2025.
 
 ## Table of contents
 
