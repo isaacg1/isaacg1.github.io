@@ -52,7 +52,6 @@ The order within a category is roughly chronological.
 
 5. [Tails for ServerFilling](#sf-tails)
 
-6. [Continuous MSJ](#continuous-msj)
 
 ### [Starting out/Not sure how to proceed](#starting-out)
 
@@ -68,6 +67,8 @@ The order within a category is roughly chronological.
 
 6. [Largest Remaining Size in the M/G/k](#mgk-lrs)
 
+7. [Starvation and Closed-system Tails](#starvation-closed)
+
 ### [Active projects](#active)
 
 1. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
@@ -75,6 +76,8 @@ The order within a category is roughly chronological.
 2. [Beating SRPT-k](#beating-srptk)
 
 3. [Half-batch MSJ](#half-batch-msj)
+
+4. [Continuous MSJ](#continuous-msj)
 
 ### [Archive: Submitted or Completed](#archive-done)
 
@@ -223,82 +226,6 @@ If 1-server jobs are very rare, then their interarrival time will be very large.
 
 **Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
 
-### Continuous MSJ {#continuous-msj}
-
-Existing theoretical multiserver-job research has overwhelmingly focused on the case of a discrete, finite set of resource requirements (e.g. numbers of servers). Moreover, policies make heavy use of this fact, often selecting a job to serve based on the number of identical jobs that are present in the system (e.g. MaxWeight). To learn more, see my [MSR MAMA paper](/publications/#simple-mrj) with Ben and Zhongrui.
-In the real world, it's common for resource requirements to be real-valued (e.g. 0.35 CPUs), and for no two jobs to be completely identical.
-
-**Model:** A natural model to capture this is: The total capacity of the system is 1. Jobs have a server need which is in the interval (0, 1]. Any set of jobs with total server need at most 1 can be served simultaneously. Jobs arrive according to a Poisson process with fixed rate λ, and have server need and duration sampled i.i.d. from some joint distribution.
-
-**Goal:** A natural goal is throughput optimality -- stabilizing the system whenever it is possible to do so.
-
-**Example setting:** A concrete example setting is: Server needs are Uniform(0, 1), and durations are Exp(1), independent of server need. This setting should be stabilizable for any λ<2.
-
-**Policies:** One way to construct a policy which is definitely stable is to discretize the server needs by rounding them up to the nearest multiple of 1/n, for some large integer n chosen as a function of the system load. Then, we apply a standard policy like MaxWeight or the [MSR policies](/publications/#simple-mrj) on the discretized system.
-
-This is fine as far as it goes, but these policies have poor performance as a function of n, the discretization parameter. It would be nice to have a throughput-optimal policy that isn't discretization-based.
-
-One could empirically evaluate the performance of existing non-identical-job-based policies, such as best-fit backfilling (most servers first) and first-fit backfilling.
-
-However, a policy worthy of further investigation is the infinite-n limit of the infinite-switching version of the MSR policy. MaxWeight doesn't have a natural infinite-n limit, it relies on having many jobs of the same class to function. MSR can be adapted to a continuous policy. For instance, with uniform server need, one version of the policy would be:
-
-* For each threshold x in (0, 0.5], find the job with largest server need below x, and with largest server need below 1-x.
-
-* For each interval of thresholds of width dx, serve that pair of jobs at rate 2dx.
-
-Concretely, if the jobs in the system are of sizes {0.21, 0.41, 0.61, 0.81},
-this policy would serve:
-
-* [0.81] at rate 0.38 (thresholds [0, 0.19]),
-
-* [0.61] at rate 0.04 (thresholds (0.19, 0.21)),
-
-* [0.61, 0.21] at rate 0.36 (thresholds [0.21, 0.39]),
-
-* [0.41, 0.21] at rate 0.22 (thresholds (0.39, 0.5)).
-
-Note that this policy is straightforwardly suboptimal. It would be better to serve [0.61, 0.21] rather than ever serving [0.61], for instance.
-Nonetheless,
-I believe that this policy would be throughput optimal via a simple discretization proof,
-along the same lines as the discretized MSR policy, but without requiring actual discretization.
-
-**Project:** Define the limit-MSJ policy concretely, and prove that it is throughput optimal,
-likely using a discretization proof.
-
-**Further direction:** Define a strictly-better version of the policy which doesn't do silly things like idle servers, and show the result carries over.
-
-## Half-Batch MSJ {#half-batch-msj}
-
-In large-scale computing systems, such as high-performance computing clusters, there are often two types of jobs:
-
-* **Large jobs**: High priority, latency-sensitive jobs which need a large amount of resources (e.g. compute nodes) at once, often a large fraction of the capacity of the entire system.
-* **Small jobs**: Low priority, batch jobs (non-latency sensitive), which need a small amount of resources at once - many nodes, but a small fraction of the entire system.
-
-The large jobs are the reason the cluster exists, at the size that it does. These jobs need to run on a very large cluster, and they're the jobs the cluster cares about.
-
-However, there aren't enough karge jobs to utilize a large fraction of the capacity of the cluster.
-
-So the cluster is also available for use by small jobs. Small jobs could run on this cluster, or on another lower resource system. They're not the priority, but they help keep the utilization high.
-
-One challenge is that typically,  either type of job is preemptible.
-
-**Model**: We will model this scenario with a MSJ system with two types of jobs, with two different arrival process: Large jobs arrive according to an external stochastic arrival process (e.g. Poisson process). Small jobs are always available. Neither type of job can be preempted.
-
-There are two objects: Response time of large jobs and overall throughput, or equivalently throughput of small jobs. The goal is to optimize the tradeoff between the two.
-
-In general, we would want general distributions of resource requirements and durations for small and large jobs. As a starting point, we can consider small jobs that take one server and large jobs that take n/k servers where n is the number of servers and k is a small integer, and exponential service times specific to the class.
-
-As an extreme first step, we can consider the k=1 case.
-
-**Starting point**: In the k=1 case, the default policy is: While there are large jobs in the system, no small jobs may enter service - we need to free up space. When all large jobs are done, small jobs may enter service.
-
-There are two variations worth considering, to improve each objective:
-
-* **Reserved capcity**: We can avoid using some of the capacity on small jobs even when there are no large jobs present. With exponential durations, it's more efficient to sometimes allow no small jobs to run, sometimes allow all small jobs to run, rather than only using some of the servers.
-* **Batching together large jobs**: Rather than serving large jobs whenever they arrive, wait to accumulate many large jobs before servjng them all in a row. This avoids the overhead of emptying out the servers for each job. It's optimal to always batch up to a threshold, rather than a variety of batch sizes.
-
-**First step**: Derive the optimal tradeoff curve between mean response time of large jobs and throughput of small jobs.
-
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}
@@ -401,6 +328,54 @@ The response time of the higher-priority class will be determined by the cycle l
 while the response time of the lower-priority class will be determined by the amount of wasted capacity pushing the system closer to the capacity boundary.
 Can we (approximately) determine how long these cycles should optimally be, given the switching overhead?
 
+### Starvation and Closed-system Tails {#starvation-closed}
+
+Many operators of practical computing systems care about a performance criterion
+which they call "starvation".
+They don't want their systems to experience starvation.
+This is a concern that arrises when evaluating priority-based policies,
+where practioners describe the lowest-priority jobs as never completing.
+
+In open queueing models where the arrival process
+is not dependent on the state of the queue,
+this behavior cannot occur:
+A key behavior of such open systems is the concept of a *busy period*,
+the duration until the system is completely empty.
+In a single-server system, busy periods are not very long,
+and as a result, no job experiences very severe response time.
+See for instance the [all can win](https://www.cs.cmu.edu/~harchol/Papers/Sigmetrics01.pdf)
+result for M/G/1/SRPT and M/G/1/PS.
+
+Extremely long response times for deprioritized jobs get more common in
+multiserver settings such as the M/G/k/SRPT,
+where under large job size variability,
+the largest job in the system may take a very long time to complete,
+because the system is rarely completely empty.
+The [ServerFilling](/publications/#server-filling) policy
+likewise exhibits this behavior if 1-server jobs are very rare.
+
+These long-tail dynamics get much more evere when there is feedback
+from the system state to the arrival rate, with lower arrival rates as queue lengths increase.
+This leads to the system stabilizing around a fixed numebr of jobs present,
+but with nothing ensure that the system stabilizes frequently.
+The time for the system to empty will typically be exponentially long, as a function of the mean queue length.
+I think this is most similar to how real systems operate.
+
+These dynamic become most extreme in a closed system, where there are a constant number of jobs in the system
+and sufficiently deprioritized jobs never finish.
+I think this is the clearest and most tractable setting where starvation can be observed:
+starvation simply means closed-system tail response time, or feedback-system tail response time.
+
+I think that these dynamics are particularly important in the nonpreemptive Multiserver-Job (MSJ) setting,
+as we can examine the tradeoff curve between throughput and tail response time,
+in the feedback or closed settings.
+Policies such as Randomized Timers achieve optimal throughput in an open setting,
+at the cost of very high mean response time in some parameterizations.
+In a closed setting, this corresponds to high throughput at the cost of high tail response time.
+
+**First steps:** Simulate some basic MSJ policies in a simple closed MSJ setting.
+Find their tradeoff between utilization and tail response time.
+
 ## Active projects {#active}
 
 
@@ -465,6 +440,82 @@ I think that the ISQ methods described in the same MAMA paper might be useful.
 In particular, drift functions derived via differential equations to give constant drift might be useful.
 
 **Future:** Can we prove tighter bounds by thinking about bounding LRS, rather than trying to bound an arbitrary policy? Even if we can't get an exact analysis.
+
+### Continuous MSJ {#continuous-msj}
+
+Existing theoretical multiserver-job research has overwhelmingly focused on the case of a discrete, finite set of resource requirements (e.g. numbers of servers). Moreover, policies make heavy use of this fact, often selecting a job to serve based on the number of identical jobs that are present in the system (e.g. MaxWeight). To learn more, see my [MSR MAMA paper](/publications/#simple-mrj) with Ben and Zhongrui.
+In the real world, it's common for resource requirements to be real-valued (e.g. 0.35 CPUs), and for no two jobs to be completely identical.
+
+**Model:** A natural model to capture this is: The total capacity of the system is 1. Jobs have a server need which is in the interval (0, 1]. Any set of jobs with total server need at most 1 can be served simultaneously. Jobs arrive according to a Poisson process with fixed rate λ, and have server need and duration sampled i.i.d. from some joint distribution.
+
+**Goal:** A natural goal is throughput optimality -- stabilizing the system whenever it is possible to do so.
+
+**Example setting:** A concrete example setting is: Server needs are Uniform(0, 1), and durations are Exp(1), independent of server need. This setting should be stabilizable for any λ<2.
+
+**Policies:** One way to construct a policy which is definitely stable is to discretize the server needs by rounding them up to the nearest multiple of 1/n, for some large integer n chosen as a function of the system load. Then, we apply a standard policy like MaxWeight or the [MSR policies](/publications/#simple-mrj) on the discretized system.
+
+This is fine as far as it goes, but these policies have poor performance as a function of n, the discretization parameter. It would be nice to have a throughput-optimal policy that isn't discretization-based.
+
+One could empirically evaluate the performance of existing non-identical-job-based policies, such as best-fit backfilling (most servers first) and first-fit backfilling.
+
+However, a policy worthy of further investigation is the infinite-n limit of the infinite-switching version of the MSR policy. MaxWeight doesn't have a natural infinite-n limit, it relies on having many jobs of the same class to function. MSR can be adapted to a continuous policy. For instance, with uniform server need, one version of the policy would be:
+
+* For each threshold x in (0, 0.5], find the job with largest server need below x, and with largest server need below 1-x.
+
+* For each interval of thresholds of width dx, serve that pair of jobs at rate 2dx.
+
+Concretely, if the jobs in the system are of sizes {0.21, 0.41, 0.61, 0.81},
+this policy would serve:
+
+* [0.81] at rate 0.38 (thresholds [0, 0.19]),
+
+* [0.61] at rate 0.04 (thresholds (0.19, 0.21)),
+
+* [0.61, 0.21] at rate 0.36 (thresholds [0.21, 0.39]),
+
+* [0.41, 0.21] at rate 0.22 (thresholds (0.39, 0.5)).
+
+Note that this policy is straightforwardly suboptimal. It would be better to serve [0.61, 0.21] rather than ever serving [0.61], for instance.
+Nonetheless,
+I believe that this policy would be throughput optimal via a simple discretization proof,
+along the same lines as the discretized MSR policy, but without requiring actual discretization.
+
+**Project:** Define the limit-MSJ policy concretely, and prove that it is throughput optimal,
+likely using a discretization proof.
+
+**Further direction:** Define a strictly-better version of the policy which doesn't do silly things like idle servers, and show the result carries over.
+
+## Half-Batch MSJ {#half-batch-msj}
+
+In large-scale computing systems, such as high-performance computing clusters, there are often two types of jobs:
+
+* **Large jobs**: High priority, latency-sensitive jobs which need a large amount of resources (e.g. compute nodes) at once, often a large fraction of the capacity of the entire system.
+* **Small jobs**: Low priority, batch jobs (non-latency sensitive), which need a small amount of resources at once - many nodes, but a small fraction of the entire system.
+
+The large jobs are the reason the cluster exists, at the size that it does. These jobs need to run on a very large cluster, and they're the jobs the cluster cares about.
+
+However, there aren't enough karge jobs to utilize a large fraction of the capacity of the cluster.
+
+So the cluster is also available for use by small jobs. Small jobs could run on this cluster, or on another lower resource system. They're not the priority, but they help keep the utilization high.
+
+One challenge is that typically,  either type of job is preemptible.
+
+**Model**: We will model this scenario with a MSJ system with two types of jobs, with two different arrival process: Large jobs arrive according to an external stochastic arrival process (e.g. Poisson process). Small jobs are always available. Neither type of job can be preempted.
+
+There are two objects: Response time of large jobs and overall throughput, or equivalently throughput of small jobs. The goal is to optimize the tradeoff between the two.
+
+In general, we would want general distributions of resource requirements and durations for small and large jobs. As a starting point, we can consider small jobs that take one server and large jobs that take n/k servers where n is the number of servers and k is a small integer, and exponential service times specific to the class.
+
+As an extreme first step, we can consider the k=1 case.
+
+**Starting point**: In the k=1 case, the default policy is: While there are large jobs in the system, no small jobs may enter service - we need to free up space. When all large jobs are done, small jobs may enter service.
+
+There are two variations worth considering, to improve each objective:
+
+* **Reserved capcity**: We can avoid using some of the capacity on small jobs even when there are no large jobs present. With exponential durations, it's more efficient to sometimes allow no small jobs to run, sometimes allow all small jobs to run, rather than only using some of the servers.
+* **Batching together large jobs**: Rather than serving large jobs whenever they arrive, wait to accumulate many large jobs before servjng them all in a row. This avoids the overhead of emptying out the servers for each job. It's optimal to always batch up to a threshold, rather than a variety of batch sizes.
+
+**First step**: Derive the optimal tradeoff curve between mean response time of large jobs and throughput of small jobs.
 
 ## Archived: Completed {#archive-done}
 
