@@ -333,8 +333,8 @@ Can we (approximately) determine how long these cycles should optimally be, give
 Many operators of practical computing systems care about a performance criterion
 which they call "starvation".
 They don't want their systems to experience starvation.
-This is a concern that arrises when evaluating priority-based policies,
-where practioners describe the lowest-priority jobs as never completing.
+This is a concern that arises when evaluating priority-based policies,
+where practitioners describe the lowest-priority jobs as never completing.
 
 In open queueing models where the arrival process
 is not dependent on the state of the queue,
@@ -354,9 +354,9 @@ because the system is rarely completely empty.
 The [ServerFilling](/publications/#server-filling) policy
 likewise exhibits this behavior if 1-server jobs are very rare.
 
-These long-tail dynamics get much more evere when there is feedback
+These long-tail dynamics get much more severe when there is feedback
 from the system state to the arrival rate, with lower arrival rates as queue lengths increase.
-This leads to the system stabilizing around a fixed numebr of jobs present,
+This leads to the system stabilizing around a fixed number of jobs present,
 but with nothing ensure that the system stabilizes frequently.
 The time for the system to empty will typically be exponentially long, as a function of the mean queue length.
 I think this is most similar to how real systems operate.
