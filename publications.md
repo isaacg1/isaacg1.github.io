@@ -317,3 +317,18 @@ The two-class results are good work, however.
 Isaac Grosof
 
 [\[paper\]](/assets/work-area.pdf)
+
+### [On the Time Complexity of the Verification of the Factorization of 2^67-1](/assets/verification-factorization.pdf)
+Isaac Grosof, Isaac Grosof. *SIGBOVIK*, April 1, 2019.
+
+[\[paper\]](/assets/verification-factorization.pdf)
+
+Note that this is a comedic, non-peer-reviewed paper.
+[SIGBOVIK](https://sigbovik.org/) is a comedic conference
+which takes place around April 1st each year, at CMU.
+Nonetheless, the paper has been cited for its actual content
+[here](https://mathoverflow.net/a/325237)
+and [here](https://hsm.stackexchange.com/a/11835/10618),
+so I decided to put it on my website.
+
+
