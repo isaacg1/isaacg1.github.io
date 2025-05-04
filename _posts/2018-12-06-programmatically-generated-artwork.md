@@ -3,8 +3,23 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made twenty Rust programs for programmatically generating artwork in different styles.
+I have made twenty-one Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Circle Fill
+
+This art draws a circle through pixels with nearby colors,
+then walks along the circle to find an open pixel
+and places the color there.
+
+[Repository](https://github.com/isaacg1/circle-fill)
+
+![A programmatically generated artwork, in a rainbow variety of colors, with a pink-yellow art in the top-right, a yellow-red splash in the center top, a white-blue-pink splash in the bottom right, an aqua strak along the bottom, and more diffuse rainbow colors in the middle left.](/assets/art/circle-fill.png)
+
+As a new visualization, I also have a GIF of the pixels being placed.
+Note that this is a 33MB file,
+and it's transposed relative to the above image
+for a reason that I can't be bothered to fix. [The GIF](https://github.com/isaacg1/circle-fill/blob/main/1000-100-20-0.01-10000-0.gif).
 
 ## Dual Peaks
 
