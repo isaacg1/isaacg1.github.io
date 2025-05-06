@@ -95,7 +95,8 @@ This makes "it was only this one time" ring particularly hollow.
 3. Being told you've misgendered someone can feel like a threat to your self image.
 You might think "I'm a good ally, I don't misgender people".
 This is not true. Allies misgender people. Trans people misgender other trans people.
-If someone thinks they never misgender anyone, it's either because they're thinking careful each time they use a gendered term to refer to someone,
+If someone thinks they never misgender anyone, it's either because they're thinking
+carefully each time they use a gendered term to refer to someone,
 or because they're completely unconscious of their pronoun usage
 and never notice that they misgender anyone.
 If your sense of goodness is wounded by being told you've misgendered someone,
