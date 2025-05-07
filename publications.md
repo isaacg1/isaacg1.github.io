@@ -20,6 +20,11 @@ permalink: /publications/
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
+### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
+Isaac Grosof and Hayriye Ayhan.
+
+[\[paper\]](/assets/multilevel-msj.pdf)
+
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
 Céline Comte and Isaac Grosof.
 
