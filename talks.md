@@ -4,6 +4,22 @@ title: Talks
 permalink: /talks/
 ---
 
+### [Graph-Structure Product-Form](/assets/graph-structure.pdf) {#graph-structure}
+[\[paper\]](/assets/graph-structure.pdf)
+[\[slides\]](/assets/graph-structure.pptx)
+
+* Product-form Probability Distributions Workshop, May 2025.
+
+### Overview of Multiserver Stochastic Scheduling
+
+* Northwestern CS  [slides](/assets/cs-overview-2024.pptx), Dec. 2024.
+* Northwestern ECE [slides](/assets/ece-overview-2024.pptx), Oct. 2024.
+
+### IEMS Brown Bag Seminar
+[\[slides\]](/assets/brown-bag-2024.pptx)
+
+* Northwestern IEMS, Nov 2024.
+
 ### [Natual Policy Gradient for Queues](/assets/npg.pdf) {#npg}
 [\[paper\]](/assets/npg.pdf)
 [\[slides\]](/assets/npg.pptx)
@@ -14,6 +30,7 @@ permalink: /talks/
 [\[short paper\]](/assets/mgk-lower-short.pdf)
 [\[short slides\]](/assets/mgk-lower.pptx)
 
+* INFORMS Annual Meeting [slides](/assets/bounds-informs-2024.pptx), Oct. 2024.
 * MAMA Workshop at ACM SIGMETRICS, Jun. 2024.
 
 ### [Analyzing Queues with Markovian Arrivals and Markovian Service](/assets/mams-tutorial.pptx) {#mams-tutorial}

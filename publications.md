@@ -24,12 +24,14 @@ permalink: /publications/
 Isaac Grosof and Hayriye Ayhan.
 
 [\[paper\]](/assets/multilevel-msj.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2505.04754)
 
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
 Céline Comte and Isaac Grosof.
 
 [\[paper\]](/assets/graph-structure.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2502.13890)
+[\[slides\]](/assets/graph-structure.pptx)
 
 Joint first authors.
 
