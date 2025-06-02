@@ -59,24 +59,24 @@ It's not a recommendation one can make for someone else, even if that person kno
 
 And certainly, if one doesn't even know for sure that they're trans,
 and they haven't chosen the identity, it's not something one should be recommending at all.
-It can give a message of "if you were trans, you'd want this. If you don't want this, you must not be trans", and that's a terrible message to place on a potential trans person. It can really make things a lot worse, whehter or not they're trans, and whether or not they end up going with the medical intervention.
+It can give a message of "if you were trans, you'd want this. If you don't want this, you must not be trans", and that's a terrible message to place on a potential trans person. It can really make things a lot worse, whether or not they're trans, and whether or not they end up going with the medical intervention.
 
 ## I don't like Option 5: Pushing an identity
 
 One reason I don't like Option 5 is because of the possibility of being wrong.
-A lot of gender noncomforming cis people have spent way too much of their lives
+A lot of gender nonconforming cis people have spent way too much of their lives
 being told that they must be trans.
 People have been told "You climb trees and watch sports, you can't be a girl."'
 People have been told "You paint your nails and sing feminine parts in songs, you can't be a boy."
 And they've heard it way too much.
-As trans people, we know what that's like -- lots of trans people are also very gender noncomforming relative to the societal expectations of our gender.
+As trans people, we know what that's like -- lots of trans people are also very gender nonconforming relative to the societal expectations of our gender.
 So let's not make it worse for people.
-There shouldn't be a conflict between gender non-comforming cis people and trans people.
+There shouldn't be a conflict between gender non-conforming cis people and trans people.
 We're all just trying to do our gender in a way that works for us.
 Option 5 creates that conflict.
 
 Another reason I don't like Option 5 is because of the possibility of being wrong.
-I personally spent a lot of time receiveing a message from society that if
+I personally spent a lot of time receiving a message from society that if
 I liked some feminine things,
 and I didn't like a lot masculine things,
 that I had to be a (binary) trans woman.
@@ -134,7 +134,7 @@ It's not a good option.
 ## I like Options 2, 3, and 4
 
 I think that each of Options 2, 3, and 4 has their place -- suggest resources,
-suggest a vague identity, or tentatively suggest a specific idenity.
+suggest a vague identity, or tentatively suggest a specific identity.
 
 Each of these options gives the egg in question a pathway towards discovering themself,
 without being (too) harmful in situations where the person seeing the egginess is off base.
@@ -158,7 +158,7 @@ I think Option 4 is more appropriate the better one knows the egg, what they're 
 Whether the suggestion will help them hatch, and help them towards a better life,
 or push them further into denial or repression.
 
-I think Option 2 is more appropriate for more casual acquantainces, or more uncertain situations. It's an approach that can be helpful for a variety of people, trans or not, so one doesn't need to know the egg as well to be confident it'll help. Learning more about trans people can be just as helpful for someone who isn't trans as someone who is, especially if they're beset by a bunch of sterotypes and half-truths about what being trans is like.
+I think Option 2 is more appropriate for more casual acquaintances, or more uncertain situations. It's an approach that can be helpful for a variety of people, trans or not, so one doesn't need to know the egg as well to be confident it'll help. Learning more about trans people can be just as helpful for someone who isn't trans as someone who is, especially if they're beset by a bunch of stereotypes and half-truths about what being trans is like.
 
 ### Considerations among options 2, 3, and 4
 
@@ -279,4 +279,4 @@ Provide resources, suggest a vague identity, and tentatively suggest a specific 
 respectively.
 My preferred slogan is "Don't crack eggs, build a nest".
 
-Whatever your prefered approach is, I respect it.
+Whatever your preferred approach is, I respect it.
