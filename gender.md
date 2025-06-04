@@ -167,13 +167,18 @@ And yet, I've built up some modicum of skill.
 And still I feel horrible.
 What does the path look like? What may the future bring?
 
-[SGGO 14: New Developments](/2025/04/13):
+[SGGO 14: New Developments](/2025/04/13/sggo-14):
 I'm trying out some new directions,
 in terms of my gender self-concept (transchromatic)
 my sex self-concept (trans-E)
 and new gender things I'm trying out:
 nail polish dots, how I feel about my belly,
 and growing in my arm hair.
+
+[SGGO 15: Dreams Come True](/2025/06/04/sggo-15):
+Sometimes, dreams that I knew were impossible,
+nonetheless came true.
+Freckles, breasts, and social acceptance.
 
 ### Trans Q&A for Trans Day of Visibility
 
