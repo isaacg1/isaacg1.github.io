@@ -126,7 +126,7 @@ It should use the noisy_float package for float comparisons.
 
 **Correctness:** Equal
 
-Both programs gave identical outputs, to the sixth significant figure. I am confident in both programs' correctness. They each meets the spec, and each meet the programming spec.
+Both programs gave identical outputs, to the sixth significant figure. I am confident in both programs' correctness. They each meet the spec, and each meet the programming spec.
 
 **Time to implement**: Manual somewhat better
 
@@ -166,7 +166,7 @@ LLM:
 Manual:
 Written while on the train, pausing to get on/off. 2 minutes on the platform, 6 minutes on the purple line, 7 minutes on the red line. The disrupted internet access would have made LLM-based programming more difficult.
 Highly experienced, both in Rust and queueing simulator programming. 
-Used on free tools.
+Used only free tools.
 
 LLM:
 Stationary on the couch, uninterrupted. Previously wrote an essentially identical program as a test run. No other prior experience.
