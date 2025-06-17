@@ -201,6 +201,55 @@ and about 15 grams while writing the LLM-based program.
 
 These CO2 emissions are smaller than I care to track and optimize.
 
+## Bugs (If I hadn't been an expert)
+
+(Added after sharing the article with friends)
+
+I specifically programmed something that I am an expert in.
+What would have happened if I'd instead been programming something that I'm less familiar with?
+It's hard to know for sure, but I can make some educated guesses,
+based on the buggy intermediate versions that I received, during LLM programming.
+I don't think that someone who wasn't an expert would've noticed these bugs,
+or at the very least it would have taken much longer to find them.
+Manual writing doesn't have as severe a problem in this regard, in my experience.
+I think there would have been more bugs in the LLM version than if I was manually writing code I'm unfamiliar with,
+and those bugs would've been more severe.
+
+**Potential bugs:**
+
+1. *Subtly different kind of queue*: Early versions of the code returned by the LLM implemented a subtly different kind of queue than I was looking for.
+The early versions implemented system where, implicitly, all jobs were in service simultaneously, rather than the single-job-in-service that I was looking for.
+This issue was mentioned by the LLM, offering a single-job-in-service version,
+but only once I started reading through and correcting the code.
+The LLM output also incorrectly claimed that in a closed queueing system, the default is for jobs to be processed in parallel (infinite server),
+which is not an established default in my field. <br>
+If I wasn't an expert, I might not have recognized the need to specify which type of queue I was looking for,
+or recognized that I'd received the wrong one.
+
+2. *Barely-correct code*: Early versions of the code returned by the LLM pretended to use `noisy_float` package that I told it use,
+but actually avoided using that package while appearing to use it,
+and instead used a different, bug-prone comparison method.
+The problem that I was trying to solve is that rust does not have a built-in way to mark floats as "not NAN",
+so ordering methods cannot be used with floats as keys by default.
+The `noisy_float` package makes a "not NAN" float type available, solving this problem.
+The returned code looks to the uninitiated like it's using this package, because it imports the package and wraps
+the floats that need to be ordered in this type.
+However, the code then extracted the underlying float from the N64 type, rendering the package pointless,
+and then extracted the raw bit values of the float and sorted using those raw bit values.
+This works in this specific case, giving the right output, but it's very delicate:
+It treats negative values as larger than all positive values.
+Thus, if my float comparison key had ever been negative,
+the code would have been wrong.
+This was essentially a bug waiting to happen.
+The `noisy_float` package doesn't have this problem -- the nascent bug was introduced by the LLM code subtly avoiding my instructions. <br>
+I don't think a non-expert would have caught this,
+especially because the LLM also outputted framing text in which it claimed to be using the `noisy_float` package,
+when in reality it had turned the use of that package into a no-op.
+
+Also, while I was writing the code
+I had thought that there'd been a bug involving treating a job duration as a job completion time,
+but this was actually just that the LLM was outputting parallel-service code rather than one-job-at-a-time code.
+
 
 ## Conclusion 
 
