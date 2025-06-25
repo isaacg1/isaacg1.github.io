@@ -5,12 +5,14 @@ published: true
 
 ![Izzy Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a white scoop-necked top with large purple flowers.](/assets/website-photo.jpg)
 
-I am an [assistant professor](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/grosof-isaac.html) at Northwestern University, in the Industrial Engineering and Management Sciences (IEMS) Department.
+I am an [assistant professor](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/grosof-isaac.html) at Northwestern University,
+in the Industrial Engineering and Management Sciences (IEMS) Department.
+I also have a courtesy position in the NU Computer Science (CS) Department.
 
 I research stochastic queueing theory, with a focus on scheduling and resource allocation,
 and optimal multiserver policies in particular.
 
-I am advising two wonderful PhD students:
+I am advising three wonderful PhD students:
 
 * [Ziyuan Wang](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#ziyuan-wang)
 ([Linkedin](https://www.linkedin.com/in/ziyuan-wang-826178238)).
@@ -18,15 +20,13 @@ I am advising two wonderful PhD students:
 ([Linkedin](https://www.linkedin.com/in/cameron-curtis-238071197)),
 joint advised with
 [Seyed Iravani](http://users.iems.northwestern.edu/~iravani/).
-
-I am leading an exciting independent study:
-
 * [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
-([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)), Spring 2025.
+([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)).
 
-I am advising an excellent undergraduate researcher:
+I am advising two excellent undergraduate researchers:
 
 * Jay Kowalik
+* Yanis Zain
 
 If you are a first-year PhD student at Northwestern, a prospective student, or thinking of applying,
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.
