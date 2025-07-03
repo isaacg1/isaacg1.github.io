@@ -11,7 +11,7 @@ I'm particularly interested in working with either Northwestern students,
 undergrad or grad,
 or people who already have a background in queueing theory research.
 
-Last updated: July 2nd, 2025.
+Last updated: July 3rd, 2025.
 
 ## Table of contents
 
@@ -51,6 +51,8 @@ The order within a category is roughly chronological.
 4. [Tails for ServerFilling](#sf-tails)
 
 5. [Largest Remaining Size in the M/G/k](#mgk-lrs)
+
+6. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
 
 ### [Starting out/Not sure how to proceed](#starting-out)
 
@@ -231,6 +233,60 @@ and my notes of the derivation of the ISQ analysis:
 [page 4](/assets/notes/isq-pg-4.jpg).
 
 **Future:** The above approach will bound total work in the LRPT system, and hence total work in the M/G/k. But we really want to bound total *relevant* work in the LRPT system, so we need the Sep-ISQ and AR-ISQ equivalents.
+
+### Product Form Distributions in Closed Queues with Front Order Independence {#front-oi}
+
+**Setting:** Closed queuing systems where job completions depend on job class and
+on queue position.
+
+As a starting point, consider the single-exponential
+multiserver-job model discussed in Section 3 of
+[this MAMA paper](/publications/#product-form-msj).
+Here, jobs have a general distribution of server need between 1 and k,
+and each job has duration Exp(μ).
+Jobs are placed into service in FCFS order, with a variable number in service based on
+the server needs of those jobs.
+Whenever a job completes, a new job is sampled from a server-need distribution p. 
+We examine the embedded Markov chain that updates on each completion-arrival pair.
+In the embedded chain, the completion is sampled uniformly at random among the
+jobs in service.
+
+This chain has a product form stationary distribution, π(m) = Prod_i(p(m_i)), where m is a length-k vector of server needs.
+
+The system obeys a partial balance property: The rate of entering state m due to transitions that involve class l completions equals the rate of leaving state m due to transitions that involve class l arrivals.
+See [the MAMA paper](/publications/#product-form-msj) for the proof.
+
+**Generalization**: This product-form property is preserved if we generalize the system as follows:
+There is a function s(m) which specifies how many jobs are in service
+in state m.
+This function s(m) must be *front-order-independent*, which means that it must satisfy the following property:
+
+> For any pair of state vectors m, m' such that the first s(m) entries of m are a permutation of the first s(m) entries of m', and all other entries of m and m' are identical, we must have s(m) = s(m').
+
+As long as the service function s(m) is front-order-independent, the product-form holds.
+
+See my notes on this subject: [page 1](/assets/notes/front-oi-pg-1.jpg), [page 2](front-oi-pg-2.jpg).
+
+**Further generalization**: This product-form property is further preserved if we generalize the system even further as follows:
+There is a function Δ\_j(m) which maps a vector m and an index j, 1 <= j <= k,
+and outputs a probability that this position is the next completion.
+We require that Sum_j Δ\_j(m) = 1.
+For example, in the above "number of jobs in service" setting with the function s(m),
+we would have Δ\_j(m) = 1/s(m) if j <= s(m), and 0 otherwise.
+
+This function Δ\_j(m) must be *front-order-independent*, which means that it must satisfy the following property:
+
+> For any pair of state vectors m, m' and any index j such that the first j entries of m are a permutation of the first j entries of m', and all other entries of m and m' are identical , we must have Δ\_j(m) = Δ\_j(m').
+
+Actually, we can weaken this property a bit further, to front-cyclic-order-independent:
+The equality only needs to hold if the first j entries of m are a *cyclic* permutation of the first j entries of m', not a general permutation.
+
+If Δ\_j(m) is front-cyclic-order-independent for all j, then the product-form holds.
+
+See my further notes: [page 3](/assets/notes/front-oi-pg-3.jpg).
+
+**Question:** Can we generalize this any further? How is this related to the theory of product-form behavior in *open* order-independent product-form queues, such as in [Krzesinski, Anthony E. "Order independent queues." Queueing networks: A fundamental approach.](https://www.utwente.nl/en/eemcs/sor/boucherie/education/mqsn/editorhandbook.pdf#page=105).
+
 
 ## Starting out/Not sure how to proceed {#starting-out}
 

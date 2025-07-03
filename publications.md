@@ -275,19 +275,6 @@ Isaac Grosof. July 2023.
 [//]: These are papers where the presentation/exposition wasn't great,
 [//]: but where I/we think the results are sufficiently strong/novel for a revised submission.
 
-### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
-Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-
-[\[paper\]](/assets/npg-approx.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2405.20467)
-
-### [Convergence for Natural Policy Gradient on Infinite-State Average-Reward Markov Decision Processes](/assets/npg.pdf) {#npg}
-Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-
-[\[paper\]](/assets/npg.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2402.05274)
-[\[talks\]](/talks/#npg)
-
 ## Papers which I'm not planning to submit {#no-publish}
 
 These are papers where I/we think the results are accurate, but not strong or novel enough to warrant peer-reviewed publication.
