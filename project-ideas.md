@@ -422,7 +422,7 @@ scenarios such as the scheduling situation described above.
 This is because it is easy to calculate the marginal impact of each job on the P(D > t)
 objective: 0 if the job's response time is below t, 1 above.
 It's harder to calculate the marginal impact of a job on the quantile objective
-- it requires access to the distribution D, which the policy typically does not have.
+\- it requires access to the distribution D, which the policy typically does not have.
 
 Any objective function of the form f(D) = E[g(D)], 
 has this property, as long as the function g does not depend on D.
@@ -432,6 +432,7 @@ We'll call these objectives *expectation objectives*.
 
 There's another important one-dimensional parameterized family of optimization functions:
 
+{:start="3"}
 3. **Conditional Value at Risk (CVaR)**: The objective function f(D) = E[D \| D > F_D^{-1}(δ)], for some threshold δ, 0 < δ < 1. This is the mean value of the top δ fraction of the distribution. It has a variety of advantageous properties - see Nico Christianson's ["Risk-Sensitive Online Algorithms"](https://virtual.oxfordabstracts.com/event/74044/submission/180) talk and paper.
 
 This raises the question: Is there are parameterized family of expectation objectives
