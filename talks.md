@@ -3,10 +3,15 @@ layout: page
 title: Talks
 permalink: /talks/
 ---
+### Outperforming SRPT at All Loads {#sek}
+[\[slides\]](/assets/sek-aps-2025.pptx)
+
+* Applied Probability Society Conference, Jun. 2025.
 
 ### [Graph-Structure Product-Form](/assets/graph-structure.pdf) {#graph-structure}
 [\[paper\]](/assets/graph-structure.pdf)
 [\[slides\]](/assets/graph-structure.pptx)
+
 
 * Product-form Probability Distributions Workshop, May 2025.
 

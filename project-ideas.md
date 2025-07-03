@@ -11,7 +11,7 @@ I'm particularly interested in working with either Northwestern students,
 undergrad or grad,
 or people who already have a background in queueing theory research.
 
-Last updated: May 1st, 2025.
+Last updated: July 2nd, 2025.
 
 ## Table of contents
 
@@ -42,16 +42,15 @@ The order within a category is roughly chronological.
 
 ### [Quite promising](#promising)
 
-1. [Scheduling to minimize E[T^2]](#t2)
+1. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
 
-2. [Optimal Relative Completions in the Multiserver-job system](#optimal-relative)
+2. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
 
-3. [Hybrid ServerFilling and MSJ FCFS to avoid starvation](#hybrid-sf-fcfs)
+3. [Scheduling with epsilon prediction errors](#epsilon-error)
 
-4. [Scheduling with epsilon prediction errors](#epsilon-error)
+4. [Tails for ServerFilling](#sf-tails)
 
-5. [Tails for ServerFilling](#sf-tails)
-
+5. [Largest Remaining Size in the M/G/k](#mgk-lrs)
 
 ### [Starting out/Not sure how to proceed](#starting-out)
 
@@ -65,9 +64,9 @@ The order within a category is roughly chronological.
 
 5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
-6. [Largest Remaining Size in the M/G/k](#mgk-lrs)
+6. [Starvation and Closed-system Tails](#starvation-closed)
 
-7. [Starvation and Closed-system Tails](#starvation-closed)
+7. [Parameterized Optimization Equivalence](#param-opt)
 
 ### [Active projects](#active)
 
@@ -99,38 +98,9 @@ The order within a category is roughly chronological.
 
 4. [Restless MDPs for tail scheduling](#restless-tail)
 
+5. [Scheduling to minimize E[T^2]](#t2)
+
 ## Quite promising {#promising}
-
-### Scheduling to minimize E[T^2] {#t2}
-
-See Section 8.3.5 of [my thesis](/assets/isaac-thesis.pdf).
-
-**Setting**: M/G/1 scheduling for tail, e.g. minimize E[T^2].
-
-#### **Scheduling policy: t/s**
-
-**Policy**: Priority is t/s, where t is a job's time in system and s is the job's size.
-Higher is better. Without preemption to start, for simplicity of analysis.
-Note that this is an "Accumulating Priority Queue", but with infinite continuous classes, not 2 classes.
-
-[Waiting time distributions in the accumulating priority queue](https://link.springer.com/article/10.1007/s11134-013-9382-6),
-David A. Stanford, Peter Taylor & Ilze Ziedins
-
-**First step**: Implement this policy. Compare it against FCFS, SRPT. Poisson arrivals, medium variance, medium load. Does it do well empirically for E[T^2]?
-
-**Future steps**: Use APQ methods to characterize steady state. Poisson point process of (size, time in system). Characterize for arbitrary joint (Size, Accumulation rate) distribution, specialize to above setting. Characterize transform of response time, moments of response time.
-
-#### **Achievable region method of lower bounds**
-
-**Background**: The key idea behind E[T] lower bounds is that if you prioritize jobs by remaining size, you minimize the amount of work below a given remaining size in the system. Using WINE, this bound can be converted into a response time bound, proving that SRPT is optimal. Similar proofs work for Gittins and in various multiserver systems.
-
-We can call this the "achievable region" method - for each relevant work threshold, there is an achievable region of how much relevant work there can be in steady state, depending on the policy.
-
-**Idea**: If you prioritize jobs by time in system (FCFS), you minimize the amount of work above each time threshold in the system. "Work with time-in-system above t". However, this cannot be converted into a bound on tail metrics such as E[T^2], because there is not a conversion from work to number of jobs or response time or anything like that.
-
-However, we can get additional bounds by assigning jobs different deadlines based on their sizes, and then prioritizing jobs in a Earliest Deadline First fashion, where jobs reach maximum priority when they are past their deadline. Each such policy minimizes the amount of work of jobs past their deadline.
-
-If jobs are classed exponential jobs (Exp(μ\_1), Exp(μ\_2), ...), then we can convert directly from an amount of work to a number of jobs. We'll get bounds of the form "N_1^t/μ\_1 + N_2^t/μ\_1 \ge x", where N_i^t is the number of jobs of class i that have been in the system for over t time. Perhaps we can integrate results like this, incorporating different deadlines for different classes of job, to get a good T^2 lower bound.
 
 ### Optimal Relative Completions in the Multiserver-job system {#optimal-relative}
 
@@ -226,6 +196,42 @@ If 1-server jobs are very rare, then their interarrival time will be very large.
 
 **Initial question:** Let's bound the transform or tail probability of time in front, either for a specific policy or uniformly over all policies.
 
+### Largest Remaining Size in the M/G/k {#mgk-lrs}
+
+In our recent [MAMA paper](/publications/#mgk-lower-short),
+and [subsequent submission](/publications/#mgk-lower),
+Ziyuan and I introduced the WINE lower-bounding framework,
+which proves lower bounds on mean response time in the M/G/k under arbitrary scheduling
+via lower bounds on mean relevant work under arbitrary scheduling.
+
+The optimal policy for mean total work under arbitrary scheduling is the largest remaining size (LRS or LRPT) policy.
+The reasoning is fairly simple: Total work is minimized if as many servers are running as possible at each moment in time.
+The only thing that can get in the way of that is too much work concentrated into too few jobs.
+So, we should schedule the job of largest remaining size. This is the opposite of the SRPT policy.
+
+**First step:** Can we prove rigorously that LRS minimizes total work in the M/G/k?
+This should be true in a sample-path sense, which should make the proof relatively straightforward.
+
+Intuition: Consider the function describing the total work in the system at all future points in time, if there are no arrivals. LRS minimizes this function, so it's optimal.
+
+See [this proof sketch](/assets/notes/lrpt-proof-sketch.jpg).
+
+**Next step:** Can we analyze LRS for the M/D/k, or even just the M/D/2? (D for Deterministic).
+I think that the ISQ methods described in the same MAMA paper might be useful.
+In particular, drift functions derived via differential equations to give constant drift might be useful.
+
+More specifically, for the 2-server system, the system state can be described by 2 continuous parameters: The work in the "parallel pool", and the work in the "largest job leftover" pool. Equivalently, the time until one server will run empty, and the time until the second server will run empty. The system state changes deterministically except for stochastic jumps on arrivals. This is very similar to the ISQ-2 dynamics, so the DiffeDrift approach should work.
+
+See the discussion of DiffeDrift in the ISQ-2 in Section 8
+of the [lower bounds paper](/publications/#mgk-lower)
+and my notes of the derivation of the ISQ analysis:
+[page 1](/assets/notes/isq-pg-1.jpg),
+[page 2](/assets/notes/isq-pg-2.jpg),
+[page 3](/assets/notes/isq-pg-3.jpg),
+[page 4](/assets/notes/isq-pg-4.jpg).
+
+**Future:** The above approach will bound total work in the LRPT system, and hence total work in the M/G/k. But we really want to bound total *relevant* work in the LRPT system, so we need the Sep-ISQ and AR-ISQ equivalents.
+
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}
@@ -288,8 +294,15 @@ We can use
 [SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies)
 to do this analysis.
 
+There are also work balance considerations. Ideally, we should be balancing the amount of low-rank work at both servers, in the style of Gittins.
+This would push us towards sending a job to a server where there's not much low-rank work present, in the style of Guardrails. But as we can't differentiate jobs at time of dispatch, there's much less we can do.
+
 **First step:** Choose a size distribution for which Gittins is simple.
+A good choice is a Decreasing Hazard Rate distribution,
+such as a hyperexponential distribution,
+where Gittins is simply Foreground-Background (FB), a.k.a. Least Attained Service (LAS).
 Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
+
 
 **Future steps:** Can we prove that unbalancing isn't worth it,
 if the dispatcher and the server have the same information?
@@ -376,6 +389,65 @@ In a closed setting, this corresponds to high throughput at the cost of high tai
 **First steps:** Simulate some basic MSJ policies in a simple closed MSJ setting.
 Find their tradeoff between utilization and tail response time.
 
+### Parameterized Optimization Equivalence {#param-opt}
+
+Consider distribution optimization problems, of the form:
+
+"Over a class of distributions *C*,
+what distribution D minimizes a real-valued objective function f(D)"?
+
+For instance, the class of distributions *C* might be all stationary response time
+distributions achievable by M/G/1 scheduling policies for a given arrival rate λ
+and job size distribution S,
+and the objective function f(D) might be the mean f(D) = E[D].
+Then the optimal distribution D would be the stationary response time
+under the SRPT policy.
+
+Two important families of optimization problems are:
+
+1. **CDF Minimization**: The objective function f(D) = P(D > t) = F_D(t), for some threshold t > 0.
+
+2. **Quantile Minimization**: The objective function f(D) = max_t s.t. P(D < t) < δ = F_D^{-1}(δ), for some threshold δ, 0 < δ < 1.
+
+Note that these are both one-dimensional parameterized families of optimization functions.
+Note that these parameterized families are equivalent in the following sense:
+The set of all distributions D that appear as solutions to the CDF minimization problem for some t > 0 is the same as the set of distributions D' that appear as solutions to the Quantile minimization problem.
+
+Intuitively, this is because if D_t is the CDF minimizer for t, and F_{D_t}(t) = δ,
+then D_t is also the quantile minimizer for δ.
+
+While equivalent in this sense,
+the CDF minimization problem is easier to solve in stochastic control
+scenarios such as the scheduling situation described above.
+This is because it is easy to calculate the marginal impact of each job on the P(D > t)
+objective: 0 if the job's response time is below t, 1 above.
+It's harder to calculate the marginal impact of a job on the quantile objective
+- it requires access to the distribution D, which the policy typically does not have.
+
+Any objective function of the form f(D) = E[g(D)], 
+has this property, as long as the function g does not depend on D.
+Instead, g should be parameterized.
+As a result, such objectives are more useful, when available.
+We'll call these objectives *expectation objectives*.
+
+There's another important one-dimensional parameterized family of optimization functions:
+
+3. **Conditional Value at Risk (CVaR)**: The objective function f(D) = E[D \| D > F_D^{-1}(δ)], for some threshold δ, 0 < δ < 1. This is the mean value of the top δ fraction of the distribution. It has a variety of advantageous properties - see Nico Christianson's ["Risk-Sensitive Online Algorithms"](https://virtual.oxfordabstracts.com/event/74044/submission/180) talk and paper.
+
+This raises the question: Is there are parameterized family of expectation objectives
+which matches the CVaR family of objectives in the same sense as above?
+More generally, is there a parameterized family of expectation objectives
+that covers the CVaR family of objectives, in the sense that
+each CVaR-optimal distribution can be guaranteed to fall within the
+new family's set of distributions?
+
+**Starting point**: In the quantile case, the marginal impact of shifting an epsilon
+of probability mass is 0 if the shift is below or above the quantile,
+and a constant if it crosses the quantile. This hints at the corresponding
+expectation objective.
+What is the marginal impact of shifting an epsilon of probability mass on CVaR?
+What is the corresponding guess of an expectation objective?
+
 ## Active projects {#active}
 
 
@@ -392,6 +464,8 @@ A good starting point would an N-system where the recipient server is critically
 **Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
 
 ### Beating SRPT-k {#beating-srptk}
+
+See [my talk](/talks/#sek) on this subject from APS 2025.
 
 See Section 8.3.1 of [my thesis](/assets/isaac-thesis.pdf).
 
@@ -419,27 +493,6 @@ there is a coupling for SRPT-k and SEK such that until the end of the busy perio
 system states differ by at most ε at all times,
 resulting in only O(ε) worse total response time in the SEK system.
 3. 1-2ε achieves ε+Omega(ε) better total response time that 1-ε, because more jobs could arrive.
-
-### Largest Remaining Size in the M/G/k {#mgk-lrs}
-
-In our recent [MAMA paper](/publications/#mgk-lower-short),
-Ziyuan and I introduced the WINE lower-bounding framework,
-which proves lower bounds on mean response time in the M/G/k under arbitrary scheduling
-via lower bounds on mean relevant work under arbitrary scheduling.
-
-The optimal policy for mean total work under arbitrary scheduling is the most servers first policy, I'm fairly certain.
-The reasoning is fairly simple: Total work is minimized if as many servers are running as possible at each moment in time.
-The only thing that can get in the way of that is too much work concentrated into too few jobs.
-So, we should schedule the job of largest remaining size. This is the opposite of the SRPT policy/
-
-**First step:** Can we prove rigorously that LRS minimizes total work in the M/G/k?
-This should be true in a sample-path sense, which should make the proof relatively straightforward.
-
-**Next step:** Can we analyze LRS for the M/D/k, or even just the M/D/2? (D for Deterministic).
-I think that the ISQ methods described in the same MAMA paper might be useful.
-In particular, drift functions derived via differential equations to give constant drift might be useful.
-
-**Future:** Can we prove tighter bounds by thinking about bounding LRS, rather than trying to bound an arbitrary policy? Even if we can't get an exact analysis.
 
 ### Continuous MSJ {#continuous-msj}
 
@@ -766,4 +819,37 @@ in their paper ["Restless Bandits with Average Reward: Breaking the Uniform Glob
 
 **Question**: Can we formulate a restless Gittins game, solve the single-arm version,
 and use the FTVL policy or something similar to design a scheduling policy?
+
+### Scheduling to minimize E[T^2] {#t2}
+
+**Update**: I'm no longer particularly excited about this policy. It'd be a lot of work to analyze and it's not that close to an optimal policy - it doesn't incorporate lookahead at future increases in holding cost, for instance.
+
+See Section 8.3.5 of [my thesis](/assets/isaac-thesis.pdf).
+
+**Setting**: M/G/1 scheduling for tail, e.g. minimize E[T^2].
+
+#### **Scheduling policy: t/s**
+
+**Policy**: Priority is t/s, where t is a job's time in system and s is the job's size.
+Higher is better. Without preemption to start, for simplicity of analysis.
+Note that this is an "Accumulating Priority Queue", but with infinite continuous classes, not 2 classes.
+
+[Waiting time distributions in the accumulating priority queue](https://link.springer.com/article/10.1007/s11134-013-9382-6),
+David A. Stanford, Peter Taylor & Ilze Ziedins
+
+**First step**: Implement this policy. Compare it against FCFS, SRPT. Poisson arrivals, medium variance, medium load. Does it do well empirically for E[T^2]?
+
+**Future steps**: Use APQ methods to characterize steady state. Poisson point process of (size, time in system). Characterize for arbitrary joint (Size, Accumulation rate) distribution, specialize to above setting. Characterize transform of response time, moments of response time.
+
+#### **Achievable region method of lower bounds**
+
+**Background**: The key idea behind E[T] lower bounds is that if you prioritize jobs by remaining size, you minimize the amount of work below a given remaining size in the system. Using WINE, this bound can be converted into a response time bound, proving that SRPT is optimal. Similar proofs work for Gittins and in various multiserver systems.
+
+We can call this the "achievable region" method - for each relevant work threshold, there is an achievable region of how much relevant work there can be in steady state, depending on the policy.
+
+**Idea**: If you prioritize jobs by time in system (FCFS), you minimize the amount of work above each time threshold in the system. "Work with time-in-system above t". However, this cannot be converted into a bound on tail metrics such as E[T^2], because there is not a conversion from work to number of jobs or response time or anything like that.
+
+However, we can get additional bounds by assigning jobs different deadlines based on their sizes, and then prioritizing jobs in a Earliest Deadline First fashion, where jobs reach maximum priority when they are past their deadline. Each such policy minimizes the amount of work of jobs past their deadline.
+
+If jobs are classed exponential jobs (Exp(μ\_1), Exp(μ\_2), ...), then we can convert directly from an amount of work to a number of jobs. We'll get bounds of the form "N_1^t/μ\_1 + N_2^t/μ\_1 \ge x", where N_i^t is the number of jobs of class i that have been in the system for over t time. Perhaps we can integrate results like this, incorporating different deadlines for different classes of job, to get a good T^2 lower bound.
 
