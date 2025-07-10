@@ -56,22 +56,24 @@ Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 [\[paper\]](/assets/npg-approx.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
-### [Convergence for Natural Policy Gradient on Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
-Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-
-[\[paper\]](/assets/npg.pdf)
-[\[old paper\]](/assets/old-npg.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2402.05274)
-[\[talks\]](/talks/#npg)
-
 ## Full, Accepted Papers {#full-papers}
 
 If there is also a short version of a paper, it is listed together with the full version.
 
+### [Convergence for Natural Policy Gradient for a Family of Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
+Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+Accepted to *Queueing Systems* as of July 2025.
+
+[\[paper\]](/assets/npg.pdf)
+[\[medium-old paper\]](/assets/medium-old-npg.pdf)
+[\[old paper\]](/assets/old-npg.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2402.05274)
+[\[talks\]](/talks/#npg)
+
 
 ### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf) {#simple-mrj}
 Zhongrui Chen, Isaac Grosof, Ben Berg.
-Accepted to *ACM SIGMETRICS*, June 2025.
+*ACM SIGMETRICS*, June 2025.
 
 [\[paper\]](/assets/msr.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2412.08915)
