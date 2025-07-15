@@ -182,6 +182,11 @@ Sometimes, dreams that I knew were impossible,
 nonetheless came true.
 Freckles, breasts, and social acceptance.
 
+[SGGO 16: Sweating](/2025/07/14/sggo-16):
+This summer, I've been feeling gross from the heat, from sweating.
+But there's another way to view it, another way to interact with it.
+This is nonbinary, this is my body, this is the humanness of gender.
+
 ### Trans Q&A for Trans Day of Visibility
 
 Every March, I solicit questions about being trans.
