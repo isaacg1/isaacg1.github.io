@@ -56,7 +56,7 @@ as well as with the Kelly Criterion,
 because we're OK losing it all some of the time, just not most of the time.
 
 The optimal strategy for the median is a bit trickier to write down.
-I initial found it with a dynamic program exponential-time search,
+I initially found it with a dynamic program exponential-time search,
 but I've managed to find the underlying pattern,
 so that one can calculate the optimal strategy with no external aid.
 
