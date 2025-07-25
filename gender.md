@@ -187,6 +187,11 @@ This summer, I've been feeling gross from the heat, from sweating.
 But there's another way to view it, another way to interact with it.
 This is nonbinary, this is my body, this is the humanness of gender.
 
+[SGGO 17: Voice](/2025/07/24/sggo-17):
+I have two voices: My living voice, the one I'm training,
+and my exhausted voice, the one I use most of my life.
+I need voice breaks when I switch between them.
+
 ### Trans Q&A for Trans Day of Visibility
 
 Every March, I solicit questions about being trans.
