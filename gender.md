@@ -93,6 +93,7 @@ to document and celebrate how my appearance changes.
 * [Month 24](/2025/04/30/transition-24). Two years!
 * [Month 25](/2025/06/04/transition-25)
 * [Month 26](/2025/06/27/transition-26)
+* [Month 27](/2025/07/25/transition-27)
 
 ### Some Gender Going On Podcast
 
