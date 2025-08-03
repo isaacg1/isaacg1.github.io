@@ -60,6 +60,12 @@ Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 
 If there is also a short version of a paper, it is listed together with the full version.
 
+### [Improving Nonpreemptive Multiserver Job Scheduling with Quickswap](/assets/quickswap.pdf)
+Zhongrui Chen, Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Marsan, Benjamin Berg, Izzy Grosof.
+Accepted to *IFIP Performance* as of August 2025.
+
+[\[paper\]](/assets/quickswap.pdf)
+
 ### [Convergence for Natural Policy Gradient for a Family of Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
 Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 Accepted to *Queueing Systems* as of July 2025.
