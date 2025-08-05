@@ -132,12 +132,6 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2
 [\[video\]](https://www.youtube.com/watch?v=oEmOs8Tdn-U)
 [\[old version\]](/assets/finite-skip.pdf)
 
-### [Towards the shortest DRAT proof of the Pigeonhole Principle](/assets/php.pdf)
-Isaac Grosof, Naifeng Zhang, Marijn Heule. *Pragmatics of SAT*, August 2022.
-
-[\[paper\]](/assets/php.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2207.11284)
-
 ### [Uniform Bounds for Scheduling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf) {#estimates}
 Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
 *Innovations in Theoretical Computer Science*, Jan. 2022.
@@ -258,6 +252,12 @@ Isaac Grosof, Mor Harchol-Balter.
 ApPLIED workshop at PODC 2023.
 
 [\[paper\]](/assets/applied.pdf)
+
+### [Towards the shortest DRAT proof of the Pigeonhole Principle](/assets/php.pdf)
+Isaac Grosof, Naifeng Zhang, Marijn Heule. *Pragmatics of SAT*, August 2022.
+
+[\[paper\]](/assets/php.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2207.11284)
 
 ### [Open Problem—M/G/k/SRPT Under Medium Load](/assets/srpt-medium.pdf)
 Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
