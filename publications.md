@@ -65,6 +65,7 @@ Zhongrui Chen, Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Mar
 Accepted to *IFIP Performance* as of August 2025.
 
 [\[paper\]](/assets/quickswap.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2509.01893)
 
 ### [Convergence for Natural Policy Gradient for a Family of Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
 Isaac Grosof, Siva Theja Maguluri, R. Srikant.
