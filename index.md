@@ -54,7 +54,9 @@ More details to come as I decide what to put in the class.
 Coming winter 2026!
 
 
-I have received the [**ACM SIGMETRICS 2023 Doctoral Dissertation Award**](https://sigmetrics.org/dissertationaward-2023.shtml),
+I have received the **2025 Cole-Higgins Award for Excellence in Teaching from the McCormick School of Engineering at Northwestern**,
+the **2025 INFORMS Graduate Teaching Award from the IEMS Department at Northwestern**,
+the [**ACM SIGMETRICS 2023 Doctoral Dissertation Award**](https://sigmetrics.org/dissertationaward-2023.shtml),
 the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions),
 the [**ACM SIGMETRICS 2021 Best Paper Award**](publications/#nudge-stochastically-improving-upon-fcfs),
 the [**ACM SIGMETRICS 2019 Best Student Paper Award**](publications/#load-balancing-guardrails),
