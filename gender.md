@@ -22,7 +22,7 @@ This is a good place to start if you're unfamiliar with people using multiple pr
 [Learning to talk](/2023/11/25/learning-to-talk):
 A poem about the pain and joy of voice training.
 
-[Scavenged Metal Collection](2023/10/21/scavenged-metal):
+[Scavenged Metal Collection](/2023/10/21/scavenged-metal):
 **✧Gender✧**!
 
 [Gender: Desire and Identity](/2024/02/09/gender-desire):
