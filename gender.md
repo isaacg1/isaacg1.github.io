@@ -94,6 +94,8 @@ to document and celebrate how my appearance changes.
 * [Month 25](/2025/06/04/transition-25)
 * [Month 26](/2025/06/27/transition-26)
 * [Month 27](/2025/07/25/transition-27)
+* [Month 28](/2025/09/22/transition-28)
+* [Month 29](/2025/09/22/transition-29)
 
 ### Some Gender Going On Podcast
 
