@@ -23,10 +23,14 @@ joint advised with
 * [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
 ([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)).
 
-I am advising two excellent undergraduate researchers:
+I am advising two excellent undergraduate/master's researchers:
 
-* Jay Kowalik
 * Yanis Zain
+* Bryan Yuen ([Linkedin](https://www.linkedin.com/in/bryanyuen04/))
+
+Past advisees include:
+
+* Jay Kowalik (Undergrad, ~Spring 2025)
 
 If you are a first-year PhD student at Northwestern, a prospective student, or thinking of applying,
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.
@@ -54,7 +58,8 @@ More details to come as I decide what to put in the class.
 Coming winter 2026!
 
 
-I have received the **2025 Cole-Higgins Award for Excellence in Teaching from the McCormick School of Engineering at Northwestern**,
+I have received
+the [**2025 Cole-Higgins Award for Excellence in Teaching from the McCormick School of Engineering at Northwestern**](https://www.mccormick.northwestern.edu/news/articles/2025/09/northwestern-engineering-names-winners-of-2025-cole-higgins-awards/),
 the **2025 INFORMS Graduate Teaching Award from the IEMS Department at Northwestern**,
 the [**ACM SIGMETRICS 2023 Doctoral Dissertation Award**](https://sigmetrics.org/dissertationaward-2023.shtml),
 the [**INFORMS 2022 George Nicholson Award**](publications/#the-gittins-policy-is-nearly-optimal-in-the-mgk-under-extremely-general-conditions),
