@@ -265,7 +265,7 @@ This function s(m) must be *front-order-independent*, which means that it must s
 
 As long as the service function s(m) is front-order-independent, the product-form holds.
 
-See my notes on this subject: [page 1](/assets/notes/front-oi-pg-1.jpg), [page 2](front-oi-pg-2.jpg).
+See my notes on this subject: [page 1](/assets/notes/front-oi-pg-1.jpg), [page 2](/assets/notes/front-oi-pg-2.jpg).
 
 **Further generalization**: This product-form property is further preserved if we generalize the system even further as follows:
 There is a function Δ\_j(m) which maps a vector m and an index j, 1 <= j <= k,
