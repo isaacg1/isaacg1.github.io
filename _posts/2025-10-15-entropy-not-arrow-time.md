@@ -46,11 +46,11 @@ Let's set up our system in a low-entropy, highly-ordered state,
 and run our system forward for 100 steps.
 I'll do this 100,000 times and record the average entropy after each number of steps.
 
-All of my code is available [in this repository](todo) if you want to adapt it. I'm currently talking about the `sim_start` function.
+All of my code is available [in this repository](https://github.com/isaacg1/entropy) if you want to adapt it. I'm currently talking about the `sim_start` function.
 
 Here's what we get:
 
-![todo](/assets/entropy/entropy-start.svg)
+![A plot titled "Entropy inceases with time?". Vertical axis "mean entropy", horizontal axis "Time since start". As time increases from 0 to 100, mean entropy encreases from 1 to near 5, convexly.](/assets/entropy/entropy-start.svg)
 
 This is what people mean when they claim "entropy is the arrow of time" - look, the entropy is increasing as time goes forward!
 
@@ -59,7 +59,7 @@ But this isn't really fair - we didn't give backward in time a chance! It's not 
 So let's add backward in time to our plot.
 
 To do this, we'll initialize our system by sampling its initial state from its stationary distribution, which is just the state where all possible states are equally likely.
-This is in the `sim_low` function in [the same repository](todo).
+This is in the `sim_low` function in [the same repository](https://github.com/isaacg1/entropy).
 
 I'll run the system for 10,000 steps, which is enough time that we'll usually encounter all states, including the minimum entropy states, at least once. After all, there's only `10 choose 5 = 252` possible states.
 
@@ -71,7 +71,7 @@ and just after visiting it, and average over 100,000 runs.
 
 And if entropy is really the arrow of time, this plot should be asymmetrical: Entropy forward in time from a minimum entropy state should behave differently from entropy backward in time from a minimum entropy state.
 
-![todo](/assets/entropy/entropy-middle.svg)
+![A plot titled "Entropy is symmetrical in time!", with vertical axis "Entropy" and horizontal axis "Time relative to minimum entropy. Time ranges from -100 to 100, and is symmetrical about 0: Entropy in the past and the future look identical.](/assets/entropy/entropy-middle.svg)
 
 Look at that! Entropy is symmetrical with respect to time!
 If we start at an average visit to a minimum entropy state,
