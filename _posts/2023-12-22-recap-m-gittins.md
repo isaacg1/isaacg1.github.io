@@ -4,7 +4,7 @@ layout: post
 title: 'Paper 5: Multiserver Monotonic-Gittins Scheduling'
 ---
 Let's return to this series.
-Time for my fifth paper: [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
+Time for my fifth paper: [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf).
 This was the third queueing paper I contributed to,
 and it builds upon my first queueing paper, on [Muliserver SRPT](/2022/09/17/recap-srptk.html).
 My coauthors once again were [Ziv Scully](https://ziv.codes/), then a fellow PhD student,
