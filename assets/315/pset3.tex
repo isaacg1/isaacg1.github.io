@@ -1,0 +1,141 @@
+\documentclass{article}
+\input{header}
+
+
+\title{Problem Set 3 (Main classes 8-10)}
+\author{Izzy Grosof}
+\date{October 8, 2025 -- Due October 15th (Wednesday)}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item Alice is playing basketball. Their probability of making a shot is dependent on their last 2 most recent shots. If they made both of their last two shots, they have a $80\%$ chance of making their next shot. If they made one of their last two shots, they have a $70\%$ chance of making their next shot. If they made neither of their last two shots, they have a $60\%$ chance of making their next shot. Their probability of success is independent of all shots before their last two shots.
+
+    In this problem, you will model Alice's shooting as a Markov chain. To do so, we must define the state that Alice is in after each shot. This state must be enough information to determine the probability that Alice makes their next shot, and to determine which state may Alice transition to, after that shot.
+    \begin{enumerate}
+        \item List the states of the DTMC corresponding to Alice's shooting.
+        \item Give either a transition matrix or a transition diagram for the DTMC for Alice's shooting, showing the probabilities of all possible state transitions.
+        \item Suppose that Alice's first 3 shots were [Miss, Make, Make]. What is the probability that Alice's next 3 shots will be [Make, Miss, Miss]?
+    \end{enumerate}
+    \item Consider the following 4 DTMC transition diagrams:
+    
+    \begin{tikzpicture}[
+    node distance = 12mm and 6mm,
+every edge/.style = {draw, -{Stealth[scale=1.2]}},
+every edge quotes/.append style = {auto, inner sep=2pt, font=\footnotesize}
+                        ]
+\node (n1)  [state] {$A$};
+\node (n2)  [state,below left=of n1]    {$B$};
+\node (n3)  [state,below right=of n1]   {$C$};
+%
+\path   (n1)    edge[bend right]  (n2)
+                edge[bend left]  (n3)
+                edge[loop above]  (n1)
+        (n2)    %edge  (n1)
+                edge[bend left]  (n3)
+                edge[loop left]  (n2)
+        (n3)    %edge  (n1)
+                edge[loop right]  (n3);
+                
+\node (n5)  [state,right=of n3]    {$E$};
+\node (n4)  [state,above right=of n5] {$D$};
+\node (n6)  [state,below right=of n4]   {$F$};
+%
+\path   (n4)    edge[bend right]  (n5)
+                edge[bend left]  (n6)
+                edge[loop above]  (n4)
+        (n5)    edge [bend left] (n6)
+                %edge  (n3)
+        (n6)    edge[bend left]  (n5)
+                %edge  (n2);
+                ;
+\node (n8)  [state,right=of n6]    {$G$};
+\node (n7)  [state,above right=of n8] {$H$};
+\node (n9)  [state,below right=of n7]   {$I$};
+%
+\path   (n7)    %edge  (n5)
+                edge[bend left]  (n9)
+        (n8)    edge[bend left]  (n7)
+                %edge  (n3)
+        (n9)    edge[bend left]  (n8)
+                %edge  (n2);
+                ;
+\node (n11)  [state,right=of n9]    {$J$};
+\node (n10)  [state,above right=of n11] {$K$};
+\node (n12)  [state,below right=of n10]   {$L$};
+%
+\path   (n10)    %edge  (n5)
+                edge[bend left]  (n12)
+        (n11)    edge[bend left]  (n10)
+                edge[bend left]  (n12)
+        (n12)    edge[bend left]  (n11)
+                %edge  (n2);
+                ;
+    \end{tikzpicture}
+    For each diagram, determine:
+    \begin{enumerate}
+        \item Is the diagram reducible or irreducible? If it is reducible, how many communicating classes does it have?
+        \item For each communicating class in each diagram, what is its period?
+        \item For each communicating class in each diagram, is it recurrent or transient?
+    \end{enumerate}
+    \item Each day I teach class, I start the class with either 1, 2, or 3 pieces of chalk.
+    During the class, if I started with at least 2 pieces of chalk,
+    I'll use up 1 or 2 pieces of chalk, with 50\% probability each, i.i.d.
+    If I started the class with 1 piece of chalk, I'll use it up.
+
+    After the class, if I have 0 pieces of chalk left, I'll refill, so I start the next class with 3 pieces of chalk.
+    Otherwise, I'll start the next class with the same number of pieces of chalk I ended class with.
+
+    Let $X_n$ be the number of pieces of chalk I start the $n$th class with.
+    The sequence $\{X_1, X_2, X_3, \ldots\}$ forms a DTMC.
+    \newpage
+    \begin{enumerate}
+        \item Give either the transition matrix $P$ or the transition diagram for this DTMC.
+        \item Find the stationary distribution $\pi$ for this DTMC.
+        \item In the long run, after what fraction of classes do I refill my chalk?
+    \end{enumerate}
+    \item Raven claims to have proven a new variant of the Markov property,
+    which we'll call ``Raven's property''.
+    Specifically, she claims that if $\{X_t\}$ is a DTMC
+    with integer states,
+    then it satisfies the following variant of the Markov property:
+    \begin{align*}
+        \P{X_3 \ge 1 \mid X_2 \ge 1 \& X_1 \ge 1} = \P{X_3 \ge 1 \mid X_2 \ge 1}
+    \end{align*}
+    Tara disagrees: She thinks that Raven's property doesn't always hold,
+    and she thinks that there's a DTMC which is a counterexample to Raven's property
+    with 3 states, and with all transition probabilities $P_{ij}$ equal to either 0 or 1.
+    \begin{enumerate}
+        \item Find the counterexample that Tara's describing.
+        Specifically, find a transition matrix $P$ where all entries are either 0 or 1,
+        and a initial distribution for $X_1$,
+        such that Raven's property fails.
+    \end{enumerate}
+    \item Consider the following Markov chain:
+    
+        \begin{tikzpicture}[
+    node distance = 12mm and 6mm,
+every edge/.style = {draw, -{Stealth[scale=1.2]}},
+every edge quotes/.append style = {auto, inner sep=2pt, font=\footnotesize}
+                        ]
+\node (n11)  [state,right=of n9]    {$1$};
+\node (n10)  [state,above right=of n11] {$2$};
+\node (n12)  [state,below right=of n10]   {$3$};
+%
+\path   (n10)    %edge  (n5)
+                edge[bend left] ["1"] (n12)
+        (n11)    edge[bend left] ["1/2"] (n10)
+                edge[bend left] ["1/2"] (n12)
+        (n12)    edge[bend left] ["1/2"] (n11)
+        (n12)    edge[loop right] ["1/2"] (n12);
+        \end{tikzpicture}
+        \begin{enumerate}
+            \item What is the stationary distribution of this DTMC?
+            \item This is a programming problem. Write a program in Python, as either a standalone file or as a Jupyter notebook.
+            Include your answers in your solution directly, and also submit the code you write, either in the same document or as a separate upload.
+
+            Simulate the above Markov chain for 1000 steps, starting in state 1. Over those 1000 steps, in what fraction of steps was the DTMC in each of states 1, 2, and 3?
+            \item What is the difference between the empirical fractions you calculated in (b) and the exact stationary distribution you found in (a)?
+        \end{enumerate}
+\end{enumerate}
+\end{document} 

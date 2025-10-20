@@ -3,6 +3,8 @@ layout: page
 published: true
 ---
 
+**[IEMS 315 Resources](resources-315)**
+
 ![Izzy Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a white scoop-necked top with large purple flowers.](/assets/website-photo.jpg)
 
 I am an [assistant professor](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/grosof-isaac.html) at Northwestern University,

@@ -32,6 +32,7 @@ header_pages:
     - cv.md
     - gender.md
     - blog.md
+    - resources-315.md
 
 # Build settings
 markdown: kramdown

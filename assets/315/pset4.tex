@@ -1,0 +1,98 @@
+\documentclass{article}
+\input{header}
+
+
+\title{Problem Set 4 (Main classes 11-13)}
+\author{Izzy Grosof}
+\date{October 15, 2025 -- Due October 22nd (Wednesday)}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item Esme is working at the lab coat exchange.
+    Each minute, there's a chance someone comes in, either to drop off a lab coat, pick up a lab coat, both, or neither.
+
+    Each minute, exactly one of these four events happens, with i.i.d. probabilities each minute. Here are the probabilities of these four events, and the effects of these events:
+    \begin{description}
+        \item[Drop off:] Probability 0.1. The number of coats in stock increases by 1.
+        \item[Nothing:] Probability 0.2. The number of coats in stock doesn't change.
+        \item[Pick up:] Probability 0.3. If there is at least one coat in stock, the number of coats in stock decreases by 1. Otherwise, if there are no coats in stock, the number of coats in stock stays at 0.
+        \item[Drop off and pick up:] Probability 0.4. If there is at least one coat in stock, the number of coats in stock doesn't change (one in, one out). Otherwise, if there are no coats in stock, the number of coats in stock increases to 1 (just a drop off).
+    \end{description}
+
+    The number of coats in stock forms a DTMC.
+    \begin{enumerate}
+        \item What are the nonzero transition probabilities $P_{ij}$
+        for initial states $i=0, 1,$ and $2$?
+        \item Is this DTMC a Birth-death chain? Why or why not?
+        \item Is this DTMC irreducible? Aperiodic?
+        \item What are the local balance equations, for states 0 and 1, 1 and 2, and in general for states $i$ and $i+1$?
+        \item For a generic state $i$, what is the relationship between $\pi_i$ and $\pi_0$, where $\pi$ is the stationary distribution?
+        \item Using the fact that $\sum_i \pi_i = 1$, calculate $\pi_0$.
+        \item What is $\pi_i$, for a generic state $i$?
+        \item What is the mean return time $\E{T_{00}}$ from starting in a state where Esme is out of lab coats, until the next time Esme is out of lab coats?
+    \end{enumerate}
+    \item Scar is moving a chess king on the squares of a chessboard. The squares form an 8x8 square grid, and the chess king can move to any neighboring square, either orthogonally or diagonally neighboring.
+
+    On each time step, Scar moves the king to one of the neighboring squares, uniformly at random, independent of all other moves.
+
+    The position of the king forms a finite-state DTMC, with 64 possible states corresponding to the 64 squares of the chessboard.
+
+    Scar wants to find the stationary distribution of this DTMC, and they think that the DTMC has a local balance solution.
+
+    There are three fundamentally different kinds of squares on the chessboard: corner squares, which only have 3 neighboring squares; edge squares, which have 5 neighboring squares; and central squares, all of the remaining squares, which have 8 neighboring squares.
+
+    Scar thinks that the stationary probability of each square only depends on whether the square is a corner square, an edge square, or a central square.
+    \begin{enumerate}
+        \item Write the local balance equation between a pair of states $i, j$ in each of the 5 possible cases:
+        A corner square neighboring an edge square, a corner square neighboring a central square, an edge square neighboring an edge square, an edge square neighboring a central square, and a central square neighboring a central square.
+        In each case, determine the transition probabilities $P_{ij}$ and $P_{ji}$, where $i$ and $j$ are the two squares.
+        \item Find probabilities $p_{corner}$, $p_{edge}$ and $p_{central}$ such that assigning $\pi_i$ to be one of those three values based on whether each square is a corner, edge, or central square satisfies all of the local balance equations listed in (b).
+    \end{enumerate}
+    \item Martin is running an on-demand bus service. His bus is always either loading passengers, or dropping them off.
+    Each minute, if he's loading passengers, there's an i.i.d. probability $p$ that a new passenger gets on the bus.
+    If no passenger gets on the bus, then the bus departs.
+    After departing, the bus drops off passengers once per minute,
+    until the bus is empty of passengers. Once the bus is empty, it returns to loading passengers in the next minute.
+
+    The state of Martin's bus over time forms an infinite DTMC, where the state is the number of passengers on the bus, and whether the bus is loading or departing.
+    
+    Each minute, either the bus changes between loading and dropping off, or the number of passengers on the bus changes. Never both, never neither.
+    \begin{enumerate}
+        \item Is Martin's DTMC an irreducible Markov chain? Why or why not?
+        \item Prove Martin's DTMC is periodic, with every state having period 2. To prove this, characterize all possible states which can be reached from the (Loading, 0 passengers) state in an even number of steps.
+        \item What is the mean return time from leaving the (Loading, 0 passenger) state to returning to that state?
+        Start by finding the mean number of steps spent in Loading states, and then the mean number of steps spent in Dropping-off states.
+        \item Based on (a), (b), (c), does Martin's DTMC have a unique stationary distribution? Does it have a limiting distribution which does not depend on the initial distribution?
+    \end{enumerate}
+    \item This is a programming problem. Write a program in Python, as either a standalone file or as a Jupyter notebook.
+            Include your answers in your solution directly, and also submit the code you write, either in the same document or as a separate upload.
+
+            In this question, you'll simulate the PageRank algorithm for
+            a set of 20 websites. Websites are numbered $1, 2, 3, \ldots, 20$. The links from website to website are as follows:
+            \begin{enumerate}
+                \item Websites $1$ through $10$ all link to each other: For each $i, j$, where $1 \le i \le 10$, $1 \le j \le 10$, and $i \neq j$, there is a link from $i$ to $j$.
+                \item Websites $10$ through $20$ form a chain:
+                Website 10 links to website 11, 11 links to 12, $\ldots$, 19 links to 20.
+            \end{enumerate}
+            Note that website 10 is in both groups.
+
+            The PageRank DTMC is defined as follows:
+            The state is a website.
+            Each time step:
+            \begin{itemize}
+                \item If the current website has at least one outgoing link, then with probability 90\% (i.i.d.),
+            pick one of the outgoing links from the website uniformly at random, and follow that link to a neighboring site.
+            \item Otherwise, pick a uniformly random website from all possible websites, and move to that website.
+            \end{itemize}
+            The second option occurs with probability 10\% if the starting website has at least one outgoing link, and 100\% if it does not.
+            \begin{enumerate}
+                \item Simulate 10,000 steps of this DTMC. What fraction of time was spent in each possible state?
+                \item Was more total time spent in the websites $1, 2, \ldots, 10$, or $11, 12, \ldots, 20$?
+                \item Within the states $1, 2, \ldots 10$, is significantly more time spent in any of these states than any others? Feel free to run your simulation longer if you're not sure.
+                \item Within the states $11, 12, \ldots, 20$,
+                is significantly more time spent in any of these states than any others? Feel free to run your simulation longer if you're not sure.
+            \end{enumerate}
+\end{enumerate}
+
+\end{document}

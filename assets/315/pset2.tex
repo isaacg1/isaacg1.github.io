@@ -1,0 +1,100 @@
+\documentclass{article}
+\input{header}
+
+
+\title{Problem Set 2 (Main classes 5-7)}
+\author{Izzy Grosof}
+\date{October 3, 2025 -- Due October 10th (Friday)}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item Let $X_1, X_2$ be i.i.d. continuous random variables,
+both having CDF $F_X(x)$ and density $f_X(x)$.
+
+Let $M = \min(X_1, X_2)$ be the minimum of the two random variables.
+\begin{enumerate}
+    \item Prove that the CDF of $M$ is:
+    \begin{align*}
+        F_M(x) = 1 - (1-F_X(x))^2
+    \end{align*}
+    \item What is the density $f_M(x)$ of $M$ in terms of the density $f_X(x)$ and CDF $F_X(x)$ of $X_1$ and $X_2$?
+    \item Suppose that $X_1, X_2 \sim Exp(\lambda)$.
+    What is the CDF $F_M(x)$ of $M$?
+
+    \textbf{Note:} Info on the exponential random variable is available in IPC 7.2.
+    \item Is $M$ an exponential random variable? Why?
+\end{enumerate}
+\item You've just shown upon to a train platform,
+where trains arrive every 15 minutes.
+When you arrive let $T$ denote the time single the last train.
+In this case, $T \sim Unif(0, 15)$ minutes.
+
+Let $S$ denote the number of people who you see at the train platform, when you arrive.
+People have been arriving to the train platform single the last train arrived at a rate of 2 people per minute, on average.
+As a result, $S \sim Poisson(2 T)$.
+
+\textbf{Note:} Info on the Poisson distribution can be found in IPC 3.2.4. Info on the Uniform distribution can be found in IPC 7.2. Note also that $\E{Poisson(\lambda)} = \lambda$ and $\Var{Poisson(\lambda)} = \lambda$.
+\begin{enumerate}
+    \item What is the mean number of people you see at the train platform, $\E{S}$?
+    \item What is the variance of the number of people you see at the train platform, $\Var{S}$?
+\end{enumerate}
+
+\item You've been selected as a contestant on Jeopardy, a game show.
+You'll play in the first round, where you might win or lose.
+Each round, if you win, you go on to the next round, and play again.
+Otherwise, you're done.
+
+You're pretty good at Jeopardy, so you have an $80\%$ probability of winning each round, independent of all other rounds.
+
+Let $R$ denote the total number of rounds you play.
+
+\begin{enumerate}
+    \item What's the standard name for the distribution of the random variable $R$?
+
+    \textbf{Note:} Standard names for discrete distributions can be found in the textbook, in chapter 3.2.
+    \item You've won your first 5 rounds. Let $Q$ denote the number of rounds you will play after these first five. In terms of $R$, we can write $Q$ as follows:
+    \begin{align*}
+        Q = [R-5 \mid R > 5]
+    \end{align*}
+    What is the PMF of $Q$, $\P{Q = i}$ for each possible value $i$?
+    
+    \item What's the standard name for the distribution of the random variable $Q$?
+\end{enumerate}
+
+\item Isabella is playing chess online, and keeping track of her rating.
+Her initial rating is 1000. Each day, her rating changes by an amount $D_i$, where $D_i \sim Uniform(-30, 30)$ is uniformly distributed between -30 and +30 rating. The rating changes $D_i$ are i.i.d.
+
+After 100 days, approximate Isabella's new rating with a Normal distribution. What's the approximate probability that her new rating is at least 1200?
+
+\item This is a programming problem. Write a program in Python, as either a standalone file or as a Jupyter notebook.
+    Include your answers in your solution directly, and also submit the code you write, either in the same document or as a separate upload.
+
+    Simulate the following situation:
+    
+    Moss is flipping a fair coin (equally likely heads or tails, i.i.d.), until the result is heads.
+    
+    For each coin flip, Moss waits $Exp(1)$ seconds before flipping the coin. The first coin flip happens at time $Exp(1)$,
+    the second coin flip, if there is one, happens $Exp(1)$ time later, and so on.
+
+    Let $T$ denote the time when the final coin, the one whose result is heads, is flipped.
+
+    Generate $10^6$ samples of the random variable $T$.
+    \begin{enumerate}
+    \item What are $\P{T \ge 1}, \P{T \ge 2}, \P{T \ge 3}, \P{T \ge 4}$?
+    \item Moss thinks that $T$ is exponentially distributed,
+    and wants to use your data to see if this might be true.
+    If a random variable $X \sim Exp(\lambda)$
+    is exponentially distributed with rate $\lambda$,
+    then for any threshold $x$, the following fraction will be constant:
+    \begin{align*}
+        \frac{\P{X \ge x+1}}{\P{X \ge x}} = e^{-\lambda}
+    \end{align*}
+    If $X$ is not exponentially distributed, then the above fraction won't have a constant value across different thresholds $x$.
+
+    Use your data from (a) to check whether the above fraction is near-constant for the random variable $T$ across thresholds $x = \{1, 2, 3\}$.
+    
+    Does $T$ seem exponentially distributed? If so, what is its rate parameter $\lambda$?
+    \end{enumerate}
+\end{enumerate}
+\end{document}

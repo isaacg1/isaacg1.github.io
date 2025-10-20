@@ -1,0 +1,111 @@
+\documentclass{article}
+\input{header}
+
+
+\title{Problem Set 1 (Main classes 1-4)}
+\author{Izzy Grosof}
+\date{September 24, 2025 -- Due October 1st}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item Suppose that days in Evanston are each mainly sunny, cloudy, or rainy.
+    Each day has a 70\% probability of being mainly sunny, 20\% of being mainly cloudy, and 10\% of being mainly rainy.
+    On a mainly sunny day, I won't be rained on. 
+    On a mainly cloudy day, there's a 10\% chance I'll be rained on.
+    On a mainly rainy day, there's a 90\% change I'll be rained on.
+
+    Today, I was rained on. Given this information, what's the probability that today was mainly sunny? Mainly cloudy? Mainly rainy?
+
+    \item Brent is a logistics student, studying how full storage units are at a local self-storage business.
+    They represent the fullness of a storage unit as a number between 0 (empty) and 1 (completely stuffed).
+    They find that lower fullness numbers tend to be more common.
+    They decide the model the fullness of a storage unit
+    as a random variable $X$ with density $f_X(x)$ proportional to $1-x$.
+    Specifically, Brent models the fullness as a continuous random variable with probability density function
+    \begin{align}
+        \label{eq:fullness}
+        f_X(x) = \begin{cases}
+            c(1-x) &\text{ if } 0 \le x \le 1, \\
+            0 &\text{ otherwise.}
+        \end{cases}
+    \end{align}
+    where $c$ is a constant. They need your help to find the value of $c$ for which the formula in \eqref{eq:fullness} gives a value probability distribution.
+    \begin{enumerate}
+        \item There is only one value of $c$ for which the formula for $f_X(x)$ in \eqref{eq:fullness} is a valid probability density function.
+        What is that value of $c$?
+        \item What is the mean fullness of a storage unit, $\E{X}$?
+        \item What is the variance of the fullness of a storage unit, $\var{X}$?
+    \end{enumerate}
+    \item We flip two fair coins, each heads or tails independently with 50\% probability of either outcome.
+    We define three events:
+    \begin{description}
+        \item[$A$:] First coin flip is heads.
+        \item[$B$:] Second coin flip is heads.
+        \item[$C$:] Between the two flips, exactly one coin is heads.
+    \end{description}
+    We want to know which events are independent of each other.
+    \begin{enumerate}
+        \item Are $A$ and $B$ independent? Why?
+        \item Are $A$ and $C$ independent? Why?
+        \item Are $B$ and $C$ independent? Why?
+        \item Are $A, B,$ and $C$ mutually independent? Why?
+    \end{enumerate}
+    \item Pearson's correlation coefficient (PCC, also known as $r$) is frequently used in statistics to measure the correlation between two random variables.
+    The PCC of two random variables $X$ and $Y$ is defined by the following formula:
+    \begin{align*}
+        PCC(X, Y) := \frac{Cov(X, Y)}{\sqrt{\var{X}\var{Y}}}
+    \end{align*}
+    The PCC of two random variables is always a number between $-1$ and $1$, and can be interpreted as shown in \cref{tbl:association}.
+    \begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+         +1.0& 	Perfect positive (+) association \\
++0.8 to 1.0& 	Very strong + association\\
++0.6 to 0.8& 	Strong + association\\
++0.4 to 0.6& 	Moderate + association\\
++0.2 to 0.4& 	Weak + association\\
+0.0 to +0.2& 	Very weak + or no association\\
+0.0 to -0.2& 	Very weak negative (-) or no association\\
+-0.2 to -0.4& 	Weak - association\\
+-0.4 to -0.6& 	Moderate - association\\
+-0.6 to -0.8& 	Strong - association\\
+-0.8 to -1.0& 	Very strong - association\\
+-1.0& 	Perfect - association \\
+\hline
+    \end{tabular}
+    \caption{Pearson Correlation Coefficient, strength of association. Credit: \href{https://web.archive.org/web/20240324210249/https://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH717-QuantCore/PH717-Module9-Correlation-Regression/PH717-Module9-Correlation-Regression4.html}{Boston University School of Public Health}.}
+    \label{tbl:association}
+    \end{table}
+    
+    Let $X$ be a random variable representing the symptom severity for a person receiving treatment for flu infections, at the time they are first seen by a nurse.
+    Let $Y$ be a random variable represent the symptom severity for the same person after two weeks of treatment.
+
+    Let's model $X$ as being distributed uniformly among severity levels $\{1, 2, 3, 4\}$.
+    Let's model $Y$ as changing by at most two severity levels from $X$.
+    Specifically, let's model $Y$ as being distributed uniformly among severity levels $\{\max(X-2, 0), X-1, X, X+1, X+2\}$.
+    The $\max(\cdot, \cdot)$ function is included to ensure that the severity level is never negative.
+    \begin{enumerate}
+        \item What is the Pearson Correlation Coefficient $PCC(X, Y)$ for these two random variables?
+        \item Using \cref{tbl:association}, what is the qualitative strength of association between $X$ and $Y$?
+    \end{enumerate}
+    \item Emma has proposed a new formula for the variance of a random variable, in addition to the formulas we've seen in class.
+    Suppose that $X, X_1,$ and $X_2$ are all independent and identically distributed.
+    Then Emma claims that
+    \begin{align*}
+        \var{X} = \frac{\E{(X_1 - X_2)^2}}{2}.
+    \end{align*}
+    Is Emma always correct? Prove that her formula always holds, or provide a counterexample.
+    \item This is a programming problem -- write a program in Python, as either a standalone file or as a Jupyter notebook.
+    Include your answers in your solution directly, and also submit the code you write, either in the same document or as a separate upload.
+    
+    Let $U_1$ and $U_2$ be two independent and identically distributed random variables with distribution Uniform$(0, 1)$.
+    Define their sum $S$ to be $U_1 + U_2$,
+    and define their difference $D$ to be $U_1 - U_2$.
+    \begin{enumerate}
+    \item Using $10^6$ samples, estimate $\E{S}$, $\E{D}$, and $\E{SD}$.
+    \item Using your result in (a), estimate $Cov(S, D)$.
+    \end{enumerate}
+\end{enumerate}
+\end{document}
