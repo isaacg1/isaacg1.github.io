@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "315"
 permalink: /resources-315/
 ---
@@ -31,13 +31,13 @@ Sample midterm: Coming soon
 
 **Additional study problems from last year:**
 
-* [Last year's lab 1](/assets/315/lab-1.pdf) [Last year's lab solutions 1](/assets/315/lab-1-sols.pdf)
-* [Last year's lab 2](/assets/315/lab-2.pdf) [Last year's lab solutions 2](/assets/315/lab-2-sols.pdf)
-* [Last year's lab 3](/assets/315/lab-3.pdf) [Last year's lab solutions 3](/assets/315/lab-3-sols.pdf)
-* [Last year's lab 4](/assets/315/lab-4.pdf) [Last year's lab solutions 4](/assets/315/lab-4-sols.pdf)
-* [Last year's lab 5](/assets/315/lab-5.pdf) [Last year's lab solutions 5](/assets/315/lab-5-sols.pdf)
-* [Last year's lab 6](/assets/315/lab-6.pdf) [Last year's lab solutions 6](/assets/315/lab-6-sols.pdf)
-* [Last year's lab 7](/assets/315/lab-7.pdf) [Last year's lab solutions 7](/assets/315/lab-7-sols.pdf)
-* [Last year's lab 8](/assets/315/lab-8.pdf) [Last year's lab solutions 8](/assets/315/lab-8-sols.pdf)
-* [Last year's lab 9](/assets/315/lab-9.pdf) [Last year's lab solutions 9](/assets/315/lab-9-sols.pdf)
-* [Last year's lab 10](/assets/315/lab-10.pdf) [Last year's lab solutions 10](/assets/315/lab-10-sols.pdf)
+* [Last year's lab 1](/assets/315/lab-1.pdf), [Last year's lab solutions 1](/assets/315/lab-1-sols.pdf)
+* [Last year's lab 2](/assets/315/lab-2.pdf), [Last year's lab solutions 2](/assets/315/lab-2-sols.pdf)
+* [Last year's lab 3](/assets/315/lab-3.pdf), [Last year's lab solutions 3](/assets/315/lab-3-sols.pdf)
+* [Last year's lab 4](/assets/315/lab-4.pdf), [Last year's lab solutions 4](/assets/315/lab-4-sols.pdf)
+* [Last year's lab 5](/assets/315/lab-5.pdf), [Last year's lab solutions 5](/assets/315/lab-5-sols.pdf)
+* [Last year's lab 6](/assets/315/lab-6.pdf), [Last year's lab solutions 6](/assets/315/lab-6-sols.pdf)
+* [Last year's lab 7](/assets/315/lab-7.pdf), [Last year's lab solutions 7](/assets/315/lab-7-sols.pdf)
+* [Last year's lab 8](/assets/315/lab-8.pdf), [Last year's lab solutions 8](/assets/315/lab-8-sols.pdf)
+* [Last year's lab 9](/assets/315/lab-9.pdf), [Last year's lab solutions 9](/assets/315/lab-9-sols.pdf)
+* [Last year's lab 10](/assets/315/lab-10.pdf), [Last year's lab solutions 10](/assets/315/lab-10-sols.pdf)
