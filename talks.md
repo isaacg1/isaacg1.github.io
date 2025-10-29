@@ -3,7 +3,8 @@ layout: page
 title: Talks
 permalink: /talks/
 ---
-### Outperforming SRPT at All Loads {#sek}
+### [Outperforming SRPT at All Loads](/assets/sek-improve.pdf) {#sek}
+[\[paper\]](/assets/sek-improves.pdf)
 [\[slides\]](/assets/sek-aps-2025.pptx)
 
 * Applied Probability Society Conference, Jun. 2025.

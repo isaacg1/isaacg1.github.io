@@ -50,15 +50,25 @@ Runhan Xie, Ziv Scully, Isaac Grosof.
 
 Currently under revision.
 
+
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 
 [\[paper\]](/assets/npg-approx.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
+Currently under revision.
+
 ## Full, Accepted Papers {#full-papers}
 
 If there is also a short version of a paper, it is listed together with the full version.
+
+### [Outperforming Multiserver SRPT at All Loads](/assets/sek-improves.pdf) {#sek}
+Izzy Grosof and Daniela Hurtado-Lange.
+Accepted to *ACM SIGMETRICS* as of October 2025.
+
+[\[paper\]](/assets/sek-improves.pdf)
+[\[talks\]](/talks/#sek)
 
 ### [Improving Nonpreemptive Multiserver Job Scheduling with Quickswap](/assets/quickswap.pdf)
 Zhongrui Chen, Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Marsan, Benjamin Berg, Izzy Grosof.
