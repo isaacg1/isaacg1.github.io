@@ -25,14 +25,14 @@ joint advised with
 * [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
 ([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)).
 
-I am advising two excellent undergraduate/master's researchers:
+I am advising an excellent undergraduate researcher:
 
-* Yanis Zain
 * Bryan Yuen ([Linkedin](https://www.linkedin.com/in/bryanyuen04/))
 
 Past advisees include:
 
-* Jay Kowalik (Undergrad, ~Spring 2025)
+* Yanis Zain (Undergrad, Summer 2025)
+* Willow Kowalik (Undergrad, Spring 2025)
 
 If you are a first-year PhD student at Northwestern, a prospective student, or thinking of applying,
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.
