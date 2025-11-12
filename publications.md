@@ -68,6 +68,7 @@ Izzy Grosof and Daniela Hurtado-Lange.
 Accepted to *ACM SIGMETRICS* as of October 2025.
 
 [\[paper\]](/assets/sek-improves.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2510.25963)
 [\[talks\]](/talks/#sek)
 
 ### [Improving Nonpreemptive Multiserver Job Scheduling with Quickswap](/assets/quickswap.pdf)
