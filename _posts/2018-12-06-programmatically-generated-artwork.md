@@ -3,8 +3,16 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made twenty-two Rust programs for programmatically generating artwork in different styles.
+I have made twenty-three Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Roots
+
+This art generates a sequence of increasingly complicated integer polynomials, looking for complex roots of those polynomials. Pixels represent regions of the complex plane, with the red cicle being the unit circle. Pixels are colored according to the first pixel found with a root in that location. Red means high degree, green means high sum of coefficients, and blue means many nonzero coefficients.
+
+[Repository](https://github.com/isaacg1/roots)
+
+![Rainbow programmatic art. A bold red circle, with green-purple eye in the center, with smaller eyes off the sides. Pointing orange-green diamonds in and out, becoming yellow at the left and right. Traces of lines and circles in the background spray.](/assets/art/roots.png)
 
 ## Spinning
 
