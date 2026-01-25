@@ -89,7 +89,7 @@ Accepted to *Queueing Systems* as of July 2025.
 [\[talks\]](/talks/#npg)
 
 
-### [Analyzing Practical Policies for Multiresource Job Scheduling](/assets/msr.pdf) {#simple-mrj}
+### [Improving Multiresource Job Scheduling with Markovian Service Rate Policies](/assets/msr.pdf) {#simple-mrj}
 Zhongrui Chen, Isaac Grosof, Ben Berg.
 *ACM SIGMETRICS*, June 2025.
 
