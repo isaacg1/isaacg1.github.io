@@ -6,6 +6,14 @@ title: "Programmatically generated artwork"
 I have made twenty-three Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
 
+## Dark Tree
+
+This art generates branches which randomly move in color and movement direction and shrink in size, and split off other branches. Branching probability shrinks linearly with branch width.
+
+![Programmatically generated art. A dark tree on a grey background. The tree starts at the top left, thick and dark, and lightens and spreads into rainbow colors as it moves down and right and moves into thinner branches.](/assets/art/dark-tree.png)
+
+[Repository](https://github.com/isaacg1/dark-tree)
+
 ## Roots
 
 This art generates a sequence of increasingly complicated integer polynomials, looking for complex roots of those polynomials. Pixels represent regions of the complex plane, with the red cicle being the unit circle. Pixels are colored according to the first pixel found with a root in that location. Red means high degree, green means high sum of coefficients, and blue means many nonzero coefficients.
