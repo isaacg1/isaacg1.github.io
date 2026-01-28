@@ -1,46 +1,46 @@
-Today, I'm tracing back my line of academic advisors (PhD advisor to PhD advisor) as far as I can, using the [Mathematics Genealogy](https://www.mathgenealogy.org). The longest-ago person in their database appears to be [Ibn Sina](https://en.wikipedia.org/wiki/Avicenna), also known as Avicenna, a Persian scholar who lived 980-1037, and a few guesses as to his potential advisors. Ibn Sina is in my line of academic advisors, so I'm tracing the path from him to me (or me back to him).
+Today, I'm tracing back my line of academic advisors (PhD advisor to PhD advisor) as far as I can, using the [Mathematics Genealogy](https://www.mathgenealogy.org). The longest-ago person in their database appears to be [Ibn Sina](https://en.wikipedia.org/wiki/Avicenna), also known as Avicenna, a Persian scholar who lived 980-1037, and his tutor [al-Natili](https://en.wikipedia.org/wiki/Al-Natili). Ibn Sina and al-Natili are in my line of academic advisors, so I'm tracing the path from him to me (or me back to him). Most people with a PhD can probably do the same.
 
-I am listing PhD advisors, or if a person has no PhD the advisor of the last graduate degree they received, or of the nearest dissertation equivalent. I also list the university or nearest equivalent where degree was achieved. Many people had multiple advisors, but to avoid an exponential explosion of advisors, I'm only tracking one advisor, chosen to reach Ibn Sina. There are many paths that reach him, and I chose arbitrarily amongst those paths. For each person, I list their name, university, degree year, years of birth and death, and a link to their Mathematics Genealogy page. I also include a short version of their name if they are better known under that short version.
+I am listing PhD advisors, or if a person has no PhD the advisor of the last graduate degree they received, or of the nearest dissertation equivalent. I also list the university or nearest equivalent where degree was achieved. Many people had multiple advisors, but to avoid an exponential explosion of advisors, I'm only tracking one advisor, chosen to reach Ibn Sina. There are many paths that reach him, and I chose arbitrarily amongst those paths. For each person, I list their name, the university at which they received their degree, degree year, years of birth and death, and a link to their Mathematics Genealogy page.
 
 ---
 
-* Izzy Grosof, Carnegie Mellon University, degree 2022, life 1995-, https://www.mathgenealogy.org/id.php?id=309796
-* Mor Harchol-Balter, University of California, Berkeley, degree 1996, life, https://www.mathgenealogy.org/id.php?id=82549
-* Manuel Blum, Massachusetts Institute of Technology, degree 1964, life, https://www.mathgenealogy.org/id.php?id=13373
-* Marvin Lee Minsky, Princeton University, degree 1954, life, https://www.mathgenealogy.org/id.php?id=6869
-* Albert William Tucker, Princeton University, degree 1932, life, https://www.mathgenealogy.org/id.php?id=8581
-* Solomon Lefschetz, Clark University, degree 1911, life, https://www.mathgenealogy.org/id.php?id=7461
-* William Edward Story, Leipzig University, degree 1875, life, https://www.mathgenealogy.org/id.php?id=7451
-* Carl Gottfried Neumann, University of Königsberg, degree 1856, life, https://www.mathgenealogy.org/id.php?id=32858
-* Friedrich Julius Richelot, University of Königsberg, degree 1831, life, https://www.mathgenealogy.org/id.php?id=57706
-* Carl Gustav Jacob Jacobi, Humbolt University of Berlin, degree 1825, life, https://www.mathgenealogy.org/id.php?id=15635
-* Enno Heeren Dirksen, University of Göttingen, degree 1820, life, https://www.mathgenealogy.org/id.php?id=41423
-* Johann Tobias Mayer, University of Göttingen, degree 1773, life, https://www.mathgenealogy.org/id.php?id=57659
-* Abraham Gotthelf Kästner, Leipzig University, degree 1739, life, https://www.mathgenealogy.org/id.php?id=66476
-* Christian August Hausen, Martin Luther University Halle-Wittenberg, degree 1713, life, https://www.mathgenealogy.org/id.php?id=57670
-* Johann Andreas Planer, Martin Luther University Halle-Wittenberg, degree 1686, life, https://www.mathgenealogy.org/id.php?id=128986
-* Rudolf Jakob Camerarius, University of Tübingen, degree 1684, life, https://www.mathgenealogy.org/id.php?id=128938
-* Georg Balthasar Metzger, University of Basel, degree 1650, life, www.mathgenealogy.org/id.php?id=123974
-* Johann Jakob von Brunn, University of Basel, degree 1615, life, https://www.mathgenealogy.org/id.php?id=182088
-* Johannes Nicolaus Stupanus, University of Basel, degree 1569, life, https://www.mathgenealogy.org/id.php?id=125048
-* Theodor Zwinger, University of Padua, degree 1559, life, https://www.mathgenealogy.org/id.php?id=125148
-* Bassiano Landi, University of Padua, degree 1542, life, https://www.mathgenealogy.org/id.php?id=152906
-* Giovanni Battista della Monte, University of Padua, degree 1520, life, https://www.mathgenealogy.org/id.php?id=152904
-* Marco Musuro, University of Florence, degree 1486, life, https://www.mathgenealogy.org/id.php?id=152901
-* Janus Lascaris, University of Padua, degree 1472, life, https://www.mathgenealogy.org/id.php?id=131541
-* Basilios Bessarion, Mystras, degree 1436, life, https://www.mathgenealogy.org/id.php?id=131561
-* Georgios Plethon Gemistos, Constantinople, degree 1380, life, https://www.mathgenealogy.org/id.php?id=131575
-* Demetrios Kydones, Thessalonica, degree ~1345, life, https://www.mathgenealogy.org/id.php?id=134780
-* Nilos Kabasilas, Thessalonica, degree 1363, life, https://www.mathgenealogy.org/id.php?id=146365
-* Gregory Palamas, Imperial University of Constantinople, degree 1316, life, https://www.mathgenealogy.org/id.php?id=176844
-* Theodore Metochites, Imperial University of Constantinople, degree 1315, life, https://www.mathgenealogy.org/id.php?id=184631
-* Manuel Bryennios, Imperial University of Constantinople, degree 1300, life, https://www.mathgenealogy.org/id.php?id=184632
-* Gregory Chioniadis, Ilkhans Court at Tabriz, degree 1296, life, https://www.mathgenealogy.org/id.php?id=201288
-* Shams al‐Dīn al‐Bukhārī, Maragheh Observatory, degree ~1270, life, https://www.mathgenealogy.org/id.php?id=204293
-* [Nasir al-Dīn al-Ṭūsī](https://mathshistory.st-andrews.ac.uk/Biographies/Al-Tusi_Nasir/), Nishapur, degree ~1220, life, https://www.mathgenealogy.org/id.php?id=217509
-* [Kamāl al-Dīn Ibn Yūnus](https://mathshistory.st-andrews.ac.uk/Biographies/Yunus/) (ibn Yunus), Baghdad, degree ~1176, life, https://www.mathgenealogy.org/id.php?id=223724
-* Saraf al-Dīn Muhammad al-Masʿūdī al-Marwazī, Marv, degree ~1125, life ?, https://www.mathgenealogy.org/id.php?id=287466
-* [Omar Khayyam](https://en.wikipedia.org/wiki/Omar_Khayyam), Nishapur, degree ~1067, life 1048-1131, [M](https://www.mathgenealogy.org/id.php?id=295739)
+* Izzy Grosof, [Carnegie Mellon University](https://en.wikipedia.org/wiki/Carnegie_Mellon_University), degree 2023, life 1995-, [M](https://www.mathgenealogy.org/id.php?id=309796)
+* [Mor Harchol-Balter](https://en.wikipedia.org/wiki/Mor_Harchol-Balter), [University of California, Berkeley](https://en.wikipedia.org/wiki/U.C._Berkeley), degree 1996, life 1966-, [M](https://www.mathgenealogy.org/id.php?id=82549)
+* [Manuel Blum](https://en.wikipedia.org/wiki/Manuel_Blum), [Massachusetts Institute of Technology](https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology), degree 1964, life  1938-, [M](https://www.mathgenealogy.org/id.php?id=13373)
+* [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky), [Princeton University](https://en.wikipedia.org/wiki/Princeton_University), degree 1954, life 1927-2016, [M](https://www.mathgenealogy.org/id.php?id=6869)
+* [Albert William Tucker](https://en.wikipedia.org/wiki/Albert_W._Tucker), [Princeton University](https://en.wikipedia.org/wiki/Princeton_University), degree 1932, life 1905-1995, [M](https://www.mathgenealogy.org/id.php?id=8581)
+* [Solomon Lefschetz](https://en.wikipedia.org/wiki/Solomon_Lefschetz), [Clark University](https://en.wikipedia.org/wiki/Clark_University), degree 1911, life 1884-1972, [M](https://www.mathgenealogy.org/id.php?id=7461)
+* [William Edward Story](https://en.wikipedia.org/wiki/William_Edward_Story), [Leipzig University](https://en.wikipedia.org/wiki/Leipzig_University), degree 1875, life 1850-1930, [M](https://www.mathgenealogy.org/id.php?id=7451)
+* [Carl Gottfried Neumann](https://en.wikipedia.org/wiki/Carl_Neumann), [University of Königsberg](ihttps://en.wikipedia.org/wiki/University_of_K%C3%B6nigsberg), degree 1856, life 1832-1925, [M](https://www.mathgenealogy.org/id.php?id=32858)
+* [Friedrich Julius Richelot](https://en.wikipedia.org/wiki/Friedrich_Julius_Richelot), [University of Königsberg](https://en.wikipedia.org/wiki/University_of_K%C3%B6nigsberg), degree 1831, life 1808-1875, [M](https://www.mathgenealogy.org/id.php?id=57706)
+* [Carl Gustav Jacob Jacobi](https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi), [University of Berlin](https://en.wikipedia.org/wiki/Humboldt_University_of_Berlin), degree 1825, life1804-1851, [M](https://www.mathgenealogy.org/id.php?id=15635)
+* [Enno Heeren Dirksen](https://en.wikipedia.org/wiki/Enno_Dirksen), [University of Göttingen](https://en.wikipedia.org/wiki/Johann_Tobias_Mayer), degree 1820, life 1788-1850, [M](https://www.mathgenealogy.org/id.php?id=41423)
+* [Johann Tobias Mayer](https://en.wikipedia.org/wiki/Johann_Tobias_Mayer), [University of Göttingen](https://en.wikipedia.org/wiki/Johann_Tobias_Mayer), degree 1773, life 1752-1830, [M](https://www.mathgenealogy.org/id.php?id=57659)
+* [Abraham Gotthelf Kästner](https://en.wikipedia.org/wiki/Abraham_Gotthelf_K%C3%A4stner), [Leipzig University](https://en.wikipedia.org/wiki/Leipzig_University), degree 1739, life 1719-1800, [M](https://www.mathgenealogy.org/id.php?id=66476)
+* [Christian August Hausen](https://en.wikipedia.org/wiki/Christian_August_Hausen), [University of Wittenberg](https://en.wikipedia.org/wiki/Martin_Luther_University_Halle-Wittenberg), degree 1713, life 1693-1743, [M](https://www.mathgenealogy.org/id.php?id=57670)
+* [Johann Andreas Planer](https://de.wikipedia.org/wiki/Johannes_Andreas_Planer), [University of Wittenberg](https://en.wikipedia.org/wiki/Martin_Luther_University_Halle-Wittenberg), degree 1686, life ~1665-1714, [M](https://www.mathgenealogy.org/id.php?id=128986)
+* [Rudolf Jakob Camerarius](https://en.wikipedia.org/wiki/Rudolf_Jakob_Camerarius), [University of Tübingen](https://en.wikipedia.org/wiki/University_of_T%C3%BCbingen), degree 1684, life 1665-1721, [M](https://www.mathgenealogy.org/id.php?id=128938)
+* [Georg Balthasar Metzger](https://en.wikipedia.org/wiki/Georg_Balthasar_Metzger), [University of Basel](https://en.wikipedia.org/wiki/University_of_Basel), degree 1650, life 1623-1687, [M](www.mathgenealogy.org/id.php?id=123974)
+* [Johann Jakob von Brunn](https://de.wikipedia.org/wiki/Johann_Jakob_von_Brunn), [University of Basel](https://en.wikipedia.org/wiki/University_of_Basel), degree 1615, life 1591-1660, [M](https://www.mathgenealogy.org/id.php?id=182088)
+* [Johannes Nicolaus Stupanus](https://en.wikipedia.org/wiki/Johann_Nikolaus_Stupanus), [University of Basel](https://en.wikipedia.org/wiki/University_of_Basel), degree 1569, life 1542-1621, [M](https://www.mathgenealogy.org/id.php?id=125048)
+* [Theodor Zwinger](https://en.wikipedia.org/wiki/Theodor_Zwinger), [University of Padua](https://en.wikipedia.org/wiki/University_of_Padua), degree 1559, life 1533-1588, [M](https://www.mathgenealogy.org/id.php?id=125148)
+* [Bassiano Landi](https://link.springer.com/article/10.1007/s00048-022-00354-7), [University of Padua](https://en.wikipedia.org/wiki/University_of_Padua), degree 1542, life ~1510-1562, [M](https://www.mathgenealogy.org/id.php?id=152906)
+* [Giovanni Battista della Monte](https://en.wikipedia.org/wiki/Johannes_Baptista_Montanus), [University of Padua](https://en.wikipedia.org/wiki/University_of_Padua), degree 1520, life 1498-1551, [M](https://www.mathgenealogy.org/id.php?id=152904)
+* [Marco Musuro](https://en.wikipedia.org/wiki/Marcus_Musurus), [University of Florence](https://en.wikipedia.org/wiki/University_of_Florence), degree 1486, life ~1470-1517, [M](https://www.mathgenealogy.org/id.php?id=152901)
+* [Janus Lascaris](https://en.wikipedia.org/wiki/Janus_Lascaris), [University of Padua](https://en.wikipedia.org/wiki/University_of_Padua), degree 1472, life ~1445-1535, [M](https://www.mathgenealogy.org/id.php?id=131541)
+* [Bessarion](https://en.wikipedia.org/wiki/Bessarion), [Mystras](https://en.wikipedia.org/wiki/Mystras), degree 1436, life 1403-1472, [M](https://www.mathgenealogy.org/id.php?id=131561)
+* [Gemistos Plethon](https://en.wikipedia.org/wiki/Gemistos_Plethon), [Constantinople](https://en.wikipedia.org/wiki/Constantinople), degree 1380, life ~1360-1452, [M](https://www.mathgenealogy.org/id.php?id=131575)
+* [Demetrios Kydones](https://en.wikipedia.org/wiki/Demetrios_Kydones), [Thessaloniki](https://en.wikipedia.org/wiki/Thessaloniki), degree ~1345, life 1324-1398, [M](https://www.mathgenealogy.org/id.php?id=134780)
+* [Nilos Kabasilas](https://en.wikipedia.org/wiki/Neilos_Kabasilas), [Thessaloniki](https://en.wikipedia.org/wiki/Thessaloniki), degree 1363, life ?, [M](https://www.mathgenealogy.org/id.php?id=146365)
+* [Gregory Palamas](https://en.wikipedia.org/wiki/Gregory_Palamas), [University of Constantinople](https://en.wikipedia.org/wiki/University_of_Constantinople), degree 1316, life ~1296-1359, [M](https://www.mathgenealogy.org/id.php?id=176844)
+* [Theodore Metochites](https://en.wikipedia.org/wiki/Theodore_Metochites), [University of Constantinople](https://en.wikipedia.org/wiki/University_of_Constantinople), degree 1315, life 1270-1332, [M](https://www.mathgenealogy.org/id.php?id=184631)
+* [Manuel Bryennios](https://en.wikipedia.org/wiki/Manuel_Bryennios), [University of Constantinople](https://en.wikipedia.org/wiki/University_of_Constantinople), degree 1300, life ~1275-~1340, [M](https://www.mathgenealogy.org/id.php?id=184632)
+* [Gregory Chioniadis](https://en.wikipedia.org/wiki/Gregory_Chioniades), [Ilkhanate](https://en.wikipedia.org/wiki/Ilkhanate) Court at [Tabriz](https://en.wikipedia.org/wiki/Tabriz), degree 1296, life ~1240-~1320, [M](https://www.mathgenealogy.org/id.php?id=201288)
+* [Shams al‐Dīn al‐Bukhārī](https://link.springer.com/rwe/10.1007/978-1-4419-9917-7_1264), [Maragheh Observatory](https://en.wikipedia.org/wiki/Maragheh_observatory), degree ~1272, life 1254-~1300, [M](https://www.mathgenealogy.org/id.php?id=204293)
+* [Nasir al-Dīn al-Ṭūsī](https://mathshistory.st-andrews.ac.uk/Biographies/Al-Tusi_Nasir/), [Nishapur](https://en.wikipedia.org/wiki/Nishapur), degree ~1220, life 1201-1274, [M](https://www.mathgenealogy.org/id.php?id=217509)
+* [Kamāl al-Dīn Ibn Yūnus](https://mathshistory.st-andrews.ac.uk/Biographies/Yunus/) (ibn Yunus), [Baghdad](https://en.wikipedia.org/wiki/Baghdad), degree ~1176, life 1156-1242, [M](https://www.mathgenealogy.org/id.php?id=223724)
+* [Saraf al-Dīn Muhammad al-Masʿūdī al-Marwazī](https://ismi.mpiwg-berlin.mpg.de/person/38830), [Merv](https://en.wikipedia.org/wiki/Merv), degree ~1125, life ?, [M](https://www.mathgenealogy.org/id.php?id=287466)
+* [Omar Khayyam](https://en.wikipedia.org/wiki/Omar_Khayyam), [Nishapur](https://en.wikipedia.org/wiki/Nishapur), degree ~1067, life 1048-1131, [M](https://www.mathgenealogy.org/id.php?id=295739)
 * [Bahmanyar](https://en.wikipedia.org/wiki/Bahmanyar), [Isfahan](https://en.wikipedia.org/wiki/Isfahan), degree ~1030, life ?, [M](https://www.mathgenealogy.org/id.php?id=287468)
 * [ibn Sina](https://en.wikipedia.org/wiki/Avicenna), a.k.a. Avicenna, [Bukhara](https://en.wikipedia.org/wiki/Bukhara), degree ~998, life 980-1037, [M](https://www.mathgenealogy.org/id.php?id=298616)
 * [al-Natili](https://en.wikipedia.org/wiki/Al-Natili), [Tabaristan?](https://en.wikipedia.org/wiki/Tabaristan), degree ~990, life ?, [M](https://www.mathgenealogy.org/id.php?id=316872)
