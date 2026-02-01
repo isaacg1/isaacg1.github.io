@@ -196,6 +196,13 @@ I have two voices: My living voice, the one I'm training,
 and my exhausted voice, the one I use most of my life.
 I need voice breaks when I switch between them.
 
+[SGGO 18: Epiglottal Speech](/2026/01/31/sggo-18):
+My secret third voice: My demon voice. My ultra-low voice.
+My epiglottal speech, produced by vibrating my epiglottis instead of using my vocal folds.
+Gender affirming for me, and it might be gender affirming for others as well!
+I go into the anatomy of the production, as well on tips for how to try learning it.
+Feel free to get in touch!
+
 ### Trans Q&A for Trans Day of Visibility
 
 Every March, I solicit questions about being trans.
