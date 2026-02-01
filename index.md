@@ -29,7 +29,7 @@ I am advising an excellent undergraduate researcher:
 
 * Bryan Yuen ([Linkedin](https://www.linkedin.com/in/bryanyuen04/))
 
-Past advisees include:
+My superb past advisees include:
 
 * Yanis Zain (Undergrad, Summer 2025)
 * Willow Kowalik (Undergrad, Spring 2025)
