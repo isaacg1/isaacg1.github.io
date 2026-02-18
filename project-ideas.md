@@ -11,7 +11,7 @@ I'm particularly interested in working with either Northwestern students,
 undergrad or grad,
 or people who already have a background in queueing theory research.
 
-Last updated: February 5th, 2026.
+Last updated: February 18th, 2026.
 
 ## Table of contents
 
@@ -44,7 +44,7 @@ The order within a category is roughly chronological.
 
 1. [Largest Remaining Size in the M/G/k](#mgk-lrs)
 
-2. [Parameterized Optimization Equivalence](#param-opt)
+2. [Near-Markovian-Service (RESET) with infinite state spaces](#infinite-ra)
 
 ### [Starting out/Not sure how to proceed](#starting-out)
 
@@ -53,8 +53,6 @@ The order within a category is roughly chronological.
 2. [Starvation and Closed-system Tails](#starvation-closed)
 
 ### [Active projects](#active)
-
-1. [Relative arrivals/completions with infinite state spaces](#infinite-ra)
 
 2. [Half-batch MSJ](#half-batch-msj)
 
@@ -102,6 +100,8 @@ The order within a category is roughly chronological.
 
 10. [Multiserver Nudge](#multi-nudge)
 
+11. [Parameterized Optimization Equivalence](#param-opt)
+
 ## Quite promising {#promising}
 
 ### Largest Remaining Size in the M/G/k {#mgk-lrs}
@@ -140,65 +140,19 @@ and my notes of the derivation of the ISQ analysis:
 
 **Future:** The above approach will bound total work in the LRPT system, and hence total work in the M/G/k. But we really want to bound total *relevant* work in the LRPT system, so we need the Sep-ISQ and AR-ISQ equivalents.
 
-### Parameterized Optimization Equivalence {#param-opt}
+### Near-Markovian-Service (RESET) with infinite state spaces {#infinite-ra}
 
-Consider distribution optimization problems, of the form:
+**Setting**: Markovian arrivals/markovian service systems.
 
-"Over a class of distributions *C*,
-what distribution D minimizes a real-valued objective function f(D)"?
+In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
 
-For instance, the class of distributions *C* might be all stationary response time
-distributions achievable by M/G/1 scheduling policies for a given arrival rate λ
-and job size distribution S,
-and the objective function f(D) might be the mean f(D) = E[D].
-Then the optimal distribution D would be the stationary response time
-under the SRPT policy.
+The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
 
-Two important families of optimization problems are:
+A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
 
-1. **CDF Minimization**: The objective function f(D) = P(D > t) = F_D(t), for some threshold t > 0.
+Solved: Arrival-sided infinite process, or  exact server-side. See works with Cameron and with Daniela.
 
-2. **Quantile Minimization**: The objective function f(D) = max_t s.t. P(D < t) < δ = F_D^{-1}(δ), for some threshold δ, 0 < δ < 1.
-
-Note that these are both one-dimensional parameterized families of optimization functions.
-Note that these parameterized families are equivalent in the following sense:
-The set of all distributions D that appear as solutions to the CDF minimization problem for some t > 0 is the same as the set of distributions D' that appear as solutions to the Quantile minimization problem.
-
-Intuitively, this is because if D_t is the CDF minimizer for t, and F_{D_t}(t) = δ,
-then D_t is also the quantile minimizer for δ.
-
-While equivalent in this sense,
-the CDF minimization problem is easier to solve in stochastic control
-scenarios such as the scheduling situation described above.
-This is because it is easy to calculate the marginal impact of each job on the P(D > t)
-objective: 0 if the job's response time is below t, 1 above.
-It's harder to calculate the marginal impact of a job on the quantile objective
-\- it requires access to the distribution D, which the policy typically does not have.
-
-Any objective function of the form f(D) = E[g(D)], 
-has this property, as long as the function g does not depend on D.
-Instead, g should be parameterized.
-As a result, such objectives are more useful, when available.
-We'll call these objectives *expectation objectives*.
-
-There's another important one-dimensional parameterized family of optimization functions:
-
-{:start="3"}
-3. **Conditional Value at Risk (CVaR)**: The objective function f(D) = E[D \| D > F_D^{-1}(δ)], for some threshold δ, 0 < δ < 1. This is the mean value of the top δ fraction of the distribution. It has a variety of advantageous properties - see Nico Christianson's ["Risk-Sensitive Online Algorithms"](https://virtual.oxfordabstracts.com/event/74044/submission/180) talk and paper.
-
-This raises the question: Is there are parameterized family of expectation objectives
-which matches the CVaR family of objectives in the same sense as above?
-More generally, is there a parameterized family of expectation objectives
-that covers the CVaR family of objectives, in the sense that
-each CVaR-optimal distribution can be guaranteed to fall within the
-new family's set of distributions?
-
-**Starting point**: In the quantile case, the marginal impact of shifting an epsilon
-of probability mass is 0 if the shift is below or above the quantile,
-and a constant if it crosses the quantile. This hints at the corresponding
-expectation objective.
-What is the marginal impact of shifting an epsilon of probability mass on CVaR?
-What is the corresponding guess of an expectation objective?
+**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
 
 ## Starting out/Not sure how to proceed {#starting-out}
 
@@ -268,18 +222,6 @@ Find their tradeoff between utilization and tail response time.
 
 ## Active projects {#active}
 
-
-### Relative arrivals/completions with infinite state spaces {#infinite-ra}
-
-**Setting**: Markovian arrivals/markovian service systems.
-
-In my [RESET and MARC](/publications/#reset) paper, the MARC technique allows us to characterize the mean response time of systems with markovian service rates, if those service rate process is finite. See also my [SNAPP talk](https://www.youtube.com/watch?v=Zr6cf4p83AA), which is a cleaner presentation of the idea and focuses on markovian arrivals.
-
-The "finite modulation chain" assumption isn't really necessary - the actual assumptions needed are much more minor. In particular, we should be able to analyze systems like the N-system or Martin's system by thinking of the non-heavily-loaded server as a modulation process on the service rate of the main server.
-
-A good starting point would an N-system where the recipient server is critically loaded, but the donor server is not.
-
-**Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
 
 
 ### Continuous MSJ {#continuous-msj}
@@ -911,4 +853,65 @@ Stochastic dominance?
 **First step:** Simulate Nudge in the M/G/k.
 
 **Future step:** Port the analysis to the M/G/k. How much transfers?
+
+### Parameterized Optimization Equivalence {#param-opt}
+
+Consider distribution optimization problems, of the form:
+
+"Over a class of distributions *C*,
+what distribution D minimizes a real-valued objective function f(D)"?
+
+For instance, the class of distributions *C* might be all stationary response time
+distributions achievable by M/G/1 scheduling policies for a given arrival rate λ
+and job size distribution S,
+and the objective function f(D) might be the mean f(D) = E[D].
+Then the optimal distribution D would be the stationary response time
+under the SRPT policy.
+
+Two important families of optimization problems are:
+
+1. **CDF Minimization**: The objective function f(D) = P(D > t) = F_D(t), for some threshold t > 0.
+
+2. **Quantile Minimization**: The objective function f(D) = max_t s.t. P(D < t) < δ = F_D^{-1}(δ), for some threshold δ, 0 < δ < 1.
+
+Note that these are both one-dimensional parameterized families of optimization functions.
+Note that these parameterized families are equivalent in the following sense:
+The set of all distributions D that appear as solutions to the CDF minimization problem for some t > 0 is the same as the set of distributions D' that appear as solutions to the Quantile minimization problem.
+
+Intuitively, this is because if D_t is the CDF minimizer for t, and F_{D_t}(t) = δ,
+then D_t is also the quantile minimizer for δ.
+
+While equivalent in this sense,
+the CDF minimization problem is easier to solve in stochastic control
+scenarios such as the scheduling situation described above.
+This is because it is easy to calculate the marginal impact of each job on the P(D > t)
+objective: 0 if the job's response time is below t, 1 above.
+It's harder to calculate the marginal impact of a job on the quantile objective
+\- it requires access to the distribution D, which the policy typically does not have.
+
+Any objective function of the form f(D) = E[g(D)], 
+has this property, as long as the function g does not depend on D.
+Instead, g should be parameterized.
+As a result, such objectives are more useful, when available.
+We'll call these objectives *expectation objectives*.
+
+There's another important one-dimensional parameterized family of optimization functions:
+
+{:start="3"}
+3. **Conditional Value at Risk (CVaR)**: The objective function f(D) = E[D \| D > F_D^{-1}(δ)], for some threshold δ, 0 < δ < 1. This is the mean value of the top δ fraction of the distribution. It has a variety of advantageous properties - see Nico Christianson's ["Risk-Sensitive Online Algorithms"](https://virtual.oxfordabstracts.com/event/74044/submission/180) talk and paper.
+
+This raises the question: Is there are parameterized family of expectation objectives
+which matches the CVaR family of objectives in the same sense as above?
+More generally, is there a parameterized family of expectation objectives
+that covers the CVaR family of objectives, in the sense that
+each CVaR-optimal distribution can be guaranteed to fall within the
+new family's set of distributions?
+
+**Starting point**: In the quantile case, the marginal impact of shifting an epsilon
+of probability mass is 0 if the shift is below or above the quantile,
+and a constant if it crosses the quantile. This hints at the corresponding
+expectation objective.
+What is the marginal impact of shifting an epsilon of probability mass on CVaR?
+What is the corresponding guess of an expectation objective?
+
 
