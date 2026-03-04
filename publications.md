@@ -20,11 +20,11 @@ permalink: /publications/
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
-### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
-Isaac Grosof and Hayriye Ayhan.
+### [Markov Modulated JSQ in Heavy Traffic Via the Poisson Equation](/assets/markov-jsq.pdf) {#markov-jsq}
+Daniela Hurtado-Lange and Izzy Grosof.
 
-[\[paper\]](/assets/multilevel-msj.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2505.04754)
+[\[paper\]](/assets/markov-jsq.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2603.00387)
 
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
 Céline Comte and Isaac Grosof.
@@ -62,6 +62,13 @@ Currently under revision.
 ## Full, Accepted Papers {#full-papers}
 
 If there is also a short version of a paper, it is listed together with the full version.
+
+### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
+Isaac Grosof and Hayriye Ayhan.
+Accepted to *Performance in the Engineering and Information Sciences* as of February 2026.
+
+[\[paper\]](/assets/multilevel-msj.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2505.04754)
 
 ### [Outperforming Multiserver SRPT at All Loads](/assets/sek-improves.pdf) {#sek}
 Izzy Grosof and Daniela Hurtado-Lange.
