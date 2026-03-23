@@ -14,7 +14,7 @@ characteristic of these two groups:
 
 1. General public: The Dunning-Kruger effect states that people who are bad at some skill
 think that they're better at that skill than
-people who good at the skill think that they are at the skill.
+people who are good at the skill think that they are at the skill.
 
 2. Researchers: The Dunning-Kruger effect states that people who are bad at some skill
 have more of a tendency to overestimate their skill
