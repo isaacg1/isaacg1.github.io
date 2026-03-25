@@ -203,6 +203,9 @@ Gender affirming for me, and it might be gender affirming for others as well!
 I go into the anatomy of the production, as well on tips for how to try learning it.
 Feel free to get in touch!
 
+[SGGO 19: Gender of the Night](/2026/03/25/sggo-19):
+The night is quiet and still and peaceful, a place for contemplation and safety from the expectations and threats of the day. It is part of my experience of gender, the safety and beauty and freedom out there.
+
 ### Trans Q&A for Trans Day of Visibility
 
 Every March, I solicit questions about being trans.
