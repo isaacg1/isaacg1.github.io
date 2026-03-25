@@ -415,46 +415,46 @@ First, the use of formatting is atrocious. There's entirely too much bolding, ra
 
 I'll now start quoting parts of the answer, with my commentary below each part.
 
-    Yes — the coordinate process ({B_n}) does form a discrete-time Markov chain.
+> Yes — the coordinate process ({B_n}) does form a discrete-time Markov chain.
 
 As I said up front, this answer is wrong, I gave a counterexample.
 Let's see what the (incorrect) argument is.
 
-    Although Bol’s rule is phrased in terms of “left / right / straight”, which depends on the direction he was traveling just before reaching the intersection, that direction is actually determined by the last two positions.
+> Although Bol’s rule is phrased in terms of “left / right / straight”, which depends on the direction he was traveling just before reaching the intersection, that direction is actually determined by the last two positions.
 
 This is enough information to determine that the correct answer is no, `{B_n}` does is not a DTMC. A DTMC must be determined by the single last position, not the last two. So this sentence contradicts the answer above.
 
-    Hence the distribution of the next position depends only on the present coordinate (B_n), not on the entire earlier history.
+> Hence the distribution of the next position depends only on the present coordinate (B_n), not on the entire earlier history.
 
 Alas, the very next sentence flips back again, now claiming that the next position only depends on the present position, not the last two.
 
-    We formalize this below.
+> We formalize this below.
 
 When you've already contradicted yourself twice in three sentences, formalizing isn't necessarily going to help.
 
-    Step 1: What must be checked
+> Step 1: What must be checked
 
-This section is an (accurate) recitation of the definition of a Markov chain. This might seem trivial, but in the Advanced Queueing Theory case it can't even manage to recite a statement from a document that it cleared was trained on, so it's not automatic.
+This section is an (accurate) recitation of the definition of a Markov chain. This might seem trivial, but in the Advanced Queueing Theory case it can't even manage to recite a statement from a document that it clearly was trained on, so it's not automatic.
 
-    None of these options sends him back along the road he just used. Hence B_{n+1} != B_{n-1} for all n >= 1.
+> None of these options sends him back along the road he just used. Hence B_{n+1} != B_{n-1} for all n >= 1.
 
 This line correctly states the no-backtracking property which was at the core of the counterexample I gave above. This could be part of a valid counterexample.
 
-    So once Bol leaves the origin, he never revisits any intersection. Therefore every visited coordinate occurs at most once in the sequence.
+> So once Bol leaves the origin, he never revisits any intersection. Therefore every visited coordinate occurs at most once in the sequence.
 
 And alas again, the answer immediately goes wrong again. The no-backtracking property stated above correctly states that Bol can't revisit an intersection after two steps. But on this line, that's transmuted into a claim that Bol can never revisit anywhere, which is just false: Bol can go around a block, turning left three times, and end up where he started.
 
-    Step 3: The incoming direction is determined by the current coordinate
+> Step 3: The incoming direction is determined by the current coordinate
 
 This section is more nonsense built off of the final line of the last section, which itself was nonsense.
 
-    Because no intersection is ever revisited, if we know the present location (B_n=(x,y)), then: there is exactly one neighbor from which Bol must have arrived, therefore his incoming direction at (B_n) is uniquely determined.
+> Because no intersection is ever revisited, if we know the present location (B_n=(x,y)), then: there is exactly one neighbor from which Bol must have arrived, therefore his incoming direction at (B_n) is uniquely determined.
 
 This reasoning does not follow. "No revisiting" is a separate property from "unique predecessor", and neither implies the other.
 
 Consider a path that, if the current direction is west, randomly chooses between straight and right, if the current direction is north randomly chooses between right and left, and if the current direction is east randomly chooses between left and straight. This path with zig-zag back and forth in the east-west direction, but always progressing towards the north. It will never revisit a position on any sample path. But it does not have unique predecessors: Each position can be visited from the west, east, or south.
 
-    Step 4: Transition probabilities depend only on (B_n)
+> Step 4: Transition probabilities depend only on (B_n)
 
 The argument now progresses with this "unique predecessor" nonsense, which is the nonsense that's necessary to justify the original answer, rather than realize it was wrong.
 
@@ -468,31 +468,31 @@ Now, into the line-by-line breakdown.
 
 Let's skip the restatement of the question. The first fresh material is:
 
-    1. A universal upper bound: (\Delta_x <= (k-1)x)
+> 1. A universal upper bound: (\Delta_x <= (k-1)x)
 
 As before, the first nontrivial statement is the crucial wrong answer, and it will spend the rest of the response justifying that crucial wrong answer.
 
-    Order the jobs (at any time (t)) by increasing remaining size: r_1 <= r_2 <= r_3 <= ...
+> Order the jobs (at any time (t)) by increasing remaining size: r_1 <= r_2 <= r_3 <= ...
 
 This notation is introduced only to be immediately discarded and never used again. It's just padding.
 
 The next non-fluff sentence is:
 
-    Hence, compared at the same time, the only way the (k)-server system can have more small-job work is that some jobs have already completed in the 1-server system but are still unfinished in the (k)-server system.
+> Hence, compared at the same time, the only way the (k)-server system can have more small-job work is that some jobs have already completed in the 1-server system but are still unfinished in the (k)-server system.
 
 This is nonsense. There are several other ways that the k-server system can have more small-job work. For one, jobs can have remaining size >x in the 1-server system and <=x in the k-server system. For another, jobs can have remaining size <=x in both systems, but a larger remaining size in the k-server system. This is just silly.
 
-    Call such jobs lagging jobs.
+> Call such jobs lagging jobs.
 
 Now we've given a name to our silly nonsense that isn't useful.
 
-    Key observation: At any time, there can be at most (k-1) lagging jobs.
+> Key observation: At any time, there can be at most (k-1) lagging jobs.
 
 This is not true. It's very straightforward to generate an unbounded number of lagging jobs. There's a good example in the worst-case paper that preceded my stochastic paper, "Approximating total flow time on parallel machines" by Leonardi and Raz, 1997. That example is also given in chapter 24.3 of the [Performance Modeling](https://www.cs.cmu.edu/~harchol/PerformanceModeling/book.html) textbook by Mor Harchol-Balter, which I use in both of my classes. These examples show that the difference in total remaining size can be spread out over an unlimited number of jobs, and all of those jobs can be what the LLM calls "lagging jobs".
 
-    Why?
+> Why?
 
-    If (k) jobs were unfinished in the (k)-system but already completed in the
+> If (k) jobs were unfinished in the (k)-system but already completed in the
     1-system, then earlier the single server must have processed at least (k)
     different jobs fully, while the (k)-system was simultaneously working on
     at most those same (k) smallest jobs. Because total service rates are equal,
@@ -505,20 +505,20 @@ In fact, in the counterexamples mentioned above, each job only arrives once the 
 
 Let's fast-forward through the problem to the sample-path construction side of things.
 
-    Construction idea: At time (0), release (k-1) jobs each of size exactly (x).
+> Construction idea: At time (0), release (k-1) jobs each of size exactly (x).
     Release one tiny job of size (\varepsilon).
 
 This sample path will never achieve a difference of (k-1)x, unless k=2. With no more jobs arriving, the difference will be maximized at time (k-1)x, with a difference of just under x.
 
-    Look just after time (x)
+> Look just after time (x)
 
 The LLM doesn't pick the time that maximizes the difference
 
-    The difference is x[(k-1)(1-1/k)-(k-2)] = x[1-(k-1)/k]
+> The difference is x[(k-1)(1-1/k)-(k-2)] = x[1-(k-1)/k]
 
 and the difference achieved is x/k (written complicatedly), far far away from the desired target, or the true upper bound.
 
-    Not yet maximal—but we can repeat this idea with
+> Not yet maximal—but we can repeat this idea with
     a longer sequence of jobs arranged so that:
     the 1-server finishes many jobs completely,
     the (k)-system still has those same jobs unfinished
@@ -526,12 +526,12 @@ and the difference achieved is x/k (written complicatedly), far far away from th
 
 Again, switching to vague, intuitive, frequently-wrong arguments.
 
-    By taking a block of (k-1) jobs all of size arbitrarily close to (x),
+> By taking a block of (k-1) jobs all of size arbitrarily close to (x),
     released sufficiently far in the past, and inserting a stream
     of slightly smaller jobs to keep SRPT priorities arranged appropriately,
     we can produce times where
 
-    those (k-1) jobs have already completed in the 1-server system,
+> those (k-1) jobs have already completed in the 1-server system,
     while in the (k)-server system they are all still unfinished
     with remaining sizes arbitrarily close to (x).
 
