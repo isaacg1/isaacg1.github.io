@@ -26,14 +26,6 @@ Daniela Hurtado-Lange and Izzy Grosof.
 [\[paper\]](/assets/markov-jsq.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2603.00387)
 
-### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
-Céline Comte and Isaac Grosof.
-
-[\[paper\]](/assets/graph-structure.pdf)
-[\[arxiv\]](https://arxiv.org/abs/2502.13890)
-[\[slides\]](/assets/graph-structure.pptx)
-
-Joint first authors.
 
 ### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
 Ziyuan Wang and Isaac Grosof.
@@ -62,6 +54,15 @@ Currently under revision.
 ## Full, Accepted Papers {#full-papers}
 
 If there is also a short version of a paper, it is listed together with the full version.
+
+### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
+Céline Comte and Isaac Grosof. Accepted to *Queueing Systems* as of April 2026.
+
+[\[paper\]](/assets/graph-structure.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2502.13890)
+[\[slides\]](/assets/graph-structure.pptx)
+
+Joint first authors.
 
 ### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
 Isaac Grosof and Hayriye Ayhan.

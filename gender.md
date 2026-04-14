@@ -66,6 +66,8 @@ I started estrogen HRT on April 18th, 2023.
 Every month since then,
 I've been taking photos in a variety of lovely locations
 to document and celebrate how my appearance changes.
+After 2.5 years, I switched from every month to every season (3 month period).
+Seasons are defined for this purpose as 4/18-7/18, 7/18-10/18, 10/18-1/18, and 1/18-4/18.
 
 * [Month 1](/2023/05/17/transition-1)
 * [Month 2](/2023/06/24/transition-2)
@@ -97,6 +99,7 @@ to document and celebrate how my appearance changes.
 * [Month 28](/2025/09/22/transition-28)
 * [Month 29](/2025/09/22/transition-29)
 * [Month 30](/2025/12/03/transition-30)
+* [Season 11](/2026/04/13/season-11)
 
 ### Some Gender Going On Podcast
 

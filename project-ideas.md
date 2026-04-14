@@ -46,6 +46,8 @@ The order within a category is roughly chronological.
 
 2. [Near-Markovian-Service (RESET) with infinite state spaces](#infinite-ra)
 
+3. [Optimal dispatching to Gittins queues](#gittins-dispatch)
+
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
@@ -61,8 +63,6 @@ The order within a category is roughly chronological.
 4. [Scheduling with epsilon prediction errors](#epsilon-error)
 
 5. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
-
-6. [Optimal dispatching to Gittins queues](#gittins-dispatch)
 
 7. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
@@ -154,6 +154,47 @@ Solved: Arrival-sided infinite process, or  exact server-side. See works with Ca
 
 **Starting point**: Compute relative completions in the aforementioned N-system, compare against simulation. Perhaps pursue with Hayriye?
 
+
+### Optimal dispatching to Gittins queues {#gittins-dispatch}
+
+See Section 8.3.3 of [my thesis](/assets/isaac-thesis.pdf).
+
+In my [guardrails](/publications/#guardrails) paper, I studied optimal dispatching with full size information.
+But what if we just have estimates? Or no info?
+A good candidate for the scheduling policy is the
+[Gittins index](https://en.wikipedia.org/wiki/Gittins_index#Queueing_theory) policy,
+and we are trying to match resource-pooled Gittins,
+which intuitively
+requires that we always spread out the jobs of each rank across all of the servers.
+
+If estimates are relatively good,
+a combination that makes sense is estimated-Gittins + PSJF with estimates.
+
+If we have no information, we might just use the greedy policy.
+For each server, calculate how long the arriving job
+will have to wait behind all other jobs at that server, in expectation.
+Also calculate how long other jobs will have to wait behind the arriving job, in expectation.
+Send to the server where the total expected added waiting time is minimized.
+We can use
+[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies)
+to do this analysis.
+
+There are also work balance considerations. Ideally, we should be balancing the amount of low-rank work at both servers, in the style of Gittins.
+This would push us towards sending a job to a server where there's not much low-rank work present, in the style of Guardrails. But as we can't differentiate jobs at time of dispatch, there's much less we can do.
+
+**First step:** Choose a size distribution for which Gittins is simple.
+A good choice is a Decreasing Hazard Rate distribution,
+such as a hyperexponential distribution,
+where Gittins is simply Foreground-Background (FB), a.k.a. Least Attained Service (LAS).
+Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
+
+**Note 1:** For the FB case, I implemented this policy for a Pareto size distribution - haven't yet found an appreciable separation between it and JSQ. More simulation needed.
+
+**Note 2:** We can achieve state-space collapse of certain quantities, such as number in queue, via the corresponding dispatching policy, such as JSQ. But we'll only be able to achieve collapse of a 1-dimensional quantity, not the every-bucket collapse of Guardrails or SEB. Is there a way to summarize the "total gap" between two queues' profile of ages? The delay-minimizing dispatch might collapse the delay at every queue, could we argue that this delay quantity is never much worse than in the single-server setting? Basically, I want to look at the FB-k argument from the SRPT-k paper, the Gittins-k argument from the Gittins-k paper, and the Gittins-k argument from the ServerFilling-SRPT paper. All of these have work quantities which are worst-case not too much worse than in the single-server system. When it comes to dispatching, perhaps even though these quantities aren't worst-case bounded in this way, they might have drift in the prefered direction?
+
+**Future steps:** Can we prove that unbalancing isn't worth it,
+if the dispatcher and the server have the same information?
+Can we prove any convergence to resource-pooled Gittins, if the distribution is simple enough?
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}
@@ -327,44 +368,6 @@ Even in scenario 1, which is much simpler, things aren't trivial by any means. I
 What's the mean response time impact of a misprediction from true size x to predicted size x', under a policy like SRPT-Checkmark or SRPT-Bounce?
 
 **Longer-term question**: Can we achieve consistency against rare large errors? Can we define a useful misprediction-distance metric such that if that metric is small, we have consistent performance?
-
-### Optimal dispatching to Gittins queues {#gittins-dispatch}
-
-See Section 8.3.3 of [my thesis](/assets/isaac-thesis.pdf).
-
-In my [guardrails](/publications/#guardrails) paper, I studied optimal dispatching with full size information.
-But what if we just have estimates? Or no info?
-A good candidate for the scheduling policy is the
-[Gittins index](https://en.wikipedia.org/wiki/Gittins_index#Queueing_theory) policy,
-and we are trying to match resource-pooled Gittins,
-which intuitively
-requires that we always spread out the jobs of each rank across all of the servers.
-
-If estimates are relatively good,
-a combination that makes sense is estimated-Gittins + PSJF with estimates.
-
-If we have no information, we might just use the greedy policy.
-For each server, calculate how long the arriving job
-will have to wait behind all other jobs at that server, in expectation.
-Also calculate how long other jobs will have to wait behind the arriving job, in expectation.
-Send to the server where the total expected added waiting time is minimized.
-We can use
-[SOAP](https://ziv.codes/publications/#soap-one-clean-analysis-of-all-age-based-scheduling-policies)
-to do this analysis.
-
-There are also work balance considerations. Ideally, we should be balancing the amount of low-rank work at both servers, in the style of Gittins.
-This would push us towards sending a job to a server where there's not much low-rank work present, in the style of Guardrails. But as we can't differentiate jobs at time of dispatch, there's much less we can do.
-
-**First step:** Choose a size distribution for which Gittins is simple.
-A good choice is a Decreasing Hazard Rate distribution,
-such as a hyperexponential distribution,
-where Gittins is simply Foreground-Background (FB), a.k.a. Least Attained Service (LAS).
-Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
-
-
-**Future steps:** Can we prove that unbalancing isn't worth it,
-if the dispatcher and the server have the same information?
-Can we prove any convergence to resource-pooled Gittins, if the distribution is simple enough?
 
 ### Optimal Nonpreemptive MSJ scheduling {#nonpreemptive-msj}
 
