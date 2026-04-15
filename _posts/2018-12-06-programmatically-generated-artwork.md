@@ -3,8 +3,16 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made twenty-three Rust programs for programmatically generating artwork in different styles.
+I have made twenty-four Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Oil Paint
+
+This art generates randow walks, which either connect to existing pixels and generate a linear gradient between those existing colors, or generate new random colors to terminate the walks. Only a single adjustable parameter!
+
+![Rainbow programmatic art. A river of light blue down the middle, with chunk feathered edges that resemble oil brushwork. Top left, light yellows and greens. Bottom right, Deep red and pink. Right is more varied, emphasizing greens, prowns, white, grey, black.](/assets/art/oil-paint.png)
+
+[Repository](https://github.com/isaacg1/walk-grad)
 
 ## Dark Tree
 
