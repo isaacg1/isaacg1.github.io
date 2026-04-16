@@ -3,7 +3,8 @@ layout: page
 published: true
 ---
 
-**[IEMS 315 Resources](resources-315)**
+[art page](2018/12/06/programmatically-generated-artwork.html),
+[art program](https://raw.githubusercontent.com/isaacg1/walk-grad/refs/heads/main/python/art.py)
 
 ![Izzy Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a white scoop-necked top with large purple flowers.](/assets/website-photo.jpg)
 
@@ -49,6 +50,8 @@ Teaching:
 Mostly undergraduate course, mostly juniors and seniors.
 Covers modeling with Markov chains and Poisson processes, and a bit of queueing theory.
 Taught fall 2024, returning fall 2025!
+**[IEMS 315 Resources](resources-315)**
+
 * [IEMS 460-1](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/460-1.html): Stochastic Processes 1.
 Mostly graduate class, mostly first-year PhD students.
 A mathematically rigorous look at Markov chains and Poisson processes, and a bit of queueing theory.
