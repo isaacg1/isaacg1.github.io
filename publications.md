@@ -26,6 +26,7 @@ Daniela Hurtado-Lange and Izzy Grosof.
 [\[paper\]](/assets/markov-jsq.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2603.00387)
 
+Currently under initial submission.
 
 ### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
 Ziyuan Wang and Isaac Grosof.
@@ -34,6 +35,8 @@ Ziyuan Wang and Isaac Grosof.
 [\[arxiv\]](https://arxiv.org/abs/2502.08804)
 
 Expands upon a [short paper](#mgk-lower-short) from MAMA 2024.
+
+Currently under initial submission.
 
 ### [Optimal Multiserver Scheduling under General Service Constraints in Heavy Traffic](/assets/seb.pdf) {#seb}
 Runhan Xie, Ziv Scully, Isaac Grosof.
@@ -49,7 +52,7 @@ Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 [\[paper\]](/assets/npg-approx.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
-Currently under revision.
+Currently under submission after major revision.
 
 ## Full, Accepted Papers {#full-papers}
 
