@@ -54,6 +54,8 @@ The order within a category is roughly chronological.
 
 2. [Starvation and Closed-system Tails](#starvation-closed)
 
+3. [Stability for M/G/k/SRPT](#srptk-stability)
+
 ### [Active projects](#active)
 
 2. [Half-batch MSJ](#half-batch-msj)
@@ -260,9 +262,39 @@ In a closed setting, this corresponds to high throughput at the cost of high tai
 **First steps:** Simulate some basic MSJ policies in a simple closed MSJ setting.
 Find their tradeoff between utilization and tail response time.
 
+### Stability for SRPT-k {#srptk-stability}
+
+(Toy problem, likely not a full research paper)
+
+In our paper [Outperforming Multiserver SRPT at All Loads](/publications/#sek),
+we had to state all of our theorems in the form
+"Whenever SRPT-k is stable, then SEK outperforms it".
+We had to write them in this way because I don't know when SRPT-k is stable,
+particularly if the job size distribution is heavy tailed,
+particularly with infinite variance.
+This is a strange thing to say, given all the papers I've written about SRPT-k,
+but most of those papers assumed that the job size distribution had finite variance,
+and low mean response time isn't incompatibility with instability,
+if the largest jobs in the system just keep getting larger and larger.
+
+To be clear, by "stability", I mean a finite mean recurrence time to the empty state,
+or equivalently positive Harris recurrence to a compact set, where compactness is measured not just in terms of number of jobs present but also in terms of the size of those jobs.
+
+As a point of comparison, in the M/G/1,
+if the job size distribution has infinite second moment,
+the stationary mean workload will be infinite,
+but the mean recurrence time from the empty state to the empty state
+is still E[S]/(1-ρ), which is finite. This holds under any scheduling policy.
+
+What about the M/G/k/SRPT? Can we guarantee it has finite mean recurrence time under
+an arbitrary job size distribution S, arrival rate λ, and number of servers k,
+given ρ<1 and E[S]<∞?
+
+My idea is to use a Lyapunov function consisting of a combination of the total work in the system and the size of the largest job in the system. If there are k or more jobs present in the system, the total work in the system falls at rate 1-ρ, and the largest job in the system grows at some rate. If there are at most k-1 jobs present in the system, the largest job in the system falls at a linear rate, while the work in the system rises. If we can bound how fast the largest job in the system increases, this should give rise to a Lyapunov function that proves stability.
+
+**Starting point:** Bound the growth rate of the largest job when the job size distribution is Pareto(α). If that's handled, all job size distributions will be doable.
 
 ## Active projects {#active}
-
 
 
 ### Continuous MSJ {#continuous-msj}
