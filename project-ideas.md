@@ -56,17 +56,19 @@ The order within a category is roughly chronological.
 
 3. [Stability for M/G/k/SRPT](#srptk-stability)
 
+4. [Buffet queueing](#buffet-queueing)
+
 ### [Active projects](#active)
 
-2. [Half-batch MSJ](#half-batch-msj)
+1. [Half-batch MSJ](#half-batch-msj)
 
-3. [Continuous MSJ](#continuous-msj)
+2. [Continuous MSJ](#continuous-msj)
 
-4. [Scheduling with epsilon prediction errors](#epsilon-error)
+3. [Scheduling with epsilon prediction errors](#epsilon-error)
 
-5. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
+4. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
 
-7. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
+5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
 ### [Archive: Submitted or Completed](#archive-done)
 
@@ -293,6 +295,20 @@ given ρ<1 and E[S]<∞?
 My idea is to use a Lyapunov function consisting of a combination of the total work in the system and the size of the largest job in the system. If there are k or more jobs present in the system, the total work in the system falls at rate 1-ρ, and the largest job in the system grows at some rate. If there are at most k-1 jobs present in the system, the largest job in the system falls at a linear rate, while the work in the system rises. If we can bound how fast the largest job in the system increases, this should give rise to a Lyapunov function that proves stability.
 
 **Starting point:** Bound the growth rate of the largest job when the job size distribution is Pareto(α). If that's handled, all job size distributions will be doable.
+
+### Buffet queueing {#buffet-queueing}
+
+(Toy problem, likely not a full research paper)
+
+Consider the following queueing scenario: There's a line to get food from a buffet. There are n food stations in the buffet, and each person wants food from each station with probability p. Each person walks along the food line until they either reach a station they want to take food from, which takes Exp(1) time, or the following station is occupied, in which case they wait at the preceeding station for the person ahead of them to complete, blocking the station at which they are waiting in the process. Walking from station to station takes no time.
+
+**Question:** In the n to infinity limit, what is the boundary of the stability region? In other words, if the queue is saturated, what is the throughput?
+
+Generalizations: What if it takes a backlog of c people waiting to block the next station? The above problem is the c=1 case. What if there are parallel buffet lines down both sides of the buffet, but only one person can take from each station at a time, causing cross-line blocking?
+
+**Starting point:** Simulate. Does it actually converge to a positive throughput as n goes to infinity?
+
+**Next step:** The system can be described as a sequence of clumps and gaps: One person taking food, then a clumps of people waiting, then a gap to the next person taking food. Presumably these clump and gap lengths should be i.i.d., so find a steady-state? Maybe geometric?
 
 ## Active projects {#active}
 
