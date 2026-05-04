@@ -26,9 +26,10 @@ joint advised with
 * [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
 ([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)).
 
-I am advising an excellent undergraduate researcher:
+I am advising two excellent undergraduate researchers:
 
 * Bryan Yuen ([Linkedin](https://www.linkedin.com/in/bryanyuen04/))
+* Sianna Perez ([Linkedin](https://www.linkedin.com/in/sianna-perez-0a92482b6))
 
 My superb past advisees include:
 
