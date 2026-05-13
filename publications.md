@@ -69,7 +69,7 @@ Joint first authors.
 
 ### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
 Isaac Grosof and Hayriye Ayhan.
-Accepted to *Performance in the Engineering and Information Sciences* as of February 2026.
+*Performance in the Engineering and Information Sciences*, March 2026.
 
 [\[paper\]](/assets/multilevel-msj.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2505.04754)
@@ -84,14 +84,14 @@ Accepted to *ACM SIGMETRICS* as of October 2025.
 
 ### [Improving Nonpreemptive Multiserver Job Scheduling with Quickswap](/assets/quickswap.pdf)
 Zhongrui Chen, Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Marsan, Benjamin Berg, Izzy Grosof.
-Accepted to *IFIP Performance* as of August 2025.
+*IFIP Performance*, March 2026.
 
 [\[paper\]](/assets/quickswap.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2509.01893)
 
 ### [Convergence for Natural Policy Gradient for a Family of Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
 Isaac Grosof, Siva Theja Maguluri, R. Srikant.
-Accepted to *Queueing Systems* as of July 2025.
+*Queueing Systems*, August 2025.
 
 [\[paper\]](/assets/npg.pdf)
 [\[medium-old paper\]](/assets/medium-old-npg.pdf)
@@ -246,12 +246,26 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 
 ## Short Papers
 
+### [Product Forms in Closed Order Independent Queues](/assets/closed-product-form-mama.pdf) {#closed-product-form-short}
+Ziyuan Wang, Izzy Grosof.
+Accepted to the MAMA workshop at SIGMETRICS 2026.
+
+[\[paper\]](/assets/closed-product-form-mama.pdf)
+
+### [Non-preemptive Datacenter Scheduling via Scaling Cycles](/assets/scaling-cycles-short.pdf) {#scaling-cycles-short}
+Zhongrui Chen, Heyuan Yao, Izzy Grosof, Benjamin Berg
+Accepted to the MAMA workshop at SIGMETRICS 2026.
+
+[\[paper\]](/assets/scaling-cycles-short.pdf)
+
 ### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower-short}
 Isaac Grosof, Ziyuan Wang.
-Accepted to the MAMA workshop at SIGMETRICS 2024.
+MAMA workshop at SIGMETRICS 2024.
 
 [\[paper\]](/assets/mgk-lower-short.pdf)
 [\[talk\]](/talks/#mgk-lower)
+
+Parts of this paper ended up in two subsequent full papers: [Outperforming Multiserver SRPT at All Loads](#sek) and [Novel Lower Bounds on M/G/k Scheduling](#mgk-lower)
 
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf) {#product-form-msj}
 Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
@@ -355,5 +369,3 @@ Nonetheless, the paper has been cited for its actual content
 [here](https://mathoverflow.net/a/325237)
 and [here](https://hsm.stackexchange.com/a/11835/10618),
 so I decided to put it on my website.
-
-
