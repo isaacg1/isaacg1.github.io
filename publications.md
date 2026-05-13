@@ -69,7 +69,7 @@ Joint first authors.
 
 ### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
 Isaac Grosof and Hayriye Ayhan.
-*Performance in the Engineering and Information Sciences*, March 2026.
+*Probabilty in the Engineering and Information Sciences*, March 2026.
 
 [\[paper\]](/assets/multilevel-msj.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2505.04754)
