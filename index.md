@@ -24,7 +24,7 @@ I am advising three wonderful PhD students:
 joint advised with
 [Seyed Iravani](http://users.iems.northwestern.edu/~iravani/).
 * [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
-([Linkedin](https://www.linkedin.com/in/heyuan-yao-96695b208)).
+([Personal Website](https://heyuan-yao.github.io)).
 
 I am advising two excellent undergraduate researchers:
 

@@ -20,6 +20,11 @@ permalink: /publications/
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
+### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf)
+Heyuan Yao, Willow Kowalik, and Izzy Grosof.
+
+[\[paper\]](/assets/continuous-mrj.pdf)
+
 ### [Markov Modulated JSQ in Heavy Traffic Via the Poisson Equation](/assets/markov-jsq.pdf) {#markov-jsq}
 Daniela Hurtado-Lange and Izzy Grosof.
 
