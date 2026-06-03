@@ -48,6 +48,8 @@ The order within a category is roughly chronological.
 
 3. [Optimal dispatching to Gittins queues](#gittins-dispatch)
 
+4. [Continuous-first scheduling in the continuous MSJ](#continuous-first)
+
 ### [Starting out/Not sure how to proceed](#starting-out)
 
 1. [Scheduling in the low-load limit](#low-load)
@@ -62,13 +64,11 @@ The order within a category is roughly chronological.
 
 1. [Half-batch MSJ](#half-batch-msj)
 
-2. [Continuous MSJ](#continuous-msj)
+2. [Scheduling with epsilon prediction errors](#epsilon-error)
 
-3. [Scheduling with epsilon prediction errors](#epsilon-error)
+3. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
 
-4. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
-
-5. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
+4. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
 ### [Archive: Submitted or Completed](#archive-done)
 
@@ -81,6 +81,8 @@ The order within a category is roughly chronological.
 4. [Known size dispatching to FCFS queues](#disp-fcfs)
 
 5. [Beating SRPT-k](#beating-srptk)
+
+6. [Continuous MSJ](#continuous-msj)
 
 ### [Archive: No longer interested](#archive-nope)
 
@@ -199,6 +201,45 @@ Try the above greedy policy. Compare against e.g. Join the Shortest Queue (JSQ).
 **Future steps:** Can we prove that unbalancing isn't worth it,
 if the dispatcher and the server have the same information?
 Can we prove any convergence to resource-pooled Gittins, if the distribution is simple enough?
+
+### Continuous-first scheduling in the contintinuous MSJ {#continuous-first}
+
+In our recent submission on the [continuous MSJ model](/publications/#continuous-mrj),
+we employed a discretized MaxWeight approach. This resulted in a discrete parameter, the number of discretization buckets to divide the space into.
+Discretized MaxWeight can be seen as selecting the service option which maximizes the negative drift of the following function:
+
+    \sum_i q_i^2
+
+where i ranges over the set of buckets, and q_i is the number of jobs present in that bucket.
+Alternatively, we can write this quantity as a double sum over all jobs:
+
+    \sum_{j, j'} 1{floor(k j) = floor(k j')}
+
+Here k is the number of buckets. The floor function results in the discretization.
+
+The effectiveness of this discretization policy suggests optimizing other pairwise functions over the resource requirements of the job pairs j, j'.
+For example, we could use an indicator function of the distance between the two jobs:
+
+    \sum_{j, j'} 1{|j - j'| < x}
+
+Here x is a similarity threshold, akin to 1/k.
+
+Or we could use a more continuous similarity function, such as
+
+    \sum_{j, j'} x/(x+|j-j'|)
+
+**First step:** Simulate. This might be pretty inefficient to simulate, because we'd have to generate all possible service options,
+but for a relatively simple setting, it should be fairly straightforward, if potentially slow to run.
+We'd calculate a score for completing each job, and then it's just a basic knapsack problem.
+
+**Next step:** Directly evaluate these optimization functions for suitability as a Lyapunov function,
+under the usual assumption of the existence of a dominating service measure.
+Either show they work, or find a family of counterexamples with arbitrary numbers of jobs present that have positive drift.
+Modify the functions accordingly.
+
+**Next step:** If we have trouble finding things that work, let's start at the discretized option and find a small tweak that maintains
+throughput optimality. Ex: General bucket sizing?
+
 ## Starting out/Not sure how to proceed {#starting-out}
 
 ### Scheduling in the low-load limit {#low-load}
@@ -312,51 +353,6 @@ Generalizations: What if it takes a backlog of c people waiting to block the nex
 
 ## Active projects {#active}
 
-
-### Continuous MSJ {#continuous-msj}
-
-Existing theoretical multiserver-job research has overwhelmingly focused on the case of a discrete, finite set of resource requirements (e.g. numbers of servers). Moreover, policies make heavy use of this fact, often selecting a job to serve based on the number of identical jobs that are present in the system (e.g. MaxWeight). To learn more, see my [MSR MAMA paper](/publications/#simple-mrj) with Ben and Zhongrui.
-In the real world, it's common for resource requirements to be real-valued (e.g. 0.35 CPUs), and for no two jobs to be completely identical.
-
-**Model:** A natural model to capture this is: The total capacity of the system is 1. Jobs have a server need which is in the interval (0, 1]. Any set of jobs with total server need at most 1 can be served simultaneously. Jobs arrive according to a Poisson process with fixed rate λ, and have server need and duration sampled i.i.d. from some joint distribution.
-
-**Goal:** A natural goal is throughput optimality -- stabilizing the system whenever it is possible to do so.
-
-**Example setting:** A concrete example setting is: Server needs are Uniform(0, 1), and durations are Exp(1), independent of server need. This setting should be stabilizable for any λ<2.
-
-**Policies:** One way to construct a policy which is definitely stable is to discretize the server needs by rounding them up to the nearest multiple of 1/n, for some large integer n chosen as a function of the system load. Then, we apply a standard policy like MaxWeight or the [MSR policies](/publications/#simple-mrj) on the discretized system.
-
-This is fine as far as it goes, but these policies have poor performance as a function of n, the discretization parameter. It would be nice to have a throughput-optimal policy that isn't discretization-based.
-
-One could empirically evaluate the performance of existing non-identical-job-based policies, such as best-fit backfilling (most servers first) and first-fit backfilling.
-
-However, a policy worthy of further investigation is the infinite-n limit of the infinite-switching version of the MSR policy. MaxWeight doesn't have a natural infinite-n limit, it relies on having many jobs of the same class to function. MSR can be adapted to a continuous policy. For instance, with uniform server need, one version of the policy would be:
-
-* For each threshold x in (0, 0.5], find the job with largest server need below x, and with largest server need below 1-x.
-
-* For each interval of thresholds of width dx, serve that pair of jobs at rate 2dx.
-
-Concretely, if the jobs in the system are of sizes {0.21, 0.41, 0.61, 0.81},
-this policy would serve:
-
-* [0.81] at rate 0.38 (thresholds [0, 0.19]),
-
-* [0.61] at rate 0.04 (thresholds (0.19, 0.21)),
-
-* [0.61, 0.21] at rate 0.36 (thresholds [0.21, 0.39]),
-
-* [0.41, 0.21] at rate 0.22 (thresholds (0.39, 0.5)).
-
-Note that this policy is straightforwardly suboptimal. It would be better to serve [0.61, 0.21] rather than ever serving [0.61], for instance.
-Nonetheless,
-I believe that this policy would be throughput optimal via a simple discretization proof,
-along the same lines as the discretized MSR policy, but without requiring actual discretization.
-
-**Project:** Define the limit-MSJ policy concretely, and prove that it is throughput optimal,
-likely using a discretization proof.
-
-**Further direction:** Define a strictly-better version of the policy which doesn't do silly things like idle servers, and show the result carries over.
-
 ## Half-Batch MSJ {#half-batch-msj}
 
 In large-scale computing systems, such as high-performance computing clusters, there are often two types of jobs:
@@ -450,6 +446,52 @@ The response time of the higher-priority class will be determined by the cycle l
 while the response time of the lower-priority class will be determined by the amount of wasted capacity pushing the system closer to the capacity boundary.
 Can we (approximately) determine how long these cycles should optimally be, given the switching overhead?
 ## Archived: Submitted or Completed {#archive-done}
+
+### Continuous MSJ {#continuous-msj}
+
+See our [submitted paper](/publications/#continuous-mrj).
+
+Existing theoretical multiserver-job research has overwhelmingly focused on the case of a discrete, finite set of resource requirements (e.g. numbers of servers). Moreover, policies make heavy use of this fact, often selecting a job to serve based on the number of identical jobs that are present in the system (e.g. MaxWeight). To learn more, see my [MSR MAMA paper](/publications/#simple-mrj) with Ben and Zhongrui.
+In the real world, it's common for resource requirements to be real-valued (e.g. 0.35 CPUs), and for no two jobs to be completely identical.
+
+**Model:** A natural model to capture this is: The total capacity of the system is 1. Jobs have a server need which is in the interval (0, 1]. Any set of jobs with total server need at most 1 can be served simultaneously. Jobs arrive according to a Poisson process with fixed rate λ, and have server need and duration sampled i.i.d. from some joint distribution.
+
+**Goal:** A natural goal is throughput optimality -- stabilizing the system whenever it is possible to do so.
+
+**Example setting:** A concrete example setting is: Server needs are Uniform(0, 1), and durations are Exp(1), independent of server need. This setting should be stabilizable for any λ<2.
+
+**Policies:** One way to construct a policy which is definitely stable is to discretize the server needs by rounding them up to the nearest multiple of 1/n, for some large integer n chosen as a function of the system load. Then, we apply a standard policy like MaxWeight or the [MSR policies](/publications/#simple-mrj) on the discretized system.
+
+This is fine as far as it goes, but these policies have poor performance as a function of n, the discretization parameter. It would be nice to have a throughput-optimal policy that isn't discretization-based.
+
+One could empirically evaluate the performance of existing non-identical-job-based policies, such as best-fit backfilling (most servers first) and first-fit backfilling.
+
+However, a policy worthy of further investigation is the infinite-n limit of the infinite-switching version of the MSR policy. MaxWeight doesn't have a natural infinite-n limit, it relies on having many jobs of the same class to function. MSR can be adapted to a continuous policy. For instance, with uniform server need, one version of the policy would be:
+
+* For each threshold x in (0, 0.5], find the job with largest server need below x, and with largest server need below 1-x.
+
+* For each interval of thresholds of width dx, serve that pair of jobs at rate 2dx.
+
+Concretely, if the jobs in the system are of sizes {0.21, 0.41, 0.61, 0.81},
+this policy would serve:
+
+* [0.81] at rate 0.38 (thresholds [0, 0.19]),
+
+* [0.61] at rate 0.04 (thresholds (0.19, 0.21)),
+
+* [0.61, 0.21] at rate 0.36 (thresholds [0.21, 0.39]),
+
+* [0.41, 0.21] at rate 0.22 (thresholds (0.39, 0.5)).
+
+Note that this policy is straightforwardly suboptimal. It would be better to serve [0.61, 0.21] rather than ever serving [0.61], for instance.
+Nonetheless,
+I believe that this policy would be throughput optimal via a simple discretization proof,
+along the same lines as the discretized MSR policy, but without requiring actual discretization.
+
+**Project:** Define the limit-MSJ policy concretely, and prove that it is throughput optimal,
+likely using a discretization proof.
+
+**Further direction:** Define a strictly-better version of the policy which doesn't do silly things like idle servers, and show the result carries over.
 
 ### M/G/k response time lower bounds (known size) {#mgk-lower}
 

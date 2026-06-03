@@ -20,7 +20,7 @@ permalink: /publications/
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
-### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf)
+### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf) {#continuous-mrj}
 Heyuan Yao, Willow Kowalik, and Izzy Grosof.
 
 [\[paper\]](/assets/continuous-mrj.pdf)
