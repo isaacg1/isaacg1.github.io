@@ -3,8 +3,7 @@ layout: page
 published: true
 ---
 
-[art page](2018/12/06/programmatically-generated-artwork.html),
-[art program](https://raw.githubusercontent.com/isaacg1/walk-grad/refs/heads/main/python/art.py)
+[art page](2018/12/06/programmatically-generated-artwork.html)
 
 ![Izzy Grosof's portrait - A nonbinary person with their head and shoulders visible, wearing a white scoop-necked top with large purple flowers.](/assets/website-photo.jpg)
 
@@ -28,11 +27,12 @@ joint advised with
 
 I am advising two excellent undergraduate researchers:
 
-* Bryan Yuen ([Linkedin](https://www.linkedin.com/in/bryanyuen04/))
 * Sianna Perez ([Linkedin](https://www.linkedin.com/in/sianna-perez-0a92482b6))
+* Daniela Chang Kim ([Linkedin](https://www.linkedin.com/in/danielaychang))
 
 My superb past advisees include:
 
+* Bryan Yuen (Undergrad, Fall 2025-Spring 2026) ([Linkedin](https://www.linkedin.com/in/bryanyuen04/))
 * Yanis Zain (Undergrad, Summer 2025)
 * Willow Kowalik (Undergrad, Spring 2025)
 
@@ -50,18 +50,16 @@ Teaching:
 * [IEMS 315](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/315.html): Stochastic Models.
 Mostly undergraduate course, mostly juniors and seniors.
 Covers modeling with Markov chains and Poisson processes, and a bit of queueing theory.
-Taught fall 2024, returning fall 2025!
+Taught fall 2024 and fall 2025, returning spring 2027!
 **[IEMS 315 Resources](resources-315)**
-
 * [IEMS 460-1](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/460-1.html): Stochastic Processes 1.
 Mostly graduate class, mostly first-year PhD students.
 A mathematically rigorous look at Markov chains and Poisson processes, and a bit of queueing theory.
-Taught winter 2025, returning winter 2026!
+Taught winter 2025 and winter 2026, returning winter 2027!
 * [IEMS 464](https://www.mccormick.northwestern.edu/industrial/academics/courses/descriptions/keep/464.html): Advanced Queueing Theory.
 Mostly graduate class, mix of years of PhD students.
 Exploring a variety of topics in queueing theory, from classical results to recent developments!
-More details to come as I decide what to put in the class.
-Coming winter 2026!
+Taught winter 2026!
 
 
 I have received

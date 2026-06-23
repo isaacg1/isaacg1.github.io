@@ -22,42 +22,45 @@ permalink: /publications/
 
 ### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf) {#continuous-mrj}
 Heyuan Yao, Willow Kowalik, and Izzy Grosof.
+Currently under initial submission.
 
 [\[paper\]](/assets/continuous-mrj.pdf)
+[\[arxiv\]](https://arxiv.org/abs/2605.21715)
+
 
 ### [Markov Modulated JSQ in Heavy Traffic Via the Poisson Equation](/assets/markov-jsq.pdf) {#markov-jsq}
 Daniela Hurtado-Lange and Izzy Grosof.
+Currently under initial submission.
 
 [\[paper\]](/assets/markov-jsq.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2603.00387)
 
-Currently under initial submission.
 
 ### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
 Ziyuan Wang and Isaac Grosof.
+Currently under initial submission.
 
 [\[paper\]](/assets/mgk-lower.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2502.08804)
 
 Expands upon a [short paper](#mgk-lower-short) from MAMA 2024.
 
-Currently under initial submission.
 
 ### [Optimal Multiserver Scheduling under General Service Constraints in Heavy Traffic](/assets/seb.pdf) {#seb}
 Runhan Xie, Ziv Scully, Isaac Grosof.
+Currently under revision.
 
 [\[paper\]](/assets/seb.pdf)
 
-Currently under revision.
 
 
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
 Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+Currently under submission after major revision.
 
 [\[paper\]](/assets/npg-approx.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2405.20467)
 
-Currently under submission after major revision.
 
 ## Full, Accepted Papers {#full-papers}
 
@@ -82,6 +85,7 @@ Isaac Grosof and Hayriye Ayhan.
 ### [Outperforming Multiserver SRPT at All Loads](/assets/sek-improves.pdf) {#sek}
 Izzy Grosof and Daniela Hurtado-Lange.
 Accepted to *ACM SIGMETRICS* as of October 2025.
+Currently under submission to a journal, pending minor revision.
 
 [\[paper\]](/assets/sek-improves.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2510.25963)
