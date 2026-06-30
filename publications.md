@@ -38,7 +38,7 @@ Currently under initial submission.
 
 ### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
 Ziyuan Wang and Isaac Grosof.
-Currently under initial submission.
+Currently undergoing major revision.
 
 [\[paper\]](/assets/mgk-lower.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2502.08804)
@@ -85,7 +85,7 @@ Isaac Grosof and Hayriye Ayhan.
 ### [Outperforming Multiserver SRPT at All Loads](/assets/sek-improves.pdf) {#sek}
 Izzy Grosof and Daniela Hurtado-Lange.
 Accepted to *ACM SIGMETRICS* as of October 2025.
-Currently under submission to a journal, pending minor revision.
+Currently under submission to a journal, undergoing minor revision.
 
 [\[paper\]](/assets/sek-improves.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2510.25963)
