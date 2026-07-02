@@ -262,7 +262,7 @@ Accepted to the MAMA workshop at SIGMETRICS 2026.
 [\[paper\]](/assets/closed-product-form-mama.pdf)
 
 ### [Non-preemptive Datacenter Scheduling via Scaling Cycles](/assets/scaling-cycles-short.pdf) {#scaling-cycles-short}
-Zhongrui Chen, Heyuan Yao, Izzy Grosof, Benjamin Berg
+Zhongrui Chen, Heyuan Yao, Izzy Grosof, Benjamin Berg.
 Accepted to the MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/scaling-cycles-short.pdf)
