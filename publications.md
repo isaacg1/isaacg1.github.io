@@ -18,10 +18,18 @@ permalink: /publications/
 
 [Notes](#notes)
 
+Students I advise are **bolded**.
+
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
+### [Pareto-Optimal Scheduling in the Half-batch Multiserver-job Model](https://arxiv.org/abs/2607.08999) {#half-batch}
+**Ziyuan Wang** and Izzy Grosof.
+Currently under initial submission.
+
+[\[arxiv\]](https://arxiv.org/abs/2607.08999)
+
 ### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf) {#continuous-mrj}
-Heyuan Yao, Willow Kowalik, and Izzy Grosof.
+**Heyuan Yao**, **Willow Kowalik**, and Izzy Grosof.
 Currently under initial submission.
 
 [\[paper\]](/assets/continuous-mrj.pdf)
@@ -37,7 +45,7 @@ Currently under initial submission.
 
 
 ### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
-Ziyuan Wang and Isaac Grosof.
+**Ziyuan Wang** and Isaac Grosof.
 Currently undergoing major revision.
 
 [\[paper\]](/assets/mgk-lower.pdf)
@@ -256,19 +264,19 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 ## Short Papers
 
 ### [Product Forms in Closed Order Independent Queues](/assets/closed-product-form-mama.pdf) {#closed-product-form-short}
-Ziyuan Wang, Izzy Grosof.
+**Ziyuan Wang**, Izzy Grosof.
 Accepted to the MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/closed-product-form-mama.pdf)
 
 ### [Non-preemptive Datacenter Scheduling via Scaling Cycles](/assets/scaling-cycles-short.pdf) {#scaling-cycles-short}
-Zhongrui Chen, Heyuan Yao, Izzy Grosof, Benjamin Berg.
+Zhongrui Chen, **Heyuan Yao**, Izzy Grosof, Benjamin Berg.
 Accepted to the MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/scaling-cycles-short.pdf)
 
 ### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower-short}
-Isaac Grosof, Ziyuan Wang.
+Isaac Grosof, **Ziyuan Wang**.
 MAMA workshop at SIGMETRICS 2024.
 
 [\[paper\]](/assets/mgk-lower-short.pdf)
