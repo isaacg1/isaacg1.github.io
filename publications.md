@@ -22,12 +22,6 @@ Students I advise are **bolded**.
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
-### [Pareto-Optimal Scheduling in the Half-batch Multiserver-job Model](https://arxiv.org/abs/2607.08999) {#half-batch}
-**Ziyuan Wang** and Izzy Grosof.
-Currently under initial submission.
-
-[\[arxiv\]](https://arxiv.org/abs/2607.08999)
-
 ### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf) {#continuous-mrj}
 **Heyuan Yao**, **Willow Kowalik**, and Izzy Grosof.
 Currently under initial submission.
