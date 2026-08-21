@@ -25,10 +25,11 @@ joint advised with
 * [Heyuan Yao](https://www.mccormick.northwestern.edu/industrial/people/graduate-students/#heyuan-yao)
 ([Personal Website](https://heyuan-yao.github.io)).
 
-I am advising two excellent undergraduate researchers:
+I am advising three excellent undergraduate researchers:
 
 * Sianna Perez ([Linkedin](https://www.linkedin.com/in/sianna-perez-0a92482b6))
 * Daniela Chang Kim ([Linkedin](https://www.linkedin.com/in/danielaychang))
+* Jooyoung Oh ([Github](https://github.com/joodevs))
 
 My superb past advisees include:
 

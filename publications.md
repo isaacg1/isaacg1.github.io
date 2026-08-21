@@ -32,7 +32,7 @@ Submitted, awaiting initial review.
 
 ### [Markov Modulated JSQ in Heavy Traffic Via the Poisson Equation](/assets/markov-jsq.pdf) {#markov-jsq}
 Daniela Hurtado-Lange and Izzy Grosof.
-Submitted, awaiting initial review.
+Has received a major revision, revising for resubmission.
 
 [\[paper\]](/assets/markov-jsq.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2603.00387)
@@ -67,6 +67,12 @@ Has received a major revision, has been resubmitted.
 ## Full, Accepted Papers {#full-papers}
 
 If there is also a short version of a paper, it is listed together with the full version.
+
+### [Pareto-Optimal Scheduling in the Half-batch Multiserver-job Model](https://arxiv.org/abs/2607.08999) {#half-batch}
+**Ziyuan Wang** and Izzy Grosof.
+Accepted to *IFIP Performance* as of July 2026.
+
+[\[arxiv\]](https://arxiv.org/abs/2607.08999)
 
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
 Céline Comte and Isaac Grosof. Accepted to *Queueing Systems* as of April 2026.
