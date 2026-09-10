@@ -3,7 +3,7 @@ published: true
 title: 'Refining and Identifying the Void'
 layout: post
 ---
-In [my previous essay](2026/07/15/adhd-and-avoidance), I named the void.
+In [my previous essay](/2026/07/15/adhd-and-avoidance), I named the void.
 In this piece, I will refine the concept,
 and walk through a system that I'm building to identify people who have a void problem,
 like me,
