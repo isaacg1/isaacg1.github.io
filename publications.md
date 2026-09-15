@@ -19,11 +19,12 @@ permalink: /publications/
 [Notes](#notes)
 
 Students I advise are **bolded**.
+First author indicated with <sup>\*</sup>, primary advisor/supervisor indicated with <sup>†</sup>.
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
 
 ### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf) {#continuous-mrj}
-**Heyuan Yao**, **Willow Kowalik**, and Izzy Grosof.
+**Heyuan Yao**,<sup>\*</sup> **Willow Kowalik**, and Izzy Grosof.<sup>†</sup>
 Submitted, awaiting initial review.
 
 [\[paper\]](/assets/continuous-mrj.pdf)
@@ -31,7 +32,7 @@ Submitted, awaiting initial review.
 
 
 ### [Markov Modulated JSQ in Heavy Traffic Via the Poisson Equation](/assets/markov-jsq.pdf) {#markov-jsq}
-Daniela Hurtado-Lange and Izzy Grosof.
+Daniela Hurtado-Lange<sup>\*</sup> and Izzy Grosof.
 Has received a major revision, revising for resubmission.
 
 [\[paper\]](/assets/markov-jsq.pdf)
@@ -39,7 +40,7 @@ Has received a major revision, revising for resubmission.
 
 
 ### [Novel Lower Bounds on M/G/k Scheduling](/assets/mgk-lower.pdf) {#mgk-lower}
-**Ziyuan Wang** and Isaac Grosof.
+**Ziyuan Wang**<sup>\*</sup> and Isaac Grosof.<sup>†</sup>
 Has received a major revision, revising for resubmission.
 
 [\[paper\]](/assets/mgk-lower.pdf)
@@ -48,16 +49,16 @@ Has received a major revision, revising for resubmission.
 Expands upon a [short paper](#mgk-lower-short) from MAMA 2024.
 
 
-### [Optimal Multiserver Scheduling under General Service Constraints in Heavy Traffic](/assets/seb.pdf) {#seb}
-Runhan Xie, Ziv Scully, Isaac Grosof.
-Preparing for submission.
+### [Optimal Scheduling in Generalized Switch in Heavy Traffic](/assets/seb.pdf) {#seb}
+Runhan Xie,<sup>\*</sup> Ziv Scully, Rhonda Righter, Isaac Grosof.<sup>†</sup>
+Submitted, awaiting initial review.
 
 [\[paper\]](/assets/seb.pdf)
 
 
 
 ### [Performance of NPG in Countable State-Space Average-Cost RL](/assets/npg-approx.pdf)
-Yashaswini Murthy, Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+Yashaswini Murthy,<sup>\*</sup> Isaac Grosof, Siva Theja Maguluri, R. Srikant.<sup>†</sup>
 Has received a major revision, has been resubmitted.
 
 [\[paper\]](/assets/npg-approx.pdf)
@@ -69,13 +70,13 @@ Has received a major revision, has been resubmitted.
 If there is also a short version of a paper, it is listed together with the full version.
 
 ### [Pareto-Optimal Scheduling in the Half-batch Multiserver-job Model](https://arxiv.org/abs/2607.08999) {#half-batch}
-**Ziyuan Wang** and Izzy Grosof.
+**Ziyuan Wang**<sup>\*</sup> and Izzy Grosof.<sup>†</sup>
 Accepted to *IFIP Performance* as of July 2026.
 
 [\[arxiv\]](https://arxiv.org/abs/2607.08999)
 
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
-Céline Comte and Isaac Grosof. Accepted to *Queueing Systems* as of April 2026.
+Céline Comte<sup>\*</sup> and Isaac Grosof.<sup>\*</sup> Accepted to *Queueing Systems* as of April 2026.
 
 [\[paper\]](/assets/graph-structure.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2502.13890)
@@ -84,30 +85,30 @@ Céline Comte and Isaac Grosof. Accepted to *Queueing Systems* as of April 2026.
 Joint first authors.
 
 ### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel-msj}
-Isaac Grosof and Hayriye Ayhan.
+Isaac Grosof<sup>\*</sup> and Hayriye Ayhan.
 *Probabilty in the Engineering and Information Sciences*, March 2026.
 
 [\[paper\]](/assets/multilevel-msj.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2505.04754)
 
 ### [Outperforming Multiserver SRPT at All Loads](/assets/sek-improves.pdf) {#sek}
-Izzy Grosof and Daniela Hurtado-Lange.
+Izzy Grosof<sup>\*</sup> and Daniela Hurtado-Lange.
 Accepted to *ACM SIGMETRICS* as of October 2025.
-Fast-track-submitted to a journal, has received a minor revision, revising for resubmission.
+Fast-track-submitted to a journal, has received a minor revision, has been resubmitted.
 
 [\[paper\]](/assets/sek-improves.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2510.25963)
 [\[talks\]](/talks/#sek)
 
 ### [Improving Nonpreemptive Multiserver Job Scheduling with Quickswap](/assets/quickswap.pdf)
-Zhongrui Chen, Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Marsan, Benjamin Berg, Izzy Grosof.
+Zhongrui Chen,<sup>\*</sup> Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Marsan, Benjamin Berg, Izzy Grosof.<sup>†</sup>
 *IFIP Performance*, March 2026.
 
 [\[paper\]](/assets/quickswap.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2509.01893)
 
 ### [Convergence for Natural Policy Gradient for a Family of Infinite-State Queueing MDPs](/assets/npg.pdf) {#npg}
-Isaac Grosof, Siva Theja Maguluri, R. Srikant.
+Isaac Grosof,<sup>\*</sup> Siva Theja Maguluri,<sup>†</sup> R. Srikant.<sup>†</sup>
 *Queueing Systems*, August 2025.
 
 [\[paper\]](/assets/npg.pdf)
@@ -118,7 +119,7 @@ Isaac Grosof, Siva Theja Maguluri, R. Srikant.
 
 
 ### [Improving Multiresource Job Scheduling with Markovian Service Rate Policies](/assets/msr.pdf) {#simple-mrj}
-Zhongrui Chen, Isaac Grosof, Ben Berg.
+Zhongrui Chen,<sup>\*</sup> Isaac Grosof, Ben Berg.<sup>†</sup>
 *ACM SIGMETRICS*, June 2025.
 
 [\[paper\]](/assets/msr.pdf)
@@ -126,7 +127,7 @@ Zhongrui Chen, Isaac Grosof, Ben Berg.
 [\[short paper\]](/assets/simple-multiresource.pdf)
 
 ### [Heavy-Traffic Optimal Size- and State-Aware Dispatching](/assets/card.pdf) {#card}
-Runhan Xie, Isaac Grosof, Ziv Scully.
+Runhan Xie,<sup>\*</sup> Isaac Grosof, Ziv Scully.<sup>†</sup>
 *ACM SIGMETRICS / IFIP Performance*, June 2024.
 
 [\[paper\]](/assets/card.pdf)
@@ -134,7 +135,7 @@ Runhan Xie, Isaac Grosof, Ziv Scully.
 [\[short paper\]]()
 
 ### [The RESET and MARC Techniques, with Application to Multiserver-Job Analysis](/assets/reset-and-marc.pdf) {#reset}
-Isaac Grosof, Yige Hong, Mor Harchol-Balter, Alan Scheller-Wolf.
+Isaac Grosof,<sup>\*</sup> Yige Hong, Mor Harchol-Balter,<sup>†</sup> Alan Scheller-Wolf.
 *IFIP Performance*, November 2023.
 
 An in-progress version appeared as [The RESET Technique for Multiserver-job Analysis](/assets/reset-src.pdf), 
@@ -155,7 +156,7 @@ See the [MAMS technical report](/assets/mams.pdf)'s literature review for detail
 The RESET section of this paper is novel, in contrast.
 
 ### [Optimal Scheduling in the Multiserver-job Model under Heavy Traffic](/assets/msj-srpt.pdf) {#sf-srpt}
-Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
+Isaac Grosof,<sup>\*</sup> Ziv Scully, Mor Harchol-Balter,<sup>†</sup> Alan Scheller-Wolf.
 *ACM SIGMETRICS*, June 2023.
 
 [\[paper\]](/assets/msj-srpt.pdf)
@@ -165,7 +166,7 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter, Alan Scheller-Wolf.
 [\[talks\]](/talks/#optimal-scheduling-in-the-multiserver-job-model)
 
 ### [WCFS: A new framework for analyzing multiserver systems](/assets/wcfs.pdf) {#server-filling}
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2022.
+Isaac Grosof<sup>\*</sup>, Mor Harchol-Balter,<sup>†</sup> Alan Scheller-Wolf. *Queueing Systems*, July 2022.
 
 [\[paper\]](/assets/wcfs.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2109.12663)
@@ -173,7 +174,7 @@ Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf. *Queueing Systems*, July 2
 [\[old version\]](/assets/finite-skip.pdf)
 
 ### [Uniform Bounds for Scheduling with Job Size Estimates](/assets/uniform-bounds-estimates.pdf) {#estimates}
-Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
+Ziv Scully,<sup>\*</sup> Isaac Grosof, Michael Mitzenmacher.<sup>†</sup>
 *Innovations in Theoretical Computer Science*, Jan. 2022.
 
 [\[paper\]](/assets/uniform-bounds-estimates.pdf)
@@ -182,7 +183,7 @@ Ziv Scully, Isaac Grosof, Michael Mitzenmacher.
 [\[talks\]](/talks/#stochastic-scheduling-with-predictions)
 
 ### [Nudge: Stochastically Improving upon FCFS](/assets/nudge.pdf) {#nudge}
-Isaac Grosof, Kunhe Yang, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
+Isaac Grosof,<sup>\*</sup> Kunhe Yang, Ziv Scully, Mor Harchol-Balter.<sup>†</sup> *ACM SIGMETRICS*, June 2021.
 
 [\[paper - edited\]](/assets/nudge.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2106.01492)
@@ -198,7 +199,7 @@ to fix some minor proof bugs, in the proofs of Theorem 4.1 and Lemma 5.3.
 Here is the [original version](/assets/nudge-old.pdf), for posterity.
 
 ### [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](/assets/gittins-extremely-general.pdf) {#gittins-k}
-Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
+Ziv Scully,<sup>\*</sup> Isaac Grosof, Mor Harchol-Balter.<sup>†</sup> *ACM SIGMETRICS*, June 2021.
 
 [\[paper\]](/assets/gittins-extremely-general.pdf)
 [\[short paper\]](/assets/gittins-extremely-general-short.pdf)
@@ -206,7 +207,7 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *ACM SIGMETRICS*, June 2021.
 **Winner of the INFORMS 2022 George Nicholson Award**
 
 ### [Optimal Multiserver Scheduling with Unknown Job Sizes in Heavy Traffic](/assets/m-gittins-k.pdf)
-Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
+Ziv Scully,<sup>\*</sup> Isaac Grosof, Mor Harchol-Balter.<sup>†</sup> *IFIP Performance*, Nov. 2020.
 
 [\[paper\]](/assets/m-gittins-k.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2003.13232)
@@ -214,7 +215,7 @@ Ziv Scully, Isaac Grosof, Mor Harchol-Balter. *IFIP Performance*, Nov. 2020.
 [\[short paper\]](/assets/m-gittins-k-short.pdf)
 
 ### [The CacheLib Caching Engine: Design and Experiences at Scale](/assets/cachelib.pdf)
-Ben Berg, Daniel Berger, Sara McAllister, Isaac Grosof, Sathya Gunasekar,
+Ben Berg,<sup>\*</sup> Daniel Berger,<sup>†</sup> Sara McAllister, Isaac Grosof, Sathya Gunasekar,
 Jimmy Lu, Michael Uhlar, Jim Carrig, Nathan Beckmann,
 Mor Harchol-Balter, Greg Ganger.
 *OSDI*, Nov. 2020.
@@ -224,7 +225,7 @@ Mor Harchol-Balter, Greg Ganger.
 
 ### [Load Balancing Guardrails](/assets/load-balancing.pdf) {#guardrails}
 #### Keeping Your Heavy Traffic on the Road to Low Response Times
-Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
+Isaac Grosof,<sup>\*</sup> Ziv Scully, Mor Harchol-Balter.<sup>†</sup> *ACM SIGMETRICS*, Jun. 2019.
 
 **Winner of the SIGMETRICS 2019 Best Student Paper Award**
 
@@ -237,7 +238,7 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *ACM SIGMETRICS*, Jun. 2019.
 [\[talks\]](/talks/#load-balancing-guardrails)
 
 ### [SRPT for Multiserver Systems](/assets/srpt.pdf) {#srptk}
-Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *IFIP Performance*, Dec. 2018. Also in the journal: *Performance Evaluation*, Nov. 2018.
+Isaac Grosof,<sup>\*</sup> Ziv Scully, Mor Harchol-Balter.<sup>†</sup> *IFIP Performance*, Dec. 2018. Also in the journal: *Performance Evaluation*, Nov. 2018.
 
 **Winner of the Performance 2018 Best Student Paper Award**
 
@@ -248,14 +249,14 @@ Isaac Grosof, Ziv Scully, Mor Harchol-Balter. *IFIP Performance*, Dec. 2018. Als
 [\[talks\]](/talks/#srpt-for-multiserver-systems)
 
 ### [Computational Complexity of Motion Planning of a Robot through Simple Gadgets](/assets/motion-planning.pdf)
-Erik D. Demaine, Isaac Grosof, Jayson Lynch, and Mikhail Rudoy. *Ninth International Conference on Fun with Algorithms*, June 2018.
+Erik D. Demaine,<sup>†</sup> Isaac Grosof,<sup>\*</sup> Jayson Lynch,<sup>\*</sup> and Mikhail Rudoy. *Ninth International Conference on Fun with Algorithms*, June 2018.
 
 [\[paper\]](/assets/motion-planning.pdf)
 [\[arxiv\]](https://arxiv.org/abs/1806.03539)
 [\[blog post\]](/2021/08/14/paper-gadgets.html)
 
 ### [Push-Pull Block Puzzles are Hard](/assets/push-pull.pdf)
-Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algorithms and Complexity*, May 2017.
+Erik D. Demaine,<sup>†</sup> Isaac Grosof,<sup>\*</sup> Jayson Lynch.<sup>\*</sup> *International Conference on Algorithms and Complexity*, May 2017.
 
 [\[paper\]](/assets/push-pull.pdf)
 [\[arxiv\]](https://arxiv.org/abs/1709.01241)
@@ -264,28 +265,28 @@ Erik D. Demaine, Isaac Grosof, Jayson Lynch. *International Conference on Algori
 ## Short Papers
 
 ### [Product Forms in Closed Order Independent Queues](/assets/closed-product-form-mama.pdf) {#closed-product-form-short}
-**Ziyuan Wang**, Izzy Grosof.
+**Ziyuan Wang**<sup>\*</sup> and Izzy Grosof.<sup>†</sup>
 Accepted to the MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/closed-product-form-mama.pdf)
 
 ### [Non-preemptive Datacenter Scheduling via Scaling Cycles](/assets/scaling-cycles-short.pdf) {#scaling-cycles-short}
-Zhongrui Chen, **Heyuan Yao**, Izzy Grosof, Benjamin Berg.
+Zhongrui Chen,<sup>\*</sup> **Heyuan Yao**, Izzy Grosof, Benjamin Berg.<sup>†</sup>
 Accepted to the MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/scaling-cycles-short.pdf)
 
 ### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower-short}
-Isaac Grosof, **Ziyuan Wang**.
+Isaac Grosof<sup>\*</sup> and **Ziyuan Wang**.
 MAMA workshop at SIGMETRICS 2024.
 
 [\[paper\]](/assets/mgk-lower-short.pdf)
 [\[talk\]](/talks/#mgk-lower)
 
-Parts of this paper ended up in two subsequent full papers: [Outperforming Multiserver SRPT at All Loads](#sek) and [Novel Lower Bounds on M/G/k Scheduling](#mgk-lower)
+Parts of this paper ended up in two subsequent full papers: [Outperforming Multiserver SRPT at All Loads](#sek) and [Novel Lower Bounds on M/G/k Scheduling](#mgk-lower).
 
 ### [New Stability Results for Multiserver-job Models via Product-form Saturated Systems](/assets/product-mama.pdf) {#product-form-msj}
-Isaac Grosof, Mor Harchol-Balter, Alan Scheller-Wolf.
+Isaac Grosof,<sup>\*</sup> Mor Harchol-Balter,<sup>†</sup> Alan Scheller-Wolf.
 MAMA workshop at SIGMETRICS 2023.
 
 [\[paper\]](/assets/product-mama.pdf)
@@ -302,26 +303,26 @@ which we missed in our literature review.
 However, the product form result is still novel, and that's the focus of the MAMA version.
 
 ### [ServerFilling: A better approach to packing multiserver jobs](/assets/applied.pdf)
-Isaac Grosof, Mor Harchol-Balter.
+Isaac Grosof<sup>\*</sup> and Mor Harchol-Balter.<sup>†</sup>
 ApPLIED workshop at PODC 2023.
 
 [\[paper\]](/assets/applied.pdf)
 
 ### [Towards the shortest DRAT proof of the Pigeonhole Principle](/assets/php.pdf)
-Isaac Grosof, Naifeng Zhang, Marijn Heule. *Pragmatics of SAT*, August 2022.
+Isaac Grosof,<sup>\*</sup> Naifeng Zhang,<sup>\*</sup> Marijn Heule.<sup>†</sup> *Pragmatics of SAT*, August 2022.
 
 [\[paper\]](/assets/php.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2207.11284)
 
 ### [Open Problem—M/G/k/SRPT Under Medium Load](/assets/srpt-medium.pdf)
-Isaac Grosof. *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
+Isaac Grosof.<sup>\*</sup> *Stochastic Systems*, arising out of INFORMS 2018. Sep. 2019.
 
 [\[paper\]](/assets/srpt-medium.pdf)
 
 ## Thesis document {#thesis}
 
 ### [Optimal Scheduling in Multiserver Queues](/assets/isaac-thesis.pdf)
-Isaac Grosof. July 2023.
+Isaac Grosof.<sup>\*</sup> July 2023.
 
 [\[thesis document\]](/assets/isaac-thesis.pdf)
 [\[short version\]](/assets/isaac-thesis-short.pdf)
@@ -342,7 +343,7 @@ Isaac Grosof. July 2023.
 These are papers where I/we think the results are accurate, but not strong or novel enough to warrant peer-reviewed publication.
 
 ### [Analysis of Markovian Arrivals and Service with Applications to Intermittent Overload](/assets/mams.pdf)
-Isaac Grosof, Yige Hong, Mor Harchol-Balter.
+Isaac Grosof,<sup>\*</sup> Yige Hong, Mor Harchol-Balter.<sup>†</sup>
 
 [\[paper\]](/assets/mams.pdf)
 [\[old paper\]](/assets/mams-old.pdf)
@@ -354,28 +355,30 @@ The new paper (technical report) has removed those claims and introduced a detai
 
 
 ### [Incentive Compatible Queues Without Money](/assets/incentive-compatible.pdf)
-Isaac Grosof, Michael Mitzenmacher.
+Isaac Grosof<sup>\*</sup> and Michael Mitzenmacher.<sup>†</sup>
 
 [\[paper\]](/assets/incentive-compatible.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2202.05747)
 
 ### [Stability for Two-class Multiserver-job Systems](/assets/multiserverjob-stability.pdf)
-As [discussed above](#product-form-msj), much of this paper is not novel.
-The two-class results are good work, however.
+Isaac Grosof,<sup>\*</sup> Mor Harchol-Balter,<sup>†</sup> Alan Scheller-Wolf.
 
 [\[paper\]](/assets/multiserverjob-stability.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2010.00631)
 [\[talks\]](/talks/#stability-for-two-class-multiserver-job-systems)
 
+As [discussed above](#product-form-msj), much of this paper is not novel.
+The two-class results are good work, however.
+
 ## Notes (short works not intended for publication) {#notes}
 
 ### [Moments of Integrated Work in the M/G/1](/assets/work-area.pdf)
-Isaac Grosof
+Izzy Grosof.<sup>\*</sup>
 
 [\[paper\]](/assets/work-area.pdf)
 
 ### [On the Time Complexity of the Verification of the Factorization of 2^67-1](/assets/verification-factorization.pdf)
-Isaac Grosof, Isaac Grosof. *SIGBOVIK*, April 1, 2019.
+Isaac Grosof,<sup>\*</sup> Isaac Grosof.<sup>\*</sup> *SIGBOVIK*, April 1, 2019.
 
 [\[paper\]](/assets/verification-factorization.pdf)
 
