@@ -76,7 +76,8 @@ Accepted to *IFIP Performance* as of July 2026.
 [\[arxiv\]](https://arxiv.org/abs/2607.08999)
 
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
-Céline Comte<sup>\*</sup> and Isaac Grosof.<sup>\*</sup> Accepted to *Queueing Systems* as of April 2026.
+Céline Comte<sup>\*</sup> and Isaac Grosof.<sup>\*</sup>
+*Queueing Systems*, June 2026.
 
 [\[paper\]](/assets/graph-structure.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2502.13890)
@@ -266,15 +267,24 @@ Erik D. Demaine,<sup>†</sup> Isaac Grosof,<sup>\*</sup> Jayson Lynch.<sup>\*</
 
 ### [Product Forms in Closed Order Independent Queues](/assets/closed-product-form-mama.pdf) {#closed-product-form-short}
 **Ziyuan Wang**<sup>\*</sup> and Izzy Grosof.<sup>†</sup>
-Accepted to the MAMA workshop at SIGMETRICS 2026.
+MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/closed-product-form-mama.pdf)
 
 ### [Non-preemptive Datacenter Scheduling via Scaling Cycles](/assets/scaling-cycles-short.pdf) {#scaling-cycles-short}
 Zhongrui Chen,<sup>\*</sup> **Heyuan Yao**, Izzy Grosof, Benjamin Berg.<sup>†</sup>
-Accepted to the MAMA workshop at SIGMETRICS 2026.
+MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/scaling-cycles-short.pdf)
+
+### [Optimal Mixed-Knowledge Scheduling with SRPT-LAS](/assets/srpt-las-src.pdf)
+**Brian Yuen**<sup>\*</sup>.
+SRC at SIGMETRICS 2026.
+
+[\[One-page SRC paper\]](/assets/srpt-las-src.pdf)
+[\[Technical report\]](/assets/srpt-las-proof-sketch.pdf)
+
+The technical report covers modeling, proofs, and proof sketches in more detail, and was written collaboratively by me and Brian.
 
 ### [Bounds on M/G/k Scheduling Under Moderate Load](/assets/mgk-lower-short.pdf) {#mgk-lower-short}
 Isaac Grosof<sup>\*</sup> and **Ziyuan Wang**.
@@ -370,7 +380,15 @@ Isaac Grosof,<sup>\*</sup> Mor Harchol-Balter,<sup>†</sup> Alan Scheller-Wolf.
 As [discussed above](#product-form-msj), much of this paper is not novel.
 The two-class results are good work, however.
 
+## Other work
+
+### [Queueing Sim](https://crates.io/crates/queueing-sim)
+**Daniela Chang Kim**<sup>\*</sup>  and Izzy Grosof.<sup>†</sup>
+
+An open-source discrete-event simulator for single-server queueing policies (FCFS, SRPT, LAS, PS, and more).
+
 ## Notes (short works not intended for publication) {#notes}
+
 
 ### [Moments of Integrated Work in the M/G/1](/assets/work-area.pdf)
 Izzy Grosof.<sup>\*</sup>
