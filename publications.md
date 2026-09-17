@@ -277,7 +277,7 @@ MAMA workshop at SIGMETRICS 2026.
 
 [\[paper\]](/assets/scaling-cycles-short.pdf)
 
-### [Optimal Mixed-Knowledge Scheduling with SRPT-LAS](/assets/srpt-las-src.pdf)
+### [Optimal Mixed-Knowledge Scheduling with SRPT-LAS](/assets/srpt-las-src.pdf) {#srpt-las}
 **Brian Yuen**<sup>\*</sup>.
 SRC at SIGMETRICS 2026.
 

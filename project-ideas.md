@@ -11,7 +11,7 @@ I'm particularly interested in working with either Northwestern students,
 undergrad or grad,
 or people who already have a background in queueing theory research.
 
-Last updated: February 18th, 2026.
+Last updated: September 17th, 2026
 
 ## Table of contents
 
@@ -56,19 +56,15 @@ The order within a category is roughly chronological.
 
 2. [Starvation and Closed-system Tails](#starvation-closed)
 
-3. [Stability for M/G/k/SRPT](#srptk-stability)
+3. [Buffet queueing](#buffet-queueing)
 
-4. [Buffet queueing](#buffet-queueing)
+4. [Scheduling for Pareto-optimal response-time distributions](#po-et-scheduling)
 
 ### [Active projects](#active)
 
-1. [Half-batch MSJ](#half-batch-msj)
+1. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
 
-2. [Scheduling with epsilon prediction errors](#epsilon-error)
-
-3. [Product-Form Distributions in Closed Queues with Front-Order-Independence](#front-oi)
-
-4. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
+2. [Optimal Nonpreemptive MSJ scheduling](#nonpreemptive-msj)
 
 ### [Archive: Submitted or Completed](#archive-done)
 
@@ -83,6 +79,12 @@ The order within a category is roughly chronological.
 5. [Beating SRPT-k](#beating-srptk)
 
 6. [Continuous MSJ](#continuous-msj)
+
+7. [Half-batch MSJ](#half-batch-msj)
+
+8. [Scheduling with epsilon prediction errors](#epsilon-error)
+
+9. [Stability for M/G/k/SRPT](#srptk-stability)
 
 ### [Archive: No longer interested](#archive-nope)
 
@@ -305,38 +307,6 @@ In a closed setting, this corresponds to high throughput at the cost of high tai
 **First steps:** Simulate some basic MSJ policies in a simple closed MSJ setting.
 Find their tradeoff between utilization and tail response time.
 
-### Stability for SRPT-k {#srptk-stability}
-
-(Toy problem, likely not a full research paper)
-
-In our paper [Outperforming Multiserver SRPT at All Loads](/publications/#sek),
-we had to state all of our theorems in the form
-"Whenever SRPT-k is stable, then SEK outperforms it".
-We had to write them in this way because I don't know when SRPT-k is stable,
-particularly if the job size distribution is heavy tailed,
-particularly with infinite variance.
-This is a strange thing to say, given all the papers I've written about SRPT-k,
-but most of those papers assumed that the job size distribution had finite variance,
-and low mean response time isn't incompatibility with instability,
-if the largest jobs in the system just keep getting larger and larger.
-
-To be clear, by "stability", I mean a finite mean recurrence time to the empty state,
-or equivalently positive Harris recurrence to a compact set, where compactness is measured not just in terms of number of jobs present but also in terms of the size of those jobs.
-
-As a point of comparison, in the M/G/1,
-if the job size distribution has infinite second moment,
-the stationary mean workload will be infinite,
-but the mean recurrence time from the empty state to the empty state
-is still E[S]/(1-ρ), which is finite. This holds under any scheduling policy.
-
-What about the M/G/k/SRPT? Can we guarantee it has finite mean recurrence time under
-an arbitrary job size distribution S, arrival rate λ, and number of servers k,
-given ρ<1 and E[S]<∞?
-
-My idea is to use a Lyapunov function consisting of a combination of the total work in the system and the size of the largest job in the system. If there are k or more jobs present in the system, the total work in the system falls at rate 1-ρ, and the largest job in the system grows at some rate. If there are at most k-1 jobs present in the system, the largest job in the system falls at a linear rate, while the work in the system rises. If we can bound how fast the largest job in the system increases, this should give rise to a Lyapunov function that proves stability.
-
-**Starting point:** Bound the growth rate of the largest job when the job size distribution is Pareto(α). If that's handled, all job size distributions will be doable.
-
 ### Buffet queueing {#buffet-queueing}
 
 (Toy problem, likely not a full research paper)
@@ -351,69 +321,94 @@ Generalizations: What if it takes a backlog of c people waiting to block the nex
 
 **Next step:** The system can be described as a sequence of clumps and gaps: One person taking food, then a clumps of people waiting, then a gap to the next person taking food. Presumably these clump and gap lengths should be i.i.d., so find a steady-state? Maybe geometric?
 
+**Alternative idea:** Start with the p=1 case as a simple starting point. It's already nontrivial.
+
+### Scheduling for Pareto-optimal response-time distributions {#po-et-scheduling}
+
+Consider an M/G/1 queue with arrival rate λ and size r.v. S.
+Consider all possible scheduling policies π, with known sizes.
+Consider all possible response time distributions T(π).
+We can evaluate those response time distributions by the tail metrics P(T(π) > t),
+for all thresholds t.
+If one policy π has better (lower) tail metric P(T(π)) > t)
+than another policy π' for all thresholds t,
+then we say that π stochastically improves upon π'.
+For instance, in my [Nudge paper] we proved that
+the Nudge policy stochastically improves upon FCFS,
+for the right parameterization of Nudge, for any given λ and S.
+
+If a policy has no other policies which stochastically improve upon it,
+we call that policy Pareto-optimal.
+We only know of one Pareto-optimal policy: SRPT.
+It's Pareto optimal because it is the unique optimizer of E[T],
+which is a positive integral of tail metrics.
+Nothing can improve its E[T], so nothing can improve all of its tail metrics simultaneously.
+
+Can we find any other polciies that are Pareto optimal? I'd be happy even if we achieved PO for a single job size distribution S, like a 2-point distribution.
+
+As an easier starting point, we could try to prove that certain policies are stochastically improvable, to try to narrow in on the Pareto-optimal policies.
+
+**Question:** Can we identify a pair of jobs, given by their (time in system, remaining size) pairs (t\_i, r\_i) such that job 1 must always be served before job 2, or stochastic improvement is guaranteed? For example, if t1 = t2 and r1 < r2, job 1 must be served ahead of job 2. Can we find an example that happens with positive probability?
+
 ## Active projects {#active}
 
-## Half-Batch MSJ {#half-batch-msj}
+### Product Form Distributions in Closed Queues with Front Order Independence {#front-oi}
 
-In large-scale computing systems, such as high-performance computing clusters, there are often two types of jobs:
+See Ziyuan and my [short paper](/publications#closed-product-form-short) at MAMA at ACM SIGMETRICS 2026. 
 
-* **Large jobs**: High priority, latency-sensitive jobs which need a large amount of resources (e.g. compute nodes) at once, often a large fraction of the capacity of the entire system.
-* **Small jobs**: Low priority, batch jobs (non-latency sensitive), which need a small amount of resources at once - many nodes, but a small fraction of the entire system.
+**Setting:** Closed queuing systems where job completions depend on job class and
+on queue position.
 
-The large jobs are the reason the cluster exists, at the size that it does. These jobs need to run on a very large cluster, and they're the jobs the cluster cares about.
+As a starting point, consider the single-exponential
+multiserver-job model discussed in Section 3 of
+[this MAMA paper](/publications/#product-form-msj).
+Here, jobs have a general distribution of server need between 1 and k,
+and each job has duration Exp(μ).
+Jobs are placed into service in FCFS order, with a variable number in service based on
+the server needs of those jobs.
+Whenever a job completes, a new job is sampled from a server-need distribution p. 
+We examine the embedded Markov chain that updates on each completion-arrival pair.
+In the embedded chain, the completion is sampled uniformly at random among the
+jobs in service.
 
-However, there aren't enough karge jobs to utilize a large fraction of the capacity of the cluster.
+This chain has a product form stationary distribution, π(m) = Prod_i(p(m_i)), where m is a length-k vector of server needs.
 
-So the cluster is also available for use by small jobs. Small jobs could run on this cluster, or on another lower resource system. They're not the priority, but they help keep the utilization high.
+The system obeys a partial balance property: The rate of entering state m due to transitions that involve class l completions equals the rate of leaving state m due to transitions that involve class l arrivals.
+See [the MAMA paper](/publications/#product-form-msj) for the proof.
 
-One challenge is that typically,  either type of job is preemptible.
+**Generalization**: This product-form property is preserved if we generalize the system as follows:
+There is a function s(m) which specifies how many jobs are in service
+in state m.
+This function s(m) must be *front-order-independent*, which means that it must satisfy the following property:
 
-**Model**: We will model this scenario with a MSJ system with two types of jobs, with two different arrival process: Large jobs arrive according to an external stochastic arrival process (e.g. Poisson process). Small jobs are always available. Neither type of job can be preempted.
+> For any pair of state vectors m, m' such that the first s(m) entries of m are a permutation of the first s(m) entries of m', and all other entries of m and m' are identical, we must have s(m) = s(m').
 
-There are two objects: Response time of large jobs and overall throughput, or equivalently throughput of small jobs. The goal is to optimize the tradeoff between the two.
+As long as the service function s(m) is front-order-independent, the product-form holds.
 
-In general, we would want general distributions of resource requirements and durations for small and large jobs. As a starting point, we can consider small jobs that take one server and large jobs that take n/k servers where n is the number of servers and k is a small integer, and exponential service times specific to the class.
+See my notes on this subject: [page 1](/assets/notes/front-oi-pg-1.jpg), [page 2](/assets/notes/front-oi-pg-2.jpg).
 
-As an extreme first step, we can consider the k=1 case.
+**Further generalization**: This product-form property is further preserved if we generalize the system even further as follows:
+There is a function Δ\_j(m) which maps a vector m and an index j, 1 <= j <= k,
+and outputs a probability that this position is the next completion.
+We require that Sum_j Δ\_j(m) = 1.
+For example, in the above "number of jobs in service" setting with the function s(m),
+we would have Δ\_j(m) = 1/s(m) if j <= s(m), and 0 otherwise.
 
-**Starting point**: In the k=1 case, the default policy is: While there are large jobs in the system, no small jobs may enter service - we need to free up space. When all large jobs are done, small jobs may enter service.
+This function Δ\_j(m) must be *front-order-independent*, which means that it must satisfy the following property:
 
-There are two variations worth considering, to improve each objective:
+> For any pair of state vectors m, m' and any index j such that the first j entries of m are a permutation of the first j entries of m', and all other entries of m and m' are identical , we must have Δ\_j(m) = Δ\_j(m').
 
-* **Reserved capcity**: We can avoid using some of the capacity on small jobs even when there are no large jobs present. With exponential durations, it's more efficient to sometimes allow no small jobs to run, sometimes allow all small jobs to run, rather than only using some of the servers.
-* **Batching together large jobs**: Rather than serving large jobs whenever they arrive, wait to accumulate many large jobs before servjng them all in a row. This avoids the overhead of emptying out the servers for each job. It's optimal to always batch up to a threshold, rather than a variety of batch sizes.
+Actually, we can weaken this property a bit further, to front-cyclic-order-independent:
+The equality only needs to hold if the first j entries of m are a *cyclic* permutation of the first j entries of m', not a general permutation.
 
-**First step**: Derive the optimal tradeoff curve between mean response time of large jobs and throughput of small jobs.
+If Δ\_j(m) is front-cyclic-order-independent for all j, then the product-form holds.
 
-### Scheduling with epsilon prediction errors {#epsilon-error}
+See my further notes: [page 3](/assets/notes/front-oi-pg-3.jpg).
 
-**Setting**: M/G/1 scheduling for the mean.
-Predictions are given, and there's a small (epsilon-sized) error in the predictions.
-
-**Goal**: Schedule to achieve a mean response time performance of the form E\[T^SRPT](1+f(epsilon)), for some function f that goes to zero as epsilon goes to zero. This is called "Consistency".
-
-**Twist**: There are many kinds of epsilon-error to consider. In our [SRPT-Bounce](/publications/#estimates) paper,
-we show that our SRPT-Bounce policy can handle the situation where all predictions may be off by a multiplicative error of epsilon.
-Adam Wierman and Misja Nuyens have a paper,
-["Scheduling despite inexact job-size information"](https://dl.acm.org/doi/abs/10.1145/1375457.1375461),
-looking at predictions being off by an additive error - consistency is not possible there.
-
-I'd like to instead consider the situation where an epsilon fraction of jobs may have seriously poor predictions, but all other predictions are accurate. There are two natural scenarios:
-
-1. Epsilon-fraction of jobs have null predictions. In this case, we know that we're getting no prediction information.
-
-2. Epsilon-fraction of jobs have predictions that are incorrect by an arbitrary magnitude. In this case, we don't know that we're getting no prediction information.
-
-We could also look at load-fractions rather than job fractions.
-
-Even in scenario 1, which is much simpler, things aren't trivial by any means. If we did something simple like put the null-prediction jobs at the end of the queue, their response time would be something horrible like 1/(1-rho)^2 in the epsilon->0 limit, which would dominate mean response time and not remotely achieve consistency.
-
-**Initial question:**
-What's the mean response time impact of a misprediction from true size x to predicted size x', under a policy like SRPT-Checkmark or SRPT-Bounce?
-
-**Longer-term question**: Can we achieve consistency against rare large errors? Can we define a useful misprediction-distance metric such that if that metric is small, we have consistent performance?
-
+**Question:** Can we generalize this any further? How is this related to the theory of product-form behavior in *open* order-independent product-form queues, such as in [Krzesinski, Anthony E. "Order independent queues." Queueing networks: A fundamental approach.](https://www.utwente.nl/en/eemcs/sor/boucherie/education/mqsn/editorhandbook.pdf#page=105).
 ### Optimal Nonpreemptive MSJ scheduling {#nonpreemptive-msj}
+
+See Zhongrui Chen, Heyuan Yao, Ben Berg and my [short paper](/publications#scaling-cycles-short) at MAMA at ACM SIGMETRICS 2026.
 
 An important aspect of MSJ scheduling in the really world
 is that we often want to scheduling nonpreemptively -- jobs that need lots of resources simultaneously tend to be expensive to set up and shut down.
@@ -639,58 +634,6 @@ Whenever a small job arrives, send it to the short queue with least work. Whenev
 Use SSC to bound response time/waiting time.
 
 Lower bound waiting time. Argument: All servers must have 1/k of the load going through them. The work has to be somewhere, and there's theta (1/(1-ρ)) of it in total. Best case scenario is that the largest jobs are the only jobs delayed by the work. This should dominate waiting time. This should match the waiting time of MASS, up to ratio 1, if the distribution is not too crazy.
-### Product Form Distributions in Closed Queues with Front Order Independence {#front-oi}
-
-**Setting:** Closed queuing systems where job completions depend on job class and
-on queue position.
-
-As a starting point, consider the single-exponential
-multiserver-job model discussed in Section 3 of
-[this MAMA paper](/publications/#product-form-msj).
-Here, jobs have a general distribution of server need between 1 and k,
-and each job has duration Exp(μ).
-Jobs are placed into service in FCFS order, with a variable number in service based on
-the server needs of those jobs.
-Whenever a job completes, a new job is sampled from a server-need distribution p. 
-We examine the embedded Markov chain that updates on each completion-arrival pair.
-In the embedded chain, the completion is sampled uniformly at random among the
-jobs in service.
-
-This chain has a product form stationary distribution, π(m) = Prod_i(p(m_i)), where m is a length-k vector of server needs.
-
-The system obeys a partial balance property: The rate of entering state m due to transitions that involve class l completions equals the rate of leaving state m due to transitions that involve class l arrivals.
-See [the MAMA paper](/publications/#product-form-msj) for the proof.
-
-**Generalization**: This product-form property is preserved if we generalize the system as follows:
-There is a function s(m) which specifies how many jobs are in service
-in state m.
-This function s(m) must be *front-order-independent*, which means that it must satisfy the following property:
-
-> For any pair of state vectors m, m' such that the first s(m) entries of m are a permutation of the first s(m) entries of m', and all other entries of m and m' are identical, we must have s(m) = s(m').
-
-As long as the service function s(m) is front-order-independent, the product-form holds.
-
-See my notes on this subject: [page 1](/assets/notes/front-oi-pg-1.jpg), [page 2](/assets/notes/front-oi-pg-2.jpg).
-
-**Further generalization**: This product-form property is further preserved if we generalize the system even further as follows:
-There is a function Δ\_j(m) which maps a vector m and an index j, 1 <= j <= k,
-and outputs a probability that this position is the next completion.
-We require that Sum_j Δ\_j(m) = 1.
-For example, in the above "number of jobs in service" setting with the function s(m),
-we would have Δ\_j(m) = 1/s(m) if j <= s(m), and 0 otherwise.
-
-This function Δ\_j(m) must be *front-order-independent*, which means that it must satisfy the following property:
-
-> For any pair of state vectors m, m' and any index j such that the first j entries of m are a permutation of the first j entries of m', and all other entries of m and m' are identical , we must have Δ\_j(m) = Δ\_j(m').
-
-Actually, we can weaken this property a bit further, to front-cyclic-order-independent:
-The equality only needs to hold if the first j entries of m are a *cyclic* permutation of the first j entries of m', not a general permutation.
-
-If Δ\_j(m) is front-cyclic-order-independent for all j, then the product-form holds.
-
-See my further notes: [page 3](/assets/notes/front-oi-pg-3.jpg).
-
-**Question:** Can we generalize this any further? How is this related to the theory of product-form behavior in *open* order-independent product-form queues, such as in [Krzesinski, Anthony E. "Order independent queues." Queueing networks: A fundamental approach.](https://www.utwente.nl/en/eemcs/sor/boucherie/education/mqsn/editorhandbook.pdf#page=105).
 
 ### Beating SRPT-k {#beating-srptk}
 
@@ -724,6 +667,107 @@ there is a coupling for SRPT-k and SEK such that until the end of the busy perio
 system states differ by at most ε at all times,
 resulting in only O(ε) worse total response time in the SEK system.
 3. 1-2ε achieves ε+Omega(ε) better total response time that 1-ε, because more jobs could arrive.
+
+### Half-Batch MSJ {#half-batch-msj}
+
+See Ziyuan Wang and my [paper](/publications#half-batch),
+accepted to IFIP Performance 2026.
+
+In large-scale computing systems, such as high-performance computing clusters, there are often two types of jobs:
+
+* **Large jobs**: High priority, latency-sensitive jobs which need a large amount of resources (e.g. compute nodes) at once, often a large fraction of the capacity of the entire system.
+* **Small jobs**: Low priority, batch jobs (non-latency sensitive), which need a small amount of resources at once - many nodes, but a small fraction of the entire system.
+
+The large jobs are the reason the cluster exists, at the size that it does. These jobs need to run on a very large cluster, and they're the jobs the cluster cares about.
+
+However, there aren't enough karge jobs to utilize a large fraction of the capacity of the cluster.
+
+So the cluster is also available for use by small jobs. Small jobs could run on this cluster, or on another lower resource system. They're not the priority, but they help keep the utilization high.
+
+One challenge is that typically,  either type of job is preemptible.
+
+**Model**: We will model this scenario with a MSJ system with two types of jobs, with two different arrival process: Large jobs arrive according to an external stochastic arrival process (e.g. Poisson process). Small jobs are always available. Neither type of job can be preempted.
+
+There are two objects: Response time of large jobs and overall throughput, or equivalently throughput of small jobs. The goal is to optimize the tradeoff between the two.
+
+In general, we would want general distributions of resource requirements and durations for small and large jobs. As a starting point, we can consider small jobs that take one server and large jobs that take n/k servers where n is the number of servers and k is a small integer, and exponential service times specific to the class.
+
+As an extreme first step, we can consider the k=1 case.
+
+**Starting point**: In the k=1 case, the default policy is: While there are large jobs in the system, no small jobs may enter service - we need to free up space. When all large jobs are done, small jobs may enter service.
+
+There are two variations worth considering, to improve each objective:
+
+* **Reserved capcity**: We can avoid using some of the capacity on small jobs even when there are no large jobs present. With exponential durations, it's more efficient to sometimes allow no small jobs to run, sometimes allow all small jobs to run, rather than only using some of the servers.
+* **Batching together large jobs**: Rather than serving large jobs whenever they arrive, wait to accumulate many large jobs before servjng them all in a row. This avoids the overhead of emptying out the servers for each job. It's optimal to always batch up to a threshold, rather than a variety of batch sizes.
+
+**First step**: Derive the optimal tradeoff curve between mean response time of large jobs and throughput of small jobs.
+
+### Scheduling with epsilon prediction errors {#epsilon-error}
+
+See Brian Yuen and my [short paper and longer writeup](/publications#srpt-las),
+presented in the ACM SIGMETRICS 2026 Student Research Competition.
+
+**Setting**: M/G/1 scheduling for the mean.
+Predictions are given, and there's a small (epsilon-sized) error in the predictions.
+
+**Goal**: Schedule to achieve a mean response time performance of the form E\[T^SRPT](1+f(epsilon)), for some function f that goes to zero as epsilon goes to zero. This is called "Consistency".
+
+**Twist**: There are many kinds of epsilon-error to consider. In our [SRPT-Bounce](/publications/#estimates) paper,
+we show that our SRPT-Bounce policy can handle the situation where all predictions may be off by a multiplicative error of epsilon.
+Adam Wierman and Misja Nuyens have a paper,
+["Scheduling despite inexact job-size information"](https://dl.acm.org/doi/abs/10.1145/1375457.1375461),
+looking at predictions being off by an additive error - consistency is not possible there.
+
+I'd like to instead consider the situation where an epsilon fraction of jobs may have seriously poor predictions, but all other predictions are accurate. There are two natural scenarios:
+
+1. Epsilon-fraction of jobs have null predictions. In this case, we know that we're getting no prediction information.
+
+2. Epsilon-fraction of jobs have predictions that are incorrect by an arbitrary magnitude. In this case, we don't know that we're getting no prediction information.
+
+We could also look at load-fractions rather than job fractions.
+
+Even in scenario 1, which is much simpler, things aren't trivial by any means. If we did something simple like put the null-prediction jobs at the end of the queue, their response time would be something horrible like 1/(1-rho)^2 in the epsilon->0 limit, which would dominate mean response time and not remotely achieve consistency.
+
+**Initial question:**
+What's the mean response time impact of a misprediction from true size x to predicted size x', under a policy like SRPT-Checkmark or SRPT-Bounce?
+
+**Longer-term question**: Can we achieve consistency against rare large errors? Can we define a useful misprediction-distance metric such that if that metric is small, we have consistent performance?
+
+### Stability for SRPT-k {#srptk-stability}
+
+This had already been essentially solved by [Appendix D of Yige Hong and Ziv Scully's paper](https://ziv.codes/hong_performance_2024/), "Performance of the Gittins Policy in the G/G/1 and G/G/k, with and without Setup Times" at IFIP Performance 2024. They presented their method as a proof sketch in the G/G/k/setup, but it proves stability for any policy in the M/G/k.
+
+(Toy problem, likely not a full research paper)
+
+In our paper [Outperforming Multiserver SRPT at All Loads](/publications/#sek),
+we had to state all of our theorems in the form
+"Whenever SRPT-k is stable, then SEK outperforms it".
+We had to write them in this way because I don't know when SRPT-k is stable,
+particularly if the job size distribution is heavy tailed,
+particularly with infinite variance.
+This is a strange thing to say, given all the papers I've written about SRPT-k,
+but most of those papers assumed that the job size distribution had finite variance,
+and low mean response time isn't incompatibility with instability,
+if the largest jobs in the system just keep getting larger and larger.
+
+To be clear, by "stability", I mean a finite mean recurrence time to the empty state,
+or equivalently positive Harris recurrence to a compact set, where compactness is measured not just in terms of number of jobs present but also in terms of the size of those jobs.
+
+As a point of comparison, in the M/G/1,
+if the job size distribution has infinite second moment,
+the stationary mean workload will be infinite,
+but the mean recurrence time from the empty state to the empty state
+is still E[S]/(1-ρ), which is finite. This holds under any scheduling policy.
+
+What about the M/G/k/SRPT? Can we guarantee it has finite mean recurrence time under
+an arbitrary job size distribution S, arrival rate λ, and number of servers k,
+given ρ<1 and E[S]<∞?
+
+My idea is to use a Lyapunov function consisting of a combination of the total work in the system and the size of the largest job in the system. If there are k or more jobs present in the system, the total work in the system falls at rate 1-ρ, and the largest job in the system grows at some rate. If there are at most k-1 jobs present in the system, the largest job in the system falls at a linear rate, while the work in the system rises. If we can bound how fast the largest job in the system increases, this should give rise to a Lyapunov function that proves stability.
+
+**Starting point:** Bound the growth rate of the largest job when the job size distribution is Pareto(α). If that's handled, all job size distributions will be doable.
+
 ## Archived: No longer interested {#archive-nope}
 
 These are projects that I was once interested in, but I'm not interested in any more.
