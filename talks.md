@@ -3,11 +3,46 @@ layout: page
 title: Talks
 permalink: /talks/
 ---
+
+### [Pareto-Optimal Scheduling in the Half-Batch Multiserver-job Model](https://arxiv.org/abs/2607.08999) {#half-batch}
+[\[arxiv\]](https://arxiv.org/abs/2607.08999)
+[\[slides\]](/assets/half-batch-talk.pptx)
+
+* Allerton Conference, September 2026
+
+### [Scheduling with Massively Heterogeneous Resource Requirements](/assets/continuous-mrj.pdf) {#continuous-msj}
+[\[paper\]](/assets/continuous-mrj.pdf)
+[\[slides CMU\]](TODO)
+[\[slides SN\]](cont-msj-sn-26.pptx)
+[\[slides GCASR\]](/assets/cont-msj-gcasr.pptx)
+
+* CMU Theory Seminar, August 2026
+* Stochastic Networks Conference, June 2026
+* Greater Chicago Area Systems Research Workshop, June 2026
+
 ### [Outperforming SRPT at All Loads](/assets/sek-improve.pdf) {#sek}
 [\[paper\]](/assets/sek-improves.pdf)
-[\[slides\]](/assets/sek-aps-2025.pptx)
+[\[slides SIGMETRICS\]](/assets/sek-sigmetrics-26.pptx)
+[\[slides Amherst\]](/assets/sek-amherst.pptx)
+[\[slides APS\]](/assets/sek-aps-2025.pptx)
 
+* ACM SIGMETRICS, Jun. 2026.
+* UMass Amherst, Mar. 2026.
+* Amherst College, Mar. 2026.
 * Applied Probability Society Conference, Jun. 2025.
+
+### Overview of Multiserver Stochastic Scheduling
+
+* Northwestern IEMS Advisory Board meeting [slides](/assets/ab-overview-2025), Nov. 2025.
+* Northwestern CS  [slides](/assets/cs-overview-2024.pptx), Dec. 2024.
+* Northwestern ECE [slides](/assets/ece-overview-2024.pptx), Oct. 2024.
+
+### [Multiserver-job Response Time under Multilevel Scaling](/assets/multilevel-msj.pdf) {#multilevel}
+
+[\[paper\]](/assets/multilevel-msj.pdf)
+[\[slides\]](/assets/multilevel-msj-talk.pptx)
+
+* INFORMS Annual Meeting, Oct. 2025
 
 ### [Graph-Structure Product-Form](/assets/graph-structure.pdf) {#graph-structure}
 [\[paper\]](/assets/graph-structure.pdf)
@@ -15,11 +50,6 @@ permalink: /talks/
 
 
 * Product-form Probability Distributions Workshop, May 2025.
-
-### Overview of Multiserver Stochastic Scheduling
-
-* Northwestern CS  [slides](/assets/cs-overview-2024.pptx), Dec. 2024.
-* Northwestern ECE [slides](/assets/ece-overview-2024.pptx), Oct. 2024.
 
 ### IEMS Brown Bag Seminar
 [\[slides\]](/assets/brown-bag-2024.pptx)
