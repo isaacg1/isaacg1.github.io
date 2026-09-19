@@ -101,6 +101,8 @@ Fast-track-submitted to a journal, has received a minor revision, has been resub
 [\[arxiv\]](https://arxiv.org/abs/2510.25963)
 [\[talks\]](/talks/#sek)
 
+**Finalist in the 2026 INFORMS Junior Faculty Interest Group competition**
+
 ### [Improving Nonpreemptive Multiserver Job Scheduling with Quickswap](/assets/quickswap.pdf)
 Zhongrui Chen,<sup>\*</sup> Adityo Anggraito, Diletta Olliaro, Andrea Marin, Marco Ajmone Marsan, Benjamin Berg, Izzy Grosof.<sup>†</sup>
 *IFIP Performance*, March 2026.
