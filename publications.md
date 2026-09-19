@@ -29,6 +29,7 @@ Submitted, awaiting initial review.
 
 [\[paper\]](/assets/continuous-mrj.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2605.21715)
+[\[talks\]](/talks#continuous-msj)
 
 
 ### [Markov Modulated JSQ in Heavy Traffic Via the Poisson Equation](/assets/markov-jsq.pdf) {#markov-jsq}
@@ -74,6 +75,7 @@ If there is also a short version of a paper, it is listed together with the full
 Accepted to *IFIP Performance* as of July 2026.
 
 [\[arxiv\]](https://arxiv.org/abs/2607.08999)
+[\[talk\]](/talks#half-batch)
 
 ### [Graph-Based Product Form](/assets/graph-structure.pdf) {#graph-structure}
 Céline Comte<sup>\*</sup> and Isaac Grosof.<sup>\*</sup>
@@ -82,6 +84,7 @@ Céline Comte<sup>\*</sup> and Isaac Grosof.<sup>\*</sup>
 [\[paper\]](/assets/graph-structure.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2502.13890)
 [\[slides\]](/assets/graph-structure.pptx)
+[\[talk\]](/talks#graph-structure)
 
 Joint first authors.
 
@@ -91,6 +94,7 @@ Isaac Grosof<sup>\*</sup> and Hayriye Ayhan.
 
 [\[paper\]](/assets/multilevel-msj.pdf)
 [\[arxiv\]](https://arxiv.org/abs/2505.04754)
+[\[talk\]](/talks#multilevel)
 
 ### [Outperforming Multiserver SRPT at All Loads](/assets/sek-improves.pdf) {#sek}
 Izzy Grosof<sup>\*</sup> and Daniela Hurtado-Lange.

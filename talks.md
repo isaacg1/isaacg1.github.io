@@ -12,8 +12,8 @@ permalink: /talks/
 
 ### [Scheduling with Massively Heterogeneous Resource Requirements](/assets/continuous-mrj.pdf) {#continuous-msj}
 [\[paper\]](/assets/continuous-mrj.pdf)
-[\[slides CMU\]](TODO)
-[\[slides SN\]](cont-msj-sn-26.pptx)
+[\[slides CMU\]](/assets/cont-msj-cmu.pptx)
+[\[slides SN\]](/assets/cont-msj-sn-26.pptx)
 [\[slides GCASR\]](/assets/cont-msj-gcasr.pptx)
 
 * CMU Theory Seminar, August 2026
