@@ -41,6 +41,8 @@ If you are a first-year PhD student at Northwestern, a prospective student, or t
 feel free to reach out to me, I am looking to recruit students with a strong mathematical background.
 If you're an undergraduate student at Northwestern interested in doing research,
 you should also feel free to get in touch.
+Do not use an LLM to write an email to me, nor to polish an email to me.
+I will reject your request if you do.
 
 My name is Izzy Grosof, where Izzy is short for Isaac. I am nonbinary, and I use both they/them and she/her pronouns.
 Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info on my gender,
