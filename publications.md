@@ -18,10 +18,15 @@ permalink: /publications/
 
 [Notes](#notes)
 
-Students I advise are **bolded**.
+Students I advise or have advised are **bolded**.
 First author indicated with <sup>\*</sup>, primary advisor/supervisor indicated with <sup>†</sup>.
 
 ## Submitted & Under-Revision Papers {#submitted-papers}
+
+### [Tandem Queues with Hybrid Abandonment in Heavy Traffic](/assets/tandem-hybrid.pdf) {#tandem-hybrid}
+**Cameron Curtis**,<sup>\*</sup> Izzy Grosof,<sup>†</sup> and Seyed Iravani.
+
+[\[paper\]](/assets/tandem-hybrid.pdf)
 
 ### [Throughput-Optimal Multiresource-Job Scheduling with Continuous Requirement Distribution](/assets/continuous-mrj.pdf) {#continuous-mrj}
 **Heyuan Yao**,<sup>\*</sup> **Willow Kowalik**, and Izzy Grosof.<sup>†</sup>
