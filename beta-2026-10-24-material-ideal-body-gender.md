@@ -263,9 +263,9 @@ In other situations, ideal gender is incorporated into a snap gender judgment. E
 
 ### Disentangling passing
 
-Passing refers to two different concepts, visit related but slightly different. One is about snap gender judgements, mostly based off body gender. Does people's snap gender judgement match the person's ideal gender or preferred top level categorization? The other is relative to conscious examination.
+Passing refers to two different concepts, closely related but slightly different. One is about snap gender judgements, mostly based off body gender. Does people's snap gender judgement match the person's ideal gender or preferred top level categorization? The other is relative to conscious examination.
 
-A trans woman is walking down the street, and a person sees her dress and heels and immediately thinks "There's a woman". Then, that person looks at her more closely and sees her receiving hairline and her height and revokes the assessment. This is passing relative to snap judgment but not conscious examination. The reverse is also common.
+A trans woman is walking down the street, and a person sees her dress and heels and immediately thinks "There's a woman". Then, that person looks at her more closely and sees her receding hairline and her height and revokes the assessment. This is passing relative to snap judgment but not conscious examination. The reverse is also common.
 
 In transphobic societies, conscious-passing is often held up in trans circles as a pathway to safety and/or access to one of the legitimate gender-classes, Power and Not-Power. Snap-passing is relevant as well, as snap judgements are the mechanism through which material gender is frequently exerted, though one of the more dangerous situations one can be in is snap-passing but not conscious-passing. In such situations, members of Power and Not-Power often take offense to the perceived attempt to access a legitimate gender-class by a Subaltern, met by corrective violence. This is the genesis of the "trans panic" legal defense, though it is frequently used as cover for the more fundamental argument "who cares if I murdered them? They're underclass, no legitimate person was harmed."
 
