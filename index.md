@@ -44,7 +44,7 @@ you should also feel free to get in touch.
 Do not use an LLM to write an email to me, nor to polish an email to me.
 I will reject your request if you do.
 
-My name is Izzy Grosof, where Izzy is short for Isaac. I am nonbinary, and I use both they/them and she/her pronouns.
+My name is Izzy Grosof, where Izzy was short for Isaac, but is now my full name. I am nonbinary, and I use both they/them and she/her pronouns, though they/them is my strong preference.
 Check out my [introduction to my nonbinary gender](/2023/07/06/my-gender) for more info on my gender,
 my [they/she Q&A](/2024/01/19/they-she) for more info on my pronouns,
 or all of my [gender-related posts](gender).
