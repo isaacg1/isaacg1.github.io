@@ -25,6 +25,7 @@ First author indicated with <sup>\*</sup>, primary advisor/supervisor indicated 
 
 ### [Tandem Queues with Hybrid Abandonment in Heavy Traffic](/assets/tandem-hybrid.pdf) {#tandem-hybrid}
 **Cameron Curtis**,<sup>\*</sup> Izzy Grosof,<sup>†</sup> and Seyed Iravani.
+Submitted, awaiting initial review.
 
 [\[paper\]](/assets/tandem-hybrid.pdf)
 
