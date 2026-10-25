@@ -351,7 +351,7 @@ And body gender liberation isn't just for trans people. Hormone replacement ther
 
 ## Conclusion
 
-Gender can only be understood through the lenses of material, ideal, and body gender. You cannot understand how gender oppresses people without understanding material gender. You can't understand how it benefits and enhances people's lives without understanding ideal gender. And you can't understand what it has to do with people's bodies without body gender. These analyses are compatible. We can understand both at once. We don't need to conflate them. Abolish material gender, widen ideal gender, liberate body gender. The future is bright and full of stars.
+Gender can only be understood through the lenses of material, ideal, and body gender. You cannot understand how gender oppresses people without understanding material gender. You can't understand how it benefits and enhances people's lives without understanding ideal gender. And you can't understand what it has to do with people's bodies without body gender. These analyses are compatible. We can understand them all at once. We don't need to conflate them. Abolish material gender, widen ideal gender, liberate body gender. The future is bright and full of stars.
 
 ### Resources:
 1. Gender Ternary and Subalternization: [https://thesizhensystem.substack.com/p/gender-ternary-and-subalternization](https://thesizhensystem.substack.com/p/gender-ternary-and-subalternization).
