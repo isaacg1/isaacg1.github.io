@@ -19,6 +19,10 @@ I use they/she pronouns.
 This post explains the basics of what that means, for me.
 This is a good place to start if you're unfamiliar with people using multiple pronoun sets.
 
+[Material, Ideal, and Body Gender](/2026/10/24/material-ideal-body-gender):
+An exploration of three importantly different lens on gender:
+material gender, ideal gender, and body gender.
+
 [Learning to talk](/2023/11/25/learning-to-talk):
 A poem about the pain and joy of voice training.
 
