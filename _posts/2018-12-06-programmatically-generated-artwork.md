@@ -3,8 +3,15 @@ layout: post
 title: "Programmatically generated artwork"
 ---
 
-I have made twenty-four Rust programs for programmatically generating artwork in different styles.
+I have made twenty-five Rust programs for programmatically generating artwork in different styles.
 Here is a sample in each style, along with an explanation of the algorithms:
+
+## Needles
+
+This art was made with too many IV needles in me: in the hospital, recovering from bottom surgery.
+![sharp triangles of rainbow color exploding out into circles and sand trails.](/assets/art/needles.png)
+
+[Repository](https://github.com/isaacg1/needles/tree/main), which also contains progress images showing how the program creates the art!
 
 ## Oil Paint
 
