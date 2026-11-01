@@ -202,7 +202,7 @@ Note that this covers primary sex characteristics, secondary sex characteristics
 
 Even the underlying feature, sex, is a socially constructed categorization and narrative on top of the underlying sex-associated biological characteristics like hormone levels, the extent to which hormone receptors are activated, whether hormone levels are constant or fluctuating, presence and functioning of sex-associated organs, chromosomes, and the biological processes downstream of all of these factors.
 
-But plenty of gendered body features are not appreciably sex associated. Resting bitch face does not arise in the hormones, it is a cultural construction around the expected factual features of people societally seen as women. Plenty of people have thick leg hair regardless of hormone levels, but only some people are expected to shave it off. 
+But plenty of gendered body features are not appreciably sex associated. Resting bitch face does not arise in the hormones, it is a cultural construction around the expected facial features of people societally seen as women. Plenty of people have thick leg hair regardless of hormone levels, but only some people are expected to shave it off. 
 
 These gendered body features are often intentionally shaped, there are intense internal feelings towards them, and intense social pressures upon them. The pathways of gender body shaping include: 
 * Skincare,
