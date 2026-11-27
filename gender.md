@@ -106,6 +106,7 @@ Seasons are defined for this purpose as 4/18-7/18, 7/18-10/18, 10/18-1/18, and 1
 * [Season 11](/2026/04/13/season-11)
 * [Season 12](/2026/09/26/season-12). Three years!
 * [Season 13](/2026/09/27/season-13)
+* [Season 14](/2026/11/27/season-14)
 
 ### Some Gender Going On Podcast
 
